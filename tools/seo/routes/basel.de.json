@@ -1,0 +1,93 @@
+{
+  "title": "Flughafentransfer Basel Zürich | Chauffeur | Z-ALS",
+  "description": "Chauffeur-Transfer vom Flughafen Zürich nach Basel, {km} km in der Mercedes E-, S- oder V-Klasse, Disposition 24/7. Festpreis vor der Buchung.",
+  "h1": "Flughafentransfer von Zürich nach Basel mit Chauffeur",
+  "lede": "Ein Chauffeur erwartet Sie in der Ankunftshalle und fährt Sie die {km} km nach Basel, zu einem Festpreis, der vor der Buchung feststeht. Der Preis gilt für Basel selbst; den EuroAirport offeriert die Disposition separat.",
+  "intro": [
+    "Basel liegt am Rhein im Nordwesten der Schweiz, dort, wo die Grenzen zu Frankreich und Deutschland zusammentreffen. Vom Flughafen Zürich sind es {km} km, grösstenteils auf der Autobahn. Ein privater Transfer bedeutet: ein Fahrzeug und ein Chauffeur, von der Ankunftshalle bis zur Tür Ihres Hotels, Büros oder Ihrer Wohnung.",
+    "Der Preis richtet sich nach Kilometern und Fahrzeugklasse und steht vor der Buchung fest. Die Disposition in Kloten antwortet rund um die Uhr persönlich, und der Chauffeur wartet in der Ankunftshalle.",
+    "Eines vorab: Der EuroAirport Basel-Mulhouse liegt auf französischem Boden. Fahrten dorthin und die Rückfahrt ab Basel offeriert die Disposition deshalb pro Strecke."
+  ],
+  "sections": [
+    {
+      "h2": "Der Festpreis vom Flughafen Zürich nach Basel",
+      "paragraphs": [
+        "Ab dem Flughafen Zürich kostet der Transfer nach Basel in der Business-Klasse (Mercedes E-Klasse oder gleichwertig) {priceBusiness}, in der Premium-Klasse (Mercedes S-Klasse oder gleichwertig) {pricePremium}, im SUV (Mercedes GLE oder gleichwertig) {priceSuv} und im Business Van (Mercedes V-Klasse oder gleichwertig) {priceVan}. Die Beträge gelten pro Fahrzeug, nicht pro Person, und verstehen sich exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen. Wer zu dritt reist, teilt sich also einen Preis.",
+        "Der Preis ergibt sich aus der Strecke und dem Kilometertarif der Klasse; der Mindestpreis, unter den keine Fahrt fällt, spielt auf dieser Strecke keine Rolle. Er wird vor der Buchung genannt und ändert sich danach nicht. Im Preis enthalten sind:"
+      ],
+      "bullets": [
+        "Wartezeit und Gepäckverladung",
+        "Mautgebühren und die Schweizer Autobahnvignette",
+        "Kindersitze, vor der Fahrt eingebaut, ohne Aufpreis",
+        "Sechzig Minuten Wartezeit nach der Landung",
+        "Passagierversicherung"
+      ]
+    },
+    {
+      "h2": "Die Fahrt nach Basel: Strecke, Fahrzeit und Jahreszeiten",
+      "paragraphs": [
+        "Die Strecke misst {km} km. Mit rund {time} Fahrzeit ist zu rechnen. Üblich ist die Autobahn, die vom Flughafen aus nach Westen durch den Aargau und das Fricktal führt und von dort dem Rhein entlang nach Basel. Ein Alpenpass liegt nicht auf dem Weg, womit sich diese Strecke von den meisten unserer Fahrten in die Berge unterscheidet.",
+        "Weil die Fahrt über keinen Pass führt, ändern die Jahreszeiten sie weniger als eine Fahrt ins Gebirge. Von Oktober bis April fährt jedes unserer Fahrzeuge auf Winterreifen, und Schnee oder Nebel können die Fahrt dennoch verlängern. Müssen Sie einen Zug, eine Sitzung oder einen Flug erreichen, planen Sie einen Puffer ein und nennen Sie der Disposition bei der Buchung die Uhrzeit, zu der Sie in Basel sein müssen.",
+        "Verstehen Sie {time} als Planungsgrösse und nicht als Zusage: Baustellen und Stau ändern sich von Tag zu Tag, und der Chauffeur wählt den Weg am Reisetag."
+      ]
+    },
+    {
+      "h2": "Welches Fahrzeug für Basel",
+      "paragraphs": [
+        "Die Business-Klasse bietet drei Plätze und Platz für drei Koffer und reicht für ein bis drei Personen mit Gepäck. Die Premium-Klasse bietet ebenfalls drei Plätze, mit Platz für zwei Koffer, dazu einen Fond mit Beinfreiheit und Ruhe, in dem sich auf dieser Fahrt arbeiten lässt.",
+        "Der SUV fasst vier Passagiere mit vier Koffern und hat Allradantrieb, was bei einer Ankunft im Winter hilft. Der Business Van bietet sieben Plätze und Platz für sieben Koffer und passt für Delegationen, Familien und Teams, die gemeinsam reisen. Für Gruppen bis zu 16 Personen offeriert die Disposition einen Minibus oder Reisebus, pro Fahrt berechnet. Eine vollelektrische Limousine steht ebenfalls zur Wahl, zum Tarif der Business-Klasse; fragen Sie bei der Buchung danach."
+      ]
+    },
+    {
+      "h2": "Abholung am Flughafen Zürich und Angaben zur Buchung",
+      "paragraphs": [
+        "Nennen Sie bei der Buchung die Flugnummer: Der ankommende Flug wird verfolgt, und die Abholzeit verschiebt sich mit ihm ohne Aufpreis. Der Chauffeur wartet in der Ankunftshalle, und im Preis sind sechzig Minuten Wartezeit nach der Landung enthalten.",
+        "Publiziert sind die Preise für Abholungen am Flughafen Zürich. Die Rückfahrt ab Basel, eine Abholung an einer anderen Adresse, am EuroAirport Basel-Mulhouse oder am Flughafen Genf sowie Fahrten ins Ausland offeriert die Disposition pro Strecke. Für die Buchung braucht sie:"
+      ],
+      "bullets": [
+        "Flugnummer und Landedatum",
+        "Das Hotel, das Büro oder die Adresse in Basel oder, falls sie noch nicht feststeht, das Quartier",
+        "Anzahl der Passagiere und der Koffer",
+        "Kindersitze oder sperrige Gepäckstücke, falls zutreffend"
+      ]
+    },
+    {
+      "h2": "Basel: Grenze, EuroAirport und Altstadt",
+      "paragraphs": [
+        "Basel liegt dort, wo die Schweiz, Frankreich und Deutschland aufeinandertreffen, und das wirkt sich auf die Buchung in einem praktischen Punkt aus. Der EuroAirport Basel-Mulhouse liegt auf französischem Boden, die Strasse dorthin quert die Grenze. Der Festpreis oben gilt für Basel; eine Fahrt zum EuroAirport oder eine Abholung dort offeriert die Disposition vor der Buchung. Soll die Fahrt am EuroAirport beginnen oder enden, senden Sie Datum, Flugnummer und Zahl der Passagiere.",
+        "Innerhalb von Basel sind einzelne Gassen der Altstadt für den gewöhnlichen Verkehr gesperrt. Liegt Ihre Adresse darin, hält der Wagen am nächsten Punkt, den er erreichen kann, und das letzte Stück legen Sie zu Fuss zurück. Eine Adresse jenseits der Grenze, in Frankreich oder Deutschland, ist eine andere Strecke und wird separat offeriert."
+      ]
+    }
+  ],
+  "priceNote": "Die Beträge sind Nettopreise pro Fahrzeug; die MwSt. von {vat} wird als eigene Zeile ausgewiesen. Sie gelten für Basel ab dem Flughafen Zürich; die Rückfahrt, den EuroAirport und jede andere Abholadresse offeriert die Disposition pro Strecke.",
+  "faq": [
+    {
+      "q": "Wie lange dauert die Fahrt vom Flughafen Zürich nach Basel?",
+      "a": "Die Fahrt dauert rund {time} für {km} km, grösstenteils auf der Autobahn. Schnee oder Nebel können sie verlängern, nennen Sie der Disposition deshalb die Uhrzeit, zu der Sie in Basel sein müssen."
+    },
+    {
+      "q": "Was kostet ein privater Transfer vom Flughafen Zürich nach Basel?",
+      "a": "Die Fahrt kostet in der Business-Klasse {priceBusiness}, in der Premium-Klasse {pricePremium}, im SUV {priceSuv} und im Business Van {priceVan}; die Preise gelten pro Fahrzeug und verstehen sich zuzüglich {vat} MwSt."
+    },
+    {
+      "q": "Was gilt bei einer Verspätung des Fluges?",
+      "a": "Nennen Sie uns bei der Buchung die Flugnummer. Der ankommende Flug wird verfolgt, die Abholzeit verschiebt sich ohne Aufpreis mit, und sechzig Minuten Wartezeit nach der Landung sind im Preis enthalten."
+    },
+    {
+      "q": "Können Sie Gepäck, Ski und Kindersitze mitnehmen?",
+      "a": "Ja. Die Gepäckverladung ist inbegriffen, und die Kindersitze werden vor der Fahrt ohne Aufpreis eingebaut. Nennen Sie der Disposition die Zahl der Koffer und allfällige Ski oder andere sperrige Stücke, damit die Klasse von Anfang an stimmt."
+    },
+    {
+      "q": "Wie kann ich bezahlen?",
+      "a": "Online per Karte oder TWINT, beim Chauffeur am Reisetag oder nach Absprache mit dem Team über WhatsApp. Firmenkunden erhalten eine Monatsrechnung; eine allfällige Stornogebühr wird bei der Bestätigung der Buchung genannt."
+    },
+    {
+      "q": "Fahren Sie auch zum EuroAirport Basel-Mulhouse?",
+      "a": "Ja, aber als offerierte Strecke und nicht aus der Preistabelle, weil der Flughafen in Frankreich liegt und die Strasse die Grenze quert. Senden Sie der Disposition Datum, Flugnummer und Zahl der Passagiere, und der Preis kommt vor der Buchung zurück."
+    },
+    {
+      "q": "Holen Sie uns in Basel für die Rückfahrt zum Flughafen Zürich ab?",
+      "a": "Ja, als eigene Fahrt, die die Disposition pro Strecke offeriert, weil die publizierten Preise für Abholungen am Flughafen Zürich gelten. Senden Sie uns Datum und Adresse in Basel."
+    }
+  ]
+}

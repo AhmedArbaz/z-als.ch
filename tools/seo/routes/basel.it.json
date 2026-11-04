@@ -1,0 +1,92 @@
+{
+  "title": "Transfer aeroporto Basilea | Autista privato | Z-ALS",
+  "description": "Transfer con autista dall’aeroporto di Zurigo a Basilea, {km} km in autostrada, in Mercedes Classe E, S o V. Prezzo fisso comunicato prima di prenotare.",
+  "h1": "Transfer dall’aeroporto di Zurigo a Basilea con autista",
+  "lede": "Un autista La attende nell’area arrivi dell’aeroporto di Zurigo e La accompagna a Basilea: {km} km, circa {time}, a un prezzo fisso comunicato prima della prenotazione. Per l’EuroAirport la centrale prepara un preventivo a parte.",
+  "intro": [
+    "Basilea sorge sul Reno, nell’angolo nord-occidentale della Svizzera, dove si incontrano i confini con la Francia e con la Germania. Dall’aeroporto di Zurigo dista {km} km, in gran parte in autostrada. Con un transfer privato restano la stessa auto e lo stesso autista dall’area arrivi fino alla porta dell’albergo, dell’ufficio o dell’appartamento, senza cambi lungo il percorso.",
+    "Z-ALS è un’azienda svizzera di trasporto con autista, in possesso delle autorizzazioni necessarie, con sede a Kloten dal 2004. Il prezzo si calcola al chilometro in base alla classe dell’auto e Le viene comunicato prima della prenotazione. Alla centrale operativa risponde una persona, a ogni ora, per telefono, su WhatsApp o per e-mail.",
+    "Qui sotto trova il prezzo, il percorso, le auto e ciò che serve alla centrale. Una precisazione subito: l’EuroAirport Basilea-Mulhouse si trova su suolo francese, perciò una corsa da o verso quell’aeroporto, come il ritorno da Basilea, richiede un preventivo della centrale per ogni singola tratta."
+  ],
+  "sections": [
+    {
+      "h2": "Il prezzo fisso da Zurigo a Basilea",
+      "paragraphs": [
+        "Un transfer in classe Business (Mercedes Classe E o equivalente) costa {priceBusiness} per l’intera auto. La classe Premium (Mercedes Classe S o equivalente) costa {pricePremium}, il SUV (Mercedes GLE o equivalente) {priceSuv} e il Business Van (Mercedes Classe V o equivalente) {priceVan}. L’IVA, pari a {vat}, compare su una riga a parte e ogni importo vale per auto, non per passeggero: in tre o in quattro il costo si divide.",
+        "Il prezzo deriva dalla distanza e dalla tariffa al chilometro della classe, Le viene comunicato prima della prenotazione e non cambia più. Comprende:"
+      ],
+      "bullets": [
+        "Attesa e gestione dei bagagli",
+        "Pedaggi e vignetta autostradale svizzera",
+        "Seggiolini per bambini, montati gratuitamente prima del viaggio",
+        "Sessanta minuti di attesa dopo l’atterraggio",
+        "L’assicurazione dei passeggeri"
+      ]
+    },
+    {
+      "h2": "Il percorso da Zurigo a Basilea",
+      "paragraphs": [
+        "La distanza è di {km} km e il viaggio dura circa {time}. L’autista prende l’autostrada verso ovest, attraversa l’Argovia, supera le alture del Giura, poi raggiunge il Reno ed entra a Basilea. Sul percorso non c’è alcun passo alpino, ed è ciò che distingue questa tratta dalle nostre corse verso le località di montagna.",
+        "Da ottobre ad aprile tutte le auto montano pneumatici invernali di serie, e neve o nebbia possono comunque allungare il viaggio. Consideri {time} come durata di pianificazione, non come promessa al minuto: un cantiere o un incidente possono rallentare l’autostrada in qualsiasi stagione. Se a Basilea ha un treno, un appuntamento o un volo da prendere, preveda un margine e lo segnali alla centrale al momento della prenotazione."
+      ]
+    },
+    {
+      "h2": "Quale auto scegliere per Basilea",
+      "paragraphs": [
+        "La classe Business è l’auto di riferimento per questa tratta: tre passeggeri con tre valigie, e un quarto passeggero se i bagagli sono leggeri. La classe Premium trasporta tre passeggeri con due valigie e offre un abitacolo posteriore pensato per lavorare. Il SUV porta quattro passeggeri con quattro valigie e ha la trazione integrale, utile se arriva in pieno inverno.",
+        "Il Business Van accoglie sette passeggeri con sette valigie ed è la scelta per delegazioni, famiglie e per chi viaggia con molti bagagli. Per gruppi fino a sedici persone la centrale prepara un preventivo per un minibus o un autobus, per ogni singolo viaggio. È disponibile anche una berlina completamente elettrica alla tariffa della classe Business: la richieda al momento della prenotazione, perché l’autonomia viene pianificata sul percorso prima dell’assegnazione dell’auto."
+      ]
+    },
+    {
+      "h2": "Prelievo all’aeroporto di Zurigo e cosa serve alla centrale",
+      "paragraphs": [
+        "All’aeroporto di Zurigo l’autista La attende all’interno dell’area arrivi e nel prezzo sono compresi sessanta minuti di attesa dopo l’atterraggio. Se indica il numero del volo al momento della prenotazione, il volo in arrivo viene monitorato e l’ora del prelievo si sposta insieme al volo, senza costi: un atterraggio in ritardo non cambia né il prezzo né il programma.",
+        "Le tariffe sono pubblicate per i prelievi all’aeroporto di Zurigo. Il ritorno da Basilea, un prelievo a un altro indirizzo, gli aeroporti di Basilea e di Ginevra e i viaggi all’estero richiedono un preventivo della centrale per ogni tratta. Per prenotare alla centrale servono:"
+      ],
+      "bullets": [
+        "Il numero del volo e la data di atterraggio",
+        "L’albergo o l’indirizzo a Basilea, o la località se l’indirizzo non è ancora definito",
+        "Il numero di passeggeri e di valigie",
+        "Seggiolini per bambini, sci o snowboard, se necessari"
+      ]
+    },
+    {
+      "h2": "Che cosa distingue Basilea: il confine e l’EuroAirport",
+      "paragraphs": [
+        "Il confine incide sulla prenotazione in modo molto concreto. L’EuroAirport Basilea-Mulhouse si trova su suolo francese: il prezzo fisso qui sopra vale per Basilea, mentre per una corsa da o verso l’EuroAirport la centrale prepara un preventivo prima della prenotazione. Se da lì prende un volo, lo comunichi e porti con sé un documento d’identità valido per ogni passeggero.",
+        "Nella città vecchia alcune vie sono riservate ai pedoni. Per un indirizzo dentro quel perimetro l’auto si ferma nel punto più vicino che può raggiungere e l’ultimo tratto si fa a piedi: indichi alla centrale l’albergo o la via, e il punto di discesa viene concordato in anticipo. Un indirizzo oltre il confine, in Francia o in Germania, è un altro viaggio e ha un preventivo a parte."
+      ]
+    }
+  ],
+  "priceNote": "Le tariffe sono indicate per auto, IVA esclusa; l’IVA, pari a {vat}, compare su una riga a parte. Valgono per i prelievi all’aeroporto di Zurigo; il ritorno da Basilea, l’EuroAirport o qualsiasi altro punto di prelievo richiedono un preventivo della centrale.",
+  "faq": [
+    {
+      "q": "Quanto dura il transfer dall’aeroporto di Zurigo a Basilea?",
+      "a": "Il viaggio dura circa {time} per {km} km, in gran parte in autostrada. Neve o nebbia possono allungarlo: segnali alla centrale ogni treno, appuntamento o volo da prendere all’arrivo."
+    },
+    {
+      "q": "Quanto costa un transfer privato da Zurigo a Basilea?",
+      "a": "{priceBusiness} in classe Business, {pricePremium} in classe Premium, {priceSuv} in SUV e {priceVan} in Business Van, IVA ({vat}) esclusa. Il prezzo vale per l’intera auto ed è fissato prima della prenotazione."
+    },
+    {
+      "q": "Cosa succede se il mio volo atterra in ritardo?",
+      "a": "Ci comunichi il numero del volo al momento della prenotazione. Monitoriamo il volo in arrivo e il prelievo si sposta insieme al volo senza costi; sessanta minuti di attesa dopo l’atterraggio sono compresi."
+    },
+    {
+      "q": "Posso portare bagagli, sci e seggiolini per bambini?",
+      "a": "I seggiolini per bambini vengono montati prima del viaggio, gratuitamente. Comunichi alla centrale il numero di valigie e di paia di sci o snowboard, così la classe è quella giusta al primo colpo."
+    },
+    {
+      "q": "Come si paga il transfer?",
+      "a": "Online con carta o TWINT, all’autista il giorno stesso, oppure concordando con la centrale su WhatsApp. I clienti aziendali ricevono una fattura mensile e le eventuali spese di annullamento Le vengono indicate alla conferma della prenotazione."
+    },
+    {
+      "q": "Potete portarmi all’EuroAirport Basilea-Mulhouse?",
+      "a": "Sì, ma questa corsa non figura nella tabella: la centrale la preventiva a parte, perché l’aeroporto è in Francia. Ci invii la data, il volo e il numero di passeggeri: il prezzo Le viene comunicato prima della prenotazione."
+    },
+    {
+      "q": "Potete venirci a prendere a Basilea per il ritorno all’aeroporto di Zurigo?",
+      "a": "Sì, come tratta separata. Le tariffe pubblicate valgono per i prelievi all’aeroporto di Zurigo: per il ritorno la centrale prepara un preventivo, ci invii la data e l’indirizzo."
+    }
+  ]
+}

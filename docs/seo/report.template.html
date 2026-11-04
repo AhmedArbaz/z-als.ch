@@ -1,0 +1,336 @@
+<title>Z-ALS SEO Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap">
+<style>
+/* Layout: one reading column, tables and roadmap widen to the column edge, everything stacks at phone width.
+   Palette: the brand's ink blue and its AA-safe accent on a cool grey ground; semantic colours only for score chips. */
+:root {
+  --bg: #F3F5F9; --surface: #FFFFFF; --ink: #0A1730; --muted: #4F5D76; --line: #D6DCE8;
+  --accent: #3A5A96; --accent-soft: #E4EBF7; --good: #17724F; --good-bg: #DDF1E8;
+  --warn: #8A5200; --warn-bg: #FBEBD0; --bad: #A82F28; --bad-bg: #F8DEDB; --note-bg: #EAF0FA;
+  --display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --body: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #070E1D; --surface: #0E1A31; --ink: #E8EDF7; --muted: #9DABC6; --line: #243350;
+    --accent: #8FB0EC; --accent-soft: #15233F; --good: #6FD3A6; --good-bg: #123A2C;
+    --warn: #F0B866; --warn-bg: #3F2C0E; --bad: #FF9A92; --bad-bg: #4A1B18; --note-bg: #12213D; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #070E1D; --surface: #0E1A31; --ink: #E8EDF7; --muted: #9DABC6; --line: #243350;
+  --accent: #8FB0EC; --accent-soft: #15233F; --good: #6FD3A6; --good-bg: #123A2C;
+  --warn: #F0B866; --warn-bg: #3F2C0E; --bad: #FF9A92; --bad-bg: #4A1B18; --note-bg: #12213D; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16px/1.65 var(--body); margin: 0; padding-inline: clamp(16px, 4vw, 40px); padding-block: 0 72px; -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin-inline: auto; }
+a { color: var(--accent); text-underline-offset: 3px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; }
+h1 { font: 500 clamp(36px, 6vw, 58px)/1.05 var(--display); letter-spacing: -0.02em; }
+h2 { font: 500 clamp(26px, 3.4vw, 34px)/1.15 var(--display); letter-spacing: -0.01em; margin-top: 64px; padding-top: 28px; border-top: 1px solid var(--line); }
+h3 { font: 700 17px/1.35 var(--body); margin-top: 32px; }
+p { margin: 14px 0 0; max-width: 68ch; }
+ul, ol { margin: 14px 0 0; padding-left: 22px; max-width: 72ch; }
+li { margin-top: 8px; }
+.eyebrow { font: 500 12px/1.4 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); }
+.lede { font-size: 19px; line-height: 1.6; color: var(--ink); max-width: 62ch; margin-top: 22px; }
+header.top { padding-block: 56px 8px; }
+nav.toc { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-top: 30px; font: 500 13px/1.4 var(--body); }
+nav.toc a { text-decoration: none; padding: 6px 0; border-bottom: 1px solid var(--line); color: var(--ink); }
+nav.toc a:hover { border-color: var(--accent); color: var(--accent); }
+.note { background: var(--note-bg); border-left: 3px solid var(--accent); padding: 16px 20px; margin-top: 24px; border-radius: 0 8px 8px 0; max-width: 72ch; }
+.note p:first-child { margin-top: 0; }
+.note strong { font-weight: 700; }
+.meta { font: 400 13px/1.5 var(--mono); color: var(--muted); margin-top: 12px; }
+
+/* before / after */
+.ba { margin-top: 26px; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.ba-row { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr) minmax(0, 1fr); gap: 8px 16px; align-items: baseline; padding: 14px 20px; border-top: 1px solid var(--line); }
+.ba-row:first-child { border-top: 0; }
+.ba-head { font: 500 11px/1.4 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); background: var(--accent-soft); }
+.ba-label { font-weight: 600; }
+.ba-label small { display: block; font-weight: 400; color: var(--muted); font-size: 13px; line-height: 1.45; margin-top: 2px; }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.before { color: var(--muted); }
+.after { font-weight: 500; color: var(--ink); }
+@media (max-width: 560px) {
+  .ba-row { grid-template-columns: 1fr 1fr; }
+  .ba-label { grid-column: 1 / -1; }
+  .ba-head span:first-child { display: none; }
+  .ba-head { grid-template-columns: 1fr 1fr; }
+}
+
+/* tables */
+.table-wrap { overflow-x: auto; margin-top: 22px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.45; }
+th, td { text-align: left; padding: 11px 14px; border-top: 1px solid var(--line); vertical-align: top; }
+thead th { border-top: 0; background: var(--accent-soft); font: 500 11px/1.4 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+td.n, th.n { text-align: right; white-space: nowrap; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+td code, p code, li code { font: 400 0.88em var(--mono); background: var(--accent-soft); padding: 1px 6px; border-radius: 5px; overflow-wrap: anywhere; }
+.chip { display: inline-block; min-width: 2.6em; text-align: center; font: 500 13px/1 var(--mono); padding: 5px 8px; border-radius: 999px; }
+.chip.good { background: var(--good-bg); color: var(--good); }
+.chip.warn { background: var(--warn-bg); color: var(--warn); }
+.chip.bad { background: var(--bad-bg); color: var(--bad); }
+.arrow { color: var(--muted); padding-inline: 4px; }
+.pair { white-space: nowrap; }
+.tag { font: 500 11px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 8px; border-radius: 6px; background: var(--accent-soft); color: var(--accent); white-space: nowrap; }
+.tag.you { background: var(--warn-bg); color: var(--warn); }
+
+/* roadmap */
+.road { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-top: 24px; }
+.road > div { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 20px 22px; }
+.road h3 { margin: 6px 0 0; font-size: 18px; }
+.road ul { padding-left: 18px; margin-top: 12px; font-size: 14.5px; line-height: 1.55; }
+@media (max-width: 760px) { .road { grid-template-columns: 1fr; } }
+
+/* checklist */
+.check { list-style: none; padding: 0; margin-top: 22px; max-width: none; background: var(--surface); border: 1px solid var(--line); border-radius: 14px; }
+.check li { display: grid; grid-template-columns: auto 1fr; gap: 6px 16px; padding: 16px 20px; margin: 0; border-top: 1px solid var(--line); align-items: start; }
+.check li:first-child { border-top: 0; }
+.check b { display: block; font-weight: 700; }
+.check span.d { display: block; color: var(--muted); font-size: 14.5px; line-height: 1.55; margin-top: 2px; }
+
+.cols { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+.cols > div { min-width: 0; }
+@media (max-width: 700px) { .cols { grid-template-columns: 1fr; } }
+footer.end { margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; line-height: 1.6; }
+footer.end p { max-width: 80ch; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media print {
+  body { background: #fff; color: #0A1730; font-size: 10.5pt; padding-inline: 0; }
+  :root { --bg: #fff; }
+  h2 { break-after: avoid; margin-top: 36px; }
+  .table-wrap, .ba, .road > div, .check li, .note { break-inside: avoid; }
+  nav.toc { display: none; }
+  a { color: inherit; text-decoration: none; }
+}
+</style>
+
+<div class="wrap">
+<header class="top">
+  <div class="eyebrow">SEO report · z-als.ch · {{date}}</div>
+  <h1 style="margin-top:14px">Z-ALS SEO Report</h1>
+  <p class="lede">What was wrong with the way Google and visitors met the site, what was built to fix it, what the measurements show on the live domain, and what happens next.</p>
+  <nav class="toc" aria-label="Sections">
+    <a href="#summary">Summary</a><a href="#audit">What we found</a><a href="#keywords">Keywords</a><a href="#built">What was built</a>
+    <a href="#results">Results</a><a href="#analytics">Analytics</a><a href="#roadmap">Roadmap</a><a href="#todo">Your checklist</a><a href="#limits">Limits</a>
+  </nav>
+</header>
+
+<main>
+<section id="summary" aria-labelledby="h-summary">
+  <h2 id="h-summary" style="margin-top:40px">Summary</h2>
+  <p>The site now gives Google, and every visitor, what they need on the first request: a home page in each of the four languages, a page for each resort transfer, a distinct title and description on all 102 pages, structured data that describes the business, and a booking path that no longer flashes while it loads. The work went live on {{date}}. The crawl, the checks and the desktop figures below were measured on <code>https://z-als.ch</code> itself; the mobile figures compare the old and the new build side by side on one machine.</p>
+  <div class="note">
+    <p><strong>About position one.</strong> Nobody can promise it. Google ranks on how well a page answers the search, how many trusted sites link to it, what customers say about the business, and what competitors do. This report removes what was holding the site back and builds the pages for the searches that bring bookings. What moves rankings next is mostly outside the code: Google reviews, a verified Google Business Profile and links from other sites. Those are in the roadmap, with who does what.</p>
+  </div>
+  <div class="ba" role="table" aria-label="Before and after">
+    <div class="ba-row ba-head" role="row"><span role="columnheader">Measured</span><span role="columnheader">4 October 2026, before</span><span role="columnheader">{{date}}, after</span></div>
+    {{ba-rows}}
+  </div>
+  <p class="meta">Before: crawl of the 67 pages listed in the old sitemap and Lighthouse runs on the live site, 4 October 2026. After: crawl of the 102 pages in the new sitemap and Lighthouse runs on the live site, 6 October 2026. The two mobile rows come from the side-by-side test explained under Results. Raw data: <code>docs/seo/baseline</code> and <code>docs/seo/after</code>.</p>
+</section>
+
+<section id="audit" aria-labelledby="h-audit">
+  <h2 id="h-audit">What we found on 4 October</h2>
+  <ul>
+    <li><strong>The German, French and Italian home pages did not exist as pages.</strong> They were the English page re-written by script behind <code>?lang=de</code>, and each one named the English page as its canonical address. Google could only ever see English.</li>
+    <li><strong>Titles and descriptions repeated.</strong> 39 of 67 pages shared a title with another page, 31 titles were longer than Google shows, 3 pages had no description and 58 had one that was too short or too long. Service pages carried brand wording with no search term in it.</li>
+    <li><strong>28 of 33 articles in German, French and Italian were still in English</strong> while declaring themselves translated, which tells Google the language tags cannot be trusted.</li>
+    <li><strong>No page for any resort.</strong> The 30 transfer pages of the old site redirected to the home page, so a search such as "Zurich to Davos transfer" had nothing to land on.</li>
+    <li><strong>Structured data was thin.</strong> One block of company data on some pages, none on the home page or booking pages, and it used a type that schema.org does not define.</li>
+    <li><strong>Nothing was compressed or cacheable.</strong> The home page sent 112 KB of HTML and about 3.4 MB in total on a phone on every visit, and its main photo was a 2400 px image fetched from another company's server.</li>
+    <li><strong>A loading flash.</strong> For about half a second the closed mobile menu painted over the top of the page before the page had assembled itself, then the hero jumped in. Measured shift on the home page: 0.18 on desktop; on the booking page: 0.52.</li>
+    <li><strong>No analytics and no consent notice.</strong> Nothing recorded which pages or which searches led to enquiries.</li>
+  </ul>
+</section>
+
+<section id="keywords" aria-labelledby="h-keywords">
+  <h2 id="h-keywords">Keyword research</h2>
+  <h3>How it was done</h3>
+  <p>In a real browser, with language and region set for each market (English, German, French, Italian). We read Google's autocomplete suggestions, the "People also ask" questions, related searches and who holds page one, 82 results pages in all (16 to 25 per language), and the title, headings, length and structured data of the pages that rank. German and English were read on <code>google.ch</code>; French and Italian on <code>google.com</code> with Switzerland as the region, after <code>google.ch</code> asked for a CAPTCHA. A CAPTCHA was never bypassed. When one appeared part-way through the competitor study we read DuckDuckGo's results for that part, so those competitor ranks are DuckDuckGo's. The result is 427 candidate phrases across the four languages in <code>keyword-plan.csv</code>, each with intent, a volume proxy, a difficulty proxy and the page it is assigned to.</p>
+  <h3>What the results pages show</h3>
+  <ul>
+    <li>Generic airport searches ("zurich airport transfer") are led by marketplaces and the airport authority, with paid ads above them. Small Swiss operators still hold many page-one places, some with pages of fewer than 1,000 words.</li>
+    <li>Pages that rank for a resort route state the distance, the drive time, the pick-up details, the cost and a comparison with train and taxi, and are mostly 1,000 to 2,500 words long.</li>
+    <li>Only 2 of the 28 competitor pages we opened had a price in the title. The new descriptions state the fixed starting fare, the flight tracking and 24-hour dispatch that the ranking pages repeat, and the route pages show the full fare table.</li>
+  </ul>
+  <h3>One main phrase per page</h3>
+  <p>Each page targets one main phrase, so no two pages compete for the same search. Titles are 58 characters or fewer, descriptions between 125 and 160.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Page</th><th>Main phrase</th><th>Title in search results</th></tr></thead>
+    <tbody>{{home-keywords}}</tbody>
+  </table></div>
+  <h3>Resort routes</h3>
+  <p>Distance, drive time and fares on these pages are read from the same price engine as the booking form, so a page can never quote a figure the form would not charge. Fares are net of 8.1% VAT, which each page states.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Route</th><th class="n">Distance</th><th class="n">Drive time</th><th class="n">Business class</th><th>English title</th><th>German title</th><th>Also in</th></tr></thead>
+    <tbody>{{routes-table}}</tbody>
+  </table></div>
+  <p>The full list, with the evidence for every phrase, is in <code>keyword-plan.md</code> and <code>keyword-plan.csv</code>.</p>
+  <div class="note"><p><strong>What the numbers are.</strong> Search volume and difficulty are proxies built from how prominently a phrase appears in Google's suggestions and who holds page one. Google Keyword Planner needs a signed-in Google Ads account, which we do not have. Once Search Console has a month of data, the real queries and impressions replace the proxies and the plan should be re-sorted.</p></div>
+</section>
+
+<section id="built" aria-labelledby="h-built">
+  <h2 id="h-built">What was built</h2>
+  <div class="cols">
+  <div>
+    <h3>Pages and content</h3>
+    <ul>
+      <li>German, French and Italian home pages at <code>/de</code>, <code>/fr</code>, <code>/it</code>, translated before the page is sent, each with its own title, description, canonical address and FAQ.</li>
+      <li>{{route-count}} route pages and four route overviews, with the fare table, the drive, the pick-up details and a FAQ for each resort.</li>
+      <li>All 44 journal articles now exist in each of the four languages (11 per language), and the four journal indexes are translated.</li>
+      <li>A unique, keyword-led title and description on every page, social preview image on every page.</li>
+      <li>The home page links to the route pages, the journal and the route overview; the footer carries "Routes and fares".</li>
+    </ul>
+    <h3>Structured data</h3>
+    <ul>
+      <li>Every page carries the business block (Kloten address, languages spoken, service area, social profiles); inner pages add the breadcrumb path, and the home, booking and legal pages the website entry.</li>
+      <li>Article markup on journal posts, service and fare markup on route pages, FAQ markup on the home pages and route pages (36 pages).</li>
+      <li>No star ratings. Rating markup is only added once real, visible customer reviews exist; invented or unseen ratings can lead to a manual penalty.</li>
+    </ul>
+  </div>
+  <div>
+    <h3>Technical foundation</h3>
+    <ul>
+      <li>One address per page: <code>/index.html</code>, <code>/quote.html</code>, trailing slashes and <code>/en</code> all redirect to the clean address. Old-site links and campaign tags (<code>utm_*</code>, <code>gclid</code>) survive the redirect.</li>
+      <li>Every language version of a page names the others and each of them names it back, which is what Google needs to show the right language to the right searcher.</li>
+      <li>Sitemap with language alternates and real modification dates; <code>robots.txt</code> keeps only the private <code>/api/</code> out.</li>
+      <li>Text is compressed and cached with validators: the home page HTML travels as about 19 KB (about 145 KB uncompressed, more than the 112 KB before because the page now carries a FAQ, route and journal content).</li>
+    </ul>
+    <h3>Loading and first impression</h3>
+    <ul>
+      <li>The page is held back until it has assembled, so nothing paints out of order. The closed menu can no longer appear over the hero. On desktop the layout shift fell from 0.18 to 0 on the home page and from 0.52 to 0 on the booking page; on a phone it stays under 0.03 on every page tested.</li>
+      <li>The hero photo is hosted on the site at 1600 px and preloaded instead of fetched from another server at 2400 px.</li>
+    </ul>
+    <h3>Analytics and consent</h3>
+    <ul>
+      <li>Google Tag Manager <code>GTM-MKMXMR2X</code> on every page, behind a consent banner in four languages that follows Google Consent Mode v2. No analytics cookies are set until the visitor accepts; the privacy notice was updated to match.</li>
+      <li>The booking steps, enquiries, payments, calls, e-mails and WhatsApp clicks are sent as events without any personal data.</li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+<section id="results" aria-labelledby="h-results">
+  <h2 id="h-results">Results</h2>
+  <h3>Desktop: the live site on 4 October and on 6 October</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Page</th><th>Performance</th><th>SEO</th><th>Accessibility</th><th class="n">Largest paint</th><th class="n">Layout shift</th><th class="n">Weight</th></tr></thead>
+    <tbody>{{lh-desktop}}</tbody>
+  </table></div>
+  <h3>Mobile: the old site and the new one, side by side</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Page</th><th>Performance</th><th>SEO</th><th>Accessibility</th><th class="n">Largest paint</th><th class="n">Blocking time</th><th class="n">Weight</th></tr></thead>
+    <tbody>{{lh-mobile}}</tbody>
+  </table></div>
+  <div class="note">
+    <p><strong>How to read this.</strong> Lighthouse is a lab test run from one machine. The mobile test also slows the processor four-fold and the connection to a slow phone network, and its Performance score moves by 10 points or more between runs of the same live page, so the side-by-side mobile figures are the median of {{runs}} runs each.</p>
+    <p>The mobile table compares the old build and the new build side by side on the same machine, with the same added network delay of 150 ms per response. Live runs on 4 and 6 October were not comparable: in this setup Lighthouse holds back the first screen by about 1.3 seconds on any page loaded over a network with delay, and the old build shows the same effect when served that way. The side-by-side copies do not load Tag Manager, which adds about 117 KB and a short task after the page has loaded on the live site. On the live site itself the home page scored {{live-mobile-home}} on mobile (median of 3 runs on 6 October against one run on 4 October); the live runs are kept in <code>docs/seo/after</code>.</p>
+    <p>The SEO score is now 100 on every page measured; the home page and the booking form scored 92 before. What visitors experience is measured by Core Web Vitals on real devices, which Search Console reports after about four weeks of traffic. That report, not these lab figures, is the one to watch.</p>
+  </div>
+  <h3>Checks that run before every release</h3>
+  <ul>
+    <li><code>seo.test</code> opens every page in the sitemap and checks title and description length and uniqueness, the canonical address, that each language link is returned by the page it points to, a single Tag Manager snippet, that the structured data matches the visible text, and that the page is written in the language it claims. All {{pages}} pages pass on the live domain.</li>
+    <li><code>fares.test</code> checks the price engine and that the prices written on the restored pages match it.</li>
+    <li><code>glitch-probe</code> loads the home, booking and legal pages on throttled desktop and mobile and fails if anything paints before the page is assembled or the layout moves.</li>
+    <li><code>gtm.test</code> and <code>events.test</code> check that consent starts denied, the banner works in four languages, no analytics cookies are set after "Decline", and the booking events carry no personal data.</li>
+  </ul>
+</section>
+
+<section id="analytics" aria-labelledby="h-analytics">
+  <h2 id="h-analytics">Analytics: one step is still yours</h2>
+  <div class="note"><p><strong>Google Analytics is not receiving data yet.</strong> The tag manager container <code>GTM-MKMXMR2X</code> loads on every page, but the published version of the container contains no tags, so nothing is sent to Google Analytics. Adding the Google Analytics 4 tag in Tag Manager and publishing it takes about ten minutes and needs your Google login. The steps are in <code>ga4-gtm-setup.md</code>. Until then no traffic, search-to-enquiry or booking numbers can be reported, so the 30-day review below depends on it.</p></div>
+  <h3>Events the site already sends</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Event</th><th>When it fires</th><th>Mark as key event</th></tr></thead>
+    <tbody>
+      <tr><td><code>quote_start</code>, <code>quote_step</code></td><td>The booking form opens; the visitor moves between its steps (trip, car, details, review, payment), including back. <code>step_name</code> shows where people drop out</td><td>No</td></tr>
+      <tr><td><code>generate_lead</code></td><td>A booking request reached dispatch (WhatsApp or "pay the chauffeur"), with the fare shown</td><td><span class="tag">Yes</span></td></tr>
+      <tr><td><code>begin_checkout</code></td><td>The visitor is sent to Stripe for card or TWINT</td><td>Optional</td></tr>
+      <tr><td><code>purchase</code></td><td>The visitor returns from Stripe with a paid session</td><td><span class="tag">Yes</span></td></tr>
+      <tr><td><code>whatsapp_click</code>, <code>phone_click</code>, <code>email_click</code></td><td>Any WhatsApp, telephone or e-mail link</td><td>Optional</td></tr>
+      <tr><td><code>contact_submit</code></td><td>The contact form is sent or fails</td><td>Optional</td></tr>
+      <tr><td><code>consent_granted</code>, <code>consent_declined</code></td><td>The visitor answers the banner</td><td>No</td></tr>
+    </tbody>
+  </table></div>
+  <p>Analytics will mostly reflect visitors who accept the banner (visitors who decline may still send a few anonymous pings without cookies), so expect it to show fewer visits than the real number; Search Console, which needs no consent, will show the larger picture of how many people found the site.</p>
+</section>
+
+<section id="roadmap" aria-labelledby="h-roadmap">
+  <h2 id="h-roadmap">Roadmap: the next 90 days</h2>
+  <p>New pages are usually crawled within days once the sitemap is submitted. Long, specific searches such as a resort route are the most winnable and tend to move first. Broad searches such as "zurich airport transfer" are held by marketplaces and the airport authority and typically take months and outside links to move.</p>
+  <div class="road">
+    <div>
+      <div class="eyebrow">Days 1 to 30</div>
+      <h3>Get seen and measured</h3>
+      <ul>
+        <li>Add <code>z-als.ch</code> to Google Search Console, submit <code>sitemap.xml</code>, request indexing for the four home pages and the nine English route pages.</li>
+        <li>Publish the Google Analytics 4 tag in Tag Manager and mark <code>generate_lead</code> and <code>purchase</code> as key events.</li>
+        <li>Claim and verify the Google Business Profile for the Kloten address.</li>
+        <li>Ask every customer for a Google review, with the short link.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">Days 31 to 60</div>
+      <h3>Read the first real data</h3>
+      <ul>
+        <li>Open Search Console's Performance report: which searches show impressions, which pages have a low click rate. Rewrite those titles first.</li>
+        <li>Track about thirty phrases from the plan each week, English and German first.</li>
+        <li>Register in Swiss business directories and with hotel concierge and event partners that can link to the route pages.</li>
+        <li>Publish two journal articles a month from the plan's gaps.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="eyebrow">Days 61 to 90</div>
+      <h3>Add weight and reach</h3>
+      <ul>
+        <li>Win links from partners to route pages: hotels, wedding venues, travel agencies, corporate travel pages.</li>
+        <li>Add route pages that Search Console shows demand for. Candidates to test, only lightly covered by the research so far: St. Anton, Gstaad, Verbier, Grindelwald, Flims.</li>
+        <li>Show real Google reviews on the site once there are some. Do not expect star ratings in search results from this; Google rarely shows them for a company's reviews of itself.</li>
+        <li>Re-run the audit and Lighthouse and compare with this report.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="todo" aria-labelledby="h-todo">
+  <h2 id="h-todo">Your checklist</h2>
+  <p>The first six need the company's own accounts or facts, so we cannot do them for you. The last four are for you and the web team to settle together.</p>
+  <ul class="check">
+    <li><span class="tag you">Z-ALS</span><div><b>Publish the Google Analytics 4 tag in Tag Manager</b><span class="d">Steps in <code>ga4-gtm-setup.md</code>. Once the tag is live, also add <code>checkout.stripe.com</code> under Admin, Data streams, Configure tag settings, List unwanted referrals, so customers who paid by card or TWINT are not counted as arriving from another website.</span></div></li>
+    <li><span class="tag you">Z-ALS</span><div><b>Verify the site in Google Search Console and submit the sitemap</b><span class="d">Add <code>https://z-als.ch/</code> as a URL-prefix property and verify it with the Tag Manager container already on every page (a domain property needs a DNS record, and the live DNS is not the Plesk panel: ask us before touching DNS). Then submit <code>https://z-als.ch/sitemap.xml</code>.</span></div></li>
+    <li><span class="tag you">Z-ALS</span><div><b>Google Business Profile</b><span class="d">Category limousine service, 24-hour opening, the Kloten address, photos of the real fleet, and the home page as website. A complete profile with reviews is one of the strongest local signals.</span></div></li>
+    <li><span class="tag you">Z-ALS</span><div><b>Collect real Google reviews</b><span class="d">A short message with the review link after each completed transfer. Only reviews that customers wrote can be shown or marked up.</span></div></li>
+    <li><span class="tag you">Z-ALS</span><div><b>Commercial-register (CHE) number, VAT number and managing director</b><span class="d">The imprint on <code>/legal</code> leaves these out because they were not supplied. Companies normally list them there.</span></div></li>
+    <li><span class="tag you">Z-ALS</span><div><b>Stripe webhook</b><span class="d">Today a card customer who closes the browser before returning to the site has paid, but the team is not told. In the Stripe dashboard add a webhook to <code>https://z-als.ch/api/stripe/webhook</code> for <code>checkout.session.completed</code> and <code>checkout.session.async_payment_succeeded</code>, then give its signing secret to whoever manages the hosting, who saves it as <code>STRIPE_WEBHOOK_SECRET</code>. Do not send it by e-mail or chat.</span></div></li>
+    <li><span class="tag">Check</span><div><b>Flight monitoring and 24-hour dispatch</b><span class="d">The page descriptions and FAQs say flights are monitored and dispatch is reachable around the clock. Confirm both are true in practice, and tell us if the wording should change.</span></div></li>
+    <li><span class="tag">Check</span><div><b>Zermatt drive time</b><span class="d">The price table (<code>places.js</code>) gives 2 h 40 for the 250 km to Zermatt, where the car stops at Täsch and the shuttle train continues. Road guides we looked at suggest roughly 3 h 30; we did not record the sources. The booking form, the Zermatt pages in four languages and the home page FAQs follow the price table by themselves; the route card on the home page and the winter-routes article in four languages are typed by hand and need the new figure added once dispatch confirms the real time.</span></div></li>
+    <li><span class="tag">Check</span><div><b>WhatsApp button on the mobile booking page</b><span class="d">The floating WhatsApp button overlaps the form's controls on small screens. This predates this work and was left as designed. Tell us if you want it moved.</span></div></li>
+  </ul>
+</section>
+
+<section id="limits" aria-labelledby="h-limits">
+  <h2 id="h-limits">Limits of this report</h2>
+  <ul>
+    <li>No ranking is promised. The report lists what was done and measured, and what is likely to move results next.</li>
+    <li>Keyword volumes are proxies. Rankings of competitors were read once, on 4 October 2026.</li>
+    <li>Lighthouse scores are single-machine lab results. The mobile Performance score varies by 10 points or more between runs.</li>
+    <li>Google Analytics shows no data yet. Results in terms of visits, enquiries and bookings cannot be reported until the tag in Tag Manager is published.</li>
+  </ul>
+  <h3>What is on the site now</h3>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Kind of page</th><th class="n">English</th><th class="n">German</th><th class="n">French</th><th class="n">Italian</th><th class="n">Total</th></tr></thead>
+    <tbody>{{inventory}}</tbody>
+  </table></div>
+</section>
+</main>
+
+<footer class="end">
+  <p>Prepared for Z-ALS, {{date}}. The data behind it, the keyword plan and the test scripts are in the project repository under <code>docs/seo</code> and <code>tools</code>.</p>
+</footer>
+</div>

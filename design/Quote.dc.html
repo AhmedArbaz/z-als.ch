@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0;padding:0;background:#01050B;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#FFFFFF;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#7E9BD4}
+:focus-visible{outline:2px solid #7E9BD4;outline-offset:2px}
+@keyframes qIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes qPop{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:1ms !important;transition-duration:1ms !important}}
+
+.q-wrap{max-width:1240px;margin:0 auto;padding:clamp(28px,4vw,56px) clamp(20px,4vw,56px) clamp(72px,8vw,112px)}
+.q-eyebrow{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4}
+.q-eyebrow::before{content:"";display:block;width:30px;height:1px;background:#5D7DB7}
+.q-h1{margin:18px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(34px,4.6vw,60px);line-height:1.02;letter-spacing:-0.03em;text-wrap:balance}
+.q-h1 span{color:#7E9BD4}
+.q-lede{margin:16px 0 0;max-width:58ch;font-size:16px;line-height:1.6;color:rgba(255,255,255,0.7)}
+
+/* Stepper */
+.q-steps{display:flex;align-items:flex-start;margin:clamp(34px,4vw,52px) 0 clamp(30px,3.6vw,46px)}
+.q-step{appearance:none;flex:none;display:flex;flex-direction:column;align-items:center;gap:10px;padding:0;border:0;background:transparent;color:inherit;font:inherit;cursor:default}
+.q-step[aria-disabled="false"]{cursor:pointer}
+.q-dot{display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;border:1px solid rgba(125,155,212,0.3);background:#050D1C;color:rgba(255,255,255,0.5);transition:background 220ms ease-out,border-color 220ms ease-out,color 220ms ease-out,box-shadow 220ms ease-out}
+.q-step-label{font-size:11px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:rgba(255,255,255,0.46)}
+.q-step.is-done .q-dot{background:#5D7DB7;border-color:#5D7DB7;color:#FFFFFF}
+.q-step.is-done .q-step-label{color:rgba(255,255,255,0.78)}
+.q-step.is-current .q-dot{border-color:#7E9BD4;color:#FFFFFF;background:#0A1730;box-shadow:0 0 0 5px rgba(93,125,183,0.2),0 0 24px rgba(93,125,183,0.4)}
+.q-step.is-current .q-step-label{color:#FFFFFF}
+.q-step[aria-disabled="false"]:hover .q-dot{border-color:#FFFFFF}
+.q-line{flex:1 1 auto;height:1px;margin-top:23px;background:rgba(125,155,212,0.22);position:relative;overflow:hidden}
+.q-line::after{content:"";position:absolute;inset:0;background:#5D7DB7;transform:scaleX(0);transform-origin:left;transition:transform 360ms cubic-bezier(.2,.6,.2,1)}
+.q-line.is-done::after{transform:scaleX(1)}
+
+/* Panels & fields */
+.q-panel{background:rgba(10,23,48,0.72);border:1px solid rgba(125,155,212,0.24);border-radius:20px;padding:clamp(22px,3vw,40px);animation:qIn 360ms cubic-bezier(.2,.6,.2,1) backwards}
+.q-h2{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(24px,2.4vw,32px);letter-spacing:-0.02em}
+.q-sub{margin:8px 0 0;font-size:14px;line-height:1.55;color:rgba(255,255,255,0.62)}
+.q-tabs{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}
+.q-tab{appearance:none;min-height:46px;padding:0 24px;border:1px solid rgba(125,155,212,0.3);background:transparent;color:rgba(255,255,255,0.78);font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;border-radius:12px;transition:border-color 180ms ease-out,color 180ms ease-out,box-shadow 180ms ease-out,background 180ms ease-out}
+.q-tab:hover{border-color:#7E9BD4;color:#FFFFFF}
+.q-tab.is-on{border-color:#7E9BD4;color:#FFFFFF;background:rgba(93,125,183,0.14);box-shadow:0 0 20px rgba(93,125,183,0.32)}
+.q-grid{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1.1fr) minmax(0,1fr);gap:22px 22px;margin-top:30px}
+.q-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.q-col{display:flex;flex-direction:column;gap:22px;min-width:0}
+.q-field{position:relative;min-width:0}
+.q-label{display:block;margin-bottom:9px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7E9BD4}
+.q-label em{font-style:normal;color:rgba(255,255,255,0.4);letter-spacing:0.04em;text-transform:none;font-weight:500}
+.q-box{display:flex;align-items:center;gap:12px;min-height:54px;padding:0 16px;background:rgba(1,5,11,0.55);border:1px solid rgba(125,155,212,0.28);border-radius:12px;transition:border-color 160ms ease-out,box-shadow 160ms ease-out}
+.q-box:focus-within{border-color:#7E9BD4;box-shadow:0 0 0 3px rgba(93,125,183,0.22)}
+.q-box svg{flex:none;color:#7E9BD4}
+.q-input{flex:1 1 auto;min-width:0;height:52px;border:0;background:transparent;padding:0;font-family:Manrope,system-ui,sans-serif;font-size:15px;font-weight:500;color:#FFFFFF;outline:none}
+.q-input::placeholder{color:rgba(255,255,255,0.4);font-weight:400}
+.q-input[type=number]{font-family:'IBM Plex Mono',ui-monospace,monospace;-moz-appearance:textfield}
+.q-input[type=number]::-webkit-inner-spin-button{opacity:0.5}
+textarea.q-input{height:auto;min-height:96px;padding:14px 0;resize:vertical;line-height:1.5}
+.q-pick{appearance:none;flex:1 1 auto;display:flex;align-items:center;justify-content:space-between;gap:10px;height:52px;border:0;background:transparent;padding:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;color:#FFFFFF;text-align:left;cursor:pointer}
+.q-pick.is-empty{font-family:Manrope,system-ui,sans-serif;color:rgba(255,255,255,0.4)}
+.q-field.is-err .q-box{border-color:#E4757A}
+.q-err{display:block;margin-top:7px;font-size:12px;line-height:1.4;color:#F09A9E}
+.q-banner{margin-top:26px;padding:16px 18px;border:1px solid #E4757A;border-radius:12px;background:rgba(228,117,122,0.08);color:#F5B8BB;font-size:13px;text-align:center}
+.q-stepper{display:flex;align-items:center;gap:14px;min-height:54px}
+.q-stepper button{appearance:none;width:38px;height:38px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:18px;line-height:1;cursor:pointer;border-radius:10px}
+.q-stepper button:hover{border-color:#FFFFFF}
+.q-stepper span{min-width:70px;text-align:center;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px}
+
+/* Popovers */
+.q-pop{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:30;background:#0A1730;border:1px solid rgba(125,155,212,0.34);box-shadow:0 20px 48px rgba(1,5,11,0.6);border-radius:14px;overflow:hidden;animation:qPop 180ms cubic-bezier(.2,.6,.2,1) both}
+.q-opts{max-height:260px;overflow-y:auto}
+.q-opt{appearance:none;display:flex;width:100%;align-items:center;gap:12px;padding:12px 16px;border:0;border-bottom:1px solid rgba(125,155,212,0.12);background:transparent;color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:14px;text-align:left;cursor:pointer}
+.q-opt:hover{background:#122340}
+.q-opt small{display:block;margin-top:2px;font-size:12px;color:rgba(255,255,255,0.5)}
+.q-opt svg{flex:none;color:#7E9BD4}
+.q-hint{padding:10px 16px;font-size:12px;color:rgba(255,255,255,0.5)}
+.q-cal{min-width:292px;padding:14px}
+.q-cal-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
+.q-cal-head strong{font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:18px}
+.q-cal-nav{appearance:none;width:34px;height:34px;border:1px solid rgba(125,155,212,0.3);background:transparent;color:#FFFFFF;border-radius:10px;cursor:pointer}
+.q-cal-nav:hover{border-color:#FFFFFF}
+.q-cal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+.q-wd{padding:6px 0;text-align:center;font-size:10px;font-weight:700;letter-spacing:0.08em;color:rgba(255,255,255,0.44)}
+.q-day{appearance:none;height:36px;border:1px solid transparent;background:transparent;color:#FFFFFF;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;border-radius:9px;cursor:pointer}
+.q-day:hover{border-color:#7E9BD4}
+.q-day.is-today{border-color:rgba(125,155,212,0.45)}
+.q-day.is-sel{background:#5D7DB7;border-color:#5D7DB7}
+.q-day.is-off{color:rgba(255,255,255,0.22);cursor:not-allowed;pointer-events:none}
+.q-day.is-blank{visibility:hidden}
+.q-time{display:grid;grid-template-columns:1fr 1fr;gap:10px;padding:14px}
+.q-time-col{max-height:228px;overflow-y:auto;display:flex;flex-direction:column;gap:4px;padding-right:4px}
+.q-time-h{grid-column:1 / -1;display:flex;justify-content:space-between;font-size:10px;font-weight:700;letter-spacing:0.1em;color:rgba(255,255,255,0.44);padding:0 4px}
+.q-time-big{grid-column:1 / -1;text-align:center;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:26px;padding-bottom:6px;border-bottom:1px solid rgba(125,155,212,0.16)}
+
+/* Vehicle cards */
+.q-cars{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:18px;margin-top:26px}
+.q-car{appearance:none;display:flex;flex-direction:column;padding:0;border:1px solid rgba(125,155,212,0.24);background:#050D1C;color:#FFFFFF;font:inherit;text-align:left;border-radius:18px;overflow:hidden;cursor:pointer;transition:border-color 180ms ease-out,transform 200ms cubic-bezier(.2,.6,.2,1),box-shadow 180ms ease-out}
+.q-car:hover{border-color:#7E9BD4;transform:translateY(-3px)}
+.q-car.is-sel{border-color:#7E9BD4;box-shadow:0 0 0 2px #5D7DB7,0 18px 40px rgba(1,5,11,0.5)}
+.q-car.is-off{opacity:0.42;cursor:not-allowed;transform:none;border-color:rgba(125,155,212,0.16)}
+.q-car-img{display:block;width:100%;aspect-ratio:16 / 9;object-fit:cover;filter:saturate(0.8)}
+.q-car-body{display:flex;flex-direction:column;gap:10px;padding:18px 20px 20px}
+.q-car-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.q-car-name{font-family:'Playfair Display',Georgia,serif;font-size:24px;letter-spacing:-0.01em}
+.q-car-check{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:50%;border:1px solid rgba(125,155,212,0.4);color:transparent}
+.q-car.is-sel .q-car-check{background:#5D7DB7;border-color:#5D7DB7;color:#FFFFFF}
+.q-car-model{font-size:13px;color:rgba(255,255,255,0.6)}
+.q-car-meta{display:flex;gap:18px;font-size:13px;color:rgba(255,255,255,0.78)}
+.q-car-meta span{display:inline-flex;align-items:center;gap:7px}
+.q-car-meta svg{color:#7E9BD4}
+.q-car-price{margin-top:6px;padding-top:14px;border-top:1px solid rgba(125,155,212,0.18);display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.q-car-price strong{font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500;font-size:19px}
+.q-car-price small{font-size:11px;color:rgba(255,255,255,0.54);text-align:right}
+.q-car-note{font-size:12px;color:#F09A9E}
+
+/* Review */
+.q-review{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px;margin-top:26px}
+.q-card{padding:22px;border:1px solid rgba(125,155,212,0.22);border-radius:16px;background:#050D1C}
+.q-card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:12px;margin-bottom:6px;border-bottom:1px solid rgba(125,155,212,0.16)}
+.q-card-head h3{margin:0;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7E9BD4}
+.q-edit{appearance:none;border:0;background:transparent;padding:4px 0;color:#FFFFFF;font:inherit;font-size:12px;font-weight:600;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.q-edit:hover{color:#7E9BD4}
+.q-row{display:flex;justify-content:space-between;gap:18px;padding:9px 0;font-size:14px;border-bottom:1px dashed rgba(125,155,212,0.12)}
+.q-row:last-child{border-bottom:0}
+.q-row span:first-child{color:rgba(255,255,255,0.56);flex:none}
+.q-row span:last-child{text-align:right;overflow-wrap:anywhere}
+.q-total{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:10px;padding-top:14px;border-top:1px solid rgba(125,155,212,0.3)}
+.q-total strong{font-family:'IBM Plex Mono',ui-monospace,monospace;font-weight:500;font-size:22px}
+.q-fine{margin:14px 0 0;font-size:12px;line-height:1.55;color:rgba(255,255,255,0.5)}
+
+/* Send */
+.q-send{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(22px,3vw,44px);align-items:start;margin-top:22px}
+.q-msg{margin:0;padding:18px 20px;max-height:380px;overflow:auto;background:#01050B;border:1px solid rgba(125,155,212,0.22);border-radius:14px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12.5px;line-height:1.65;color:rgba(255,255,255,0.84);white-space:pre-wrap}
+.q-wa{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:60px;padding:0 26px;border:0;background:#25D366;color:#01050B;font-family:Manrope,system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;border-radius:14px;cursor:pointer;transition:background 180ms ease-out,transform 120ms ease-out}
+.q-wa:hover{background:#3BE07A}
+.q-wa:active{transform:translateY(1px)}
+.q-walink-row{margin:14px 0 0;text-align:right}
+.q-walink{display:inline-flex;align-items:center;min-height:44px;color:#25D366;font-size:13px;font-weight:600;text-decoration:none}
+.q-walink:hover{color:#3BE07A;text-decoration:underline}
+.q-alt{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:18px;font-size:13px}
+.q-done{margin-top:18px;padding:16px 18px;border:1px solid rgba(37,211,102,0.5);border-radius:12px;background:rgba(37,211,102,0.08);font-size:14px;line-height:1.55;color:#C9F5D8}
+
+/* Payment */
+.q-pay.is-main{grid-column:1 / -1}
+.q-pays-or{grid-column:1 / -1;margin:10px 0 -2px;font-size:11px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.55)}
+.q-pay-badge{display:inline-block;margin-left:10px;padding:3px 9px;border-radius:999px;background:rgba(37,211,102,0.16);color:#8EF0B4;font-family:Manrope,system-ui,sans-serif;font-size:10px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;vertical-align:middle}
+.q-pays{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px;margin-top:24px}
+.q-pay{appearance:none;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;gap:12px 14px;align-items:start;padding:20px;border:1px solid rgba(125,155,212,0.24);background:#050D1C;color:#FFFFFF;font:inherit;text-align:left;border-radius:16px;cursor:pointer;transition:border-color 180ms ease-out,box-shadow 180ms ease-out,transform 200ms cubic-bezier(.2,.6,.2,1)}
+.q-pay:hover{border-color:#7E9BD4;transform:translateY(-2px)}
+.q-pay.is-sel{border-color:#7E9BD4;box-shadow:0 0 0 2px #5D7DB7,0 0 26px rgba(93,125,183,0.3)}
+.q-pay.is-off{opacity:0.45;cursor:not-allowed;transform:none;border-color:rgba(125,155,212,0.14)}
+.q-pay-radio{width:20px;height:20px;margin-top:3px;border-radius:50%;border:1.5px solid rgba(125,155,212,0.6)}
+.q-pay.is-sel .q-pay-radio{border:6px solid #7E9BD4;background:#FFFFFF}
+.q-pay-body{display:flex;flex-direction:column;gap:6px;min-width:0}
+.q-pay-name{font-family:'Playfair Display',Georgia,serif;font-size:22px;letter-spacing:-0.01em}
+.q-pay-sub{font-size:13px;line-height:1.5;color:rgba(255,255,255,0.66)}
+.q-pay-note{font-size:12px;line-height:1.45;color:#F0C38E}
+.q-pay-note:empty{display:none}
+.q-marks{grid-column:1 / -1;display:flex;flex-wrap:wrap;gap:6px}
+/* Brand marks are shown as supplied (each SVG is its own card tile), never recoloured. The
+   outline keeps the black TWINT tile visible on this dark page. */
+.q-logo{display:block;width:45px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,0.22)}
+.q-mark{display:inline-flex;align-items:center;height:24px;padding:0 9px;border-radius:6px;background:#FFFFFF;color:#0A1730;font-size:10px;font-weight:800;letter-spacing:0.06em}
+.q-paysum{max-width:460px;margin-top:22px;padding:14px 18px;border:1px solid rgba(125,155,212,0.2);border-radius:14px;background:#01050B}
+.q-next[aria-busy="true"]{opacity:0.7;cursor:progress}
+.q-next.is-wait{background:rgba(93,125,183,0.4)}
+
+/* Footer bar of every step */
+.q-bar{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px 24px;margin-top:30px;padding-top:24px;border-top:1px solid rgba(125,155,212,0.18)}
+.q-fare-label{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:rgba(255,255,255,0.54)}
+.q-fare{margin-top:6px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px}
+.q-actions{display:flex;flex-wrap:wrap;gap:12px;margin-left:auto}
+.q-back{appearance:none;min-height:54px;padding:0 24px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;border-radius:12px;cursor:pointer}
+.q-back:hover{border-color:#FFFFFF}
+.q-next{appearance:none;display:inline-flex;align-items:center;gap:12px;min-height:54px;padding:0 28px;border:0;background:#5D7DB7;color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;border-radius:12px;cursor:pointer;transition:background 180ms ease-out,color 180ms ease-out,transform 120ms ease-out}
+.q-next:hover{background:#7E9BD4;color:#0A1730}
+.q-next:active{transform:translateY(1px)}
+
+@media (max-width:1000px){.q-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.q-grid > .q-col:first-child{grid-column:1 / -1}.q-send{grid-template-columns:1fr}}
+@media (max-width:640px){
+.q-grid,.q-grid-2{grid-template-columns:1fr}
+.q-step-label{display:none}
+.q-dot{width:40px;height:40px}
+.q-line{margin-top:20px}
+.q-tab{flex:1 1 30%;padding:0 10px;letter-spacing:0.06em}
+.q-actions{width:100%}
+.q-actions > button{flex:1 1 auto;justify-content:center}
+.q-field{scroll-margin-top:96px}
+/* The calendar and time picker become a sheet pinned to the bottom of the screen. Address lists stay under their
+   field: a phone keyboard would cover a bottom sheet. (Needs .q-panel to keep no transform, hence fill-mode backwards.) */
+.q-pop.q-cal,.q-pop.q-time{position:fixed;left:12px;right:12px;top:auto;bottom:12px;max-height:70vh;overflow:auto;z-index:70}
+}
+</style>
+</helmet>
+
+<div style="width:100%;min-height:100vh;background:#01050B;font-family:Manrope,system-ui,sans-serif;color:#FFFFFF;overflow-x:clip">
+
+<dc-import name="SiteHeader v3" active="quote" hint-size="100%,87px"></dc-import>
+
+<div aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:640px;pointer-events:none;background:radial-gradient(70% 90% at 10% 0%,rgba(93,125,183,0.22) 0%,rgba(93,125,183,0) 62%)"></div>
+
+<main class="q-wrap" style="position:relative">
+<div class="q-eyebrow">Request a quote</div>
+<h1 class="q-h1">Book your chauffeur <span>in five steps.</span></h1>
+<p class="q-lede">Tell us the trip, choose the car, and book with our team on WhatsApp or pay online by card or TWINT. Fixed fares from Zürich Airport are shown as you go; every other route is quoted personally by dispatch, all costs stated before you travel.</p>
+
+<nav class="q-steps" aria-label="Booking steps" id="q-top">
+<button type="button" class="{{ s1Cls }}" aria-disabled="{{ s1Off }}" aria-current="{{ s1Cur }}" onClick="{{ go1 }}"><span class="q-dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="19" r="3"></circle><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"></path><circle cx="18" cy="5" r="3"></circle></svg></span><span class="q-step-label">Trip</span></button>
+<span class="{{ l1Cls }}"></span>
+<button type="button" class="{{ s2Cls }}" aria-disabled="{{ s2Off }}" aria-current="{{ s2Cur }}" onClick="{{ go2 }}"><span class="q-dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"></path><circle cx="7" cy="17" r="2"></circle><path d="M9 17h6"></path><circle cx="17" cy="17" r="2"></circle></svg></span><span class="q-step-label">Vehicle</span></button>
+<span class="{{ l2Cls }}"></span>
+<button type="button" class="{{ s3Cls }}" aria-disabled="{{ s3Off }}" aria-current="{{ s3Cur }}" onClick="{{ go3 }}"><span class="q-dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="8" height="4" x="8" y="2" rx="1"></rect><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><path d="M12 11h4"></path><path d="M12 16h4"></path><path d="M8 11h.01"></path><path d="M8 16h.01"></path></svg></span><span class="q-step-label">Details</span></button>
+<span class="{{ l3Cls }}"></span>
+<button type="button" class="{{ s4Cls }}" aria-disabled="{{ s4Off }}" aria-current="{{ s4Cur }}" onClick="{{ go4 }}"><span class="q-dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2.06 12.35a1 1 0 0 1 0-.7 10.75 10.75 0 0 1 19.88 0 1 1 0 0 1 0 .7 10.75 10.75 0 0 1-19.88 0"></path><circle cx="12" cy="12" r="3"></circle></svg></span><span class="q-step-label">Review</span></button>
+<span class="{{ l4Cls }}"></span>
+<button type="button" class="{{ s5Cls }}" aria-disabled="{{ s5Off }}" aria-current="{{ s5Cur }}" onClick="{{ go5 }}"><span class="q-dot"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"></rect><path d="M2 10h20"></path></svg></span><span class="q-step-label">Payment</span></button>
+</nav>
+
+<form novalidate onSubmit="{{ onNext }}">
+
+<!-- ───────── Step 1 · Trip ───────── -->
+<sc-if value="{{ isStep1 }}">
+<section class="q-panel" aria-labelledby="q-h-trip">
+<h2 class="q-h2" id="q-h-trip">How would you like to travel?</h2>
+<div class="q-tabs" role="group" aria-label="Trip type">
+<button type="button" class="{{ tabOneway }}" onClick="{{ setOneway }}">One way</button>
+<button type="button" class="{{ tabReturn }}" onClick="{{ setReturn }}">Return</button>
+<button type="button" class="{{ tabHourly }}" onClick="{{ setHourly }}">Hourly</button>
+</div>
+
+<div class="q-grid">
+<div class="q-col">
+<div class="{{ fPickup }}" data-pop="pickup">
+<label class="q-label" for="q-pickup">Pick-up</label>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><input id="q-pickup" class="q-input" name="pickup" type="text" autocomplete="off" placeholder="Address, airport or hotel" value="{{ pickup }}" onChange="{{ onField }}" onFocus="{{ openPickup }}"></div>
+<sc-if value="{{ errPickup }}"><span class="q-err">{{ errPickup }}</span></sc-if>
+<sc-if value="{{ pickupOpen }}">
+<div class="q-pop"><div class="q-opts">
+<sc-for each="{{ pickupOpts }}" as="o"><button type="button" class="q-opt" onClick="{{ o.pick }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg><span>{{ o.name }}<small>{{ o.sub }}</small></span></button></sc-for>
+</div><div class="q-hint">{{ pickupHint }}</div></div>
+</sc-if>
+</div>
+
+<sc-if value="{{ showDest }}">
+<div class="{{ fDest }}" data-pop="dest">
+<label class="q-label" for="q-dest">Destination</label>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path></svg><input id="q-dest" class="q-input" name="dest" type="text" autocomplete="off" placeholder="Any city in Switzerland or Central Europe" value="{{ dest }}" onChange="{{ onField }}" onFocus="{{ openDest }}"></div>
+<sc-if value="{{ errDest }}"><span class="q-err">{{ errDest }}</span></sc-if>
+<sc-if value="{{ destOpen }}">
+<div class="q-pop"><div class="q-opts">
+<sc-for each="{{ destOpts }}" as="o"><button type="button" class="q-opt" onClick="{{ o.pick }}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22V4a1 1 0 0 1 .4-.8A6 6 0 0 1 8 2c3 0 5 2 7.333 2q2 0 3.067-.8A1 1 0 0 1 20 4v10a1 1 0 0 1-.4.8A6 6 0 0 1 16 16c-3 0-5-2-8-2a6 6 0 0 0-4 1.528"></path></svg><span>{{ o.name }}<small>{{ o.sub }}</small></span></button></sc-for>
+</div><div class="q-hint">{{ destHint }}</div></div>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ showHours }}">
+<div class="q-field">
+<span class="q-label">Duration</span>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+<div class="q-stepper"><button type="button" aria-label="Fewer hours" onClick="{{ decHours }}">−</button><span>{{ hoursLabel }}</span><button type="button" aria-label="More hours" onClick="{{ incHours }}">+</button></div></div>
+<span class="q-err" style="color:rgba(255,255,255,0.5)">Minimum 4 hours · the car and chauffeur stay with you. Long-distance roadshows: route and hours confirmed by dispatch.</span>
+</div>
+</sc-if>
+</div>
+
+<div class="q-col">
+<div class="{{ fDate }}" data-pop="cal:date">
+<span class="q-label">Date</span>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg><button type="button" class="{{ dateBtnCls }}" onClick="{{ openDate }}">{{ dateLabel }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg></button></div>
+<sc-if value="{{ errDate }}"><span class="q-err">{{ errDate }}</span></sc-if>
+<sc-if value="{{ calDateOpen }}">
+<div class="q-pop q-cal">
+<div class="q-cal-head"><button type="button" class="q-cal-nav" aria-label="Previous month" onClick="{{ calPrev }}">‹</button><strong>{{ calTitle }}</strong><button type="button" class="q-cal-nav" aria-label="Next month" onClick="{{ calNext }}">›</button></div>
+<div class="q-cal-grid"><span class="q-wd">MO</span><span class="q-wd">TU</span><span class="q-wd">WE</span><span class="q-wd">TH</span><span class="q-wd">FR</span><span class="q-wd">SA</span><span class="q-wd">SU</span>
+<sc-for each="{{ calDays }}" as="d"><button type="button" class="{{ d.cls }}" aria-disabled="{{ d.off }}" onClick="{{ d.pick }}">{{ d.label }}</button></sc-for>
+</div>
+</div>
+</sc-if>
+</div>
+
+<div class="{{ fTime }}" data-pop="time:time">
+<span class="q-label">Pick-up time</span>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg><button type="button" class="{{ timeBtnCls }}" onClick="{{ openTime }}">{{ timeLabel }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg></button></div>
+<sc-if value="{{ errTime }}"><span class="q-err">{{ errTime }}</span></sc-if>
+<sc-if value="{{ timeOpen }}">
+<div class="q-pop q-time">
+<div class="q-time-big">{{ timeBig }}</div>
+<div class="q-time-h"><span>HOUR</span><span>MIN</span></div>
+<div class="q-time-col"><sc-for each="{{ hourOpts }}" as="t"><button type="button" class="{{ t.cls }}" onClick="{{ t.pick }}">{{ t.label }}</button></sc-for></div>
+<div class="q-time-col"><sc-for each="{{ minOpts }}" as="t"><button type="button" class="{{ t.cls }}" onClick="{{ t.pick }}">{{ t.label }}</button></sc-for></div>
+</div>
+</sc-if>
+</div>
+</div>
+
+<div class="q-col">
+<div class="{{ fPax }}">
+<label class="q-label" for="q-pax">Passengers</label>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg><input id="q-pax" class="q-input" name="pax" type="number" inputmode="numeric" min="1" max="16" placeholder="1" value="{{ pax }}" onChange="{{ onField }}"></div>
+<sc-if value="{{ errPax }}"><span class="q-err">{{ errPax }}</span></sc-if>
+</div>
+<div class="{{ fBags }}">
+<label class="q-label" for="q-bags">Luggage</label>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2"></path><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"></path><path d="M10 20h4"></path><circle cx="16" cy="20" r="2"></circle><circle cx="8" cy="20" r="2"></circle></svg><input id="q-bags" class="q-input" name="bags" type="number" inputmode="numeric" min="0" max="16" placeholder="0" value="{{ bags }}" onChange="{{ onField }}"></div>
+<sc-if value="{{ errBags }}"><span class="q-err">{{ errBags }}</span></sc-if>
+</div>
+</div>
+</div>
+
+<sc-if value="{{ isReturn }}">
+<div class="q-grid-2" style="margin-top:22px">
+<div class="{{ fRDate }}" data-pop="cal:returnDate">
+<span class="q-label">Return date</span>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg><button type="button" class="{{ rDateBtnCls }}" onClick="{{ openRDate }}">{{ rDateLabel }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg></button></div>
+<sc-if value="{{ errRDate }}"><span class="q-err">{{ errRDate }}</span></sc-if>
+<sc-if value="{{ calRDateOpen }}">
+<div class="q-pop q-cal">
+<div class="q-cal-head"><button type="button" class="q-cal-nav" aria-label="Previous month" onClick="{{ calPrev }}">‹</button><strong>{{ calTitle }}</strong><button type="button" class="q-cal-nav" aria-label="Next month" onClick="{{ calNext }}">›</button></div>
+<div class="q-cal-grid"><span class="q-wd">MO</span><span class="q-wd">TU</span><span class="q-wd">WE</span><span class="q-wd">TH</span><span class="q-wd">FR</span><span class="q-wd">SA</span><span class="q-wd">SU</span>
+<sc-for each="{{ calDays }}" as="d"><button type="button" class="{{ d.cls }}" aria-disabled="{{ d.off }}" onClick="{{ d.pick }}">{{ d.label }}</button></sc-for>
+</div>
+</div>
+</sc-if>
+</div>
+<div class="{{ fRTime }}" data-pop="time:returnTime">
+<span class="q-label">Return time</span>
+<div class="q-box"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg><button type="button" class="{{ rTimeBtnCls }}" onClick="{{ openRTime }}">{{ rTimeLabel }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="m6 9 6 6 6-6"></path></svg></button></div>
+<sc-if value="{{ errRTime }}"><span class="q-err">{{ errRTime }}</span></sc-if>
+<sc-if value="{{ rTimeOpen }}">
+<div class="q-pop q-time">
+<div class="q-time-big">{{ timeBig }}</div>
+<div class="q-time-h"><span>HOUR</span><span>MIN</span></div>
+<div class="q-time-col"><sc-for each="{{ hourOpts }}" as="t"><button type="button" class="{{ t.cls }}" onClick="{{ t.pick }}">{{ t.label }}</button></sc-for></div>
+<div class="q-time-col"><sc-for each="{{ minOpts }}" as="t"><button type="button" class="{{ t.cls }}" onClick="{{ t.pick }}">{{ t.label }}</button></sc-for></div>
+</div>
+</sc-if>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ banner }}"><div class="q-banner" role="alert">Please correct the marked fields before continuing.</div></sc-if>
+<div class="q-bar">
+<div><div class="q-fare-label">{{ fareLabel }}</div><div class="q-fare">{{ fareText }}</div></div>
+<div class="q-actions"><button type="submit" class="q-next">Choose vehicle <span aria-hidden="true">→</span></button></div>
+</div>
+<p class="q-walink-row"><a class="q-walink" href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Prefer WhatsApp? Continue there →</a></p>
+</section>
+</sc-if>
+
+<!-- ───────── Step 2 · Vehicle ───────── -->
+<sc-if value="{{ isStep2 }}">
+<section class="q-panel" aria-labelledby="q-h-car">
+<h2 class="q-h2" id="q-h-car">Choose your car</h2>
+<p class="q-sub">{{ routeLine }}</p>
+<div class="q-cars">
+<sc-for each="{{ cars }}" as="c">
+<button type="button" class="{{ c.cls }}" aria-pressed="{{ c.pressed }}" onClick="{{ c.pick }}">
+<img class="q-car-img" src="{{ c.img }}" alt="{{ c.alt }}" loading="lazy">
+<span class="q-car-body">
+<span class="q-car-top"><span class="q-car-name">{{ c.name }}</span><span class="q-car-check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span></span>
+<span class="q-car-model">{{ c.model }}</span>
+<span class="q-car-meta"><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>{{ c.seats }}</span><span><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 20a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2"></path><path d="M8 18V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"></path></svg>{{ c.cases }}</span></span>
+<span class="q-car-note">{{ c.note }}</span>
+<span class="q-car-price"><strong>{{ c.price }}</strong><small>{{ c.priceNote }}</small></span>
+</span>
+</button>
+</sc-for>
+</div>
+<sc-if value="{{ errVehicle }}"><div class="q-banner" role="alert">{{ errVehicle }}</div></sc-if>
+<div class="q-bar">
+<div><div class="q-fare-label">{{ fareLabel }}</div><div class="q-fare">{{ fareText }}</div></div>
+<div class="q-actions"><button type="button" class="q-back" onClick="{{ onBack }}">← Back</button><button type="submit" class="q-next">Your details <span aria-hidden="true">→</span></button></div>
+</div>
+<p class="q-walink-row"><a class="q-walink" href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Prefer WhatsApp? Continue there →</a></p>
+</section>
+</sc-if>
+
+<!-- ───────── Step 3 · Details ───────── -->
+<sc-if value="{{ isStep3 }}">
+<section class="q-panel" aria-labelledby="q-h-you">
+<h2 class="q-h2" id="q-h-you">Who is travelling?</h2>
+<p class="q-sub">Dispatch uses these only to confirm this journey with you.</p>
+<div class="q-grid-2" style="margin-top:28px">
+<div class="{{ fFirst }}"><label class="q-label" for="q-first">First name</label><div class="q-box"><input id="q-first" class="q-input" name="first" type="text" autocomplete="given-name" value="{{ first }}" onChange="{{ onField }}"></div><sc-if value="{{ errFirst }}"><span class="q-err">{{ errFirst }}</span></sc-if></div>
+<div class="{{ fLast }}"><label class="q-label" for="q-last">Last name</label><div class="q-box"><input id="q-last" class="q-input" name="last" type="text" autocomplete="family-name" value="{{ last }}" onChange="{{ onField }}"></div><sc-if value="{{ errLast }}"><span class="q-err">{{ errLast }}</span></sc-if></div>
+<div class="{{ fPhone }}"><label class="q-label" for="q-phone">Mobile <em>· with country code</em></label><div class="q-box"><input id="q-phone" class="q-input" name="phone" type="tel" autocomplete="tel" placeholder="+41 …" value="{{ phone }}" onChange="{{ onField }}"></div><sc-if value="{{ errPhone }}"><span class="q-err">{{ errPhone }}</span></sc-if></div>
+<div class="{{ fEmail }}"><label class="q-label" for="q-email">Email</label><div class="q-box"><input id="q-email" class="q-input" name="email" type="email" autocomplete="email" value="{{ email }}" onChange="{{ onField }}"></div><sc-if value="{{ errEmail }}"><span class="q-err">{{ errEmail }}</span></sc-if></div>
+<div class="q-field"><label class="q-label" for="q-flight">Flight number <em>· optional</em></label><div class="q-box"><input id="q-flight" class="q-input" name="flight" type="text" placeholder="e.g. LX 318" value="{{ flight }}" onChange="{{ onField }}"></div></div>
+<div class="q-field"><label class="q-label" for="q-sign">Name on the sign <em>· optional</em></label><div class="q-box"><input id="q-sign" class="q-input" name="sign" type="text" value="{{ sign }}" onChange="{{ onField }}"></div></div>
+<div class="q-field"><span class="q-label">Child seats</span><div class="q-box"><div class="q-stepper"><button type="button" aria-label="Fewer child seats" onClick="{{ decSeats }}">−</button><span>{{ childSeats }}</span><button type="button" aria-label="More child seats" onClick="{{ incSeats }}">+</button></div></div></div>
+<div class="q-field"><label class="q-label" for="q-notes">Notes for the chauffeur <em>· optional</em></label><div class="q-box"><textarea id="q-notes" class="q-input" name="notes" rows="3" value="{{ notes }}" onChange="{{ onField }}"></textarea></div></div>
+</div>
+<sc-if value="{{ banner }}"><div class="q-banner" role="alert">Please correct the marked fields before continuing.</div></sc-if>
+<div class="q-bar">
+<div><div class="q-fare-label">{{ fareLabel }}</div><div class="q-fare">{{ fareText }}</div></div>
+<div class="q-actions"><button type="button" class="q-back" onClick="{{ onBack }}">← Back</button><button type="submit" class="q-next">Review <span aria-hidden="true">→</span></button></div>
+</div>
+<p class="q-walink-row"><a class="q-walink" href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Prefer WhatsApp? Continue there →</a></p>
+</section>
+</sc-if>
+
+<!-- ───────── Step 4 · Review ───────── -->
+<sc-if value="{{ isStep4 }}">
+<section class="q-panel" aria-labelledby="q-h-rev">
+<h2 class="q-h2" id="q-h-rev">Check your request</h2>
+<p class="q-sub">Nothing is booked yet. Dispatch confirms the car and the fare with you personally.</p>
+<div class="q-review">
+<div class="q-card"><div class="q-card-head"><h3>Trip</h3><button type="button" class="q-edit" onClick="{{ go1 }}">Edit</button></div>
+<sc-for each="{{ tripRows }}" as="r"><div class="q-row"><span>{{ r.k }}</span><span>{{ r.v }}</span></div></sc-for></div>
+<div class="q-card"><div class="q-card-head"><h3>Passenger</h3><button type="button" class="q-edit" onClick="{{ go3 }}">Edit</button></div>
+<sc-for each="{{ youRows }}" as="r"><div class="q-row"><span>{{ r.k }}</span><span>{{ r.v }}</span></div></sc-for></div>
+<div class="q-card"><div class="q-card-head"><h3>Vehicle &amp; fare</h3><button type="button" class="q-edit" onClick="{{ go2 }}">Edit</button></div>
+<sc-for each="{{ fareRows }}" as="r"><div class="q-row"><span>{{ r.k }}</span><span>{{ r.v }}</span></div></sc-for>
+<div class="q-total"><span>{{ totalLabel }}</span><strong>{{ totalText }}</strong></div>
+<p class="q-fine">Waiting (60 min at airports), luggage, tolls and vignette are inside the fare. VAT 8.1% is billed as a separate line. Online payments are handled by Stripe; this site never sees or stores card details.</p>
+</div>
+</div>
+<div class="q-bar">
+<div></div>
+<div class="q-actions"><button type="button" class="q-back" onClick="{{ onBack }}">← Back</button><button type="submit" class="q-next">Continue to payment <span aria-hidden="true">→</span></button></div>
+</div>
+<p class="q-walink-row"><a class="q-walink" onClick="{{ onWaReview }}" href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Prefer WhatsApp? Continue there →</a></p>
+</section>
+</sc-if>
+
+<!-- ───────── Step 5 · Payment ───────── -->
+<sc-if value="{{ isStep5 }}">
+<section class="q-panel" aria-labelledby="q-h-pay">
+
+<sc-if value="{{ notPaid }}">
+<h2 class="q-h2" id="q-h-pay">How would you like to pay?</h2>
+<p class="q-sub">{{ payIntro }}</p>
+<sc-if value="{{ cancelled }}"><div class="q-banner" role="status">Payment cancelled. Nothing was charged. Choose a method to try again.</div></sc-if>
+<div class="q-pays" role="radiogroup" aria-label="Payment method">
+<sc-for each="{{ payMain }}" as="p">
+<button type="button" role="radio" aria-checked="{{ p.checked }}" aria-disabled="{{ p.off }}" class="{{ p.cls }}" onClick="{{ p.pick }}">
+<span class="q-pay-radio" aria-hidden="true"></span>
+<span class="q-pay-body"><span class="q-pay-name">{{ p.name }}<span class="q-pay-badge">{{ p.badge }}</span></span><span class="q-pay-sub">{{ p.sub }}</span><span class="q-pay-note">{{ p.note }}</span></span>
+<span class="q-marks" aria-hidden="true"><sc-for each="{{ p.logos }}" as="m"><img class="q-logo" src="{{ m.src }}" alt="{{ m.alt }}" width="45" height="30" loading="lazy"></sc-for><sc-for each="{{ p.chips }}" as="m"><span class="q-mark">{{ m }}</span></sc-for></span>
+</button>
+</sc-for>
+<p class="q-pays-or">Or pay now on the website</p>
+<sc-for each="{{ payMore }}" as="p">
+<button type="button" role="radio" aria-checked="{{ p.checked }}" aria-disabled="{{ p.off }}" class="{{ p.cls }}" onClick="{{ p.pick }}">
+<span class="q-pay-radio" aria-hidden="true"></span>
+<span class="q-pay-body"><span class="q-pay-name">{{ p.name }}</span><span class="q-pay-sub">{{ p.sub }}</span><span class="q-pay-note">{{ p.note }}</span></span>
+<span class="q-marks" aria-hidden="true"><sc-for each="{{ p.logos }}" as="m"><img class="q-logo" src="{{ m.src }}" alt="{{ m.alt }}" width="45" height="30" loading="lazy"></sc-for><sc-for each="{{ p.chips }}" as="m"><span class="q-mark">{{ m }}</span></sc-for></span>
+</button>
+</sc-for>
+</div>
+<div class="q-paysum">
+<sc-for each="{{ fareRows }}" as="r"><div class="q-row"><span>{{ r.k }}</span><span>{{ r.v }}</span></div></sc-for>
+</div>
+<sc-if value="{{ errPay }}"><div class="q-banner" role="alert">{{ errPay }}</div></sc-if>
+<sc-if value="{{ payError }}"><div class="q-banner" role="alert">{{ payError }}</div><div class="q-alt"><a href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a><a href="{{ phoneHref }}">Call dispatch · {{ dispatchPhone }}</a></div></sc-if>
+<div class="q-bar">
+<div><div class="q-fare-label">{{ totalLabel }}</div><div class="q-fare">{{ totalText }}</div></div>
+<div class="q-actions"><button type="button" class="q-back" onClick="{{ onBack }}">← Back</button><button type="button" class="{{ payCtaCls }}" aria-busy="{{ payBusyAttr }}" onClick="{{ onPay }}">{{ payCta }}</button></div>
+</div>
+<sc-if value="{{ showChat }}"><p class="q-walink-row"><a class="q-walink" href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Questions? Chat with dispatch on WhatsApp →</a></p></sc-if>
+<sc-if value="{{ driverSent }}">
+<div class="q-done" role="status">{{ driverNote }}</div>
+<div class="q-alt"><a href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a><a href="{{ phoneHref }}">Call dispatch · {{ dispatchPhone }}</a></div>
+</sc-if>
+<sc-if value="{{ waSent }}">
+<div class="q-done" role="status">{{ waNote }}</div>
+<div class="q-alt"><a href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Open WhatsApp</a><a href="{{ mailHref }}">Email it instead</a><a href="{{ phoneHref }}">Call dispatch · {{ dispatchPhone }}</a></div>
+<pre class="q-msg" style="margin-top:18px" aria-label="Your request">{{ message }}</pre>
+</sc-if>
+<p class="q-fine">Card and TWINT payments run on Stripe's own secure page. This site never sees card details.</p>
+</sc-if>
+
+<sc-if value="{{ isPaid }}">
+<h2 class="q-h2" id="q-h-paid">Payment received. Thank you.</h2>
+<div class="q-done" role="status">{{ paidLine }}</div>
+<div class="q-send">
+<div>
+<p class="q-sub" style="font-size:15px"><strong style="color:#FFFFFF">You're booked.</strong> <sc-if value="{{ email }}">A confirmation email is on its way to {{ email }}, and dispatch already has your booking. The dispatcher who runs the journey confirms your chauffeur personally, day or night. Questions? Chat with dispatch on WhatsApp.</sc-if><sc-if value="{{ noEmail }}">Dispatch already has your booking. The dispatcher who runs the journey confirms your chauffeur personally, day or night. Questions? Chat with dispatch on WhatsApp.</sc-if></p>
+<div style="margin-top:22px"><button type="button" class="q-wa" onClick="{{ sendWhatsApp }}"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 32 32" fill="currentColor"><path d="M16.03 4.5c-6.35 0-11.5 5.15-11.5 11.5 0 2.03.53 4.02 1.55 5.77L4.5 27.5l5.9-1.55a11.47 11.47 0 0 0 5.63 1.46h.01c6.34 0 11.49-5.15 11.49-11.5 0-3.07-1.2-5.96-3.37-8.13A11.42 11.42 0 0 0 16.03 4.5Zm0 21.02h-.01a9.55 9.55 0 0 1-4.86-1.33l-.35-.2-3.5.92.93-3.41-.23-.36a9.53 9.53 0 0 1-1.46-5.09c0-5.27 4.29-9.56 9.57-9.56 2.56 0 4.96 1 6.76 2.81a9.5 9.5 0 0 1 2.8 6.76c0 5.28-4.29 9.46-9.65 9.46Zm5.25-7.13c-.29-.15-1.79-.88-2.07-.98-.28-.1-.48-.15-.68.15-.2.29-.78.98-.96 1.18-.18.2-.35.22-.64.07-.29-.14-1.23-.45-2.34-1.44a8.8 8.8 0 0 1-1.62-2.02c-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.53.14-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.68-1.65-.93-2.25-.24-.59-.49-.5-.68-.51h-.58c-.2 0-.51.07-.78.36-.27.29-1.03 1-1.03 2.45 0 1.44 1.05 2.83 1.2 3.03.15.19 2.06 3.14 4.98 4.29.7.3 1.24.48 1.67.61.71.23 1.35.2 1.86.12.57-.09 1.79-.73 2.04-1.44.25-.7.25-1.31.18-1.43-.07-.13-.27-.2-.56-.35Z"></path></svg>Chat with dispatch on WhatsApp</button></div>
+<sc-if value="{{ sent }}"><div class="q-done" role="status">WhatsApp opened. Press send there to reach dispatch.</div></sc-if>
+<div class="q-alt"><a href="{{ mailHref }}">Email it instead</a><a href="{{ phoneHref }}">Call dispatch · {{ dispatchPhone }}</a></div>
+</div>
+<sc-if value="{{ email }}"><pre class="q-msg" aria-label="Your booking">{{ message }}</pre></sc-if>
+</div>
+</sc-if>
+
+</section>
+</sc-if>
+
+</form>
+</main>
+
+<dc-import name="SiteFooter v3" hint-size="100%,640px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:1400},&quot;dispatchPhone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+41 76 272 0909&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+/* Request a quote — a five-step wizard after swisselitelimousine.ch/de/buchen
+   (Trip → Vehicle → Details → Review → Payment), in the Variation 2 look.
+   Fixed fares can be paid online by card or TWINT through Stripe Checkout
+   (server.mjs creates the session and re-prices it). "Book via WhatsApp" (the default: the team
+   confirms and arranges payment) and "pay the chauffeur" email dispatch and the customer instead.
+   The price table is public/js/fares.js, shared with the server. */
+const { AIRPORTS, CARS, TARIFF, PRICED_KM, MIN_HOURS, MAX_HOURS, needsRoute, quoteFor, todayInZurich } = window.ZALS;
+const { searchPlaces } = window.ZALS_PLACES;
+const { findAddresses, findRoute } = window.ZALS_GEO;
+/* Stripe's ceiling for one TWINT payment; server.mjs enforces the same. */
+const TWINT_MAX = 5000;
+const LOGO = (file, alt) => ({ src: '/assets/pay/' + file + '.svg', alt });
+const SAVE_KEY = 'zals-quote';
+const PAY_LABEL = { card: 'card', twint: 'TWINT', driver: 'the chauffeur', whatsapp: 'WhatsApp' };
+const STEP_NAMES = ['Trip', 'Vehicle', 'Details', 'Review', 'Payment'];
+
+/* public/js/i18n.js: the visitor's language; {name} placeholders are filled after translating. */
+const T = (s, v) => (window.ZALS_I18N ? window.ZALS_I18N.t(s, v) : s);
+const LOCALE = () => (window.ZALS_I18N ? window.ZALS_I18N.locale : 'en-GB');
+
+const pad = n => String(n).padStart(2, '0');
+const isoOf = d => d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate());
+const parseIso = s => { const [y, m, d] = String(s).split('-').map(Number); return new Date(y, m - 1, d); };
+const niceDate = s => s ? parseIso(s).toLocaleDateString(LOCALE(), { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }) : '';
+const chf = n => {
+  const p = (Math.round(n * 100) / 100).toFixed(2).split('.');
+  const i = p[0];
+  return 'CHF ' + (i.length > 3 ? i.slice(0, i.length - 3) + ' ' + i.slice(-3) : i) + '.' + p[1];
+};
+const intOr = (v, d) => { const n = parseInt(v, 10); return Number.isFinite(n) ? n : d; };
+const whole = v => /^\d+$/.test(String(v).trim());
+/* Shown instead of the server's own text, so every language has it. */
+const NOT_SENT = "We couldn't send your request. Please book via WhatsApp or call dispatch on +41 76 272 0909.";
+const TOO_MANY = 'Too many attempts. Please try again later.';
+
+/* The wizard strips its own query (?paid=, ?trip=...) with replaceState; campaign parameters stay. */
+const MARKETING = /^(utm_[a-z_]+|gclid|gbraid|wbraid|fbclid|msclkid)$/i;
+const cleanUrl = () => {
+  const keep = new URLSearchParams();
+  new URLSearchParams(location.search).forEach((v, k) => { if (MARKETING.test(k)) keep.append(k, v); });
+  const q = keep.toString();
+  return location.pathname + (q ? '?' + q : '');
+};
+/* Events for Google Tag Manager (public/js/track.js). Only counts and choices: never names, contact details or notes. */
+const track = (name, params) => { try { if (window.zalsTrack) window.zalsTrack(name, params || {}); } catch (e) {} };
+
+class Component extends DCLogic {
+  state = {
+    step: 1, reached: 1,
+    tripType: 'oneway', pickup: '', dest: '', hours: MIN_HOURS, date: '', time: '', returnDate: '', returnTime: '', pax: '', bags: '',
+    open: null, calY: parseIso(todayInZurich()).getFullYear(), calM: parseIso(todayInZurich()).getMonth(),
+    vehicle: '',
+    first: '', last: '', phone: '', email: '', flight: '', sign: '', childSeats: 0, notes: '',
+    errors: {}, banner: false, sent: false,
+    pay: '', online: null, payBusy: false, payError: '', paid: null, cancelled: false, enq: null
+  };
+
+  componentDidMount() {
+    fetch('/api/config').then(r => r.json()).then(c => this.setState({ online: !!c.online })).catch(() => this.setState({ online: false }));
+    const prefilled = [...new URLSearchParams(location.search).keys()].some(k => !MARKETING.test(k));
+    if (!this.resume()) this.prefill();
+    track('quote_start', { prefilled, step: this.state.step });
+    history.replaceState({ step: this.state.step }, '');
+    this._onPop = e => {
+      const n = e.state && e.state.step;
+      if (n && n <= this.state.reached) this.setState({ step: n, open: null, errors: {}, banner: false });
+    };
+    /* A tap outside the open picker closes it. pointerup, not pointerdown: a touch that turns into a scroll ends in
+       pointercancel, so scrolling to reach the picker no longer closes it. Not click either: by then dc-lite has
+       re-rendered the hour/minute buttons, and the tapped one is no longer inside [data-pop]. */
+    this._onDown = e => {
+      if (!this.state.open) return;
+      const host = e.target.closest && e.target.closest('[data-pop]');
+      if (!host || host.getAttribute('data-pop') !== this.state.open) this.setState({ open: null });
+    };
+    this._onKey = e => { if (e.key === 'Escape' && this.state.open) this.setState({ open: null }); };
+    window.addEventListener('popstate', this._onPop);
+    document.addEventListener('pointerup', this._onDown);
+    window.addEventListener('keydown', this._onKey);
+  }
+
+  /* Coming back from Stripe: the wizard's state was saved before the redirect. A tab without it (the customer
+     paid in another tab or on another device) still asks for the status, so dispatch hears of the payment, and
+     shows the confirmation of a paid session. */
+  resume() {
+    const q = new URLSearchParams(location.search);
+    /* ?paid=cs_… from card Checkout; the query is stripped below. */
+    const paidId = q.get('paid'), cancelled = q.get('cancelled');
+    if (!paidId && !cancelled) return false;
+    let saved = null;
+    try { saved = JSON.parse(sessionStorage.getItem(SAVE_KEY) || 'null'); } catch (e) {}
+    history.replaceState(null, '', cleanUrl());
+    const at5 = { step: 5, reached: 5, errors: {}, banner: false, open: null, payBusy: false };
+    if (saved) Object.assign(this.state, saved, at5);
+    if (cancelled) { if (saved) { this.state.cancelled = true; this.setState({}); } return true; }
+    if (saved) this.setState({ payBusy: true });
+    const unsure = 'We could not confirm the payment. If you were charged, dispatch will see it. Send the request on WhatsApp and mention it.';
+    fetch('/api/checkout/status?id=' + encodeURIComponent(paidId)).then(r => r.json().then(st => ({ ok: r.ok, st }))).then(({ ok, st }) => {
+      if (ok && st.paid) {
+        this.setState(Object.assign(saved ? {} : at5, { payBusy: false, paid: { amount: st.amount, method: st.method, ref: st.ref } }));
+        track('purchase', { transaction_id: String(st.ref || paidId), value: Number(st.amount) || 0, currency: 'CHF', payment_method: st.method });
+        try { sessionStorage.removeItem(SAVE_KEY); } catch (e) {}
+      } else if (saved) {
+        /* "Nothing was charged" only when Stripe says so; an error proves nothing either way. */
+        this.setState({ payBusy: false, payError: ok ? 'The payment was not completed, so nothing was charged. Please try again, or choose another way to pay.' : unsure });
+      }
+    }).catch(() => { if (saved) this.setState({ payBusy: false, payError: unsure }); });
+    return true;
+  }
+
+  /* The homepage hero sends its fields here. A complete trip skips straight to the cars. */
+  prefill() {
+    const q = new URLSearchParams(location.search);
+    if (![...q.keys()].length) return;
+    const trip = q.get('trip');
+    const patch = {
+      tripType: trip === 'roundtrip' || trip === 'return' ? 'return' : trip === 'hourly' ? 'hourly' : 'oneway',
+      pickup: q.get('pickup') || '', dest: q.get('dest') || '',
+      hours: Math.min(MAX_HOURS, Math.max(MIN_HOURS, intOr(q.get('hours'), MIN_HOURS))),
+      date: q.get('date') || '', time: q.get('time') || '', returnDate: q.get('rdate') || '', returnTime: q.get('rtime') || '',
+      pax: q.get('pax') || '', bags: q.get('bags') || ''
+    };
+    if (patch.date) { const d = parseIso(patch.date); patch.calY = d.getFullYear(); patch.calM = d.getMonth(); }
+    // validate() reads this.state, so the patch lands first; setState then re-renders.
+    Object.assign(this.state, patch);
+    if (!Object.keys(this.validate(1)).length) Object.assign(this.state, { step: 2, reached: 2 });
+    this.setState({});
+    history.replaceState(null, '', cleanUrl());
+  }
+
+  validate(step) {
+    const s = this.state, e = {};
+    if (step === 1) {
+      if (!s.pickup.trim()) e.pickup = 'Please enter a pick-up address.';
+      if (s.tripType !== 'hourly' && !s.dest.trim()) e.dest = 'Please enter a destination.';
+      if (!s.date) e.date = 'Please choose a date.';
+      else if (s.date < todayInZurich()) e.date = 'That date has already passed.';
+      if (!s.time) e.time = 'Please choose a pick-up time.';
+      /* Whole numbers only: the server refuses "2.5", so the browser must too. */
+      const pax = intOr(s.pax, 0);
+      if (String(s.pax).trim() !== '' && !whole(s.pax)) e.pax = 'Please enter a whole number.';
+      else if (pax < 1) e.pax = 'At least 1 passenger is required.';
+      else if (pax > 16) e.pax = 'For more than 16 passengers, call dispatch.';
+      if (String(s.bags).trim() === '') e.bags = 'Please enter the number of bags (0 is fine).';
+      else if (!whole(s.bags)) e.bags = 'Please enter a whole number.';
+      if (s.tripType === 'return') {
+        if (!s.returnDate) e.returnDate = 'Please choose a return date.';
+        else if (s.date && s.returnDate < s.date) e.returnDate = 'The return must be after the outbound trip.';
+        if (!s.returnTime) e.returnTime = 'Please choose a return time.';
+        else if (s.returnDate && s.returnDate === s.date && s.time && s.returnTime <= s.time) e.returnTime = 'The return must be after the outbound trip.';
+      }
+    }
+    if (step === 2) {
+      const car = CARS.find(c => c.key === s.vehicle);
+      if (!car) e.vehicle = 'Please choose a car to continue.';
+      else if (!this.fits(car)) e.vehicle = 'That car is too small for your party. Please choose another.';
+    }
+    if (step === 3) {
+      if (!s.first.trim()) e.first = 'Please enter a first name.';
+      if (!s.last.trim()) e.last = 'Please enter a last name.';
+      if (String(s.phone).replace(/\D/g, '').length < 7) e.phone = 'Please enter a mobile number dispatch can reach.';
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(s.email.trim())) e.email = 'Please enter a valid email address.';
+    }
+    return e;
+  }
+
+  fits(car) { return car.seats >= intOr(this.state.pax, 1) && car.cases >= intOr(this.state.bags, 0); }
+
+  /* The measured road distance for a trip off the ZRH table: undefined while it is being asked (server.mjs /api/route). */
+  routeNow() {
+    const s = this.state;
+    if (!needsRoute(s)) return undefined;
+    const k = s.pickup + '|' + s.dest, r = s.route;
+    if (r && r.k === k) return r.v;
+    // Only once the list is closed: half-typed text would cost a Mapbox measurement each pause.
+    if (s.open !== 'pickup' && s.open !== 'dest') findRoute(s.pickup, s.dest, (key, v) => this.setState({ route: { k: key, v } }));
+    return undefined;
+  }
+
+  measuring() { return needsRoute(this.state) && this.routeNow() === undefined; }
+
+  /* { amount (net), gross, note, kind } for a class, or null when dispatch quotes the route. */
+  price(cls) {
+    const s = this.state;
+    const q = quoteFor({ tripType: s.tripType, pickup: s.pickup, dest: s.dest, hours: s.hours, vehicle: cls, route: this.routeNow() });
+    return q && { amount: q.net, gross: q.gross, note: q.note, kind: q.kind };
+  }
+
+  /* Online payment needs a fixed fare and a configured server. */
+  payable() {
+    const car = CARS.find(c => c.key === this.state.vehicle), p = car && this.price(car.key);
+    return !!(p && p.kind === 'fixed');
+  }
+
+  snapshot() {
+    const s = this.state;
+    const keep = ['tripType', 'pickup', 'dest', 'hours', 'date', 'time', 'returnDate', 'returnTime', 'pax', 'bags', 'vehicle',
+      'first', 'last', 'phone', 'email', 'flight', 'sign', 'childSeats', 'notes', 'pay', 'calY', 'calM'];
+    const snap = {};
+    keep.forEach(k => { snap[k] = s[k]; });
+    return snap;
+  }
+
+  /* Emails the booking to dispatch (server.mjs → Resend) and resolves { ok, customerEmailed, error }, where error is
+     a fixed board string. The same booking twice (a double tap, or pressing again after it arrived) is sent once;
+     a changed one is sent again, marked as an update once one has arrived; a failed one can be retried.
+     keepalive lets it finish while WhatsApp opens. */
+  sendEnquiry() {
+    const snap = this.snapshot();
+    const key = JSON.stringify(Object.assign({}, snap, { calY: 0, calM: 0 }));
+    if (this._send && this._send.key === key) return this._send.promise;
+    const promise = fetch('/api/enquiry', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.assign(snap, { update: !!this._okOnce })), keepalive: true
+    }).then(r => r.json().catch(() => ({})).then(j => (r.ok
+      ? { ok: true, customerEmailed: !!j.customerEmailed }
+      : { ok: false, error: r.status === 429 ? TOO_MANY : NOT_SENT })))
+      .catch(() => ({ ok: false, error: NOT_SENT }))
+      .then(res => {
+        if (res.ok && !this._okOnce) track('generate_lead', Object.assign({ method: this.state.pay || 'whatsapp' }, this.leadValue()));
+        if (res.ok) this._okOnce = true;
+        else if (this._send && this._send.promise === promise) this._send = null;
+        return res;
+      });
+    this._send = { key, promise };
+    return promise;
+  }
+
+  /* What the funnel events carry: trip type, car class and the fare shown (no personal data). */
+  leadValue() {
+    const s = this.state, car = CARS.find(c => c.key === s.vehicle), p = car && this.price(car.key);
+    const out = { trip_type: s.tripType, vehicle: s.vehicle || undefined };
+    if (p && p.kind === 'fixed') { out.value = p.amount; out.currency = 'CHF'; }
+    return out;
+  }
+
+  /* Opens the pick-up or destination list. On a phone the list hangs below its field, mostly under the fold (and the
+     keyboard), so the field scrolls up to just under the sticky header (scroll-margin-top in the phone CSS). */
+  openList(k) {
+    this.setState({ open: k });
+    let phone = false;
+    try { phone = window.matchMedia('(max-width:640px)').matches; } catch (e) {}
+    if (phone) setTimeout(() => { const f = document.querySelector('[data-pop="' + k + '"]'); if (f) f.scrollIntoView({ block: 'start', behavior: 'smooth' }); }, 0);
+  }
+
+  /* The first of steps 1..upTo that doesn't validate, as { step, errors }, or null. */
+  firstInvalid(upTo) {
+    for (let k = 1; k <= upTo; k++) { const errors = this.validate(k); if (Object.keys(errors).length) return { step: k, errors }; }
+    return null;
+  }
+
+  startCheckout() {
+    const s = this.state;
+    const snap = this.snapshot();
+    try { sessionStorage.setItem(SAVE_KEY, JSON.stringify(snap)); } catch (e) {}
+    this.setState({ payBusy: true, payError: '', cancelled: false });
+    track('begin_checkout', Object.assign({ payment_method: s.pay }, this.leadValue()));
+    fetch('/api/checkout', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.assign({}, snap, { method: s.pay }))
+    }).then(r => r.json().then(j => ({ ok: r.ok, j }))).then(({ ok, j }) => {
+      if (ok && j.url) { window.location.href = j.url; return; }
+      this.setState({ payBusy: false, payError: (j && j.error) || 'Online payment is unavailable right now.', online: j && j.unavailable ? false : this.state.online });
+    }).catch(() => this.setState({ payBusy: false, payError: 'Online payment is unavailable right now. You can still pay the chauffeur.' }));
+  }
+
+  goTo(n, push) {
+    if (n < 1 || n > 5) return;
+    /* Going forward (Next, or the step indicator) re-checks every step before n, so no jump skips a field that
+       changed since. The target step itself isn't checked: its fields may simply not be filled in yet. */
+    const bad = n > this.state.step ? this.firstInvalid(Math.min(n - 1, 3)) : null;
+    if (bad) {
+      if (bad.step !== this.state.step) this.goTo(bad.step, push);
+      this.setState({ errors: bad.errors, banner: true });
+      return;
+    }
+    const reached = Math.max(this.state.reached, n);
+    const patch = { step: n, reached, errors: {}, banner: false, open: null, sent: n === 5 ? this.state.sent : false, enq: n === 5 ? this.state.enq : null };
+    // Booking with the team on WhatsApp is the default; paying on the website is the alternative.
+    if (n === 5 && !this.state.pay) patch.pay = 'whatsapp';
+    const from = this.state.step;
+    this.setState(patch);
+    if (n !== from) track('quote_step', { step: n, step_name: ['trip', 'car', 'details', 'review', 'payment'][n - 1] });
+    if (push) history.pushState({ step: n }, '');
+    const top = document.getElementById('q-top');
+    if (top && top.getBoundingClientRect().top < 0) top.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  next() {
+    const errs = this.validate(this.state.step);
+    if (Object.keys(errs).length) { this.setState({ errors: errs, banner: true }); return; }
+    this.goTo(this.state.step + 1, true);
+  }
+
+  tripLabel() { return this.state.tripType === 'oneway' ? 'One way' : this.state.tripType === 'return' ? 'Return' : 'Hourly'; }
+
+  message() {
+    const s = this.state, car = CARS.find(c => c.key === s.vehicle), p = car && this.price(car.key);
+    const L = [T('Booking request from z-als.ch'), ''];
+    /* The steps 1–4 WhatsApp link sends a half-filled form, so blank fields are left out. */
+    const add = (k, v) => { if (v !== undefined && v !== null && String(v).trim() !== '') L.push(T(k) + ': ' + v); };
+    const at = (d, t) => (d && t ? T('{date} at {time}', { date: niceDate(d), time: t }) : niceDate(d) || t);
+    L.push(T('Trip') + ': ' + T(this.tripLabel()));
+    add('Pick-up', s.pickup);
+    if (s.tripType === 'hourly') add('Duration', T('{n} hours', { n: s.hours })); else add('Destination', s.dest);
+    add('Date', at(s.date, s.time));
+    if (s.tripType === 'return') add('Return', at(s.returnDate, s.returnTime));
+    add('Passengers', s.pax);
+    add('Luggage', s.bags);
+    add('Vehicle', car && T(car.name) + ' (' + T(car.model) + ')');
+    if (car) add('Fare', p ? chf(p.amount) + ' ' + T(p.note) + ' · ' + T('total {amount} incl. VAT', { amount: chf(p.gross) }) : T('to be quoted by dispatch'));
+    if (s.paid) add('Payment', T('PAID {amount} via {method} · Stripe ref {ref}', { amount: chf(s.paid.amount), method: T(PAY_LABEL[s.paid.method] || s.paid.method), ref: s.paid.ref }));
+    else if (s.pay === 'driver') add('Payment', T('pay the chauffeur (cash or card in the car)'));
+    else if (s.pay === 'whatsapp') add('Payment', T('to arrange with the Z-ALS team'));
+    else if (car && !(p && p.kind === 'fixed')) add('Payment', T('after dispatch confirms the fare'));
+    L.push('');
+    add('Name', (s.first + ' ' + s.last).trim());
+    add('Mobile', s.phone);
+    add('Email', s.email);
+    add('Flight', s.flight);
+    add('Name sign', s.sign);
+    if (s.childSeats) add('Child seats', s.childSeats);
+    add('Notes', s.notes.trim());
+    return L.join('\n').trim();
+  }
+
+  calDays(field) {
+    const s = this.state, first = new Date(s.calY, s.calM, 1), today = todayInZurich();
+    const min = field === 'returnDate' && s.date ? s.date : today;
+    const out = [];
+    for (let i = 0; i < (first.getDay() + 6) % 7; i++) out.push({ label: '', cls: 'q-day is-blank', off: 'true', pick: null });
+    const days = new Date(s.calY, s.calM + 1, 0).getDate();
+    for (let d = 1; d <= days; d++) {
+      const iso = s.calY + '-' + pad(s.calM + 1) + '-' + pad(d);
+      const cls = ['q-day'];
+      if (iso === today) cls.push('is-today');
+      if (iso === s[field]) cls.push('is-sel');
+      const off = iso < min;
+      if (off) cls.push('is-off');
+      /* A past day can't be picked by keyboard either (the CSS only stops the mouse). */
+      out.push({ label: d, cls: cls.join(' '), off: String(off), pick: off ? null : () => this.setState({ [field]: iso, open: null, errors: Object.assign({}, s.errors, { [field]: '' }) }) });
+    }
+    return out;
+  }
+
+  timeOpts(field) {
+    const s = this.state, cur = s[field] || '';
+    const [h, m] = cur ? cur.split(':') : ['', ''];
+    const set = (hh, mm, close) => this.setState({ [field]: hh + ':' + mm, open: close ? null : s.open, errors: Object.assign({}, s.errors, { [field]: '' }) });
+    const opt = (label, on, pick) => ({ label, cls: 'q-day' + (on ? ' is-sel' : ''), pick });
+    return {
+      big: cur || '--:--',
+      hours: Array.from({ length: 24 }, (_, i) => opt(pad(i), pad(i) === h, () => set(pad(i), m || '00', false))),
+      mins: Array.from({ length: 12 }, (_, i) => opt(pad(i * 5), pad(i * 5) === m, () => set(h || '09', pad(i * 5), true)))
+    };
+  }
+
+  openPop(key) {
+    const s = this.state, field = key.split(':')[1];
+    const patch = { open: s.open === key ? null : key };
+    if (key.startsWith('cal:')) {
+      const base = s[field] ? parseIso(s[field]) : (field === 'returnDate' && s.date ? parseIso(s.date) : parseIso(todayInZurich()));
+      patch.calY = base.getFullYear(); patch.calM = base.getMonth();
+    }
+    this.setState(patch);
+  }
+
+  renderVals() {
+    const s = this.state, e = s.errors;
+    const phone = this.props.dispatchPhone ?? '+41 76 272 0909';
+    const stepCls = n => 'q-step' + (n === s.step ? ' is-current' : n < s.reached ? ' is-done' : '');
+    const field = k => 'q-field' + (e[k] ? ' is-err' : '');
+    const suggest = k => {
+      const q = s[k], t = String(q || '').trim().toLowerCase();
+      const a = AIRPORTS.filter(x => !t || x.name.toLowerCase().includes(t));
+      /* Street addresses and hotels for exactly what was typed (Mapbox, via /api/places) lead the list,
+         as on swisselitelimousine.ch; picking one fills "Bahnhofstrasse 1, 6003 Luzern, Switzerland". */
+      const g = s.geo && s.geo.k === k && s.geo.q === q ? s.geo.rows : [];
+      const addr = g.map(r => ({ name: r.name, sub: r.sub, value: r.sub ? r.name + ', ' + r.sub : r.name }));
+      /* z-als.ch's directory: 550-odd towns and postcodes, each with its road distance from ZRH. */
+      const p = searchPlaces(q, !t ? 6 : addr.length ? 2 : 8)
+        .map(c => ({ name: c.city, sub: T(c.place) + ' · ' + (c.km <= PRICED_KM ? T('{km} km from ZRH', { km: c.km }) : T('quoted by dispatch')) }));
+      return a.concat(addr, p).slice(0, 10);
+    };
+    const pickTo = (k, list) => list.map(o => Object.assign({}, o, { pick: () => this.setState({ [k]: o.value || o.name, open: null, errors: Object.assign({}, e, { [k]: '' }) }) }));
+    const geoOn = k => !!(s.geo && s.geo.k === k && s.geo.q === s[k] && s.geo.rows.length);
+    const timeKey = s.open && s.open.startsWith('time:') ? s.open.split(':')[1] : 'time';
+    const tp = this.timeOpts(timeKey);
+    const calKey = s.open && s.open.startsWith('cal:') ? s.open.split(':')[1] : 'date';
+
+    const car = CARS.find(c => c.key === s.vehicle);
+    const shown = car ? this.price(car.key) : this.price('Business');
+    const fareLabel = car ? (shown ? T('Your fare · {car}', { car: T(car.name) }) : 'Your fare') : (shown ? 'From · Business class' : 'Fare');
+    const measuring = this.measuring();
+    const fareText = shown ? T('{amount} + VAT', { amount: chf(shown.amount) }) : measuring ? 'Calculating fare…' : 'Quoted by dispatch';
+
+    const cars = CARS.map(c => {
+      const ok = this.fits(c), p = this.price(c.key), sel = s.vehicle === c.key;
+      return {
+        name: c.name, model: c.model, img: c.img, alt: c.model,
+        seats: T('{n} seats', { n: c.seats }), cases: T('{n} cases', { n: c.cases }),
+        cls: 'q-car' + (sel ? ' is-sel' : '') + (ok ? '' : ' is-off'), pressed: sel ? 'true' : 'false',
+        note: ok ? '' : T('Too small for {pax} passengers and {bags} bags', { pax: intOr(s.pax, 1), bags: intOr(s.bags, 0) }),
+        price: p ? chf(p.amount) : measuring ? 'Calculating fare…' : 'On request', priceNote: p ? p.note : measuring ? '' : 'quoted by dispatch',
+        pick: () => { if (ok) this.setState({ vehicle: c.key, errors: {}, banner: false }); }
+      };
+    });
+
+    const total = car && this.price(car.key);
+    const tripRows = [{ k: 'Type', v: this.tripLabel() }, { k: 'Pick-up', v: s.pickup }]
+      .concat(s.tripType === 'hourly' ? [{ k: 'Duration', v: T('{n} hours', { n: s.hours }) }] : [{ k: 'Destination', v: s.dest }])
+      .concat([{ k: 'Date', v: niceDate(s.date) + ' · ' + s.time }])
+      .concat(s.tripType === 'return' ? [{ k: 'Return', v: niceDate(s.returnDate) + ' · ' + s.returnTime }] : [])
+      .concat([{ k: 'Passengers', v: s.pax }, { k: 'Luggage', v: s.bags }]);
+    const youRows = [{ k: 'Name', v: (s.first + ' ' + s.last).trim() }, { k: 'Mobile', v: s.phone }, { k: 'Email', v: s.email }]
+      .concat(s.flight ? [{ k: 'Flight', v: s.flight }] : [])
+      .concat(s.sign ? [{ k: 'Name sign', v: s.sign }] : [])
+      .concat(s.childSeats ? [{ k: 'Child seats', v: s.childSeats }] : [])
+      .concat(s.notes.trim() ? [{ k: 'Notes', v: s.notes.trim() }] : []);
+    const fareRows = [{ k: 'Vehicle', v: car ? car.name : '—' }]
+      .concat(total ? [{ k: 'Fare (net)', v: chf(total.amount) }, { k: 'VAT 8.1%', v: chf(total.gross - total.amount) }] : [{ k: 'Fare', v: 'Quoted by dispatch' }]);
+    const msg = this.message();
+    const waHref = 'https://wa.me/' + String(phone).replace(/\D/g, '') + '?text=' + encodeURIComponent(msg);
+
+    // Payment step
+    const fixed = this.payable();
+    const canOnline = fixed && s.online === true;
+    const offReason = !fixed
+      ? (s.tripType === 'hourly' ? 'Hourly hire is settled after the journey.'
+        : car && !TARIFF[car.key] ? 'Groups and the Minibus are priced by dispatch. Please book via WhatsApp or pay the chauffeur.'
+        : 'Online payment covers fixed fares up to 320 km. Dispatch prices this one, so please book via WhatsApp or pay the chauffeur.')
+      : s.online === false ? 'Coming soon' : s.online === null ? 'Checking availability…' : '';
+    const twintOk = canOnline && !!total && total.gross <= TWINT_MAX;
+    const payOk = k => (k === 'card' ? canOnline : k === 'twint' ? twintOk : k === 'driver' || k === 'whatsapp');
+    const payOpt = (key, name, sub, logos, chips, why, badge) => ({
+      name, sub, logos, chips, badge: badge || '', note: payOk(key) ? '' : (why || offReason),
+      cls: 'q-pay' + (key === 'whatsapp' ? ' is-main' : '') + (s.pay === key ? ' is-sel' : '') + (payOk(key) ? '' : ' is-off'),
+      checked: s.pay === key ? 'true' : 'false', off: payOk(key) ? 'false' : 'true',
+      pick: () => { if (payOk(key) && !s.payBusy) this.setState({ pay: key, errors: {}, payError: '', cancelled: false, sent: false, enq: null }); }
+    });
+    const payMain = [
+      payOpt('whatsapp', 'Book via WhatsApp', 'Our team confirms your chauffeur and arranges payment with you on WhatsApp.', [], ['WHATSAPP'], '', 'Recommended')
+    ];
+    const payMore = [
+      payOpt('card', 'Card', "Visa, Mastercard, American Express, Apple Pay or Google Pay, on Stripe's secure page.",
+        [LOGO('visa', 'Visa'), LOGO('mastercard', 'Mastercard'), LOGO('american-express', 'American Express'), LOGO('apple-pay', 'Apple Pay'), LOGO('google-pay', 'Google Pay')], []),
+      payOpt('twint', 'TWINT', "Pay in the TWINT app on Stripe's secure page: a QR code on a computer, straight into the app on a phone.", [LOGO('twint', 'TWINT')], [],
+        canOnline ? 'TWINT is limited to CHF 5,000 per payment. Please pay by card.' : ''),
+      payOpt('driver', 'Pay the chauffeur', 'Cash, card or TWINT in the car, at the end of the journey.', [], ['CASH', 'CARD', 'TWINT'])
+    ];
+    const due = total ? chf(total.gross) : '';
+    const payCta = s.payBusy ? 'Please wait…'
+      : s.pay === 'whatsapp' ? 'Continue on WhatsApp →'
+      : s.pay === 'card' && payOk('card') ? T('Pay {amount} by card →', { amount: due })
+      : s.pay === 'twint' && payOk('twint') ? T('Pay {amount} with TWINT →', { amount: due })
+      : s.pay === 'driver' ? 'Send booking request →'
+      : 'Choose a payment method';
+    const onPay = () => {
+      if (s.payBusy) return;
+      if (!s.pay || !payOk(s.pay)) { this.setState({ errors: { pay: 'Please choose how you would like to pay.' } }); return; }
+      /* The step indicator can bring the visitor back here after changing an earlier step. */
+      const bad = this.firstInvalid(3);
+      if (bad) { this.goTo(bad.step, true); this.setState({ errors: bad.errors, banner: true }); return; }
+      if (s.pay === 'card' || s.pay === 'twint') { this.startCheckout(); return; }
+      if (s.pay === 'whatsapp') {
+        vals.sendWhatsApp();                           // synchronous inside the click, or popup blockers eat it
+        this.sendEnquiry().then(enq => this.setState({ enq }));
+        return;
+      }
+      /* Pay the chauffeur: "sent" only once dispatch has the email (server.mjs answers 502 if it didn't go). */
+      this.setState({ payBusy: true, payError: '', sent: false, enq: null });
+      this.sendEnquiry().then(enq => this.setState(enq.ok ? { payBusy: false, sent: true, enq } : { payBusy: false, payError: enq.error, enq }));
+    };
+    const enq = s.enq;
+    const driverNote = enq && enq.customerEmailed
+      ? T("Request sent. We've emailed a copy to {email}; dispatch confirms your chauffeur personally.", { email: s.email })
+      : 'Request sent. Dispatch confirms your chauffeur personally, by email or WhatsApp.';
+    const waNote = enq && !enq.ok
+      ? "WhatsApp opened, but our email copy didn't go through. Please press Send in WhatsApp, or use one of the options below."
+      : enq && enq.customerEmailed
+        ? "WhatsApp opened with your booking. Press send there and our team takes it from here; we've also emailed you a copy. If WhatsApp didn't open, use one of the options below."
+        : "WhatsApp opened with your booking. Press send there and our team takes it from here. If WhatsApp didn't open, use one of the options below.";
+    const route = s.tripType === 'hourly' ? s.pickup + ' · ' + T('{n} hours', { n: s.hours }) : s.pickup + ' → ' + s.dest;
+
+    const vals = {
+      isStep1: s.step === 1, isStep2: s.step === 2, isStep3: s.step === 3, isStep4: s.step === 4, isStep5: s.step === 5,
+      onNext: ev => { ev.preventDefault(); this.next(); },
+      /* Not history.back(): a trip handed over from the homepage starts on step 2 with
+         no step-1 entry behind it, and back would leave the page. */
+      onBack: () => { this.goTo(s.step - 1, false); history.replaceState({ step: s.step - 1 }, ''); },
+      tabOneway: 'q-tab' + (s.tripType === 'oneway' ? ' is-on' : ''), tabReturn: 'q-tab' + (s.tripType === 'return' ? ' is-on' : ''), tabHourly: 'q-tab' + (s.tripType === 'hourly' ? ' is-on' : ''),
+      setOneway: () => this.setState({ tripType: 'oneway', errors: {}, banner: false }),
+      setReturn: () => this.setState({ tripType: 'return', errors: {}, banner: false }),
+      setHourly: () => this.setState({ tripType: 'hourly', errors: {}, banner: false }),
+      showDest: s.tripType !== 'hourly', showHours: s.tripType === 'hourly', isReturn: s.tripType === 'return',
+      pickup: s.pickup, dest: s.dest, pax: s.pax, bags: s.bags,
+      first: s.first, last: s.last, phone: s.phone, email: s.email, flight: s.flight, sign: s.sign, notes: s.notes, childSeats: s.childSeats,
+      onField: ev => {
+        const k = ev.target.name, patch = { [k]: ev.target.value, errors: Object.assign({}, e, { [k]: '' }) };
+        if (k === 'pickup' || k === 'dest') {
+          patch.open = k;
+          findAddresses(ev.target.value, (q, rows) => this.setState({ geo: { k, q, rows } }));
+        }
+        this.setState(patch);
+      },
+      openPickup: () => this.openList('pickup'), openDest: () => this.openList('dest'),
+      pickupOpen: s.open === 'pickup', destOpen: s.open === 'dest',
+      pickupOpts: pickTo('pickup', suggest('pickup')), destOpts: pickTo('dest', suggest('dest')),
+      pickupHint: geoOn('pickup') ? 'Address search by Mapbox · or type any address or hotel' : 'Or type any address or hotel',
+      destHint: geoOn('dest') ? 'Address search by Mapbox · or type any address or hotel' : 'Or type any address or hotel',
+      hoursLabel: T('{n} hrs', { n: s.hours }),
+      decHours: () => this.setState(st => ({ hours: Math.max(MIN_HOURS, st.hours - 1) })), incHours: () => this.setState(st => ({ hours: Math.min(MAX_HOURS, st.hours + 1) })),
+      decSeats: () => this.setState(st => ({ childSeats: Math.max(0, st.childSeats - 1) })), incSeats: () => this.setState(st => ({ childSeats: Math.min(3, st.childSeats + 1) })),
+
+      fPickup: field('pickup'), fDest: field('dest'), fDate: field('date'), fTime: field('time'), fPax: field('pax'), fBags: field('bags'),
+      fRDate: field('returnDate'), fRTime: field('returnTime'),
+      fFirst: field('first'), fLast: field('last'), fPhone: field('phone'), fEmail: field('email'),
+      errPickup: e.pickup, errDest: e.dest, errDate: e.date, errTime: e.time, errPax: e.pax, errBags: e.bags,
+      errRDate: e.returnDate, errRTime: e.returnTime, errVehicle: e.vehicle,
+      errFirst: e.first, errLast: e.last, errPhone: e.phone, errEmail: e.email,
+      banner: s.banner,
+
+      dateLabel: s.date ? niceDate(s.date) : 'Select a date', dateBtnCls: 'q-pick' + (s.date ? '' : ' is-empty'),
+      timeLabel: s.time || 'Select a time', timeBtnCls: 'q-pick' + (s.time ? '' : ' is-empty'),
+      rDateLabel: s.returnDate ? niceDate(s.returnDate) : 'Select a date', rDateBtnCls: 'q-pick' + (s.returnDate ? '' : ' is-empty'),
+      rTimeLabel: s.returnTime || 'Select a time', rTimeBtnCls: 'q-pick' + (s.returnTime ? '' : ' is-empty'),
+      openDate: () => this.openPop('cal:date'), openRDate: () => this.openPop('cal:returnDate'),
+      openTime: () => this.openPop('time:time'), openRTime: () => this.openPop('time:returnTime'),
+      calDateOpen: s.open === 'cal:date', calRDateOpen: s.open === 'cal:returnDate',
+      timeOpen: s.open === 'time:time', rTimeOpen: s.open === 'time:returnTime',
+      calTitle: new Date(s.calY, s.calM, 1).toLocaleDateString(LOCALE(), { month: 'long', year: 'numeric' }), calDays: this.calDays(calKey),
+      calPrev: () => this.setState(st => {
+        const now = parseIso(todayInZurich());
+        if (st.calY === now.getFullYear() && st.calM === now.getMonth()) return null;
+        return st.calM ? { calM: st.calM - 1 } : { calM: 11, calY: st.calY - 1 };
+      }),
+      calNext: () => this.setState(st => (st.calM === 11 ? { calM: 0, calY: st.calY + 1 } : { calM: st.calM + 1 })),
+      timeBig: tp.big, hourOpts: tp.hours, minOpts: tp.mins,
+
+      fareLabel, fareText,
+      routeLine: route + ' · ' + T('{date} at {time}', { date: niceDate(s.date), time: s.time }) + ' · ' + T('{n} pax', { n: s.pax }) + ' · ' + T('{n} bags', { n: s.bags }),
+      cars,
+      tripRows, youRows, fareRows,
+      totalLabel: total ? 'Total incl. VAT' : 'Total', totalText: total ? chf(total.gross) : 'Quoted by dispatch',
+
+      message: msg,
+      notPaid: !s.paid, isPaid: !!s.paid, cancelled: s.cancelled,
+      payIntro: T('Book with our team on WhatsApp: they confirm your chauffeur and arrange payment with you.')
+        + (canOnline ? ' ' + T('Prefer to pay now? Pay securely by card or TWINT on the website.') : ''),
+      payMain, payMore, onPay, payCta,
+      payCtaCls: 'q-next' + (s.pay ? '' : ' is-wait'), payBusyAttr: s.payBusy ? 'true' : 'false',
+      errPay: e.pay, payError: s.payError,
+      driverSent: s.pay === 'driver' && s.sent, waSent: s.pay === 'whatsapp' && s.sent, showChat: s.pay !== 'whatsapp',
+      driverNote, waNote, noEmail: !s.email,
+      paidLine: s.paid ? T('{amount} paid via {method} · reference {ref}. Stripe emails your receipt.', { amount: chf(s.paid.amount), method: T(PAY_LABEL[s.paid.method] || s.paid.method), ref: s.paid.ref }) : '',
+      sent: s.sent,
+      waHref,
+      /* Contact details are validated by the time the Review step shows, so a WhatsApp hand-off from
+         there is a completed booking and dispatch gets the email too. The link still opens WhatsApp. */
+      onWaReview: () => this.sendEnquiry(),
+      sendWhatsApp: () => {
+        /* One WhatsApp tab per press: a double click would open two. */
+        if (Date.now() - (this._waAt || 0) < 1500) return;
+        this._waAt = Date.now();
+        track('whatsapp_click', { link_location: location.pathname, step: s.step });
+        this.setState({ sent: true });
+        window.open(waHref, '_blank', 'noopener');
+      },
+      mailHref: 'mailto:info@z-als.ch?subject=' + encodeURIComponent(T('Booking request') + ' · ' + route) + '&body=' + encodeURIComponent(msg),
+      phoneHref: 'tel:' + String(phone).replace(/[^+0-9]/g, ''), dispatchPhone: phone
+    };
+    for (let n = 1; n <= 5; n++) {
+      vals['s' + n + 'Cls'] = stepCls(n);
+      vals['s' + n + 'Off'] = n <= s.reached && n !== s.step ? 'false' : 'true';
+      vals['s' + n + 'Cur'] = n === s.step ? 'step' : 'false';
+      vals['go' + n] = () => { if (n <= s.reached && n !== s.step) this.goTo(n, true); };
+      if (n < 5) vals['l' + n + 'Cls'] = 'q-line' + (n < s.reached ? ' is-done' : '');
+    }
+    return vals;
+  }
+}
+</script>
+</body>
+</html>

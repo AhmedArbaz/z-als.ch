@@ -1,0 +1,7 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "z-als-previous", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 3002 },
+    { "name": "z-als-www-check", "runtimeExecutable": "node", "runtimeArgs": ["server.mjs"], "port": 3005, "env": { "PORT": "3005", "SITE_URL": "https://z-als.ch" } }
+  ]
+}

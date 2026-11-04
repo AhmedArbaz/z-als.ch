@@ -1,0 +1,49 @@
+{
+  "title": "Zurich Airport to Zermatt, St. Moritz & Davos | Z-ALS",
+  "description": "Train or private transfer from Zurich Airport to Zermatt, St. Moritz and Davos: journey times, changes and fixed chauffeur fares compared, route by route.",
+  "eyebrow": "Guide · Zürich Airport to the Alps · timetables checked {checked}",
+  "h1": "Zurich Airport to Zermatt, St. Moritz and Davos: train or private transfer?",
+  "lede": "By train, Zermatt is {trainZermatt} away with {trainZermattChanges}, St. Moritz {trainStMoritz} with {trainStMoritzChanges} and Davos {trainDavos} with {trainDavosChanges}. A private transfer to Davos costs {priceDavos} plus VAT.",
+  "intro": [
+    "The three best-known Swiss resorts are all a few hours from Zürich Airport, and all three are served by excellent trains. The question is not whether you can get there by rail, but whether the changes, the luggage and the last stretch to your chalet or hotel are worth the saving.",
+    "This guide compares the fastest train connection with a private chauffeur transfer for each resort. Train times come from the Swiss timetable, checked on {checked}; our drive times, distances and fares come from the same price engine as our booking form, and each resort has its own page with the full fare table."
+  ],
+  "sections": [
+    {
+      "h2": "Zermatt: the drive ends at Täsch",
+      "paragraphs": [
+        "Zermatt is car-free, so every road journey ends at Täsch, where the shuttle train runs up to the village in a few minutes and electric taxis and hotel shuttles wait at Zermatt station. Our transfer covers {kmZermatt} km from the airport to Täsch in about {timeZermatt}; the fixed Business fare is {priceZermatt} plus VAT, and the Business Van for up to seven passengers costs {priceVanZermatt}.",
+        "The fastest train from the airport takes {trainZermatt} with {trainZermattChanges}, usually at Visp, and the last leg climbs the valley on the narrow-gauge line straight into Zermatt. With light luggage that is an easy trip. With skis, several cases or children, the change and the platforms are where a car helps most, and the chauffeur loads everything at Täsch for the shuttle."
+      ]
+    },
+    {
+      "h2": "St. Moritz: over the passes or through the tunnel",
+      "paragraphs": [
+        "The train to St. Moritz takes {trainStMoritz} with {trainStMoritzChanges}, typically at Zürich HB and Chur, and the final hour on the Albula line is one of the most beautiful railway journeys in Europe. If the scenery is part of the trip and your bags are light, it is hard to argue against.",
+        "By road the transfer covers {kmStMoritz} km in about {timeStMoritz}. The Business fare is {priceStMoritz} plus VAT, the Premium class {pricePremiumStMoritz}. In winter the route depends on the passes: dispatch checks the forecast and the pass status the evening before and plans the departure with you, and every car runs winter tyres from October to April."
+      ]
+    },
+    {
+      "h2": "Davos: the shortest of the three",
+      "paragraphs": [
+        "Davos is the closest of the three resorts. The fastest train takes {trainDavos} with {trainDavosChanges}, usually at Zürich HB and Landquart, and lands you at Davos Platz or Davos Dorf, from where most hotels are a short walk or a local bus ride away.",
+        "A private transfer covers {kmDavos} km in about {timeDavos} for a fixed {priceDavos} plus VAT in the Business class, or {priceVanDavos} in the Business Van. The World Economic Forum meets in Davos every January and ski weeks fill the cars, so book early for those dates; outside them a booking a day or two ahead is usually enough."
+      ]
+    },
+    {
+      "h2": "How to choose",
+      "paragraphs": [
+        "Take the train if you travel light, enjoy the ride and do not mind changing trains with your bags. It is the lower-cost option for one or two people, and Swiss trains run to the minute.",
+        "Book a transfer if you land late, carry skis or several cases, travel with children, or are three or more: the fare is per car, not per person, so a family of four in the Business Van to Davos pays {priceVanDavos} plus VAT in total. You also skip the changes, and the chauffeur tracks your flight and waits in arrivals, with the first 60 minutes after landing included."
+      ]
+    }
+  ],
+  "faq": [
+    { "q": "How long does it take from Zurich Airport to Zermatt?", "a": "About {trainZermatt} by the fastest train with {trainZermattChanges}, or about {timeZermatt} by car to Täsch, where the shuttle train runs up to the car-free village." },
+    { "q": "How much is a private transfer from Zurich Airport to Zermatt?", "a": "With Z-ALS, {priceZermatt} plus VAT in the Business class to Täsch, or {priceVanZermatt} plus VAT in the Business Van for up to seven passengers, fixed when you book." },
+    { "q": "How do I get from Zurich Airport to St. Moritz?", "a": "By train in about {trainStMoritz} with {trainStMoritzChanges}, or by private transfer in about {timeStMoritz} for {priceStMoritz} plus VAT in the Business class. In winter dispatch confirms the route the evening before." },
+    { "q": "What is the fastest way from Zurich Airport to Davos?", "a": "A private transfer takes about {timeDavos} door to door. The fastest train takes {trainDavos} with {trainDavosChanges}, then a short local transfer to your hotel." },
+    { "q": "Is a transfer worth it for a family?", "a": "Often, yes: the fare is per car. A Business Van for up to seven passengers and seven cases costs {priceVanDavos} to Davos and {priceVanZermatt} to Täsch for Zermatt, plus VAT, with child seats fitted on request." },
+    { "q": "Do you drive to the Alps in winter?", "a": "Yes. Every car runs winter tyres from October to April, and dispatch checks the forecast and pass status the evening before each mountain transfer and agrees the departure time with you." }
+  ]
+}

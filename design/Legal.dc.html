@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0;padding:0;background:#01050B;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#FFFFFF;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#7E9BD4}
+:focus-visible{outline:2px solid #7E9BD4;outline-offset:2px}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.l-wrap{position:relative;max-width:1400px;margin:0 auto;padding:clamp(40px,6vw,88px) clamp(20px,4vw,56px) clamp(64px,8vw,120px);display:grid;grid-template-columns:minmax(180px,240px) minmax(0,1fr);gap:clamp(32px,5vw,80px)}
+.l-toc{position:sticky;top:112px;align-self:start;display:flex;flex-direction:column;gap:4px}
+.l-toc a{display:flex;align-items:center;min-height:44px;padding:0 14px;border-left:1px solid rgba(125,155,212,0.34);color:rgba(255,255,255,0.78);font-size:14px;font-weight:600;letter-spacing:0.02em;text-decoration:none}
+.l-toc a:hover{color:#FFFFFF;border-color:#FFFFFF}
+.l-eyebrow{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.05em;color:#7E9BD4;text-transform:uppercase}
+.l-h1{margin:14px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(34px,4.6vw,60px);line-height:1.04;letter-spacing:-0.025em}
+.l-lede{margin:18px 0 0;max-width:62ch;font-size:16px;line-height:1.6;color:rgba(255,255,255,0.74)}
+.l-doc{max-width:72ch;padding-top:clamp(40px,5vw,64px);margin-top:clamp(40px,5vw,64px);border-top:1px solid rgba(125,155,212,0.2)}
+.l-doc h2{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(28px,3.2vw,40px);line-height:1.1;letter-spacing:-0.02em}
+.l-doc h3{margin:32px 0 0;font-size:17px;font-weight:700;letter-spacing:0.01em}
+.l-doc p,.l-doc li{font-size:16px;line-height:1.7;color:rgba(255,255,255,0.82)}
+.l-doc p{margin:12px 0 0}
+.l-doc ul{margin:12px 0 0;padding-left:20px}
+.l-doc li+li{margin-top:6px}
+.l-doc strong{color:#FFFFFF;font-weight:600}
+.l-updated{margin-top:10px !important;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px !important;color:#7E9BD4 !important}
+.l-dl{display:grid;grid-template-columns:minmax(140px,220px) minmax(0,1fr);margin:24px 0 0;border-top:1px solid rgba(125,155,212,0.2)}
+.l-dl dt,.l-dl dd{margin:0;padding:14px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-size:15px;line-height:1.6}
+.l-dl dt{color:#7E9BD4;font-weight:600;padding-right:20px}
+.l-dl dd{color:#FFFFFF}
+.l-rates{margin:18px 0 0;border:1px solid rgba(125,155,212,0.24);border-radius:14px;overflow:hidden}
+.l-row{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(3,minmax(0,1fr));gap:12px;padding:12px 18px;border-top:1px solid rgba(125,155,212,0.16);font-size:15px}
+.l-row:first-child{border-top:0}
+.l-row span+span{text-align:right;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px}
+.l-head{background:rgba(125,155,212,0.1);color:#7E9BD4;font-size:11px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase}
+.l-head span+span{font-family:Manrope,system-ui,sans-serif;font-size:11px}
+@media (max-width:860px){.l-wrap{grid-template-columns:1fr}.l-toc{position:static;flex-direction:row;flex-wrap:wrap;gap:8px}.l-toc a{border:1px solid rgba(125,155,212,0.34);border-radius:10px}}
+@media (max-width:560px){.l-dl{grid-template-columns:1fr}.l-dl dt{padding-bottom:0;border-bottom:0}.l-row{grid-template-columns:minmax(0,1.2fr) repeat(3,minmax(0,1fr));padding:12px;gap:8px;font-size:14px}.l-row span+span{font-size:13px}}
+</style>
+</helmet>
+
+<div style="width:100%;min-height:100vh;background:#01050B;font-family:Manrope,system-ui,sans-serif;color:#FFFFFF;overflow-x:clip">
+
+<dc-import name="SiteHeader v3" active="legal" hint-size="100%,87px"></dc-import>
+
+<div aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:640px;pointer-events:none;background:radial-gradient(70% 90% at 10% 0%,rgba(93,125,183,0.22) 0%,rgba(93,125,183,0) 62%)"></div>
+
+<main class="l-wrap">
+<nav class="l-toc" aria-label="On this page">
+<a href="#imprint">Imprint</a>
+<a href="#privacy">Privacy</a>
+<a href="#terms">Terms</a>
+</nav>
+
+<div>
+<div class="l-eyebrow">Legal</div>
+<h1 class="l-h1">Imprint, privacy &amp; terms</h1>
+<p class="l-lede">Who runs this website, what happens to the details you send us, and the terms our transport is provided under.</p>
+<p class="l-updated">The legal text is provided in English.</p>
+
+<section class="l-doc" id="imprint" aria-labelledby="imprint-h">
+<h2 id="imprint-h">Imprint</h2>
+<dl class="l-dl">
+<dt>Company</dt><dd>Zurich-Airport Limousinen Services GmbH</dd>
+<dt>Legal form</dt><dd>Gesellschaft mit beschränkter Haftung (GmbH)</dd>
+<dt>Address</dt><dd>Am Balsberg 36<br>8302 Kloten<br>Switzerland</dd>
+<dt>Telephone</dt><dd><a href="{{ phoneHref }}">{{ dispatchPhone }}</a></dd>
+<dt>Email</dt><dd><a href="mailto:info@z-als.ch">info@z-als.ch</a></dd>
+<dt>Bank account</dt><dd><span translate="no">Zurich-A.L.S GmbH · IBAN CH72 0027 8278 1373 9201 F</span></dd>
+<dt>Trading since</dt><dd>2004</dd>
+<dt>GmbH registered</dt><dd>2014</dd>
+<dt>Responsible for content</dt><dd>Zurich-Airport Limousinen Services GmbH</dd>
+</dl>
+<h3>Liability for content</h3>
+<p>The content of this website is compiled with care. Rates, distances and drive times are published in good faith. Fares shown online are fixed only where the booking form says so; every other route is quoted personally, and that written quote is what binds us.</p>
+<h3>Liability for links</h3>
+<p>This website links to external sites over whose content we have no control. We are not responsible for the content of any linked site.</p>
+<h3>Copyright</h3>
+<p>The content and structure of this website are protected by copyright. Reproduction requires the prior written consent of Zurich-Airport Limousinen Services GmbH.</p>
+</section>
+
+<section class="l-doc" id="privacy" aria-labelledby="privacy-h">
+<h2 id="privacy-h">Privacy</h2>
+<p class="l-updated">Last updated 4 October 2026</p>
+<p>This notice describes what happens to the details you give us through this website. It is written to match what the site actually does. If the site changes, this page changes with it.</p>
+<h3>Who is responsible</h3>
+<p>Zurich-Airport Limousinen Services GmbH, Am Balsberg 36, 8302 Kloten, Switzerland · <a href="mailto:info@z-als.ch">info@z-als.ch</a> · <a href="{{ phoneHref }}">{{ dispatchPhone }}</a></p>
+<h3>What you choose to send</h3>
+<p>There is no account, login or profile. When you request a quote or book a ride, the booking form collects:</p>
+<ul>
+<li>Your name, phone number and email address.</li>
+<li>The journey: pick-up and destination, date and time, flight number, passengers, luggage, vehicle class and the fare shown.</li>
+<li>Anything you write in the free-text notes field.</li>
+</ul>
+<p>The contact form sends your name, email address, phone number (if you give one), subject and message to our dispatch by email. The website keeps no copy.</p>
+<h3>Why we hold it</h3>
+<p>To answer your enquiry, confirm your booking and carry out the transport you ask for: steps taken at your request before a contract, and the performance of that contract. We do not use your details for marketing, and we do not sell or share them for advertising.</p>
+<h3>Who processes it</h3>
+<ul>
+<li><strong>Resend</strong> (Resend, Inc., USA) delivers the booking emails: a copy of your booking to our dispatch, and a confirmation to the email address you give. It also delivers the messages you send with the contact form, to our dispatch only.</li>
+<li><strong>WhatsApp</strong> (Meta Platforms Ireland Ltd). If you choose to book via WhatsApp, the site opens a chat prefilled with your booking; it is sent only if you tap Send.</li>
+<li><strong>Stripe</strong> (Stripe Payments Europe Ltd). If you pay online by card or TWINT, you pay on Stripe’s own checkout page. Your card details go to Stripe and never reach our server; we receive the payment status and amount.</li>
+<li><strong>Mapbox</strong> (Mapbox, Inc., USA). While you type a pick-up or destination address, the letters you type are sent through our server to Mapbox to suggest matching addresses. When a trip neither starts nor ends at Zürich Airport, the pick-up and destination are also sent to Mapbox to measure the road distance for the fare. Your IP address is not passed on.</li>
+<li><strong>Google Tag Manager and Google Analytics</strong> (Google Ireland Ltd; Google LLC, USA). Only if you accept analytics in the banner, we measure which pages are visited, how visitors reach the site and how far they get in the booking form, to improve the site. Google then receives your IP address and browser details and sets the cookies <code>_ga</code> and <code>_ga_*</code>. The events we send never contain your name, contact details or the text you type. Before you choose, and if you decline, no analytics cookies are set; because the Tag Manager script itself loads from Google, Google’s servers still see your IP address, as with any embedded resource.</li>
+<li><strong>Unsplash</strong> (Unsplash Inc., Canada). Some photographs load from its servers, which therefore receive your IP address and browser details, as with any website you visit. The typefaces are served from this site.</li>
+</ul>
+<p>Some of these providers process data outside Switzerland, including in the United States, under their contractual data-protection safeguards.</p>
+<h3>Cookies and analytics</h3>
+<p>The site sets no advertising or marketing cookies. The analytics cookies <code>_ga</code> and <code>_ga_*</code> (up to two years) are set only after you accept analytics in the banner, and you can change your mind at any time with “Cookie settings” in the page footer. It keeps three things in your own browser: your language choice (<code>zals-lang</code>), so the site opens in the same language next time; your analytics choice (<code>zals-consent</code>, kept for 12 months); and, only while you pay online, your booking in this tab’s session storage, so the form can show it again when you return from Stripe. Closing the tab clears the last one.</p>
+<h3>How long we keep it</h3>
+<p>Booking emails and messages are kept as long as needed to handle the enquiry and any resulting booking. Records that become part of a booking are kept for as long as Swiss accounting law requires. Our web server keeps no copy of the form. Analytics data is kept in Google Analytics for the period set there, at most 14 months.</p>
+<h3>Your rights</h3>
+<p>You can ask us for a copy of what we hold about you, ask us to correct it, or ask us to delete it. You can withdraw your analytics consent at any time with “Cookie settings” in the page footer. Write to <a href="mailto:info@z-als.ch">info@z-als.ch</a> and we will respond. In Switzerland you may complain to the Federal Data Protection and Information Commissioner (FDPIC); in the EU or EEA, to your national supervisory authority.</p>
+<h3>Security</h3>
+<p>The site is served over HTTPS only. Card and TWINT payments are handled entirely by Stripe.</p>
+</section>
+
+<section class="l-doc" id="terms" aria-labelledby="terms-h">
+<h2 id="terms-h">Terms</h2>
+<p class="l-updated">Last updated 26 September 2026</p>
+<h3>1. Who these terms are with</h3>
+<p>These terms govern transport services provided by Zurich-Airport Limousinen Services GmbH, Am Balsberg 36, 8302 Kloten, Switzerland.</p>
+<h3>2. Quotes and bookings</h3>
+<p>Trips from or to Zürich Airport, and between any two addresses up to 320 km by road, are shown as fixed fares in the booking form. Longer routes, and hourly hire, are shown as estimates and confirmed personally by our dispatch. A booking paid online by card or TWINT is confirmed once the payment succeeds. A booking made via WhatsApp, or to be paid to the chauffeur, is confirmed when our dispatch confirms it to you.</p>
+<h3>3. How the fare is calculated</h3>
+<p>A transfer is charged per kilometre at the rate for the vehicle class booked, and never falls below that class’s minimum fare. Hourly hire is charged per hour at the class rate, for at least {{ minHours }} hours. Value added tax at {{ vatPct }}% is added and shown as its own line. The rates below are net of VAT. Passenger insurance is included.</p>
+<div class="l-rates" role="table" aria-label="Rates by vehicle class, CHF, net of VAT">
+<div class="l-row l-head" role="row"><span role="columnheader">Class</span><span role="columnheader">Per km</span><span role="columnheader">Minimum</span><span role="columnheader">Per hour</span></div>
+<sc-for each="{{ rates }}" as="r"><div class="l-row" role="row"><span role="rowheader">{{ r.name }}</span><span role="cell">{{ r.km }}</span><span role="cell">{{ r.min }}</span><span role="cell">{{ r.hr }}</span></div></sc-for>
+</div>
+<p>Collections from Basel and Geneva, long-distance and cross-border journeys are quoted per route, with tolls, night hours and driver rest named in the quote.</p>
+<h3>4. What the fare includes</h3>
+<ul>
+<li>Waiting, luggage handling, tolls and the Swiss motorway vignette.</li>
+<li>Child seats, fitted before the journey, at no charge.</li>
+<li>Sixty minutes of waiting after landing on airport arrivals.</li>
+</ul>
+<p>Nothing in this list is added to the invoice afterwards.</p>
+<h3>5. Flight monitoring and delays</h3>
+<p>Where you give us a flight number, we track the inbound flight and move the pick-up time with it at no charge. Waiting beyond the included sixty minutes is charged pro rata at the hourly rate for the class booked, and only after we have contacted you.</p>
+<h3>6. Changes and cancellation</h3>
+<p>To change or cancel a booking, contact our dispatch by phone, WhatsApp or email as early as possible. Any cancellation charge is stated when your booking is confirmed.</p>
+<h3>7. Payment</h3>
+<p>You can pay online by card or TWINT through Stripe, or pay the chauffeur on the day. Corporate and contract clients are invoiced monthly, with agreed payment terms.</p>
+<h3>8. Passengers, luggage and conduct</h3>
+<p>Vehicles are booked by class, not by registration; we supply the stated model or an equivalent. The chauffeur may decline a load that exceeds the vehicle’s safe capacity. Pets and bulky sports luggage are carried where notified in advance.</p>
+<h3>9. Liability</h3>
+<p>Passengers are covered by the passenger insurance included in every fare. We are not liable for consequential loss arising from delays outside our control, including weather, road closures and air-traffic disruption.</p>
+<h3>10. Governing law</h3>
+<p>Swiss law applies. The place of jurisdiction is Kloten, Switzerland.</p>
+</section>
+</div>
+</main>
+
+<dc-import name="SiteFooter v3" hint-size="100%,640px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:4200},&quot;dispatchPhone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+41 76 272 0909&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+/* Imprint, privacy and terms. The rate card reads public/js/fares.js, so it can't drift from the prices the booking form charges. */
+class Component extends DCLogic {
+  renderVals() {
+    const { TARIFF, VAT, MIN_HOURS, CARS } = window.ZALS;
+    const phone = this.props.dispatchPhone ?? '+41 76 272 0909';
+    const chf = n => 'CHF ' + Number(n).toFixed(2);
+    return {
+      dispatchPhone: phone,
+      phoneHref: 'tel:' + String(phone).replace(/[^+0-9]/g, ''),
+      minHours: MIN_HOURS,
+      vatPct: String(+(VAT * 100).toFixed(1)),
+      rates: CARS.filter(c => TARIFF[c.key]).map(c => ({ name: c.name, km: chf(TARIFF[c.key].km), min: chf(TARIFF[c.key].min), hr: chf(TARIFF[c.key].hr) }))
+    };
+  }
+}
+</script>
+</body>
+</html>

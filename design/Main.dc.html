@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preload" as="image" href="assets/fleet/hero-s-class-1600.webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0;padding:0;background:#01050B;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#FFFFFF;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#7E9BD4}
+:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+[data-reveal]{opacity:0;transform:translateY(16px);transition:opacity 520ms cubic-bezier(.2,.6,.2,1),transform 520ms cubic-bezier(.2,.6,.2,1)}
+@keyframes zRise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+@keyframes zFade{from{opacity:0}to{opacity:1}}
+@keyframes zFare{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:1ms !important;transition-duration:1ms !important}[data-reveal]{opacity:1;transform:none}}
+@media (max-width:900px){
+[data-m="hero-grid"]{grid-template-columns:1fr !important}
+[data-m="stat-row"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[data-m="routes-grid"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[data-m="fleet-grid"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[data-m="steps-grid"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[data-m="bento"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[data-m="bento"] > [data-bento="hero"],[data-m="bento"] > [data-bento="wide"]{grid-column:1 / -1 !important;grid-row:auto !important}
+[data-m="bento"] > [data-bento="hero"]{min-height:320px !important}
+}
+@media (max-width:760px){
+[data-m="bento"]{grid-template-columns:1fr !important}
+[data-m="bento"] > a{grid-column:auto !important;grid-row:auto !important;min-height:0 !important}
+[data-m="bento-vip"]{grid-template-columns:1fr !important}
+}
+@media (max-width:760px){
+[data-m="routes-grid"]{grid-template-columns:1fr !important}
+[data-m="fleet-grid"]{grid-template-columns:1fr !important}
+[data-m="steps-grid"]{grid-template-columns:1fr !important}
+[data-m="stat-row"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+[data-m="promo-grid"]{grid-template-columns:1fr !important}
+[data-m="cta-row"]{flex-direction:column !important;align-items:stretch !important;width:100%}
+[data-m="cta-row"] > a{justify-content:center !important}
+[data-m="hero-pad"]{padding-top:118px !important;padding-bottom:36px !important}
+[data-m="pax-row"]{grid-template-columns:1fr !important}
+[data-m="date-grid"]{grid-template-columns:repeat(2,minmax(0,1fr)) !important}
+}
+@media (max-width:400px){
+[data-m="trip-tabs"]{flex-wrap:wrap !important}
+[data-m="trip-tabs"] > button{flex:1 1 45% !important;border-radius:10px !important}
+}
+</style>
+</helmet>
+
+<div style="width:100%;background:#01050B;font-family:Manrope,system-ui,sans-serif;color:#FFFFFF;overflow-x:clip">
+
+<dc-import name="SiteHeader v3" active="home" hint-size="100%,87px"></dc-import>
+<main>
+
+<section data-screen-label="Hero" id="hero-form" style="position:relative;margin-top:-87px;background:#01050B;overflow:hidden">
+<img src="assets/fleet/hero-s-class-1600.webp" width="1600" height="1067" fetchpriority="high" alt="Black Mercedes-Benz S-Class parked at the kerb" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% 60%;filter:saturate(0.7) contrast(1.06) brightness(0.55)">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(1,5,11,0.94) 0%,rgba(5,13,28,0.78) 42%,rgba(1,5,11,0.62) 100%)"></div>
+<div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(90% 70% at 8% 18%,rgba(93,125,183,0.26) 0%,rgba(93,125,183,0) 60%)"></div>
+
+<div data-m="hero-pad" style="position:relative;max-width:1400px;margin:0 auto;padding:clamp(140px,13vw,190px) clamp(20px,4vw,56px) 0">
+<div data-m="hero-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(36px,5vw,72px);align-items:start">
+
+<div style="min-width:0">
+<div style="display:flex;align-items:center;gap:14px;animation:zRise 520ms cubic-bezier(.2,.6,.2,1) both 60ms">
+<span style="display:block;width:30px;height:1px;background:#5D7DB7"></span>
+<h1 style="margin:0;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Zurich Airport limousine &amp; chauffeur service</h1>
+</div>
+
+<p style="margin:24px 0 0;max-width:17ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(42px,6.4vw,88px);line-height:1;letter-spacing:-0.03em;color:#FFFFFF;text-wrap:balance;animation:zRise 640ms cubic-bezier(.2,.6,.2,1) both 140ms">The car is already <span style="color:#7E9BD4">at the kerb.</span></p>
+
+<p style="margin:26px 0 0;max-width:50ch;font-size:clamp(16px,1.2vw,19px);line-height:1.62;color:rgba(255,255,255,0.76);text-wrap:pretty;animation:zRise 640ms cubic-bezier(.2,.6,.2,1) both 240ms">Chauffeured Zurich airport transfers, with pick-ups from Basel and Geneva too, then on to anywhere in Switzerland and across Central Europe. Your flight is monitored, your chauffeur waits inside arrivals, and the fare is agreed before you board.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:12px 34px;margin-top:36px;animation:zRise 640ms cubic-bezier(.2,.6,.2,1) both 340ms">
+<div style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg><span style="font-size:14px;color:rgba(255,255,255,0.82)">Fixed fare, agreed up front</span></div>
+<div style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg><span style="font-size:14px;color:rgba(255,255,255,0.82)">60 minutes waiting included</span></div>
+<div style="display:flex;align-items:center;gap:10px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.4-.2c.4-.3.6-.7.6-1.2z"></path></svg><span style="font-size:14px;color:rgba(255,255,255,0.82)">Flight numbers monitored</span></div>
+</div>
+</div>
+
+<div style="min-width:0;animation:zRise 700ms cubic-bezier(.2,.6,.2,1) both 300ms">
+<form onSubmit="{{ onSubmit }}" style="position:relative;background:rgba(10,23,48,0.86);backdrop-filter:blur(16px);border:1px solid rgba(125,155,212,0.28);box-shadow:0 24px 60px rgba(1,5,11,0.5);border-radius:16px;overflow:hidden">
+
+<div data-m="trip-tabs" style="display:flex;gap:2px;padding:16px 20px 0">
+<button type="button" onClick="{{ setOneway }}" style="appearance:none;flex:1;min-height:40px;border:1px solid {{ owBorder }};background:{{ owBg }};color:{{ owFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:10px 0 0 10px">One way</button>
+<button type="button" onClick="{{ setRoundtrip }}" style="appearance:none;flex:1;min-height:40px;border:1px solid {{ rtBorder }};border-left:0;border-right:0;background:{{ rtBg }};color:{{ rtFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer">Round trip</button>
+<button type="button" onClick="{{ setHourly }}" style="appearance:none;flex:1;min-height:40px;border:1px solid {{ hrBorder }};background:{{ hrBg }};color:{{ hrFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:0 10px 10px 0">Hourly</button>
+</div>
+
+<div data-hero-field="pickup" style="padding:16px 20px 4px;position:relative">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Pick-up</span>
+<input type="text" value="{{ pickup }}" onChange="{{ onPickup }}" onFocus="{{ focusPickup }}" placeholder="Address, hotel or airport" autocomplete="off" style="display:block;width:100%;margin-top:6px;border:0;border-bottom:1px solid rgba(125,155,212,0.28);background:transparent;padding:0 0 10px;font-family:Manrope,system-ui,sans-serif;font-size:16px;font-weight:500;color:#FFFFFF;min-height:34px">
+<sc-if value="{{ pickupOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:20px;right:20px;top:100%;z-index:20;margin-top:4px;background:#0A1730;border:1px solid rgba(125,155,212,0.3);box-shadow:0 16px 40px rgba(1,5,11,0.5);border-radius:12px;overflow:hidden">
+<button type="button" onClick="{{ pickAirportZRH }}" style="display:flex;width:100%;align-items:center;gap:10px;padding:12px 16px;border:0;background:transparent;color:#FFFFFF;font-size:14px;text-align:left;cursor:pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.6"><path d="M2.5 19h19M12 2v8m0 0-7 5m7-5 7 5"></path></svg>Zürich Airport · ZRH</button>
+<button type="button" onClick="{{ pickAirportBSL }}" style="display:flex;width:100%;align-items:center;gap:10px;padding:12px 16px;border:0;border-top:1px solid rgba(125,155,212,0.16);background:transparent;color:#FFFFFF;font-size:14px;text-align:left;cursor:pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.6"><path d="M2.5 19h19M12 2v8m0 0-7 5m7-5 7 5"></path></svg>Basel Airport · BSL</button>
+<button type="button" onClick="{{ pickAirportGVA }}" style="display:flex;width:100%;align-items:center;gap:10px;padding:12px 16px;border:0;border-top:1px solid rgba(125,155,212,0.16);background:transparent;color:#FFFFFF;font-size:14px;text-align:left;cursor:pointer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.6"><path d="M2.5 19h19M12 2v8m0 0-7 5m7-5 7 5"></path></svg>Geneva Airport · GVA</button>
+<div style="padding:10px 16px;font-size:12px;color:rgba(255,255,255,0.5);border-top:1px solid rgba(125,155,212,0.16)">Or type any address or hotel</div>
+</div>
+</sc-if>
+</div>
+
+<sc-if value="{{ showDest }}" hint-placeholder-val="{{ true }}">
+<div data-hero-field="dest" style="padding:12px 20px 4px;position:relative">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Destination</span>
+<input type="text" value="{{ dest }}" onChange="{{ onDest }}" onFocus="{{ focusDest }}" placeholder="Any city in Switzerland or Central Europe" autocomplete="off" style="display:block;width:100%;margin-top:6px;border:0;border-bottom:1px solid rgba(125,155,212,0.28);background:transparent;padding:0 0 10px;font-family:Manrope,system-ui,sans-serif;font-size:16px;font-weight:500;color:#FFFFFF;min-height:34px">
+<sc-if value="{{ destOpen }}" hint-placeholder-val="{{ false }}">
+<div style="position:absolute;left:20px;right:20px;top:100%;z-index:20;margin-top:4px;max-height:220px;overflow-y:auto;background:#0A1730;border:1px solid rgba(125,155,212,0.3);box-shadow:0 16px 40px rgba(1,5,11,0.5);border-radius:12px">
+<sc-for each="{{ destMatches }}" as="place">
+<button type="button" onClick="{{ place.pick }}" style="display:flex;width:100%;align-items:center;gap:10px;padding:11px 16px;border:0;border-bottom:1px solid rgba(125,155,212,0.14);background:transparent;color:#FFFFFF;font-size:14px;text-align:left;cursor:pointer">{{ place.name }}</button>
+</sc-for>
+<sc-if value="{{ destByMapbox }}" hint-placeholder-val="{{ false }}"><div style="padding:10px 16px;font-size:12px;color:rgba(255,255,255,0.5)">Address search by Mapbox</div></sc-if>
+</div>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{ showDuration }}" hint-placeholder-val="{{ false }}">
+<div style="padding:12px 20px 4px">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Duration</span>
+<div style="display:flex;align-items:center;gap:14px;margin-top:8px">
+<button type="button" onClick="{{ decHours }}" aria-label="Fewer hours" style="appearance:none;width:34px;height:34px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:18px;line-height:1;cursor:pointer;border-radius:8px">−</button>
+<span style="min-width:64px;text-align:center;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:16px">{{ hoursLabel }}</span>
+<button type="button" onClick="{{ incHours }}" aria-label="More hours" style="appearance:none;width:34px;height:34px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:18px;line-height:1;cursor:pointer;border-radius:8px">+</button>
+</div>
+<span style="display:block;margin-top:8px;font-size:12px;line-height:1.5;color:rgba(255,255,255,0.5)">Minimum 4 hours. Long-distance roadshows: route and hours confirmed by dispatch.</span>
+</div>
+</sc-if>
+
+<div data-m="date-grid" style="display:grid;grid-template-columns:{{ dateColTemplate }};gap:0;margin-top:8px">
+<label style="display:flex;flex-direction:column;gap:6px;padding:12px 20px 14px;border-top:1px solid rgba(125,155,212,0.18);border-right:1px solid rgba(125,155,212,0.18);min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Date</span>
+<input type="date" value="{{ date }}" min="{{ today }}" onChange="{{ onDate }}" style="width:100%;border:0;background:transparent;padding:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#FFFFFF;color-scheme:dark;min-height:40px">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;padding:12px 20px 14px;border-top:1px solid rgba(125,155,212,0.18);min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Time</span>
+<input type="time" value="{{ time }}" onChange="{{ onTime }}" style="width:100%;border:0;background:transparent;padding:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#FFFFFF;color-scheme:dark;min-height:40px">
+</label>
+<sc-if value="{{ isRoundtrip }}" hint-placeholder-val="{{ false }}">
+<label style="display:flex;flex-direction:column;gap:6px;padding:12px 20px 14px;border-top:1px solid rgba(125,155,212,0.18);border-right:1px solid rgba(125,155,212,0.18);min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Return date</span>
+<input type="date" value="{{ returnDate }}" min="{{ returnMin }}" onChange="{{ onReturnDate }}" style="width:100%;border:0;background:transparent;padding:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#FFFFFF;color-scheme:dark;min-height:40px">
+</label>
+<label style="display:flex;flex-direction:column;gap:6px;padding:12px 20px 14px;border-top:1px solid rgba(125,155,212,0.18);min-width:0">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Return time</span>
+<input type="time" value="{{ returnTime }}" onChange="{{ onReturnTime }}" style="width:100%;border:0;background:transparent;padding:0;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#FFFFFF;color-scheme:dark;min-height:40px">
+</label>
+</sc-if>
+</div>
+
+<div data-m="pax-row" style="display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid rgba(125,155,212,0.18)">
+<div style="display:flex;flex-direction:column;gap:8px;padding:12px 20px 14px;border-right:1px solid rgba(125,155,212,0.18)">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Passengers</span>
+<div style="display:flex;align-items:center;gap:12px">
+<button type="button" onClick="{{ decPax }}" aria-label="Fewer passengers" style="appearance:none;width:30px;height:30px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:16px;line-height:1;cursor:pointer;border-radius:8px">−</button>
+<span style="min-width:16px;text-align:center;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px">{{ pax }}</span>
+<button type="button" onClick="{{ incPax }}" aria-label="More passengers" style="appearance:none;width:30px;height:30px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:16px;line-height:1;cursor:pointer;border-radius:8px">+</button>
+</div>
+</div>
+<div style="display:flex;flex-direction:column;gap:8px;padding:12px 20px 14px">
+<span style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">Luggage</span>
+<div style="display:flex;align-items:center;gap:12px">
+<button type="button" onClick="{{ decLuggage }}" aria-label="Fewer bags" style="appearance:none;width:30px;height:30px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:16px;line-height:1;cursor:pointer;border-radius:8px">−</button>
+<span style="min-width:16px;text-align:center;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px">{{ luggage }}</span>
+<button type="button" onClick="{{ incLuggage }}" aria-label="More bags" style="appearance:none;width:30px;height:30px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;font-size:16px;line-height:1;cursor:pointer;border-radius:8px">+</button>
+</div>
+</div>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;padding:18px 20px 20px;border-top:1px solid rgba(125,155,212,0.18)">
+<div style="min-width:0">
+<div style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:rgba(255,255,255,0.66)">{{ fareLabel }}</div>
+<div style="margin-top:8px;min-height:26px">{{ fareEl }}</div>
+</div>
+<button type="submit" style="appearance:none;flex:1 1 190px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;border:0;background:#5D7DB7;color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.03em;cursor:pointer;transition:background 180ms ease-out,transform 120ms ease-out;border-radius:12px" style-hover="background:#7E9BD4;color:#0A1730" style-active="transform:translateY(1px)">Choose your car →</button>
+<a href="{{ waHref }}" target="_blank" rel="noopener noreferrer" style="flex:1 1 190px;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 24px;background:#25D366;color:#01050B;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:700;letter-spacing:0.03em;text-decoration:none;transition:background 180ms ease-out,transform 120ms ease-out;border-radius:12px" style-hover="background:#3BE07A;color:#01050B;text-decoration:none" style-active="transform:translateY(1px)"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 32 32" fill="currentColor"><path d="M16.03 4.5c-6.35 0-11.5 5.15-11.5 11.5 0 2.03.53 4.02 1.55 5.77L4.5 27.5l5.9-1.55a11.47 11.47 0 0 0 5.63 1.46h.01c6.34 0 11.49-5.15 11.49-11.5 0-3.07-1.2-5.96-3.37-8.13A11.42 11.42 0 0 0 16.03 4.5Zm0 21.02h-.01a9.55 9.55 0 0 1-4.86-1.33l-.35-.2-3.5.92.93-3.41-.23-.36a9.53 9.53 0 0 1-1.46-5.09c0-5.27 4.29-9.56 9.57-9.56 2.56 0 4.96 1 6.76 2.81a9.5 9.5 0 0 1 2.8 6.76c0 5.28-4.29 9.46-9.65 9.46Zm5.25-7.13c-.29-.15-1.79-.88-2.07-.98-.28-.1-.48-.15-.68.15-.2.29-.78.98-.96 1.18-.18.2-.35.22-.64.07-.29-.14-1.23-.45-2.34-1.44a8.8 8.8 0 0 1-1.62-2.02c-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.53.14-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.68-1.65-.93-2.25-.24-.59-.49-.5-.68-.51h-.58c-.2 0-.51.07-.78.36-.27.29-1.03 1-1.03 2.45 0 1.44 1.05 2.83 1.2 3.03.15.19 2.06 3.14 4.98 4.29.7.3 1.24.48 1.67.61.71.23 1.35.2 1.86.12.57-.09 1.79-.73 2.04-1.44.25-.7.25-1.31.18-1.43-.07-.13-.27-.2-.56-.35Z"></path></svg>Continue on WhatsApp</a>
+</div>
+<div aria-live="polite" style="padding:0 20px 20px;font-size:12px;line-height:1.55;color:rgba(255,255,255,0.64)">{{ note }}</div>
+</form>
+</div>
+</div>
+
+<div data-m="stat-row" style="position:relative;margin-top:clamp(40px,5vw,64px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:0 clamp(24px,3vw,52px);border-top:1px solid rgba(125,155,212,0.2)">
+<div style="padding:26px 0 clamp(48px,6vw,72px)">
+<div style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:clamp(26px,2.6vw,34px);line-height:1;color:#FFFFFF">3</div>
+<div style="margin-top:10px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Airports we collect from</div>
+<div style="margin-top:6px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,0.66)">ZRH · BSL · GVA</div>
+</div>
+<div style="padding:26px 0 clamp(48px,6vw,72px)">
+<div style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:clamp(26px,2.6vw,34px);line-height:1;color:#FFFFFF">5</div>
+<div style="margin-top:10px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Countries we drop off in</div>
+<div style="margin-top:6px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,0.66)">CH · IT · FR · DE · AT</div>
+</div>
+<div style="padding:26px 0 clamp(48px,6vw,72px)">
+<div style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:clamp(26px,2.6vw,34px);line-height:1;color:#FFFFFF">2004</div>
+<div style="margin-top:10px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Driving since</div>
+<div style="margin-top:6px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,0.66)">Kloten, Zürich</div>
+</div>
+<div style="padding:26px 0 clamp(48px,6vw,72px)">
+<div style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:clamp(26px,2.6vw,34px);line-height:1;color:#FFFFFF">24 / 7</div>
+<div style="margin-top:10px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Dispatch answered live</div>
+<div style="margin-top:6px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,0.66)">{{ dispatchPhone }}</div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Trust" style="background:#FFFFFF;color:#0A1730;padding:clamp(44px,5vw,72px) 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:clamp(20px,2.4vw,36px)">
+<div style="display:flex;gap:14px;padding-top:20px;border-top:1px solid #CFDAEB">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A6AA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600">Swiss-registered operator</span><span style="display:block;margin-top:6px;font-size:14px;line-height:1.55;color:#3B506F;text-wrap:pretty">Zurich-Airport Limousinen Services GmbH, Am Balsberg 36, Kloten — trading since 2004.</span></span>
+</div>
+<div style="display:flex;gap:14px;padding-top:20px;border-top:1px solid #CFDAEB">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A6AA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><rect width="20" height="14" x="2" y="5" rx="2"></rect><path d="M2 10h20"></path></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600">Fixed fares, costs inside</span><span style="display:block;margin-top:6px;font-size:14px;line-height:1.55;color:#3B506F;text-wrap:pretty">Waiting, luggage, tolls and vignette sit inside the quoted figure. Distance and 8.1% VAT are billed as separate lines. No card kept on file.</span></span>
+</div>
+<div style="display:flex;gap:14px;padding-top:20px;border-top:1px solid #CFDAEB">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A6AA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.4-.2c.4-.3.6-.7.6-1.2z"></path></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600">Flights watched, waiting included</span><span style="display:block;margin-top:6px;font-size:14px;line-height:1.55;color:#3B506F;text-wrap:pretty">We follow the flight number and hold the car for 60 minutes after landing at no charge.</span></span>
+</div>
+<div style="display:flex;gap:14px;padding-top:20px;border-top:1px solid #CFDAEB">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4A6AA6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex:none;margin-top:2px"><path d="m5 8 6 6"></path><path d="m4 14 6-6 3-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600">Four languages on the road</span><span style="display:block;margin-top:6px;font-size:14px;line-height:1.55;color:#3B506F;text-wrap:pretty">German, English, French and Italian — in the car and on the dispatch line, 24 / 7.</span></span>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Popular routes" style="background:#050D1C;color:#FFFFFF;padding:clamp(72px,8vw,124px) 0;border-top:1px solid rgba(125,155,212,0.2)">
+<div style="max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+<div data-reveal="0" style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;padding-bottom:clamp(30px,4vw,48px)">
+<div>
+<div style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Popular routes</div>
+<h2 style="margin:16px 0 0;max-width:20ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(30px,4vw,52px);line-height:1.06;letter-spacing:-0.025em;text-wrap:balance">Where would you like <span style="color:#7E9BD4">to land?</span></h2>
+</div>
+<p style="margin:0;max-width:36ch;font-size:15px;line-height:1.6;color:rgba(255,255,255,0.68)">Fixed fares from Zürich Airport, published up front. Distance and 8.1% VAT are billed as separate lines — no surge, no surprise.</p>
+</div>
+
+<div data-m="routes-grid" data-reveal="1" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:rgba(125,155,212,0.18);border:1px solid rgba(125,155,212,0.18);border-radius:16px;overflow:hidden">
+<a href="#hero-form" onClick="{{ pickRouteZurich }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1515488764276-beab7607c1e6?w=900&amp;q=80" alt="Zürich old town along the Limmat" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → ZÜRICH CITY</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 120.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">13 km · 15 min · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-basel" onClick="{{ pickRouteBasel }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1657123793819-698e5ebf1823?w=900&amp;q=80" alt="Bridge over the Rhine in Basel" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → BASEL</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 540.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">90 km · 1h05 · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-bern" onClick="{{ pickRouteBern }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1723006273476-ead2eda4cbc9?w=900&amp;q=80" alt="Bern old town above the Aare" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → BERN</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 810.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">135 km · 1h35 · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-lucerne" onClick="{{ pickRouteLuzern }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1565182242096-16033e7f1260?w=900&amp;q=80" alt="Lucerne water tower on the Reuss" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → LUZERN</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 408.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">68 km · 55 min · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-interlaken" onClick="{{ pickRouteInterlaken }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1506351487281-fd19470d8bf4?w=900&amp;q=80" alt="Interlaken between its two lakes" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → INTERLAKEN</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 990.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">165 km · 2h00 · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-davos" onClick="{{ pickRouteDavos }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1587952134350-d10487bc1c37?w=900&amp;q=80" alt="Davos in its alpine valley" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → DAVOS</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 960.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">160 km · 2h10 · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-st-moritz" onClick="{{ pickRouteStMoritz }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1547980562-3c008cd4b769?w=900&amp;q=80" alt="St. Moritz in winter snow" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → ST. MORITZ</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 1 290.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">215 km · 2h55 · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+<a href="/en/transfers/zurich-airport-to-zermatt" onClick="{{ pickRouteZermatt }}" style="display:flex;flex-direction:column;gap:14px;padding:24px;background:#0A1730;text-decoration:none;color:#FFFFFF;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none;color:#FFFFFF">
+<span style="display:block;margin:-24px -24px 4px;aspect-ratio:16 / 10;overflow:hidden;background:#050D1C"><img src="https://images.unsplash.com/photo-1571274834067-3a24675547b4?w=900&amp;q=80" alt="Zermatt village below the Matterhorn" loading="lazy" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.85) brightness(0.9)"></span>
+<span style="font-size:11px;font-weight:600;letter-spacing:0.05em;color:#7E9BD4">ZRH → ZERMATT</span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;color:#FFFFFF">CHF 1 500.00</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.6)">250 km · 2h40 · + 8.1% VAT</span>
+<span style="margin-top:auto;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">Request this route →</span>
+</a>
+</div>
+<p style="margin:24px 0 0"><a href="/en/transfers" style="display:inline-flex;align-items:center;min-height:44px;font-size:13px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF;text-decoration:underline;text-underline-offset:4px">All routes and fares from Zürich Airport →</a></p>
+<p style="margin:12px 0 0;font-size:12px;color:rgba(255,255,255,0.5)">Business-class fare shown for 1–3 passengers. Basel and Geneva pickups, and every other Swiss or cross-border destination, are quoted per route by dispatch.</p>
+</div>
+</section>
+
+<section data-screen-label="Corporate promo" style="position:relative;background:#01050B">
+<div style="position:relative;width:100%;min-height:clamp(360px,42vw,520px);display:flex;align-items:center">
+<img src="https://images.unsplash.com/photo-1610099610040-ab19f3a5ec35?w=1600&amp;q=80" alt="Black Mercedes S-Class parked outside a business district building" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(0.6) contrast(1.05) brightness(0.4)">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(1,5,11,0.92) 0%,rgba(1,5,11,0.5) 55%,rgba(1,5,11,0.72) 100%)"></div>
+<div data-m="promo-grid" style="position:relative;max-width:1400px;width:100%;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,360px),1fr));gap:32px;align-items:end">
+<div>
+<div style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Corporate &amp; standing accounts</div>
+<h2 style="margin:16px 0 0;max-width:16ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(28px,3.6vw,46px);line-height:1.08;letter-spacing:-0.02em;color:#FFFFFF;text-wrap:balance">The car stays with you.</h2>
+</div>
+<div>
+<p style="margin:0;max-width:46ch;font-size:16px;line-height:1.64;color:rgba(255,255,255,0.82);text-wrap:pretty">Board meetings, roadshows, alpine runs and events anywhere in Switzerland or across the border — the same car and chauffeur for the whole day. Repeat corporate accounts, private clients and standing airport contracts, since 2004.</p>
+<div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:24px">
+<a href="#hero-form" style="display:inline-flex;align-items:center;min-height:50px;padding:0 26px;background:#5D7DB7;color:#FFFFFF;font-size:12px;font-weight:600;letter-spacing:0.03em;text-decoration:none;border-radius:12px" style-hover="background:#7E9BD4;color:#0A1730;text-decoration:none">Ask about a standing arrangement</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Fleet" id="fleet" style="background:#FFFFFF;color:#0A1730;padding:clamp(72px,8vw,124px) 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;padding-bottom:clamp(24px,3vw,36px)">
+<div>
+<div style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:#4A6AA6">The fleet</div>
+<h2 style="margin:16px 0 0;max-width:24ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(32px,4.4vw,60px);line-height:1.04;letter-spacing:-0.025em;text-wrap:balance">Five cars, one <span style="color:#4A6AA6">standard of quiet</span></h2>
+<p style="margin:18px 0 0;max-width:52ch;font-size:16px;line-height:1.64;color:#3B506F;text-wrap:pretty">Luxury Mercedes limousines, vans and SUVs, always with a professional chauffeur: choose the class that fits your group and your luggage.</p>
+</div>
+<a href="Z-ALS%20Fleet.dc.html" style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:#0A1730;text-decoration:none;border-bottom:1px solid #0A1730;padding-bottom:4px;min-height:44px;display:inline-flex;align-items:flex-end" style-hover="color:#4A6AA6;border-color:#4A6AA6;text-decoration:none">Full fleet &amp; rates →</a>
+</div>
+
+<div style="display:flex;flex-wrap:wrap;gap:10px;padding-bottom:clamp(28px,3vw,40px)">
+<button type="button" onClick="{{ setFilterAll }}" style="appearance:none;height:38px;padding:0 18px;border:1px solid {{ filterAllBorder }};background:{{ filterAllBg }};color:{{ filterAllFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:100px">All classes</button>
+<button type="button" onClick="{{ setFilterBusiness }}" style="appearance:none;height:38px;padding:0 18px;border:1px solid {{ filterBusinessBorder }};background:{{ filterBusinessBg }};color:{{ filterBusinessFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:100px">Business</button>
+<button type="button" onClick="{{ setFilterPremium }}" style="appearance:none;height:38px;padding:0 18px;border:1px solid {{ filterPremiumBorder }};background:{{ filterPremiumBg }};color:{{ filterPremiumFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:100px">Premium</button>
+<button type="button" onClick="{{ setFilterSUV }}" style="appearance:none;height:38px;padding:0 18px;border:1px solid {{ filterSUVBorder }};background:{{ filterSUVBg }};color:{{ filterSUVFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:100px">SUV</button>
+<button type="button" onClick="{{ setFilterVan }}" style="appearance:none;height:38px;padding:0 18px;border:1px solid {{ filterVanBorder }};background:{{ filterVanBg }};color:{{ filterVanFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:100px">Business Van</button>
+<button type="button" onClick="{{ setFilterElectric }}" style="appearance:none;height:38px;padding:0 18px;border:1px solid {{ filterElectricBorder }};background:{{ filterElectricBg }};color:{{ filterElectricFg }};font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.02em;cursor:pointer;border-radius:100px">Electric</button>
+</div>
+
+<div data-m="fleet-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:clamp(20px,2.4vw,36px)">
+<a href="Z-ALS%20Fleet.dc.html#business" style="display:{{ dispBusiness }};flex-direction:column;text-decoration:none;color:#0A1730;transition:transform 220ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-4px);text-decoration:none;color:#0A1730">
+<div style="width:100%;aspect-ratio:4 / 3;border:1px solid #CFDAEB;overflow:hidden;border-radius:16px"><img src="https://z-als.ch/wp-content/uploads/2017/11/Business-Class.webp" alt="Mercedes E-Class" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75)"></div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:20px;padding-bottom:14px;border-bottom:1px solid #CFDAEB">
+<h3 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;letter-spacing:-0.02em">Business</h3>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#4A6AA6;text-align:right;white-space:nowrap;line-height:1.5">CHF 6.00 / km<br>CHF 120 / hr</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:14px;font-size:13px;letter-spacing:0.01em;color:#4A6180"><span>Mercedes E-Class or equivalent</span><span>3 seats</span><span>3 cases</span></div>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#premium" style="display:{{ dispPremium }};flex-direction:column;text-decoration:none;color:#0A1730;transition:transform 220ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-4px);text-decoration:none;color:#0A1730">
+<div style="width:100%;aspect-ratio:4 / 3;border:1px solid #CFDAEB;overflow:hidden;border-radius:16px"><img src="https://z-als.ch/wp-content/uploads/2017/11/Premier-Class.webp" alt="Mercedes S-Class" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75)"></div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:20px;padding-bottom:14px;border-bottom:1px solid #CFDAEB">
+<h3 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;letter-spacing:-0.02em">Premium</h3>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#4A6AA6;text-align:right;white-space:nowrap;line-height:1.5">CHF 7.00 / km<br>CHF 130 / hr</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:14px;font-size:13px;letter-spacing:0.01em;color:#4A6180"><span>Mercedes S-Class or equivalent</span><span>3 seats</span><span>rear cabin</span></div>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#suv" style="display:{{ dispSUV }};flex-direction:column;text-decoration:none;color:#0A1730;transition:transform 220ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-4px);text-decoration:none;color:#0A1730">
+<div style="width:100%;aspect-ratio:4 / 3;border:1px solid #CFDAEB;overflow:hidden;border-radius:16px"><img src="assets/fleet/suv.webp" alt="SUV class — black Mercedes-Benz SUV" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75)"></div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:20px;padding-bottom:14px;border-bottom:1px solid #CFDAEB">
+<h3 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;letter-spacing:-0.02em">SUV</h3>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#4A6AA6;text-align:right;white-space:nowrap;line-height:1.5">CHF 7.00 / km<br>CHF 130 / hr</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:14px;font-size:13px;letter-spacing:0.01em;color:#4A6180"><span>Mercedes GLE or equivalent</span><span>4 seats</span><span>4 cases</span></div>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#van" style="display:{{ dispVan }};flex-direction:column;text-decoration:none;color:#0A1730;transition:transform 220ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-4px);text-decoration:none;color:#0A1730">
+<div style="width:100%;aspect-ratio:4 / 3;border:1px solid #CFDAEB;overflow:hidden;border-radius:16px"><img src="https://z-als.ch/wp-content/uploads/2017/11/van.webp" alt="Mercedes V-Class" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75)"></div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:20px;padding-bottom:14px;border-bottom:1px solid #CFDAEB">
+<h3 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;letter-spacing:-0.02em">Business Van</h3>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#4A6AA6;text-align:right;white-space:nowrap;line-height:1.5">CHF 6.00 / km<br>CHF 120 / hr</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:14px;font-size:13px;letter-spacing:0.01em;color:#4A6180"><span>Mercedes V-Class or equivalent</span><span>7 seats</span><span>7 cases</span></div>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#electric" style="display:{{ dispElectric }};flex-direction:column;text-decoration:none;color:#0A1730;transition:transform 220ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-4px);text-decoration:none;color:#0A1730">
+<div style="width:100%;aspect-ratio:4 / 3;border:1px solid #CFDAEB;overflow:hidden;border-radius:16px"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1600&amp;q=80" alt="Fully electric saloon on charge" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75)"></div>
+<div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:20px;padding-bottom:14px;border-bottom:1px solid #CFDAEB">
+<h3 style="margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:26px;line-height:1.1;letter-spacing:-0.02em">Electric</h3>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#4A6AA6;text-align:right;white-space:nowrap;line-height:1.5">CHF 6.00 / km<br>CHF 120 / hr</span>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:8px 20px;padding-top:14px;font-size:13px;letter-spacing:0.01em;color:#4A6180"><span>Fully electric saloon or equivalent</span><span>3 seats</span><span>3 cases</span></div>
+</a>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Services" id="services" style="background:#EEF2F8;color:#0A1730;padding:clamp(72px,8vw,124px) 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+<div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px 40px;padding-bottom:clamp(30px,4vw,52px)">
+<h2 style="margin:0;max-width:22ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(32px,4.4vw,60px);line-height:1.04;letter-spacing:-0.025em;color:#0A1730;text-wrap:balance">Five ways we <span style="color:#4A6AA6">drive for you</span></h2>
+<a href="Z-ALS%20Services.dc.html" style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:#0A1730;text-decoration:none;border-bottom:1px solid #0A1730;padding-bottom:4px;min-height:44px;display:inline-flex;align-items:flex-end" style-hover="color:#4A6AA6;border-color:#4A6AA6;text-decoration:none">Zurich chauffeur service →</a>
+</div>
+
+<div data-m="bento" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));grid-auto-rows:minmax(230px,auto);gap:16px">
+<a href="Z-ALS%20Services.dc.html#transfer" data-bento="hero" style="grid-column:1 / span 2;grid-row:1 / span 2;position:relative;display:flex;flex-direction:column;gap:18px;padding:clamp(28px,3vw,40px);background:#0A1730;border-radius:24px;overflow:hidden;text-decoration:none;color:#FFFFFF;transition:transform 200ms ease-out,background 200ms ease-out" style-hover="background:#0F2142;transform:translateY(-3px);text-decoration:none;color:#FFFFFF">
+<img src="https://images.unsplash.com/photo-1697977054796-f72b37dc37cc?w=1400&amp;q=80" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(0.7) brightness(0.7)">
+<span aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,23,48,0.55) 0%,rgba(10,23,48,0.35) 35%,rgba(10,23,48,0.94) 78%)"></span>
+<span style="position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:16px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;color:#7E9BD4">01 · MOST BOOKED</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:50%;background:#16294D;color:#B9CBEA"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"></path></svg></span>
+</span>
+<span style="position:relative;z-index:1;margin-top:auto;font-family:'Playfair Display',Georgia,serif;font-size:clamp(34px,3.6vw,52px);line-height:1.02;letter-spacing:-0.02em;text-wrap:balance">Airport transfer</span>
+<span style="position:relative;z-index:1;max-width:40ch;font-size:16px;line-height:1.6;color:#B7C6DE">Meet and greet inside arrivals at Zürich, Basel or Geneva. Flight monitored, 60 minutes of waiting included.</span>
+<span style="position:relative;z-index:1;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:20px;border-top:1px solid #22375E">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;color:#FFFFFF">from CHF 120.00 + 8.1% VAT</span>
+<span style="font-size:13px;font-weight:600;letter-spacing:0.03em;color:#B9CBEA">Book a transfer →</span>
+</span>
+</a>
+<a href="Z-ALS%20Services.dc.html#limousine" data-bento="wide" style="grid-column:3 / span 2;display:flex;flex-direction:column;gap:14px;padding:28px;background:#FFFFFF;border:1px solid #CFDAEB;border-radius:24px;text-decoration:none;color:#0A1730;transition:transform 200ms ease-out,border-color 200ms ease-out" style-hover="border-color:#4A6AA6;transform:translateY(-3px);text-decoration:none;color:#0A1730">
+<span style="display:flex;align-items:center;justify-content:space-between;gap:16px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;color:#4A6AA6">02</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#EEF2F8;color:#4A6AA6"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 2"></path></svg></span>
+</span>
+<span style="font-family:'Playfair Display',Georgia,serif;font-size:28px;line-height:1.1;letter-spacing:-0.01em">Limousine by the hour</span>
+<span style="max-width:46ch;font-size:14px;line-height:1.55;color:#3B506F">Board meetings, roadshows, alpine runs and events anywhere in Switzerland or across the border.</span>
+<span style="margin-top:auto;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#0A1730">from CHF 120 / hr + 8.1% VAT · min. 4 hrs</span>
+</a>
+<a href="Z-ALS%20Services.dc.html#chauffeur" style="display:flex;flex-direction:column;gap:14px;padding:26px;background:#DCE5F2;border-radius:24px;text-decoration:none;color:#0A1730;transition:transform 200ms ease-out,background 200ms ease-out" style-hover="background:#D2DDEE;transform:translateY(-3px);text-decoration:none;color:#0A1730">
+<span style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;color:#3D5C96">03</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#FFFFFF;color:#3D5C96"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="12" r="2.5"></circle><path d="M3.5 10.5 9.5 12M14.5 12l6-1.5M12 14.5V21"></path></svg></span>
+</span>
+<span style="font-family:'Playfair Display',Georgia,serif;font-size:24px;line-height:1.15;letter-spacing:-0.01em">Private chauffeur</span>
+<span style="font-size:14px;line-height:1.55;color:#2E4466">A trained, insured, discreet chauffeur — in our car or yours — for a day, a season, or a standing arrangement.</span>
+<span style="margin-top:auto;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#0A1730">Price on request</span>
+</a>
+<a href="Z-ALS%20Services.dc.html#bus" style="display:flex;flex-direction:column;gap:14px;padding:26px;background:#FFFFFF;border:1px solid #CFDAEB;border-radius:24px;text-decoration:none;color:#0A1730;transition:transform 200ms ease-out,border-color 200ms ease-out" style-hover="border-color:#4A6AA6;transform:translateY(-3px);text-decoration:none;color:#0A1730">
+<span style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;color:#4A6AA6">04</span>
+<span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#EEF2F8;color:#4A6AA6"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="15" rx="2"></rect><path d="M4 11h16M8 18v3M16 18v3"></path><circle cx="8" cy="14.5" r="0.8"></circle><circle cx="16" cy="14.5" r="0.8"></circle></svg></span>
+</span>
+<span style="font-family:'Playfair Display',Georgia,serif;font-size:24px;line-height:1.15;letter-spacing:-0.01em">Bus service</span>
+<span style="font-size:14px;line-height:1.55;color:#3B506F">Group pick-up and drop-off by minibus and coach for larger parties, delegations and events across Zurich and Switzerland.</span>
+<span style="margin-top:auto;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#0A1730">per km · on request</span>
+</a>
+<a href="Z-ALS%20Services.dc.html#vip-bodyguard" data-bento="wide" data-m="bento-vip" style="grid-column:1 / -1;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:end;gap:20px 40px;padding:clamp(26px,3vw,36px);background:#01050B;border-radius:24px;text-decoration:none;color:#FFFFFF;transition:transform 200ms ease-out,background 200ms ease-out" style-hover="background:#0A1730;transform:translateY(-3px);text-decoration:none;color:#FFFFFF">
+<span style="display:flex;flex-direction:column;gap:14px">
+<span style="display:flex;align-items:center;gap:14px">
+<span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#16294D;color:#B9CBEA"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 5 6v5c0 4.5 3 8.3 7 10 4-1.7 7-5.5 7-10V6z"></path><path d="m9 12 2 2 4-4"></path></svg></span>
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.1em;color:#7E9BD4">05</span>
+</span>
+<span style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(26px,2.6vw,34px);line-height:1.1;letter-spacing:-0.01em">VIP pick-up &amp; bodyguard</span>
+<span style="max-width:52ch;font-size:14px;line-height:1.55;color:#B7C6DE">A trained bodyguard accompanies the journey for clients who require discreet personal protection.</span>
+</span>
+<span style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding-top:18px;border-top:1px solid #22375E">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#FFFFFF">per km · on request</span>
+<span style="font-size:13px;font-weight:600;letter-spacing:0.03em;color:#B9CBEA">Enquire →</span>
+</span>
+</a>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Process" style="background:#01050B;padding:clamp(72px,8vw,124px) 0">
+<div style="max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+<div data-reveal="0" style="max-width:26ch;margin-bottom:clamp(36px,4vw,56px)">
+<div style="font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">How it works</div>
+<h2 style="margin:16px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(30px,4vw,52px);line-height:1.06;letter-spacing:-0.025em;color:#FFFFFF;text-wrap:balance">Four steps to <span style="color:#7E9BD4">the kerb</span></h2>
+</div>
+<div data-m="steps-grid" data-reveal="1" style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(24px,3vw,40px)">
+<div style="border-top:1px solid rgba(125,155,212,0.28);padding-top:20px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">STEP 01</span>
+<h3 style="margin:14px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2;color:#FFFFFF">Send your trip details</h3>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.66)">Pick-up, destination, date and time — or hourly, if the car should just stay with you.</p>
+</div>
+<div style="border-top:1px solid rgba(125,155,212,0.28);padding-top:20px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">STEP 02</span>
+<h3 style="margin:14px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2;color:#FFFFFF">See your fixed fare</h3>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.66)">The published per-kilometre rate for your class, shown before you send anything — VAT stated separately.</p>
+</div>
+<div style="border-top:1px solid rgba(125,155,212,0.28);padding-top:20px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">STEP 03</span>
+<h3 style="margin:14px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2;color:#FFFFFF">Confirm with dispatch</h3>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.66)">One tap to WhatsApp. The dispatcher who runs the journey answers personally, day or night.</p>
+</div>
+<div style="border-top:1px solid rgba(125,155,212,0.28);padding-top:20px">
+<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">STEP 04</span>
+<h3 style="margin:14px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.2;color:#FFFFFF">Meet your chauffeur</h3>
+<p style="margin:10px 0 0;font-size:14px;line-height:1.6;color:rgba(255,255,255,0.66)">Waiting inside arrivals, flight number monitored, 60 minutes of waiting included at no charge.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!--z-faq-->
+<!--z-journal-->
+
+<section data-screen-label="Record band" style="position:relative;background:#01050B">
+<div style="position:relative;width:100%;height:clamp(320px,44vw,540px)">
+<img src="https://images.unsplash.com/photo-1556306549-3827a1fc9f5a?w=2000&amp;q=80" alt="Travellers in the terminal at Zürich Airport, Kloten" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.6) contrast(1.05) brightness(0.62)">
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(90deg,rgba(1,5,11,0.9) 0%,rgba(1,5,11,0.24) 68%)"></div>
+<div aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(1,5,11,0) 38%,rgba(1,5,11,0.86) 100%)"></div>
+<div style="position:absolute;inset:auto auto 0 50%;transform:translateX(-50%);width:100%;max-width:1400px;padding:0 clamp(20px,4vw,56px) clamp(30px,4vw,54px)">
+<!-- Placeholder for a real, attributable client quote (docs/CONTENT-GAPS.md §11 — still open).
+     Until the client supplies one with a name and permission to publish, this band states a
+     verified company fact instead of invented praise or a star rating. -->
+<p style="margin:0;max-width:26ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(24px,2.8vw,40px);line-height:1.14;letter-spacing:-0.02em;color:#FFFFFF;text-wrap:balance">Twenty-two years of arrivals at Kloten.</p>
+<div style="margin-top:20px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4">Zurich-Airport Limousinen Services GmbH · founded 2004</div>
+</div>
+</div>
+</section>
+
+<section data-screen-label="Closing CTA" style="position:relative;background:#01050B;padding:clamp(72px,8vw,124px) 0;overflow:hidden">
+<div aria-hidden="true" style="position:absolute;inset:0;background:radial-gradient(80% 100% at 100% 100%,rgba(93,125,183,0.24) 0%,rgba(93,125,183,0) 60%)"></div>
+<div style="position:relative;max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:clamp(28px,4vw,64px);align-items:end">
+<h2 data-reveal="0" style="margin:0;max-width:22ch;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(34px,5vw,68px);line-height:1.02;letter-spacing:-0.03em;color:#FFFFFF;text-wrap:balance">Tell us the flight. <span style="color:#7E9BD4">We will do the rest.</span></h2>
+<div data-reveal="1" style="display:flex;flex-direction:column;gap:16px;align-items:flex-start">
+<p style="margin:0;max-width:42ch;font-size:17px;line-height:1.62;color:rgba(255,255,255,0.72);text-wrap:pretty">Send the flight number and the address. The dispatcher who will run the journey answers you personally, with the fare agreed before you travel.</p>
+<div data-m="cta-row" style="display:flex;flex-wrap:wrap;gap:14px;padding-top:8px">
+<a href="Z-ALS%20Quote.dc.html" style="display:inline-flex;align-items:center;min-height:56px;padding:0 30px;background:#5D7DB7;color:#FFFFFF;font-size:12px;font-weight:600;letter-spacing:0.03em;text-decoration:none;transition:background 180ms ease-out,transform 120ms ease-out;border-radius:12px" style-hover="background:#7E9BD4;color:#0A1730;text-decoration:none" style-active="transform:translateY(1px)">Request a quote</a>
+<a href="{{ phoneHref }}" style="display:inline-flex;align-items:center;min-height:56px;padding:0 26px;border:1px solid rgba(125,155,212,0.4);color:#FFFFFF;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;text-decoration:none;transition:border-color 180ms ease-out;border-radius:12px" style-hover="border-color:#FFFFFF;text-decoration:none">{{ dispatchPhone }}</a>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px 24px;padding-top:6px">
+<span style="font-size:12px;color:rgba(255,255,255,0.56)">Fixed fare, agreed up front</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.56)">60 min waiting included</span>
+<span style="font-size:12px;color:rgba(255,255,255,0.56)">Dispatch answered 24 / 7</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</main>
+<dc-import name="SiteFooter v3" hint-size="100%,640px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:6400},&quot;dispatchPhone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+41 76 272 0909&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+/* Fares and the destination list come from public/js/places.js and fares.js, the same
+   engine the Request a quote wizard and server.mjs use (distance from Zürich Airport at
+   the class rate, or hours × the class rate; VAT as its own line), so the hero can't drift. */
+const { TARIFF, MIN_HOURS, MAX_HOURS, fromZRH, needsRoute, quoteFor, todayInZurich } = window.ZALS;
+const { searchPlaces } = window.ZALS_PLACES;
+const { findAddresses, findRoute } = window.ZALS_GEO;
+const ZRH = 'Zürich Airport · ZRH';
+/* public/js/i18n.js: the visitor's language; {name} placeholders are filled after translating. */
+const T = (s, v) => (window.ZALS_I18N ? window.ZALS_I18N.t(s, v) : s);
+/* The class the hero prices; past the V-Class's 7 seats there is none, and dispatch quotes the group. */
+const classFor = pax => (pax > 7 ? null : pax >= 5 ? 'Van' : 'Business');
+
+class Component extends DCLogic {
+  state = {
+    tripType: 'oneway', pickup: '', pickupOpen: false, dest: '', destOpen: false,
+    date: '', time: '09:20', returnDate: '', returnTime: '17:00', hours: MIN_HOURS, pax: 2, luggage: 2,
+    fleetFilter: 'all', sent: false
+  };
+
+  componentDidMount() {
+    /* Tomorrow in Zürich (UTC noon, so no clock change moves the day). */
+    const d = new Date(todayInZurich() + 'T12:00:00Z');
+    d.setUTCDate(d.getUTCDate() + 1);
+    this.setState({ date: d.toISOString().slice(0, 10) });
+    /* A tap outside the form closes the lists: pointerup, so a touch that turns into a scroll (pointercancel) doesn't. */
+    this._onDocDown = e => {
+      if (!this.state.pickupOpen && !this.state.destOpen) return;
+      if (!e.target.closest('form')) this.setState({ pickupOpen: false, destOpen: false });
+    };
+    /* Escape closes them, and so does focus arriving anywhere outside the list's own field (Tab, a click on the date).
+       Not focusout: Safari doesn't focus a tapped button, so the list would vanish before the pick lands. */
+    this._onKey = e => { if (e.key === 'Escape' && (this.state.pickupOpen || this.state.destOpen)) this.setState({ pickupOpen: false, destOpen: false }); };
+    this._onFocusIn = e => {
+      const s = this.state;
+      if (!s.pickupOpen && !s.destOpen) return;
+      const w = e.target.closest && e.target.closest('[data-hero-field]'), k = w && w.getAttribute('data-hero-field');
+      if ((s.pickupOpen && k !== 'pickup') || (s.destOpen && k !== 'dest')) this.setState({ pickupOpen: s.pickupOpen && k === 'pickup', destOpen: s.destOpen && k === 'dest' });
+    };
+    document.addEventListener('pointerup', this._onDocDown);
+    document.addEventListener('keydown', this._onKey);
+    document.addEventListener('focusin', this._onFocusIn);
+    this.reveal();
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('pointerup', this._onDocDown);
+    document.removeEventListener('keydown', this._onKey);
+    document.removeEventListener('focusin', this._onFocusIn);
+    if (this._io) this._io.disconnect();
+    clearTimeout(this._safety);
+  }
+
+  reveal() {
+    let reduce = false;
+    try { reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches; } catch (e) {}
+    const nodes = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+    if (!nodes.length) return;
+    const show = el => { el.style.opacity = '1'; el.style.transform = 'none'; };
+    if (reduce) { nodes.forEach(show); return; }
+    nodes.forEach(el => { const i = parseInt(el.getAttribute('data-reveal'), 10) || 0; el.style.transitionDelay = (i * 90) + 'ms'; });
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { rootMargin: '0px 0px -18% 0px', threshold: 0.15 });
+    nodes.forEach(n => io.observe(n));
+    this._io = io;
+    this._safety = setTimeout(() => nodes.forEach(show), 4000);
+  }
+
+  fmt(n) {
+    const p = (Math.round(n * 100) / 100).toFixed(2).split('.');
+    const i = p[0];
+    return (i.length > 3 ? i.slice(0, i.length - 3) + ' ' + i.slice(-3) : i) + '.' + p[1];
+  }
+
+  fareNode(text) {
+    return React.createElement('span', {
+      key: text,
+      style: { display: 'inline-block', fontFamily: "'IBM Plex Mono',ui-monospace,monospace", fontSize: '24px', lineHeight: 1, color: '#FFFFFF', animation: 'zFare 240ms cubic-bezier(.2,.6,.2,1) both' }
+    }, text);
+  }
+
+  /* The hero's "Continue on WhatsApp": the trip so far as a message to dispatch, the
+     same wa.me hand-off z-als.ch uses. Contact details and the email to dispatch come
+     from the Request a quote wizard. */
+  /* A route card is a link to its page (for search engines and middle clicks); a plain click fills the form above. */
+  pickRoute(e, dest) {
+    if (e && !(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button > 0)) {
+      e.preventDefault();
+      const form = document.getElementById('hero-form');
+      if (form) form.scrollIntoView({ behavior: 'smooth' });
+    }
+    this.setState({ tripType: 'oneway', pickup: this.state.pickup || ZRH, dest });
+  }
+
+  buildMessage() {
+    const s = this.state;
+    const at = (d, t) => (t ? T('{date} at {time}', { date: d || '—', time: t }) : d || '—');
+    const lines = [T('Booking request from z-als.ch')];
+    lines.push(T('Trip') + ': ' + T(s.tripType === 'oneway' ? 'One way' : s.tripType === 'roundtrip' ? 'Round trip' : 'Hourly'));
+    if (s.pickup) lines.push(T('Pick-up') + ': ' + s.pickup);
+    if (s.tripType !== 'hourly' && s.dest) lines.push(T('Destination') + ': ' + s.dest);
+    if (s.tripType === 'hourly') lines.push(T('Duration') + ': ' + T('{n} hours', { n: s.hours }));
+    lines.push(T('Date') + ': ' + at(s.date, s.time));
+    if (s.tripType === 'roundtrip') lines.push(T('Return') + ': ' + at(s.returnDate, s.returnTime));
+    lines.push(T('Passengers') + ': ' + s.pax + ' · ' + T('Luggage') + ': ' + s.luggage);
+    return lines.join('\n');
+  }
+
+  /* The measured road distance for a trip off the ZRH table: undefined while it is being asked (server.mjs /api/route). */
+  routeNow(trip) {
+    if (!needsRoute(trip)) return undefined;
+    const k = trip.pickup + '|' + trip.dest, r = this.state.route;
+    if (r && r.k === k) return r.v;
+    // Only once the list is closed: half-typed text would cost a Mapbox measurement each pause.
+    if (!this.state.pickupOpen && !this.state.destOpen) findRoute(trip.pickup, trip.dest, (key, v) => this.setState({ route: { k: key, v } }));
+    return undefined;
+  }
+
+  renderVals() {
+    const s = this.state;
+    const phone = this.props.dispatchPhone ?? '+41 76 272 0909';
+    const cls = classFor(s.pax);
+    /* An empty pick-up reads as ZRH, the airport every published fare starts from. */
+    const trip = { tripType: s.tripType === 'roundtrip' ? 'return' : 'oneway', pickup: s.pickup || ZRH, dest: s.dest };
+    const route = cls && s.tripType !== 'hourly' && s.dest ? this.routeNow(trip) : undefined;
+    const measuring = route === undefined && cls && s.tripType !== 'hourly' && !!s.dest && needsRoute(trip);
+    const q = !cls || s.tripType === 'hourly' || !s.dest ? null : quoteFor({ ...trip, vehicle: cls, route });
+    const priced = !!q;
+    const total = q ? q.net : null;
+    /* Hourly: hours × the class rate, never payable online (dispatch settles extra hours). */
+    const h = cls && s.tripType === 'hourly' ? quoteFor({ tripType: 'hourly', hours: s.hours, vehicle: cls }) : null;
+    const fare = total || h ? T('{amount} + VAT', { amount: 'CHF ' + this.fmt(total || h.net) }) : T(measuring ? 'Calculating fare…' : 'Quoted by dispatch');
+    const note = s.sent
+      ? 'Opening WhatsApp — dispatch answers personally, day or night.'
+      : !cls ? 'Groups of more than 7 travel by Minibus or coach, quoted by dispatch, all costs shown before you travel.'
+      : h ? T('{hours} hrs × CHF {rate} / hr · {car}. Premium and SUV: CHF {top} / hr. Choose the car in the next step.',
+        { hours: s.hours, rate: TARIFF[cls].hr, car: T(cls === 'Van' ? 'Business Van' : 'Business'), top: TARIFF.Premium.hr })
+      : (priced
+        ? T(s.tripType === 'roundtrip' ? '{from} → {dest} · {km} km · drive time {drive} · both ways, fixed fare, VAT separate.' : '{from} → {dest} · {km} km · drive time {drive} · fixed fare, VAT separate.',
+          { from: fromZRH(trip.pickup) ? 'ZRH' : trip.pickup.split(',')[0], dest: fromZRH(s.dest) ? 'ZRH' : s.dest.split(',')[0], km: q.km, drive: q.drive })
+        : measuring ? 'Measuring the road distance for your fare…'
+        : 'Every other pick-up and destination is quoted per route by dispatch, all costs shown before you travel.');
+    const seg = (active) => ({
+      Bg: active ? '#5D7DB7' : 'transparent', Fg: active ? '#FFFFFF' : 'rgba(255,255,255,0.7)', Border: active ? '#5D7DB7' : 'rgba(125,155,212,0.34)'
+    });
+    const ow = seg(s.tripType === 'oneway'), rt = seg(s.tripType === 'roundtrip'), hr = seg(s.tripType === 'hourly');
+    /* Street addresses for exactly what was typed (Mapbox, via /api/places) first, then the town directory. */
+    const addr = s.geo && s.geo.q === s.dest ? s.geo.rows.map(r => (r.sub ? r.name + ', ' + r.sub : r.name)) : [];
+    const destMatches = addr.concat(searchPlaces(s.dest, addr.length ? 2 : 8).map(c => c.city)).slice(0, 8)
+      .map(v => ({ name: v, pick: () => this.setState({ dest: v, destOpen: false }) }));
+    const filt = (key) => ({
+      Bg: s.fleetFilter === key ? '#0A1730' : 'transparent', Fg: s.fleetFilter === key ? '#FFFFFF' : '#0A1730', Border: s.fleetFilter === key ? '#0A1730' : '#CFDAEB'
+    });
+    const fAll = filt('all'), fBiz = filt('Business'), fPrem = filt('Premium'), fSuv = filt('SUV'), fVan = filt('Van'), fElec = filt('Electric');
+    const dispFor = key => (s.fleetFilter === 'all' || s.fleetFilter === key) ? 'flex' : 'none';
+    return {
+      owBg: ow.Bg, owFg: ow.Fg, owBorder: ow.Border, rtBg: rt.Bg, rtFg: rt.Fg, rtBorder: rt.Border, hrBg: hr.Bg, hrFg: hr.Fg, hrBorder: hr.Border,
+      setOneway: () => this.setState({ tripType: 'oneway' }), setRoundtrip: () => this.setState({ tripType: 'roundtrip' }), setHourly: () => this.setState({ tripType: 'hourly' }),
+      showDest: s.tripType !== 'hourly', showDuration: s.tripType === 'hourly', isRoundtrip: s.tripType === 'roundtrip',
+      dateColTemplate: s.tripType === 'roundtrip' ? 'repeat(4,minmax(0,1fr))' : 'repeat(2,minmax(0,1fr))',
+      pickup: s.pickup, onPickup: e => this.setState({ pickup: e.target.value, pickupOpen: true }), focusPickup: () => this.setState({ pickupOpen: true, destOpen: false }),
+      pickupOpen: s.pickupOpen,
+      pickAirportZRH: () => this.setState({ pickup: 'Zürich Airport · ZRH', pickupOpen: false }),
+      pickAirportBSL: () => this.setState({ pickup: 'Basel Airport · BSL', pickupOpen: false }),
+      pickAirportGVA: () => this.setState({ pickup: 'Geneva Airport · GVA', pickupOpen: false }),
+      dest: s.dest, onDest: e => {
+        findAddresses(e.target.value, (q, rows) => this.setState({ geo: { q, rows } }));
+        this.setState({ dest: e.target.value, destOpen: true });
+      }, focusDest: () => this.setState({ destOpen: true, pickupOpen: false }),
+      destOpen: s.destOpen, destMatches: destMatches, destByMapbox: addr.length > 0,
+      hours: s.hours, hoursLabel: T('{n} hrs', { n: s.hours }),
+      decHours: () => this.setState(st => ({ hours: Math.max(MIN_HOURS, st.hours - 1) })), incHours: () => this.setState(st => ({ hours: Math.min(MAX_HOURS, st.hours + 1) })),
+      /* min doesn't stop a typed date in every browser, so an earlier one is refused here (setState({}) redraws the field). */
+      today: todayInZurich(), returnMin: s.date || todayInZurich(),
+      date: s.date, onDate: e => this.setState(e.target.value && e.target.value < todayInZurich() ? {} : { date: e.target.value }), time: s.time, onTime: e => this.setState({ time: e.target.value }),
+      returnDate: s.returnDate, onReturnDate: e => this.setState(e.target.value && e.target.value < (s.date || todayInZurich()) ? {} : { returnDate: e.target.value }), returnTime: s.returnTime, onReturnTime: e => this.setState({ returnTime: e.target.value }),
+      pax: s.pax, decPax: () => this.setState(st => ({ pax: Math.max(1, st.pax - 1) })), incPax: () => this.setState(st => ({ pax: Math.min(16, st.pax + 1) })),
+      luggage: s.luggage, decLuggage: () => this.setState(st => ({ luggage: Math.max(0, st.luggage - 1) })), incLuggage: () => this.setState(st => ({ luggage: Math.min(16, st.luggage + 1) })),
+      fareLabel: priced ? 'Fixed fare · VAT separate' : (h ? 'Hourly hire · min. 4 hrs · VAT separate' : 'Fare on quote'),
+      fareEl: this.fareNode(fare),
+      note: note,
+      waHref: 'https://wa.me/' + String(phone).replace(/\D/g, '') + '?text=' + encodeURIComponent(this.buildMessage()),
+      /* The hero hands the trip to the Request a quote wizard,
+         which picks the car and collects contact details before WhatsApp. */
+      onSubmit: e => {
+        e.preventDefault();
+        const q = new URLSearchParams({
+          /* The fare shown for an empty pick-up is from ZRH, so the wizard gets ZRH too. */
+          trip: s.tripType, pickup: s.pickup || (s.tripType !== 'hourly' && s.dest ? ZRH : ''), dest: s.dest, hours: s.hours, date: s.date, time: s.time,
+          rdate: s.returnDate, rtime: s.returnTime, pax: s.pax, bags: s.luggage
+        });
+        window.location.href = '/quote?' + q.toString();
+      },
+      pickRouteZurich: () => this.setState({ tripType: 'oneway', pickup: s.pickup || ZRH, dest: 'Zürich city' }),
+      pickRouteBasel: e => this.pickRoute(e, 'Basel'),
+      pickRouteBern: e => this.pickRoute(e, 'Bern'),
+      pickRouteLuzern: e => this.pickRoute(e, 'Luzern'),
+      pickRouteInterlaken: e => this.pickRoute(e, 'Interlaken'),
+      pickRouteDavos: e => this.pickRoute(e, 'Davos'),
+      pickRouteStMoritz: e => this.pickRoute(e, 'St. Moritz'),
+      pickRouteZermatt: e => this.pickRoute(e, 'Zermatt'),
+      filterAllBg: fAll.Bg, filterAllFg: fAll.Fg, filterAllBorder: fAll.Border, setFilterAll: () => this.setState({ fleetFilter: 'all' }),
+      filterBusinessBg: fBiz.Bg, filterBusinessFg: fBiz.Fg, filterBusinessBorder: fBiz.Border, setFilterBusiness: () => this.setState({ fleetFilter: 'Business' }),
+      filterPremiumBg: fPrem.Bg, filterPremiumFg: fPrem.Fg, filterPremiumBorder: fPrem.Border, setFilterPremium: () => this.setState({ fleetFilter: 'Premium' }),
+      filterSUVBg: fSuv.Bg, filterSUVFg: fSuv.Fg, filterSUVBorder: fSuv.Border, setFilterSUV: () => this.setState({ fleetFilter: 'SUV' }),
+      filterVanBg: fVan.Bg, filterVanFg: fVan.Fg, filterVanBorder: fVan.Border, setFilterVan: () => this.setState({ fleetFilter: 'Van' }),
+      filterElectricBg: fElec.Bg, filterElectricFg: fElec.Fg, filterElectricBorder: fElec.Border, setFilterElectric: () => this.setState({ fleetFilter: 'Electric' }),
+      dispBusiness: dispFor('Business'), dispPremium: dispFor('Premium'), dispSUV: dispFor('SUV'), dispVan: dispFor('Van'), dispElectric: dispFor('Electric'),
+      dispatchPhone: phone, phoneHref: 'tel:' + String(phone).replace(/[^+0-9]/g, '')
+    };
+  }
+}
+</script>
+</body>
+</html>

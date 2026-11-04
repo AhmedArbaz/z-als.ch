@@ -1,0 +1,92 @@
+{
+  "title": "Zurich Airport to Basel Private Transfer | Z-ALS",
+  "description": "Private transfer from Zurich Airport to Basel, {km} km by motorway, in a Mercedes E-, S- or V-Class, with dispatch 24/7. Fare fixed before you book.",
+  "h1": "Zurich Airport to Basel by private chauffeur",
+  "lede": "A chauffeur meets you inside arrivals at Zürich Airport and drives you the {km} km to Basel for a fare fixed before you book. The fare is for Basel itself; EuroAirport Basel-Mulhouse is quoted separately.",
+  "intro": [
+    "Basel lies on the Rhine in the north-west corner of Switzerland, where the borders with France and Germany meet. From Zürich Airport it is {km} km, most of it by motorway, and a private transfer is one car and one chauffeur from the arrivals hall to the door of your hotel, office or apartment.",
+    "The fare is set per kilometre by car class and fixed before you book. A person answers dispatch at any hour, and the chauffeur waits inside arrivals.",
+    "This page sets out the fare, the drive, the cars and what dispatch needs from you. One point is worth knowing early: EuroAirport Basel-Mulhouse lies on French soil, so a journey to or from it, like the return from Basel, is quoted by dispatch."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Basel",
+      "paragraphs": [
+        "A Business Class transfer (Mercedes E-Class or equivalent) costs {priceBusiness} for the whole car, with {vat} VAT added as its own line. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. The fare is for the car, so a party of three or four shares it.",
+        "It is set before you book and does not move afterwards. The fare includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats, fitted before the journey at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The drive to Basel",
+      "paragraphs": [
+        "The distance is {km} km and the drive takes about {time}. The usual way is by motorway, west from Zürich and across the low hills of the Jura, then down towards the Rhine and into Basel. There is no mountain pass on the way, which sets this route apart from most of our alpine runs.",
+        "From October to April every car runs winter tyres, and snow or fog can still lengthen the drive. Treat {time} as the planning figure rather than a promise, and if you have a train, a meeting or a flight to reach, allow some margin and tell dispatch about it when you book."
+      ]
+    },
+    {
+      "h2": "Which car for Basel",
+      "paragraphs": [
+        "Business Class takes three passengers with three cases, and a fourth fits if the luggage is light. Premium Class seats three, with two cases, in a rear cabin built to work in. The SUV seats four with four cases and has all-wheel drive, which is worth having for a winter arrival.",
+        "The Business Van seats seven with seven cases and suits delegations, families and anyone travelling with a lot of luggage. Dispatch quotes a minibus or coach for groups of up to sixteen, priced per journey. There is also a fully electric saloon at the Business Class rate; ask dispatch when you book, because its range is planned against the route before the car is assigned."
+      ]
+    },
+    {
+      "h2": "Pick-up and booking",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals, and the fare includes sixty minutes of waiting after landing. Give the flight number when you book, and the pick-up moves with the inbound flight at no charge.",
+        "Fares are published for pick-ups at Zürich Airport. The return from Basel, a pick-up at any other address, at EuroAirport Basel-Mulhouse or at Geneva airport, and journeys abroad are quoted per route by dispatch. To book, dispatch needs:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The hotel or address in Basel, or the town if the address is not settled",
+        "Number of passengers and cases",
+        "Child seats, skis or boards, if any"
+      ]
+    },
+    {
+      "h2": "Basel: the border and EuroAirport",
+      "paragraphs": [
+        "Basel sits where Switzerland, France and Germany meet, and that shapes the booking in one practical way. EuroAirport Basel-Mulhouse is on French soil, so the road to it crosses the border. The fixed fare above is for Basel, and a drop-off or collection at EuroAirport is quoted by dispatch before you book. If you are flying out from there, say so, and have a passport or identity card to hand for everyone in the car.",
+        "Within Basel, some streets in the old town are closed to ordinary traffic. For an address inside them the car stops at the nearest point it can reach and the last stretch is on foot, so give dispatch the hotel or the street and the drop-off is agreed in advance. An address across the border, in France or Germany, is a different route and is quoted separately."
+      ]
+    }
+  ],
+  "priceNote": "Fares are net of VAT; {vat} VAT is added as its own line. They are published for pick-ups at Zürich Airport, and the return from Basel, EuroAirport or any other pick-up point is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Basel take?",
+      "a": "The drive is about {time} for {km} km, mostly by motorway. Snow or fog can lengthen it, so tell dispatch if you have a train, a meeting or a flight to reach."
+    },
+    {
+      "q": "How much does a private transfer from Zürich Airport to Basel cost?",
+      "a": "{priceBusiness} in a Business Class car, {pricePremium} in Premium Class, {priceSuv} in the SUV and {priceVan} in the Business Van, all net of {vat} VAT. Each fare is for the whole car and is set before you book."
+    },
+    {
+      "q": "Does the car follow a delayed flight?",
+      "a": "It does if you gave us the flight number. We track the inbound flight, the pick-up moves with it at no charge, and sixty minutes of waiting after landing are included."
+    },
+    {
+      "q": "Can I bring luggage, skis and child seats?",
+      "a": "Infant, toddler and booster seats are fitted before the journey at no charge. Tell dispatch how many cases and how many pairs of skis or boards you have, so that the class is right the first time."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "Online by card or TWINT, to the chauffeur on the day, or arranged with dispatch on WhatsApp. Corporate clients are invoiced monthly, and the terms of any cancellation charge are given when the booking is confirmed."
+    },
+    {
+      "q": "Can you take me to EuroAirport Basel-Mulhouse?",
+      "a": "Dispatch quotes that journey rather than taking it from the table, because the airport is in France and the road crosses the border. Send the date, the flight if there is one and the number of passengers, and the fare comes back before you book."
+    },
+    {
+      "q": "Can you collect us in Basel for the return to Zürich Airport?",
+      "a": "Yes, as a separate journey. Dispatch quotes it per route, because published fares start at Zürich Airport; send the date and the address."
+    }
+  ]
+}

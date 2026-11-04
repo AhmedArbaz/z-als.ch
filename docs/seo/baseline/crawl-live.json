@@ -1,0 +1,2617 @@
+{
+ "summary": {
+  "base": "https://z-als.ch",
+  "pages": 67,
+  "non200": 0,
+  "titleMissing": 0,
+  "titleOver60": 31,
+  "titleDuplicated": 39,
+  "descMissing": 3,
+  "descShort": 24,
+  "descLong": 34,
+  "descDuplicated": 39,
+  "noCanonical": 0,
+  "noHreflang": 3,
+  "noOgImage": 23,
+  "noJsonld": 3,
+  "noMain": 1,
+  "imgNoSize": 167,
+  "gtmPages": 0,
+  "gtmBad": 0,
+  "gzip": 0
+ },
+ "rows": [
+  {
+   "url": "https://z-als.ch/",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 112097,
+   "lang": "en",
+   "title": "Z-ALS · Chauffeured airport transfers from Zürich, Basel and Geneva",
+   "canonical": "https://z-als.ch/",
+   "hreflang": [],
+   "og": [],
+   "twitter": false,
+   "h1": 1,
+   "h2": 6,
+   "main": false,
+   "words": 1165,
+   "imgs": 32,
+   "imgNoAlt": 0,
+   "imgNoSize": 32,
+   "jsonld": [],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/quote",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 96056,
+   "lang": "en",
+   "title": "Request a quote · Z-ALS",
+   "canonical": "https://z-als.ch/quote",
+   "hreflang": [],
+   "og": [],
+   "twitter": false,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 694,
+   "imgs": 18,
+   "imgNoAlt": 0,
+   "imgNoSize": 16,
+   "jsonld": [],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/legal",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 59714,
+   "lang": "en",
+   "title": "Imprint, privacy & terms · Z-ALS",
+   "canonical": "https://z-als.ch/legal",
+   "hreflang": [],
+   "og": [],
+   "twitter": false,
+   "h1": 1,
+   "h2": 3,
+   "main": true,
+   "words": 1447,
+   "imgs": 15,
+   "imgNoAlt": 0,
+   "imgNoSize": 15,
+   "jsonld": [],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/about",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33691,
+   "lang": "en",
+   "title": "A licensed Swiss chauffeur service — Z-ALS, Kloten",
+   "description": "Z-ALS was registered in Kloten in 2004 and has worked out of the same airport district ever since. No franchise, no app layer, no subcontracted city fleet.",
+   "canonical": "https://z-als.ch/en/about",
+   "hreflang": [
+    "en=https://z-als.ch/en/about",
+    "de=https://z-als.ch/de/about",
+    "fr=https://z-als.ch/fr/about",
+    "it=https://z-als.ch/it/about",
+    "x-default=https://z-als.ch/en/about"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 4,
+   "main": true,
+   "words": 773,
+   "imgs": 10,
+   "imgNoAlt": 0,
+   "imgNoSize": 2,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/services",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 37257,
+   "lang": "en",
+   "title": "What we actually do — Z-ALS",
+   "description": "Four service lines, one dispatch desk in Kloten and one Mercedes fleet. The rates below are the published rates; anything outside them is fixed in writing before the journey.",
+   "canonical": "https://z-als.ch/en/services",
+   "hreflang": [
+    "en=https://z-als.ch/en/services",
+    "de=https://z-als.ch/de/services",
+    "fr=https://z-als.ch/fr/services",
+    "it=https://z-als.ch/it/services",
+    "x-default=https://z-als.ch/en/services"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 924,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/fleet",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 43426,
+   "lang": "en",
+   "title": "Five classes, one standard — Z-ALS",
+   "description": "You book a class, not a number plate. Every car in it is serviced on schedule at one garage and runs winter tyres from October to April. Choose by passengers and luggage — the standard does not change.",
+   "canonical": "https://z-als.ch/en/fleet",
+   "hreflang": [
+    "en=https://z-als.ch/en/fleet",
+    "de=https://z-als.ch/de/fleet",
+    "fr=https://z-als.ch/fr/fleet",
+    "it=https://z-als.ch/it/fleet",
+    "x-default=https://z-als.ch/en/fleet"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 9,
+   "main": true,
+   "words": 1040,
+   "imgs": 18,
+   "imgNoAlt": 0,
+   "imgNoSize": 10,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/contact",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 31382,
+   "lang": "en",
+   "title": "One desk, one number — Z-ALS",
+   "description": "The people who answer the phone are the people who dispatch the cars. Quotes come back in writing within two hours on working days — immediately by phone if you are already travelling.",
+   "canonical": "https://z-als.ch/en/contact",
+   "hreflang": [
+    "en=https://z-als.ch/en/contact",
+    "de=https://z-als.ch/de/contact",
+    "fr=https://z-als.ch/fr/contact",
+    "it=https://z-als.ch/it/contact",
+    "x-default=https://z-als.ch/en/contact"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 1,
+   "main": true,
+   "words": 547,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 31941,
+   "lang": "en",
+   "title": "How this work is actually run — Z-ALS",
+   "description": "Written for the people who buy chauffeur services: travel managers, executive assistants, family offices. Operational detail, pricing logic, and the standards a supplier should be able to evidence.",
+   "canonical": "https://z-als.ch/en/journal",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal",
+    "de=https://z-als.ch/de/journal",
+    "fr=https://z-als.ch/fr/journal",
+    "it=https://z-als.ch/it/journal",
+    "x-default=https://z-als.ch/en/journal"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 2,
+   "main": true,
+   "words": 718,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/the-arrivals-gap",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34681,
+   "lang": "en",
+   "title": "The arrivals gap: what the new border checks did to the walk to the kerb — Z-ALS Journal",
+   "description": "Biometric registration has put an unpredictable stretch between wheels-down and the arrivals hall. A transfer priced on the old assumption is quoting for a journey that no longer exists.",
+   "canonical": "https://z-als.ch/en/journal/the-arrivals-gap",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/the-arrivals-gap",
+    "de=https://z-als.ch/de/journal/the-arrivals-gap",
+    "fr=https://z-als.ch/fr/journal/the-arrivals-gap",
+    "it=https://z-als.ch/it/journal/the-arrivals-gap",
+    "x-default=https://z-als.ch/en/journal/the-arrivals-gap"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1114,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33590,
+   "lang": "en",
+   "title": "What a fixed fare has to cover — Z-ALS Journal",
+   "description": "A quote that looks cheap on a spreadsheet usually has the waiting time, the night hours and the parking taken out of it. Here is every cost line a transfer actually carries, and which of them we absorb.",
+   "canonical": "https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover",
+    "de=https://z-als.ch/de/journal/what-a-fixed-fare-has-to-cover",
+    "fr=https://z-als.ch/fr/journal/what-a-fixed-fare-has-to-cover",
+    "it=https://z-als.ch/it/journal/what-a-fixed-fare-has-to-cover",
+    "x-default=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 934,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34844,
+   "lang": "en",
+   "title": "Scope 3, Category 6, and the car that meets you — Z-ALS Journal",
+   "description": "Ground transport is a reportable line in your travel emissions now, and the worst-evidenced one. What that means when you choose a transfer class.",
+   "canonical": "https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "de=https://z-als.ch/de/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "fr=https://z-als.ch/fr/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "it=https://z-als.ch/it/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "x-default=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1098,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33897,
+   "lang": "en",
+   "title": "How a dispatch desk absorbs a delayed flight — Z-ALS Journal",
+   "description": "The inbound slips two hours. What happens on our side before the passenger has cleared passport control.",
+   "canonical": "https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "de=https://z-als.ch/de/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "fr=https://z-als.ch/fr/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "it=https://z-als.ch/it/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "x-default=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1009,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33812,
+   "lang": "en",
+   "title": "What we ask of a chauffeur before the first shift — Z-ALS Journal",
+   "description": "Licence, medical, background check, training, and a fortnight of shadowing. In that order.",
+   "canonical": "https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur",
+    "de=https://z-als.ch/de/journal/what-we-ask-of-a-chauffeur",
+    "fr=https://z-als.ch/fr/journal/what-we-ask-of-a-chauffeur",
+    "it=https://z-als.ch/it/journal/what-we-ask-of-a-chauffeur",
+    "x-default=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1021,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/who-is-actually-driving",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34460,
+   "lang": "en",
+   "title": "Who is actually driving — Z-ALS Journal",
+   "description": "The ground leg is the most frequent and least controlled part of a business trip. What Swiss law requires of the person behind the wheel, and what a booking channel does not.",
+   "canonical": "https://z-als.ch/en/journal/who-is-actually-driving",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/who-is-actually-driving",
+    "de=https://z-als.ch/de/journal/who-is-actually-driving",
+    "fr=https://z-als.ch/fr/journal/who-is-actually-driving",
+    "it=https://z-als.ch/it/journal/who-is-actually-driving",
+    "x-default=https://z-als.ch/en/journal/who-is-actually-driving"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1081,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/reading-a-chauffeur-invoice",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35317,
+   "lang": "en",
+   "title": "Reading a chauffeur invoice: the six lines that matter — Z-ALS Journal",
+   "description": "Waiting, mileage bands, night hours, tolls, parking, cancellation. Where suppliers differ most.",
+   "canonical": "https://z-als.ch/en/journal/reading-a-chauffeur-invoice",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/reading-a-chauffeur-invoice",
+    "de=https://z-als.ch/de/journal/reading-a-chauffeur-invoice",
+    "fr=https://z-als.ch/fr/journal/reading-a-chauffeur-invoice",
+    "it=https://z-als.ch/it/journal/reading-a-chauffeur-invoice",
+    "x-default=https://z-als.ch/en/journal/reading-a-chauffeur-invoice"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 8,
+   "main": true,
+   "words": 1270,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/roadshow-logistics",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34961,
+   "lang": "en",
+   "title": "Roadshow logistics: fourteen cars on one sheet — Z-ALS Journal",
+   "description": "How a three-day multi-vehicle programme is planned, and why it lives on paper as well as a screen.",
+   "canonical": "https://z-als.ch/en/journal/roadshow-logistics",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/roadshow-logistics",
+    "de=https://z-als.ch/de/journal/roadshow-logistics",
+    "fr=https://z-als.ch/fr/journal/roadshow-logistics",
+    "it=https://z-als.ch/it/journal/roadshow-logistics",
+    "x-default=https://z-als.ch/en/journal/roadshow-logistics"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1242,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/winter-routes",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33104,
+   "lang": "en",
+   "title": "Winter routes: when the Julier decides your schedule — Z-ALS Journal",
+   "description": "Alpine transfers in February are a weather problem before they are a driving problem.",
+   "canonical": "https://z-als.ch/en/journal/winter-routes",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/winter-routes",
+    "de=https://z-als.ch/de/journal/winter-routes",
+    "fr=https://z-als.ch/fr/journal/winter-routes",
+    "it=https://z-als.ch/it/journal/winter-routes",
+    "x-default=https://z-als.ch/en/journal/winter-routes"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 984,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/insurance-and-licensing",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33921,
+   "lang": "en",
+   "title": "Insurance and licensing: what to ask a transfer supplier — Z-ALS Journal",
+   "description": "Four questions that separate a licensed operator from a well-dressed ride-hailing account.",
+   "canonical": "https://z-als.ch/en/journal/insurance-and-licensing",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/insurance-and-licensing",
+    "de=https://z-als.ch/de/journal/insurance-and-licensing",
+    "fr=https://z-als.ch/fr/journal/insurance-and-licensing",
+    "it=https://z-als.ch/it/journal/insurance-and-licensing",
+    "x-default=https://z-als.ch/en/journal/insurance-and-licensing"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1045,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/en/journal/why-we-quote-by-hand",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 32811,
+   "lang": "en",
+   "title": "Why we quote by hand instead of by algorithm — Z-ALS Journal",
+   "description": "Dynamic pricing works for volume. It does not work for a client who has to know the number in advance.",
+   "canonical": "https://z-als.ch/en/journal/why-we-quote-by-hand",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/why-we-quote-by-hand",
+    "de=https://z-als.ch/de/journal/why-we-quote-by-hand",
+    "fr=https://z-als.ch/fr/journal/why-we-quote-by-hand",
+    "it=https://z-als.ch/it/journal/why-we-quote-by-hand",
+    "x-default=https://z-als.ch/en/journal/why-we-quote-by-hand"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 877,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/about",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34495,
+   "lang": "de",
+   "title": "Lizenzierter Chauffeurservice Schweiz — Z-ALS, Kloten",
+   "description": "Z-ALS ist ein bewilligter, in Kloten eingetragener schweizerischer Chauffeurservice — seit 2004 aus demselben Flughafenquartier. Kein Franchise, keine App-Ebene, keine zugekaufte Stadtflotte.",
+   "canonical": "https://z-als.ch/de/about",
+   "hreflang": [
+    "en=https://z-als.ch/en/about",
+    "de=https://z-als.ch/de/about",
+    "fr=https://z-als.ch/fr/about",
+    "it=https://z-als.ch/it/about",
+    "x-default=https://z-als.ch/en/about"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 4,
+   "main": true,
+   "words": 721,
+   "imgs": 10,
+   "imgNoAlt": 0,
+   "imgNoSize": 2,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/services",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 38063,
+   "lang": "de",
+   "title": "Was wir tatsächlich tun — Z-ALS",
+   "description": "Vier Leistungsbereiche, eine Disposition in Kloten und eine Mercedes-Flotte. Die unten aufgeführten Tarife sind die publizierten Tarife; alles darüber hinaus wird vor der Fahrt schriftlich fixiert.",
+   "canonical": "https://z-als.ch/de/services",
+   "hreflang": [
+    "en=https://z-als.ch/en/services",
+    "de=https://z-als.ch/de/services",
+    "fr=https://z-als.ch/fr/services",
+    "it=https://z-als.ch/it/services",
+    "x-default=https://z-als.ch/en/services"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 868,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/fleet",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 44229,
+   "lang": "de",
+   "title": "Fünf Klassen, ein Standard — Z-ALS",
+   "description": "Sie buchen eine Klasse, kein Kennzeichen. Jedes Fahrzeug wird planmässig in derselben Garage gewartet und fährt von Oktober bis April auf Winterreifen. Wählen Sie nach Passagieren und Gepäck — der Standard bleibt derselbe.",
+   "canonical": "https://z-als.ch/de/fleet",
+   "hreflang": [
+    "en=https://z-als.ch/en/fleet",
+    "de=https://z-als.ch/de/fleet",
+    "fr=https://z-als.ch/fr/fleet",
+    "it=https://z-als.ch/it/fleet",
+    "x-default=https://z-als.ch/en/fleet"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 9,
+   "main": true,
+   "words": 962,
+   "imgs": 18,
+   "imgNoAlt": 0,
+   "imgNoSize": 10,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/contact",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 32037,
+   "lang": "de",
+   "title": "Ein Schreibtisch, eine Nummer — Z-ALS",
+   "description": "Wer ans Telefon geht, disponiert auch die Fahrzeuge. Offerten kommen an Werktagen innert zwei Stunden schriftlich zurück — sofort telefonisch, wenn Sie bereits unterwegs sind.",
+   "canonical": "https://z-als.ch/de/contact",
+   "hreflang": [
+    "en=https://z-als.ch/en/contact",
+    "de=https://z-als.ch/de/contact",
+    "fr=https://z-als.ch/fr/contact",
+    "it=https://z-als.ch/it/contact",
+    "x-default=https://z-als.ch/en/contact"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 1,
+   "main": true,
+   "words": 528,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 32321,
+   "lang": "de",
+   "title": "Wie diese Arbeit tatsächlich abläuft — Z-ALS",
+   "description": "Geschrieben für alle, die Chauffeurdienste einkaufen: Travel Manager, Assistenzen der Geschäftsleitung, Family Offices. Operative Details, Preislogik und die Standards, die ein Anbieter belegen können sollte.",
+   "canonical": "https://z-als.ch/de/journal",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal",
+    "de=https://z-als.ch/de/journal",
+    "fr=https://z-als.ch/fr/journal",
+    "it=https://z-als.ch/it/journal",
+    "x-default=https://z-als.ch/en/journal"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 2,
+   "main": true,
+   "words": 703,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/the-arrivals-gap",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34893,
+   "lang": "de",
+   "title": "The arrivals gap: what the new border checks did to the walk to the kerb — Z-ALS Journal",
+   "description": "Biometric registration has put an unpredictable stretch between wheels-down and the arrivals hall. A transfer priced on the old assumption is quoting for a journey that no longer exists.",
+   "canonical": "https://z-als.ch/de/journal/the-arrivals-gap",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/the-arrivals-gap",
+    "de=https://z-als.ch/de/journal/the-arrivals-gap",
+    "fr=https://z-als.ch/fr/journal/the-arrivals-gap",
+    "it=https://z-als.ch/it/journal/the-arrivals-gap",
+    "x-default=https://z-als.ch/en/journal/the-arrivals-gap"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1095,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/what-a-fixed-fare-has-to-cover",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34803,
+   "lang": "de",
+   "title": "Was kostet ein Chauffeurservice in Zürich — Wartezeit inklusive — Z-ALS Journal",
+   "description": "Ein Angebot, das auf der Tabelle günstig aussieht, hat meist Wartezeit, Nachtstunden und Parkierung herausgerechnet. Hier steht jede Kostenposition, die ein Transfer trägt, und welche davon wir übernehmen.",
+   "canonical": "https://z-als.ch/de/journal/what-a-fixed-fare-has-to-cover",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover",
+    "de=https://z-als.ch/de/journal/what-a-fixed-fare-has-to-cover",
+    "fr=https://z-als.ch/fr/journal/what-a-fixed-fare-has-to-cover",
+    "it=https://z-als.ch/it/journal/what-a-fixed-fare-has-to-cover",
+    "x-default=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 8,
+   "main": true,
+   "words": 919,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35056,
+   "lang": "de",
+   "title": "Scope 3, Category 6, and the car that meets you — Z-ALS Journal",
+   "description": "Ground transport is a reportable line in your travel emissions now, and the worst-evidenced one. What that means when you choose a transfer class.",
+   "canonical": "https://z-als.ch/de/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "de=https://z-als.ch/de/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "fr=https://z-als.ch/fr/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "it=https://z-als.ch/it/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "x-default=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1079,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35328,
+   "lang": "de",
+   "title": "Verspäteter Flug: was beim Flughafentransfer Zürich wirklich passiert — Z-ALS Journal",
+   "description": "Der ankommende Flug verschiebt sich um zwei Stunden. Was auf unserer Seite geschieht, bevor der Passagier die Passkontrolle verlassen hat — und warum die sechzig Minuten Wartezeit nicht der interessante Teil sind.",
+   "canonical": "https://z-als.ch/de/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "de=https://z-als.ch/de/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "fr=https://z-als.ch/fr/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "it=https://z-als.ch/it/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "x-default=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 998,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/what-we-ask-of-a-chauffeur",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34024,
+   "lang": "de",
+   "title": "What we ask of a chauffeur before the first shift — Z-ALS Journal",
+   "description": "Licence, medical, background check, training, and a fortnight of shadowing. In that order.",
+   "canonical": "https://z-als.ch/de/journal/what-we-ask-of-a-chauffeur",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur",
+    "de=https://z-als.ch/de/journal/what-we-ask-of-a-chauffeur",
+    "fr=https://z-als.ch/fr/journal/what-we-ask-of-a-chauffeur",
+    "it=https://z-als.ch/it/journal/what-we-ask-of-a-chauffeur",
+    "x-default=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1002,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/who-is-actually-driving",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34672,
+   "lang": "de",
+   "title": "Who is actually driving — Z-ALS Journal",
+   "description": "The ground leg is the most frequent and least controlled part of a business trip. What Swiss law requires of the person behind the wheel, and what a booking channel does not.",
+   "canonical": "https://z-als.ch/de/journal/who-is-actually-driving",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/who-is-actually-driving",
+    "de=https://z-als.ch/de/journal/who-is-actually-driving",
+    "fr=https://z-als.ch/fr/journal/who-is-actually-driving",
+    "it=https://z-als.ch/it/journal/who-is-actually-driving",
+    "x-default=https://z-als.ch/en/journal/who-is-actually-driving"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1062,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/reading-a-chauffeur-invoice",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 36583,
+   "lang": "de",
+   "title": "Chauffeur-Rechnung prüfen: die sechs Positionen, die zählen — Z-ALS Journal",
+   "description": "Wartezeit, Kilometerstaffeln, Nachtstunden, Maut, Parkierung, Stornierung. Wo sich Anbieter am stärksten unterscheiden — und was Sie vor der Ausschreibung verlangen sollten.",
+   "canonical": "https://z-als.ch/de/journal/reading-a-chauffeur-invoice",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/reading-a-chauffeur-invoice",
+    "de=https://z-als.ch/de/journal/reading-a-chauffeur-invoice",
+    "fr=https://z-als.ch/fr/journal/reading-a-chauffeur-invoice",
+    "it=https://z-als.ch/it/journal/reading-a-chauffeur-invoice",
+    "x-default=https://z-als.ch/en/journal/reading-a-chauffeur-invoice"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 8,
+   "main": true,
+   "words": 1214,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/roadshow-logistics",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35903,
+   "lang": "de",
+   "title": "Roadshow-Transport in Zürich organisieren: vierzehn Fahrzeuge auf einem Blatt — Z-ALS Journal",
+   "description": "Wie ein dreitägiges Programm mit mehreren Fahrzeugen geplant wird, und warum ein Teil davon auf Papier existiert und nicht nur auf dem Bildschirm.",
+   "canonical": "https://z-als.ch/de/journal/roadshow-logistics",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/roadshow-logistics",
+    "de=https://z-als.ch/de/journal/roadshow-logistics",
+    "fr=https://z-als.ch/fr/journal/roadshow-logistics",
+    "it=https://z-als.ch/it/journal/roadshow-logistics",
+    "x-default=https://z-als.ch/en/journal/roadshow-logistics"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1158,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/winter-routes",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33316,
+   "lang": "de",
+   "title": "Winter routes: when the Julier decides your schedule — Z-ALS Journal",
+   "description": "Alpine transfers in February are a weather problem before they are a driving problem.",
+   "canonical": "https://z-als.ch/de/journal/winter-routes",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/winter-routes",
+    "de=https://z-als.ch/de/journal/winter-routes",
+    "fr=https://z-als.ch/fr/journal/winter-routes",
+    "it=https://z-als.ch/it/journal/winter-routes",
+    "x-default=https://z-als.ch/en/journal/winter-routes"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 965,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/insurance-and-licensing",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35243,
+   "lang": "de",
+   "title": "Chauffeurservice: worauf achten und wie Sie einen seriösen Anbieter erkennen — Z-ALS Journal",
+   "description": "Vier Fragen trennen einen bewilligten Betrieb von einem gut gekleideten Buchungskonto. Was Sie vor der Buchung prüfen können — und was ein Buchungskanal nicht prüft.",
+   "canonical": "https://z-als.ch/de/journal/insurance-and-licensing",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/insurance-and-licensing",
+    "de=https://z-als.ch/de/journal/insurance-and-licensing",
+    "fr=https://z-als.ch/fr/journal/insurance-and-licensing",
+    "it=https://z-als.ch/it/journal/insurance-and-licensing",
+    "x-default=https://z-als.ch/en/journal/insurance-and-licensing"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1031,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/de/journal/why-we-quote-by-hand",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33023,
+   "lang": "de",
+   "title": "Why we quote by hand instead of by algorithm — Z-ALS Journal",
+   "description": "Dynamic pricing works for volume. It does not work for a client who has to know the number in advance.",
+   "canonical": "https://z-als.ch/de/journal/why-we-quote-by-hand",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/why-we-quote-by-hand",
+    "de=https://z-als.ch/de/journal/why-we-quote-by-hand",
+    "fr=https://z-als.ch/fr/journal/why-we-quote-by-hand",
+    "it=https://z-als.ch/it/journal/why-we-quote-by-hand",
+    "x-default=https://z-als.ch/en/journal/why-we-quote-by-hand"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 858,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/about",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34576,
+   "lang": "fr",
+   "title": "Service de chauffeur agréé en Suisse — Z-ALS, Kloten",
+   "description": "Z-ALS a été inscrite à Kloten en 2004 et travaille depuis au départ du même quartier aéroportuaire. Pas de franchise, pas de couche applicative, pas de flotte urbaine sous-traitée.",
+   "canonical": "https://z-als.ch/fr/about",
+   "hreflang": [
+    "en=https://z-als.ch/en/about",
+    "de=https://z-als.ch/de/about",
+    "fr=https://z-als.ch/fr/about",
+    "it=https://z-als.ch/it/about",
+    "x-default=https://z-als.ch/en/about"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 4,
+   "main": true,
+   "words": 853,
+   "imgs": 10,
+   "imgNoAlt": 0,
+   "imgNoSize": 2,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/services",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 38089,
+   "lang": "fr",
+   "title": "Ce que nous faisons réellement — Z-ALS",
+   "description": "Quatre métiers, une centrale à Kloten et une flotte Mercedes. Les tarifs ci-dessous sont les tarifs publiés ; tout ce qui en sort est fixé par écrit avant le trajet.",
+   "canonical": "https://z-als.ch/fr/services",
+   "hreflang": [
+    "en=https://z-als.ch/en/services",
+    "de=https://z-als.ch/de/services",
+    "fr=https://z-als.ch/fr/services",
+    "it=https://z-als.ch/it/services",
+    "x-default=https://z-als.ch/en/services"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1000,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/fleet",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 44577,
+   "lang": "fr",
+   "title": "Cinq classes, un seul standard — Z-ALS",
+   "description": "Vous réservez une classe, pas une plaque. Chaque véhicule est entretenu selon le calendrier dans le même garage et roule en pneus hiver d’octobre à avril. Choisissez selon les passagers et les bagages — le standard, lui, ne change pas.",
+   "canonical": "https://z-als.ch/fr/fleet",
+   "hreflang": [
+    "en=https://z-als.ch/en/fleet",
+    "de=https://z-als.ch/de/fleet",
+    "fr=https://z-als.ch/fr/fleet",
+    "it=https://z-als.ch/it/fleet",
+    "x-default=https://z-als.ch/en/fleet"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 9,
+   "main": true,
+   "words": 1143,
+   "imgs": 18,
+   "imgNoAlt": 0,
+   "imgNoSize": 10,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/contact",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 32064,
+   "lang": "fr",
+   "title": "Un bureau, un numéro — Z-ALS",
+   "description": "Les personnes qui répondent au téléphone sont celles qui affectent les véhicules. Les devis reviennent par écrit sous deux heures les jours ouvrables — immédiatement par téléphone si vous êtes déjà en route.",
+   "canonical": "https://z-als.ch/fr/contact",
+   "hreflang": [
+    "en=https://z-als.ch/en/contact",
+    "de=https://z-als.ch/de/contact",
+    "fr=https://z-als.ch/fr/contact",
+    "it=https://z-als.ch/it/contact",
+    "x-default=https://z-als.ch/en/contact"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 1,
+   "main": true,
+   "words": 596,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 32372,
+   "lang": "fr",
+   "title": "Comment ce métier s’exerce vraiment — Z-ALS",
+   "description": "Écrit pour ceux qui achètent des services de chauffeur : travel managers, assistants de direction, family offices. Détail opérationnel, logique tarifaire, et les standards qu’un prestataire devrait pouvoir démontrer.",
+   "canonical": "https://z-als.ch/fr/journal",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal",
+    "de=https://z-als.ch/de/journal",
+    "fr=https://z-als.ch/fr/journal",
+    "it=https://z-als.ch/it/journal",
+    "x-default=https://z-als.ch/en/journal"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 2,
+   "main": true,
+   "words": 743,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/the-arrivals-gap",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35046,
+   "lang": "fr",
+   "title": "The arrivals gap: what the new border checks did to the walk to the kerb — Z-ALS Journal",
+   "description": "Biometric registration has put an unpredictable stretch between wheels-down and the arrivals hall. A transfer priced on the old assumption is quoting for a journey that no longer exists.",
+   "canonical": "https://z-als.ch/fr/journal/the-arrivals-gap",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/the-arrivals-gap",
+    "de=https://z-als.ch/de/journal/the-arrivals-gap",
+    "fr=https://z-als.ch/fr/journal/the-arrivals-gap",
+    "it=https://z-als.ch/it/journal/the-arrivals-gap",
+    "x-default=https://z-als.ch/en/journal/the-arrivals-gap"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1136,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/what-a-fixed-fare-has-to-cover",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33955,
+   "lang": "fr",
+   "title": "What a fixed fare has to cover — Z-ALS Journal",
+   "description": "A quote that looks cheap on a spreadsheet usually has the waiting time, the night hours and the parking taken out of it. Here is every cost line a transfer actually carries, and which of them we absorb.",
+   "canonical": "https://z-als.ch/fr/journal/what-a-fixed-fare-has-to-cover",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover",
+    "de=https://z-als.ch/de/journal/what-a-fixed-fare-has-to-cover",
+    "fr=https://z-als.ch/fr/journal/what-a-fixed-fare-has-to-cover",
+    "it=https://z-als.ch/it/journal/what-a-fixed-fare-has-to-cover",
+    "x-default=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 956,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35209,
+   "lang": "fr",
+   "title": "Scope 3, Category 6, and the car that meets you — Z-ALS Journal",
+   "description": "Ground transport is a reportable line in your travel emissions now, and the worst-evidenced one. What that means when you choose a transfer class.",
+   "canonical": "https://z-als.ch/fr/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "de=https://z-als.ch/de/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "fr=https://z-als.ch/fr/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "it=https://z-als.ch/it/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "x-default=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1120,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34262,
+   "lang": "fr",
+   "title": "How a dispatch desk absorbs a delayed flight — Z-ALS Journal",
+   "description": "The inbound slips two hours. What happens on our side before the passenger has cleared passport control.",
+   "canonical": "https://z-als.ch/fr/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "de=https://z-als.ch/de/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "fr=https://z-als.ch/fr/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "it=https://z-als.ch/it/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "x-default=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1031,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/what-we-ask-of-a-chauffeur",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34177,
+   "lang": "fr",
+   "title": "What we ask of a chauffeur before the first shift — Z-ALS Journal",
+   "description": "Licence, medical, background check, training, and a fortnight of shadowing. In that order.",
+   "canonical": "https://z-als.ch/fr/journal/what-we-ask-of-a-chauffeur",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur",
+    "de=https://z-als.ch/de/journal/what-we-ask-of-a-chauffeur",
+    "fr=https://z-als.ch/fr/journal/what-we-ask-of-a-chauffeur",
+    "it=https://z-als.ch/it/journal/what-we-ask-of-a-chauffeur",
+    "x-default=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1043,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/who-is-actually-driving",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34825,
+   "lang": "fr",
+   "title": "Who is actually driving — Z-ALS Journal",
+   "description": "The ground leg is the most frequent and least controlled part of a business trip. What Swiss law requires of the person behind the wheel, and what a booking channel does not.",
+   "canonical": "https://z-als.ch/fr/journal/who-is-actually-driving",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/who-is-actually-driving",
+    "de=https://z-als.ch/de/journal/who-is-actually-driving",
+    "fr=https://z-als.ch/fr/journal/who-is-actually-driving",
+    "it=https://z-als.ch/it/journal/who-is-actually-driving",
+    "x-default=https://z-als.ch/en/journal/who-is-actually-driving"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1103,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/reading-a-chauffeur-invoice",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35682,
+   "lang": "fr",
+   "title": "Reading a chauffeur invoice: the six lines that matter — Z-ALS Journal",
+   "description": "Waiting, mileage bands, night hours, tolls, parking, cancellation. Where suppliers differ most.",
+   "canonical": "https://z-als.ch/fr/journal/reading-a-chauffeur-invoice",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/reading-a-chauffeur-invoice",
+    "de=https://z-als.ch/de/journal/reading-a-chauffeur-invoice",
+    "fr=https://z-als.ch/fr/journal/reading-a-chauffeur-invoice",
+    "it=https://z-als.ch/it/journal/reading-a-chauffeur-invoice",
+    "x-default=https://z-als.ch/en/journal/reading-a-chauffeur-invoice"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 8,
+   "main": true,
+   "words": 1292,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/roadshow-logistics",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35326,
+   "lang": "fr",
+   "title": "Roadshow logistics: fourteen cars on one sheet — Z-ALS Journal",
+   "description": "How a three-day multi-vehicle programme is planned, and why it lives on paper as well as a screen.",
+   "canonical": "https://z-als.ch/fr/journal/roadshow-logistics",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/roadshow-logistics",
+    "de=https://z-als.ch/de/journal/roadshow-logistics",
+    "fr=https://z-als.ch/fr/journal/roadshow-logistics",
+    "it=https://z-als.ch/it/journal/roadshow-logistics",
+    "x-default=https://z-als.ch/en/journal/roadshow-logistics"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1264,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/winter-routes",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33469,
+   "lang": "fr",
+   "title": "Winter routes: when the Julier decides your schedule — Z-ALS Journal",
+   "description": "Alpine transfers in February are a weather problem before they are a driving problem.",
+   "canonical": "https://z-als.ch/fr/journal/winter-routes",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/winter-routes",
+    "de=https://z-als.ch/de/journal/winter-routes",
+    "fr=https://z-als.ch/fr/journal/winter-routes",
+    "it=https://z-als.ch/it/journal/winter-routes",
+    "x-default=https://z-als.ch/en/journal/winter-routes"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 1006,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/insurance-and-licensing",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34286,
+   "lang": "fr",
+   "title": "Insurance and licensing: what to ask a transfer supplier — Z-ALS Journal",
+   "description": "Four questions that separate a licensed operator from a well-dressed ride-hailing account.",
+   "canonical": "https://z-als.ch/fr/journal/insurance-and-licensing",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/insurance-and-licensing",
+    "de=https://z-als.ch/de/journal/insurance-and-licensing",
+    "fr=https://z-als.ch/fr/journal/insurance-and-licensing",
+    "it=https://z-als.ch/it/journal/insurance-and-licensing",
+    "x-default=https://z-als.ch/en/journal/insurance-and-licensing"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1067,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/fr/journal/why-we-quote-by-hand",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33176,
+   "lang": "fr",
+   "title": "Why we quote by hand instead of by algorithm — Z-ALS Journal",
+   "description": "Dynamic pricing works for volume. It does not work for a client who has to know the number in advance.",
+   "canonical": "https://z-als.ch/fr/journal/why-we-quote-by-hand",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/why-we-quote-by-hand",
+    "de=https://z-als.ch/de/journal/why-we-quote-by-hand",
+    "fr=https://z-als.ch/fr/journal/why-we-quote-by-hand",
+    "it=https://z-als.ch/it/journal/why-we-quote-by-hand",
+    "x-default=https://z-als.ch/en/journal/why-we-quote-by-hand"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 899,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/about",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34238,
+   "lang": "it",
+   "title": "Servizio autista autorizzato in Svizzera — Z-ALS, Kloten",
+   "description": "Z-ALS è stata iscritta a Kloten nel 2004 e da allora lavora dallo stesso quartiere aeroportuale. Nessun franchising, nessuno strato applicativo, nessuna flotta urbana in subappalto.",
+   "canonical": "https://z-als.ch/it/about",
+   "hreflang": [
+    "en=https://z-als.ch/en/about",
+    "de=https://z-als.ch/de/about",
+    "fr=https://z-als.ch/fr/about",
+    "it=https://z-als.ch/it/about",
+    "x-default=https://z-als.ch/en/about"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 4,
+   "main": true,
+   "words": 797,
+   "imgs": 10,
+   "imgNoAlt": 0,
+   "imgNoSize": 2,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/services",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 37912,
+   "lang": "it",
+   "title": "Cosa facciamo davvero — Z-ALS",
+   "description": "Quattro linee di servizio, una centrale operativa a Kloten e una flotta Mercedes. Le tariffe qui sotto sono quelle pubblicate; tutto ciò che ne esce viene fissato per iscritto prima del viaggio.",
+   "canonical": "https://z-als.ch/it/services",
+   "hreflang": [
+    "en=https://z-als.ch/en/services",
+    "de=https://z-als.ch/de/services",
+    "fr=https://z-als.ch/fr/services",
+    "it=https://z-als.ch/it/services",
+    "x-default=https://z-als.ch/en/services"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 950,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/fleet",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 44319,
+   "lang": "it",
+   "title": "Cinque classi, un solo standard — Z-ALS",
+   "description": "Prenota una classe, non una targa. Ogni auto è tagliandata secondo programma nella stessa officina e monta pneumatici invernali da ottobre ad aprile. Scelga in base a passeggeri e bagagli — lo standard non cambia.",
+   "canonical": "https://z-als.ch/it/fleet",
+   "hreflang": [
+    "en=https://z-als.ch/en/fleet",
+    "de=https://z-als.ch/de/fleet",
+    "fr=https://z-als.ch/fr/fleet",
+    "it=https://z-als.ch/it/fleet",
+    "x-default=https://z-als.ch/en/fleet"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 9,
+   "main": true,
+   "words": 1084,
+   "imgs": 18,
+   "imgNoAlt": 0,
+   "imgNoSize": 10,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/contact",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 31806,
+   "lang": "it",
+   "title": "Un banco, un numero — Z-ALS",
+   "description": "Chi risponde al telefono è anche chi assegna le vetture. I preventivi tornano per iscritto entro due ore nei giorni lavorativi — subito per telefono se siete già in viaggio.",
+   "canonical": "https://z-als.ch/it/contact",
+   "hreflang": [
+    "en=https://z-als.ch/en/contact",
+    "de=https://z-als.ch/de/contact",
+    "fr=https://z-als.ch/fr/contact",
+    "it=https://z-als.ch/it/contact",
+    "x-default=https://z-als.ch/en/contact"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 1,
+   "main": true,
+   "words": 577,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 32205,
+   "lang": "it",
+   "title": "Come funziona davvero questo lavoro — Z-ALS",
+   "description": "Scritto per chi acquista servizi di autista: travel manager, assistenti di direzione, family office. Dettagli operativi, logica tariffaria e gli standard che un fornitore dovrebbe saper dimostrare.",
+   "canonical": "https://z-als.ch/it/journal",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal",
+    "de=https://z-als.ch/de/journal",
+    "fr=https://z-als.ch/fr/journal",
+    "it=https://z-als.ch/it/journal",
+    "x-default=https://z-als.ch/en/journal"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 2,
+   "main": true,
+   "words": 728,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/the-arrivals-gap",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34899,
+   "lang": "it",
+   "title": "The arrivals gap: what the new border checks did to the walk to the kerb — Z-ALS Journal",
+   "description": "Biometric registration has put an unpredictable stretch between wheels-down and the arrivals hall. A transfer priced on the old assumption is quoting for a journey that no longer exists.",
+   "canonical": "https://z-als.ch/it/journal/the-arrivals-gap",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/the-arrivals-gap",
+    "de=https://z-als.ch/de/journal/the-arrivals-gap",
+    "fr=https://z-als.ch/fr/journal/the-arrivals-gap",
+    "it=https://z-als.ch/it/journal/the-arrivals-gap",
+    "x-default=https://z-als.ch/en/journal/the-arrivals-gap"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1123,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/what-a-fixed-fare-has-to-cover",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33808,
+   "lang": "it",
+   "title": "What a fixed fare has to cover — Z-ALS Journal",
+   "description": "A quote that looks cheap on a spreadsheet usually has the waiting time, the night hours and the parking taken out of it. Here is every cost line a transfer actually carries, and which of them we absorb.",
+   "canonical": "https://z-als.ch/it/journal/what-a-fixed-fare-has-to-cover",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover",
+    "de=https://z-als.ch/de/journal/what-a-fixed-fare-has-to-cover",
+    "fr=https://z-als.ch/fr/journal/what-a-fixed-fare-has-to-cover",
+    "it=https://z-als.ch/it/journal/what-a-fixed-fare-has-to-cover",
+    "x-default=https://z-als.ch/en/journal/what-a-fixed-fare-has-to-cover"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 943,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35062,
+   "lang": "it",
+   "title": "Scope 3, Category 6, and the car that meets you — Z-ALS Journal",
+   "description": "Ground transport is a reportable line in your travel emissions now, and the worst-evidenced one. What that means when you choose a transfer class.",
+   "canonical": "https://z-als.ch/it/journal/business-travel-emissions-and-the-car-that-meets-you",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "de=https://z-als.ch/de/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "fr=https://z-als.ch/fr/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "it=https://z-als.ch/it/journal/business-travel-emissions-and-the-car-that-meets-you",
+    "x-default=https://z-als.ch/en/journal/business-travel-emissions-and-the-car-that-meets-you"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1107,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34115,
+   "lang": "it",
+   "title": "How a dispatch desk absorbs a delayed flight — Z-ALS Journal",
+   "description": "The inbound slips two hours. What happens on our side before the passenger has cleared passport control.",
+   "canonical": "https://z-als.ch/it/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "de=https://z-als.ch/de/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "fr=https://z-als.ch/fr/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "it=https://z-als.ch/it/journal/how-a-dispatch-desk-absorbs-a-delayed-flight",
+    "x-default=https://z-als.ch/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1018,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/what-we-ask-of-a-chauffeur",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34030,
+   "lang": "it",
+   "title": "What we ask of a chauffeur before the first shift — Z-ALS Journal",
+   "description": "Licence, medical, background check, training, and a fortnight of shadowing. In that order.",
+   "canonical": "https://z-als.ch/it/journal/what-we-ask-of-a-chauffeur",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur",
+    "de=https://z-als.ch/de/journal/what-we-ask-of-a-chauffeur",
+    "fr=https://z-als.ch/fr/journal/what-we-ask-of-a-chauffeur",
+    "it=https://z-als.ch/it/journal/what-we-ask-of-a-chauffeur",
+    "x-default=https://z-als.ch/en/journal/what-we-ask-of-a-chauffeur"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1030,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/who-is-actually-driving",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34678,
+   "lang": "it",
+   "title": "Who is actually driving — Z-ALS Journal",
+   "description": "The ground leg is the most frequent and least controlled part of a business trip. What Swiss law requires of the person behind the wheel, and what a booking channel does not.",
+   "canonical": "https://z-als.ch/it/journal/who-is-actually-driving",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/who-is-actually-driving",
+    "de=https://z-als.ch/de/journal/who-is-actually-driving",
+    "fr=https://z-als.ch/fr/journal/who-is-actually-driving",
+    "it=https://z-als.ch/it/journal/who-is-actually-driving",
+    "x-default=https://z-als.ch/en/journal/who-is-actually-driving"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1090,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/reading-a-chauffeur-invoice",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35535,
+   "lang": "it",
+   "title": "Reading a chauffeur invoice: the six lines that matter — Z-ALS Journal",
+   "description": "Waiting, mileage bands, night hours, tolls, parking, cancellation. Where suppliers differ most.",
+   "canonical": "https://z-als.ch/it/journal/reading-a-chauffeur-invoice",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/reading-a-chauffeur-invoice",
+    "de=https://z-als.ch/de/journal/reading-a-chauffeur-invoice",
+    "fr=https://z-als.ch/fr/journal/reading-a-chauffeur-invoice",
+    "it=https://z-als.ch/it/journal/reading-a-chauffeur-invoice",
+    "x-default=https://z-als.ch/en/journal/reading-a-chauffeur-invoice"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 8,
+   "main": true,
+   "words": 1279,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/roadshow-logistics",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 35179,
+   "lang": "it",
+   "title": "Roadshow logistics: fourteen cars on one sheet — Z-ALS Journal",
+   "description": "How a three-day multi-vehicle programme is planned, and why it lives on paper as well as a screen.",
+   "canonical": "https://z-als.ch/it/journal/roadshow-logistics",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/roadshow-logistics",
+    "de=https://z-als.ch/de/journal/roadshow-logistics",
+    "fr=https://z-als.ch/fr/journal/roadshow-logistics",
+    "it=https://z-als.ch/it/journal/roadshow-logistics",
+    "x-default=https://z-als.ch/en/journal/roadshow-logistics"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 7,
+   "main": true,
+   "words": 1251,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/winter-routes",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33322,
+   "lang": "it",
+   "title": "Winter routes: when the Julier decides your schedule — Z-ALS Journal",
+   "description": "Alpine transfers in February are a weather problem before they are a driving problem.",
+   "canonical": "https://z-als.ch/it/journal/winter-routes",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/winter-routes",
+    "de=https://z-als.ch/de/journal/winter-routes",
+    "fr=https://z-als.ch/fr/journal/winter-routes",
+    "it=https://z-als.ch/it/journal/winter-routes",
+    "x-default=https://z-als.ch/en/journal/winter-routes"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 993,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/insurance-and-licensing",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 34139,
+   "lang": "it",
+   "title": "Insurance and licensing: what to ask a transfer supplier — Z-ALS Journal",
+   "description": "Four questions that separate a licensed operator from a well-dressed ride-hailing account.",
+   "canonical": "https://z-als.ch/it/journal/insurance-and-licensing",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/insurance-and-licensing",
+    "de=https://z-als.ch/de/journal/insurance-and-licensing",
+    "fr=https://z-als.ch/fr/journal/insurance-and-licensing",
+    "it=https://z-als.ch/it/journal/insurance-and-licensing",
+    "x-default=https://z-als.ch/en/journal/insurance-and-licensing"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 6,
+   "main": true,
+   "words": 1054,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  },
+  {
+   "url": "https://z-als.ch/it/journal/why-we-quote-by-hand",
+   "status": 200,
+   "encoding": "",
+   "etag": false,
+   "bytes": 33029,
+   "lang": "it",
+   "title": "Why we quote by hand instead of by algorithm — Z-ALS Journal",
+   "description": "Dynamic pricing works for volume. It does not work for a client who has to know the number in advance.",
+   "canonical": "https://z-als.ch/it/journal/why-we-quote-by-hand",
+   "hreflang": [
+    "en=https://z-als.ch/en/journal/why-we-quote-by-hand",
+    "de=https://z-als.ch/de/journal/why-we-quote-by-hand",
+    "fr=https://z-als.ch/fr/journal/why-we-quote-by-hand",
+    "it=https://z-als.ch/it/journal/why-we-quote-by-hand",
+    "x-default=https://z-als.ch/en/journal/why-we-quote-by-hand"
+   ],
+   "og": [
+    "og:title",
+    "og:description",
+    "og:image",
+    "og:locale",
+    "og:url"
+   ],
+   "twitter": true,
+   "h1": 1,
+   "h2": 5,
+   "main": true,
+   "words": 886,
+   "imgs": 9,
+   "imgNoAlt": 0,
+   "imgNoSize": 1,
+   "jsonld": [
+    "LimousineService",
+    "BlogPosting"
+   ],
+   "jsonldInvalid": false,
+   "gtm": 0,
+   "gtmNoscript": 0
+  }
+ ]
+}

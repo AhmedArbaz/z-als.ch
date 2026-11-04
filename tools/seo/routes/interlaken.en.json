@@ -1,0 +1,93 @@
+{
+  "title": "Zurich to Interlaken Transfer | Private Chauffeur | Z-ALS",
+  "description": "Private chauffeur from Zurich Airport to Interlaken, {km} km to the Jungfrau region. Flight tracked, 24/7 dispatch, fare fixed before you book.",
+  "h1": "Zurich Airport to Interlaken by private chauffeur",
+  "lede": "A chauffeur meets you inside arrivals at Zürich Airport and drives you to Interlaken, {km} km away between Lake Thun and Lake Brienz, for a fare fixed before you book. Dispatch answers at any hour, by phone, WhatsApp or email.",
+  "intro": [
+    "Interlaken lies between Lake Thun and Lake Brienz and is the usual starting point for the Jungfrau region and the Bernese Oberland. From Zürich Airport it is {km} km, and a private transfer is one car and one chauffeur from the arrivals hall to your door, with no change of train or bus on the way.",
+    "The fare comes from the distance and the car class, and it is fixed before you book. The chauffeur waits inside arrivals, and if you give us the flight number the pick-up moves with the landing.",
+    "This page covers the fare, the drive, the cars and what dispatch needs from you. Anything outside the published fares, such as the return from Interlaken, is quoted per route."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Interlaken",
+      "paragraphs": [
+        "Business Class (Mercedes E-Class or equivalent) costs {priceBusiness} for the whole car, with {vat} VAT added as its own line. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. Each figure is per car, not per passenger.",
+        "The fare is worked out from the distance and the class rate, stated before you book and not changed afterwards. It includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats, fitted before the journey at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The drive along Lake Thun",
+      "paragraphs": [
+        "The distance is {km} km and the drive takes about {time}. The usual way runs by motorway from the airport towards Bern and Thun, then follows the shore of Lake Thun into Interlaken.",
+        "Most of the journey is motorway, and the last part runs beside the lake. From October to April every car runs winter tyres, and snow on the way can lengthen the drive. Allow some margin if you have a train or a booked excursion to reach, and tell dispatch about it when you book.",
+        "Summer brings more visitors to the lakes and the Jungfrau region, so leave some room in the day rather than counting to the minute."
+      ]
+    },
+    {
+      "h2": "Which car for Interlaken",
+      "paragraphs": [
+        "In Business Class three passengers travel with three cases, and a fourth fits if the luggage is light. Premium Class seats three, with two cases, and has a rear cabin built to work in over a drive of this length. The SUV seats four with four cases and has all-wheel drive, which suits a winter arrival and a ski week in the Oberland.",
+        "The Business Van seats seven with seven cases and suits families, tour parties and anyone travelling with a lot of luggage. For larger groups dispatch quotes a minibus or coach. A fully electric saloon is available at the Business Class rate; on a run of this length, ask dispatch first, because range is planned against the route before the car is assigned."
+      ]
+    },
+    {
+      "h2": "Meeting the chauffeur and booking",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals, and the fare includes sixty minutes of waiting after landing. Give the flight number when you book: the inbound flight is tracked and the pick-up moves with it at no charge, so a delayed landing changes neither the fare nor the plan.",
+        "Fares are published for pick-ups at Zürich Airport. The return from Interlaken, a pick-up at any other address, at Basel or Geneva airport, and journeys abroad are quoted per route by dispatch. To book, dispatch needs:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The hotel or address in Interlaken, or the town if the address is not settled",
+        "Number of passengers and cases",
+        "Child seats, skis or boards, if any"
+      ]
+    },
+    {
+      "h2": "Interlaken as a base for the valleys",
+      "paragraphs": [
+        "Interlaken is a base for most visitors rather than the last stop. The Jungfrau region begins just beyond it, and the valleys of Lauterbrunnen and Grindelwald are reached from here. The fare is for Interlaken itself; an address further up either valley is a different route, and dispatch quotes it before you book. The town has two railway stations, West and Ost, so name the hotel or the station you want.",
+        "Wengen and Mürren have no road access, so the car goes as far as Lauterbrunnen or the valley station and the last stretch is by rail or cable car with your luggage. Tell dispatch if that is your destination, so that the drop-off point is agreed in advance. A stop on the way, or an onward leg, is also a different route and is quoted separately."
+      ]
+    }
+  ],
+  "priceNote": "Fares are net of VAT; {vat} VAT is added as its own line. They are published for pick-ups at Zürich Airport, and the return from Interlaken or any other pick-up point is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Interlaken take?",
+      "a": "The drive is about {time} for {km} km, mostly by motorway. Snow can lengthen it in winter, so tell dispatch if you have a fixed commitment on arrival."
+    },
+    {
+      "q": "How much does a private transfer from Zürich Airport to Interlaken cost?",
+      "a": "{priceBusiness} in a Business Class car, {pricePremium} in Premium Class, {priceSuv} in the SUV and {priceVan} in the Business Van, all net of {vat} VAT. The fare covers the whole car and is fixed before you book."
+    },
+    {
+      "q": "Does the pick-up change if my flight is delayed?",
+      "a": "Yes, it moves with the flight, at no charge, as long as you gave us the flight number when you booked. Sixty minutes of waiting after landing are included."
+    },
+    {
+      "q": "Can I bring skis, luggage and child seats?",
+      "a": "Child seats (infant, toddler or booster) are fitted before the journey at no charge. Tell dispatch how many cases and how many pairs of skis or boards you have, so that the class is right the first time; the Business Van takes a ski box from November."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "You can pay online by card or TWINT, pay the chauffeur on the day, or arrange payment with dispatch on WhatsApp. Corporate clients are invoiced monthly; if a cancellation charge applies, it is stated when the booking is confirmed."
+    },
+    {
+      "q": "Can you drive us to Wengen or Mürren?",
+      "a": "Both villages are closed to cars, so the car takes you to Lauterbrunnen or the valley station and the last stretch is by rail or cable car. The published fare covers Interlaken only, so dispatch quotes the route: send the date and the village."
+    },
+    {
+      "q": "Can you collect us in Interlaken for the return to the airport?",
+      "a": "Yes. The return is a separate journey, and because published fares start at Zürich Airport, dispatch quotes it per route. Send the date and the address."
+    }
+  ]
+}

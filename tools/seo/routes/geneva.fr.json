@@ -1,0 +1,96 @@
+{
+  "title": "Transfert Genève Zurich | Chauffeur privé | Z-ALS",
+  "description": "Transfert privé de l’aéroport de Zurich à Genève : {km} km, environ {time} par autoroute, retour sur devis. Prix fixe annoncé avant la réservation.",
+  "h1": "Transfert de l’aéroport de Zurich à Genève avec chauffeur privé",
+  "lede": "Un chauffeur vous attend dans le hall d’arrivée de l’aéroport de Zurich et vous conduit à Genève : {km} km, environ {time} par autoroute, à un prix fixe annoncé avant la réservation. La centrale répond à toute heure.",
+  "intro": [
+    "Genève se trouve à l’extrémité occidentale du lac Léman, en Suisse romande, et la route depuis l’aéroport de Zurich traverse tout le Plateau suisse pour y parvenir. La distance est de {km} km, soit environ {time} de route : une longue étape, plus simple en une seule voiture, avec les bagages pris en charge du hall d’arrivée jusqu’à la porte de l’hôtel ou du bureau.",
+    "Z-ALS est une entreprise suisse de transport avec chauffeur, titulaire des autorisations requises, installée à Kloten depuis 2004. Le prix découle de la distance et de la classe du véhicule et il est annoncé avant la réservation : il ne change pas, même si l’horaire de votre vol change. Une personne répond à la centrale à toute heure, par téléphone, WhatsApp ou e-mail.",
+    "Vous trouverez ci-dessous le prix, la route, les voitures et ce dont la centrale a besoin. Pour un transfert de Genève à Zurich, reportez-vous à la dernière section : ce sens est chiffré par la centrale."
+  ],
+  "sections": [
+    {
+      "h2": "Le prix fixe de l’aéroport de Zurich à Genève",
+      "paragraphs": [
+        "Un transfert en classe Business (Mercedes Classe E ou équivalent) coûte {priceBusiness} pour toute la voiture. La classe Premium (Mercedes Classe S ou équivalent) est à {pricePremium}, le SUV (Mercedes GLE ou équivalent) à {priceSuv} et le Business Van (Mercedes Classe V ou équivalent) à {priceVan}. La TVA de {vat} s’ajoute sur une ligne à part.",
+        "Le prix s’entend par voiture, non par passager, et se calcule au kilomètre selon la classe : sur {km} km, le minimum de la classe n’entre pas en jeu. Il est annoncé avant la réservation et comprend :"
+      ],
+      "bullets": [
+        "L’attente et la manutention des bagages",
+        "Les péages et la vignette autoroutière suisse",
+        "Les sièges enfant, installés avant le trajet sans frais",
+        "Soixante minutes d’attente après l’atterrissage",
+        "L’assurance passagers"
+      ]
+    },
+    {
+      "h2": "La route de Zurich à Genève et la durée du trajet",
+      "paragraphs": [
+        "Le trajet fait {km} km et dure environ {time}. Le chauffeur prend l’autoroute vers l’ouest et traverse le Plateau suisse, par la région de Berne puis celle de Lausanne, avant de longer la rive du lac Léman jusqu’à Genève. Prenez {time} comme durée de planification, non comme promesse à la minute, et gardez une marge si un vol, un train ou un rendez-vous vous attend à l’arrivée.",
+        "Aucun col de montagne ne se trouve sur cette route, et l’hiver y pèse donc moins que sur nos trajets alpins. La neige ou le brouillard sur le Plateau peuvent néanmoins ralentir l’autoroute. D’octobre à avril, toutes les voitures roulent en pneus hiver, de série. Le prix suit la distance et non la durée : une route lente ne l’augmente pas."
+      ]
+    },
+    {
+      "h2": "Quelle voiture pour Genève",
+      "paragraphs": [
+        "La classe Business accueille trois passagers avec trois valises ; un quatrième tient si les bagages sont légers. C’est le choix habituel pour une à trois personnes. La classe Premium transporte trois passagers avec deux valises, dans un habitacle arrière conçu pour travailler : sur {time} de route, cela compte. Le SUV accueille quatre passagers avec quatre valises et dispose de quatre roues motrices.",
+        "Le Business Van prend sept passagers avec sept valises : il convient aux délégations, aux familles et aux gros bagages. Pour les groupes jusqu’à seize personnes, la centrale établit un devis pour un minibus ou un autocar, par trajet. Une berline entièrement électrique est disponible au tarif de la classe Business ; sur une étape aussi longue, demandez-la à la centrale lors de la réservation, car l’autonomie est planifiée sur l’itinéraire avant l’attribution du véhicule."
+      ]
+    },
+    {
+      "h2": "Prise en charge à l’aéroport de Zurich et ce dont la centrale a besoin",
+      "paragraphs": [
+        "Le chauffeur vous attend à l’intérieur du hall d’arrivée, et soixante minutes d’attente après l’atterrissage sont comprises dans le prix. Indiquez votre numéro de vol à la réservation : le vol entrant est suivi et la prise en charge se décale avec lui sans supplément, de sorte qu’un atterrissage retardé ne change ni le prix ni le plan.",
+        "Les prix publiés partent de l’aéroport de Zurich. Toute autre adresse de départ, l’aéroport de Bâle ou celui de Genève, le retour depuis Genève et les trajets à l’étranger font l’objet d’un devis par trajet établi par la centrale. Pour réserver, elle a besoin de :"
+      ],
+      "bullets": [
+        "Le numéro de vol et la date d’atterrissage",
+        "L’adresse à Genève, ou la localité si l’adresse n’est pas encore arrêtée",
+        "Le nombre de passagers et de valises, avec les skis ou les bagages encombrants le cas échéant",
+        "Les sièges enfant nécessaires",
+        "Un numéro de téléphone joignable à l’arrivée"
+      ]
+    },
+    {
+      "h2": "Ce qui distingue ce trajet : une longue étape jusqu’à Genève",
+      "paragraphs": [
+        "Sur une étape de cette longueur, mieux vaut régler les détails de l’arrivée avant le départ. Genève borde le lac, abrite un aéroport et touche la France : donnez à la centrale l’adresse complète, avec la rue et le numéro ou le nom de l’hôtel, et non la seule ville, pour que le chauffeur se rende à la bonne porte du premier coup. Si le trajet doit s’achever à l’aéroport de Genève, dites-le à la réservation.",
+        "Le prix publié s’applique à Genève. Un arrêt en route, une autre localité du lac Léman ou une adresse en France sortent du trajet publié ici : la centrale les chiffre avant la réservation. Pour un vol au départ de Genève, prévoyez une large marge avant l’enregistrement."
+      ]
+    },
+    {
+      "h2": "De Genève à Zurich : le transfert en sens inverse",
+      "paragraphs": [
+        "Un transfert de Genève à Zurich, au départ de l’aéroport de Genève ou d’une adresse en ville, est chiffré par la centrale, tout comme le retour d’un séjour à Genève. La route est la même dans les deux sens ; ce qui change, c’est le point de départ, et les prix publiés partent de l’aéroport de Zurich.",
+        "Pour obtenir un prix fixe avant de réserver, envoyez la date, l’adresse de départ à Genève, l’adresse à Zurich ou près de Zurich, et le nombre de passagers et de valises. Si vous atterrissez à Genève, ajoutez le numéro de vol : le vol entrant est suivi. La centrale répond avec le prix avant que rien ne soit confirmé."
+      ]
+    }
+  ],
+  "priceNote": "Les prix s’entendent par voiture, en aller simple depuis l’aéroport de Zurich, hors TVA ; la TVA de {vat} s’ajoute sur une ligne à part. Le départ depuis Genève, y compris l’aéroport de Genève, fait l’objet d’un devis de la centrale.",
+  "faq": [
+    {
+      "q": "Combien de temps dure le transfert de l’aéroport de Zurich à Genève ?",
+      "a": "Le trajet compte {km} km et dure environ {time}, presque entièrement sur autoroute. La neige ou le brouillard peuvent l’allonger : signalez à la centrale tout vol, train ou rendez-vous à tenir à l’arrivée."
+    },
+    {
+      "q": "Combien coûte un transfert privé de l’aéroport de Zurich à Genève ?",
+      "a": "{priceBusiness} en classe Business (Mercedes Classe E ou équivalent), pour toute la voiture et non par passager. La classe Premium est à {pricePremium}, le SUV à {priceSuv} et le Business Van à {priceVan}, hors TVA de {vat}, qui s’ajoute sur une ligne à part."
+    },
+    {
+      "q": "Que se passe-t-il si mon vol atterrit en retard ?",
+      "a": "Donnez-nous le numéro de vol à la réservation. Nous suivons le vol entrant et la prise en charge se décale avec lui sans supplément ; soixante minutes d’attente après l’atterrissage sont comprises."
+    },
+    {
+      "q": "Puis-je emporter des bagages, des skis et des sièges enfant ?",
+      "a": "La manutention des bagages est comprise dans le prix, et les sièges enfant (bébé, enfant ou rehausseur) sont installés avant le trajet sans frais. Indiquez à la centrale le nombre de valises et de paires de skis ou de snowboards."
+    },
+    {
+      "q": "Comment payer le transfert ?",
+      "a": "En ligne par carte ou par TWINT, au chauffeur le jour même, ou selon un arrangement pris avec la centrale sur WhatsApp. Les clients entreprises sont facturés mensuellement, et tout frais d’annulation est indiqué à la confirmation de la réservation."
+    },
+    {
+      "q": "Pouvez-vous me prendre à l’aéroport de Genève pour me conduire à Zurich ?",
+      "a": "Oui, sur devis. Les prix publiés partent de l’aéroport de Zurich : envoyez la date, le numéro de vol et l’adresse à Zurich par téléphone, WhatsApp ou e-mail, et le prix vous revient avant la réservation."
+    }
+  ]
+}

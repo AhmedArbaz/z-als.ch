@@ -1,0 +1,92 @@
+{
+  "title": "Transfer Zürich Luzern privat | Chauffeur | Z-ALS",
+  "description": "Privater Chauffeur-Transfer vom Flughafen Zürich nach Luzern, {km} km, rund {time} Fahrzeit. Mercedes E-, S- oder V-Klasse, Festpreis vor der Buchung.",
+  "h1": "Transfer von Zürich nach Luzern mit privatem Chauffeur",
+  "lede": "Ein Chauffeur erwartet Sie in der Ankunftshalle am Flughafen Zürich und fährt Sie die {km} km nach Luzern, zu einem Festpreis, der vor der Buchung feststeht. Ziel ist Ihre Tür, nicht der Bahnhof.",
+  "intro": [
+    "Luzern liegt am Vierwaldstättersee in der Zentralschweiz, mit dem Pilatus und der Rigi in der Nähe. Vom Flughafen Zürich sind es {km} km, und ein privater Transfer bedeutet: ein Fahrzeug und ein Chauffeur von der Ankunftshalle bis vor die Tür Ihres Hotels, Ihres Büros oder Ihrer Wohnung, ohne Umsteigen am Bahnhof.",
+    "Berechnet wird pro Kilometer nach Fahrzeugklasse; der Preis steht vor der Buchung fest. Die Disposition antwortet rund um die Uhr persönlich, per Telefon, WhatsApp oder E-Mail, und der Chauffeur wartet in der Ankunftshalle."
+  ],
+  "sections": [
+    {
+      "h2": "Der Festpreis vom Flughafen Zürich nach Luzern",
+      "paragraphs": [
+        "Die Business-Klasse (Mercedes E-Klasse oder gleichwertig) kostet {priceBusiness}, die Premium-Klasse (Mercedes S-Klasse oder gleichwertig) {pricePremium}, der SUV (Mercedes GLE oder gleichwertig) {priceSuv} und der Business Van (Mercedes V-Klasse oder gleichwertig) {priceVan}. Die Beträge gelten pro Fahrzeug, nicht pro Person; eine Gruppe von drei oder vier Personen teilt sich also einen Preis. Sie verstehen sich exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen.",
+        "Der Preis ergibt sich aus der Strecke und dem Kilometertarif der Klasse und liegt auf dieser Strecke über dem Mindestpreis der Klasse. Er wird vor der Buchung genannt und ändert sich danach nicht, auch nicht, wenn sich der Flug verspätet. Im Preis enthalten sind:"
+      ],
+      "bullets": [
+        "Wartezeit und Gepäckverladung",
+        "Mautgebühren und die Schweizer Autobahnvignette",
+        "Kindersitze, vor der Fahrt eingebaut, ohne Aufpreis",
+        "Sechzig Minuten Wartezeit nach der Landung",
+        "Passagierversicherung"
+      ]
+    },
+    {
+      "h2": "Die Fahrt: fast nur Autobahn, kein Pass",
+      "paragraphs": [
+        "Für die {km} km rechnen Sie mit rund {time} Fahrzeit. Der übliche Weg führt ab dem Flughafen um Zürich herum auf die Autobahn in Richtung Zug und von dort weiter nach Luzern. Fast die ganze Fahrt verläuft auf der Autobahn, erst das letzte Stück führt in die Stadt hinein.",
+        "Die Strecke überquert keinen Pass, und darin unterscheidet sie sich von den meisten unserer Bergfahrten. Von Oktober bis April fährt jedes unserer Fahrzeuge auf Winterreifen. Schnee oder starker Regen können die Fahrt trotzdem verlängern; wer einen Zug oder einen Termin erreichen muss, plant deshalb einen Puffer ein und sagt es der Disposition bei der Buchung.",
+        "Im Sommer sind rund um den See mehr Gäste unterwegs. Verstehen Sie die Fahrzeit von {time} darum als Planungswert, nicht als Zusage auf die Minute."
+      ]
+    },
+    {
+      "h2": "Welches Fahrzeug für Luzern",
+      "paragraphs": [
+        "In der Business-Klasse reisen drei Passagiere mit drei Koffern; ein vierter findet Platz, wenn das Gepäck leicht ist. Die Premium-Klasse bietet drei Plätze und Platz für zwei Koffer, dazu einen Fond, in dem sich unterwegs arbeiten lässt. Der SUV fasst vier Passagiere mit vier Koffern und hat Allradantrieb, was bei einer Ankunft im Winter von Vorteil ist.",
+        "Der Business Van bietet sieben Plätze und Platz für sieben Koffer und passt für Familien, Delegationen und alle, die mit viel Gepäck reisen. Für Gruppen bis zu 16 Personen offeriert die Disposition einen Minibus oder Reisebus, pro Fahrt und nicht nach der Preistabelle. Eine vollelektrische Limousine ist ebenfalls im Angebot; ihre Reichweite wird vor der Zuteilung gegen die Route geplant, fragen Sie bei der Buchung danach."
+      ]
+    },
+    {
+      "h2": "Abholung in der Ankunftshalle: was wir von Ihnen brauchen",
+      "paragraphs": [
+        "Der Chauffeur wartet in der Ankunftshalle. Nennen Sie bei der Buchung die Flugnummer: Der ankommende Flug wird verfolgt, und die Abholzeit verschiebt sich ohne Aufpreis mit der Landung. Sechzig Minuten Wartezeit nach der Landung sind im Preis enthalten.",
+        "Die Festpreise sind für Abholungen am Flughafen Zürich publiziert. Die Rückfahrt ab Luzern, eine Abholung an einer anderen Adresse, am Flughafen Basel oder am Flughafen Genf sowie Fahrten ins Ausland offeriert die Disposition pro Strecke. Für die Buchung braucht sie:"
+      ],
+      "bullets": [
+        "Flugnummer und Landedatum",
+        "Das Hotel oder die Adresse in Luzern oder, falls sie noch nicht feststeht, den Ort",
+        "Anzahl der Passagiere und der Koffer",
+        "Kindersitze, Ski oder Snowboards, falls zutreffend"
+      ]
+    },
+    {
+      "h2": "Luzern: Bahn oder Auto, und die Altstadt",
+      "paragraphs": [
+        "Luzern gehört zu den Strecken, auf denen die Bahn eine echte Alternative ist, und das sagen wir offen. Die Zugverbindung ab Zürich ist gut, und für eine einzelne Person mit einem Gepäckstück ist sie eine vernünftige Wahl. Für das Auto spricht der Service von Tür zu Tür: kein Umsteigen am Bahnhof, das Gepäck trägt der Chauffeur, die Gruppe bleibt zusammen, und die Abholung richtet sich nach Ihrem Flug statt nach einem Fahrplan.",
+        "Teile der Altstadt beidseits der Reuss sind Fussgängerzonen. Liegt Ihre Adresse darin, hält das Fahrzeug am nächsten Punkt, den es erreichen kann, und das letzte Stück legen Sie zu Fuss zurück. Nennen Sie der Disposition das Hotel oder die Strasse, dann wird der Halteort vorab abgesprochen. Der Preis gilt für Luzern selbst: Ein Ort am See, ein Ziel in den Bergen dahinter oder eine Adresse ausserhalb der Stadt ist eine andere Strecke, die die Disposition vor der Buchung offeriert."
+      ]
+    }
+  ],
+  "priceNote": "Nettopreise pro Fahrzeug; die MwSt. von {vat} kommt als eigene Zeile hinzu. Die Rückfahrt ab Luzern und jede andere Abholadresse offeriert die Disposition pro Strecke, denn die Preise gelten für Abholungen am Flughafen Zürich.",
+  "faq": [
+    {
+      "q": "Wie lange dauert die Fahrt vom Flughafen Zürich nach Luzern?",
+      "a": "Die Fahrt dauert rund {time} für {km} km, grösstenteils auf der Autobahn. Schnee oder starker Regen können sie verlängern, sagen Sie der Disposition deshalb, wenn Sie einen Zug oder einen Termin erreichen müssen."
+    },
+    {
+      "q": "Was kostet ein privater Transfer vom Flughafen Zürich nach Luzern?",
+      "a": "{priceBusiness} in der Business-Klasse, {pricePremium} in der Premium-Klasse, {priceSuv} im SUV und {priceVan} im Business Van, jeweils pro Fahrzeug und zuzüglich {vat} MwSt. Der Preis steht vor der Buchung fest und ändert sich danach nicht."
+    },
+    {
+      "q": "Wartet der Chauffeur, wenn mein Flug verspätet ist?",
+      "a": "Ja. Mit der Flugnummer wird der ankommende Flug verfolgt, und die Abholzeit verschiebt sich ohne Aufpreis. Im Preis sind sechzig Minuten Wartezeit nach der Landung enthalten."
+    },
+    {
+      "q": "Können Sie Gepäck, Ski und Kindersitze mitnehmen?",
+      "a": "Ja. Die Gepäckverladung ist inbegriffen, und Kindersitze werden vor der Fahrt ohne Aufpreis eingebaut. Nennen Sie der Disposition die Zahl der Koffer und allfällige Ski oder Snowboards, damit die Klasse von Anfang an stimmt."
+    },
+    {
+      "q": "Wie bezahle ich den Transfer?",
+      "a": "Zur Wahl stehen die Zahlung online per Karte oder TWINT, beim Chauffeur am Reisetag oder nach Absprache mit dem Team über WhatsApp. Für Firmenkunden gibt es eine Monatsrechnung; eine allfällige Stornogebühr wird bei der Bestätigung der Buchung genannt."
+    },
+    {
+      "q": "Ist die Bahn nach Luzern nicht die bessere Wahl?",
+      "a": "Für eine oder zwei Personen mit leichtem Gepäck und einem Hotel in Bahnhofsnähe kann sie es sein. Ein Auto lohnt sich für den Service von Tür zu Tür, bei viel Gepäck, bei einer Gruppe oder wenn sich die Abholung nach einem verspäteten Flug richten soll."
+    },
+    {
+      "q": "Holen Sie uns in Luzern für die Rückfahrt zum Flughafen ab?",
+      "a": "Ja, die Disposition offeriert die Rückfahrt pro Strecke. Die publizierten Preise beginnen am Flughafen Zürich; für die Fahrt ab Luzern genügen Datum und Adresse."
+    }
+  ]
+}

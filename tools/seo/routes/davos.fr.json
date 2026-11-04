@@ -1,0 +1,93 @@
+{
+  "title": "Transfert Zurich Davos | Chauffeur privé | Z-ALS",
+  "description": "Transfert avec chauffeur privé de l’aéroport de Zurich à Davos, {km} km par Klosters. Mercedes Classe E, S ou V, vol suivi, prix fixe avant la réservation.",
+  "h1": "Transfert de Zurich à Davos avec chauffeur privé",
+  "lede": "Un chauffeur vous attend dans le hall d’arrivée de l’aéroport de Zurich et vous conduit à Davos, {km} km par le Prättigau, à un prix fixé avant la réservation. Avec le numéro de vol, la prise en charge suit l’atterrissage.",
+  "intro": [
+    "Davos se situe à environ 1 560 m d’altitude, et le trajet depuis l’aéroport de Zurich compte {km} km d’autoroute puis de route de vallée. Un transfert privé, c’est une voiture, un chauffeur et un prix, du hall d’arrivée jusqu’à la porte, sans changement de véhicule en chemin.",
+    "Le prix est calculé au kilomètre selon la classe du véhicule et annoncé avant la réservation. Une personne répond à la centrale à toute heure, par téléphone, WhatsApp ou e-mail : une question sur la neige ou sur l’horaire ne reste donc pas sans réponse.",
+    "Vous trouverez ci-dessous le prix, la route selon la saison, les voitures et ce dont la centrale a besoin. Ce qui sort des tarifs publiés, comme le retour depuis Davos, fait l’objet d’un devis par trajet."
+  ],
+  "sections": [
+    {
+      "h2": "Le prix fixe de l’aéroport de Zurich à Davos",
+      "paragraphs": [
+        "Un transfert en classe Business (Mercedes Classe E ou équivalent) coûte {priceBusiness} pour toute la voiture. La classe Premium (Mercedes Classe S ou équivalent) est à {pricePremium}, le SUV (Mercedes GLE ou équivalent) à {priceSuv} et le Business Van (Mercedes Classe V ou équivalent) à {priceVan}. La TVA de {vat} s’ajoute sur une ligne à part, et chaque montant s’entend par voiture, non par passager.",
+        "Le prix découle de la distance et du tarif de la classe. Avec {km} km, il se situe bien au-dessus du minimum de la classe, qui ne joue donc aucun rôle ici. Il est annoncé avant la réservation et ne change plus ensuite. Il comprend :"
+      ],
+      "bullets": [
+        "L’attente et la manutention des bagages",
+        "Les péages et la vignette autoroutière suisse",
+        "Les sièges enfant, installés avant le trajet sans frais",
+        "Soixante minutes d’attente après l’atterrissage",
+        "L’assurance passagers"
+      ]
+    },
+    {
+      "h2": "La route de Zurich à Davos",
+      "paragraphs": [
+        "La distance est de {km} km et le trajet dure environ {time}. Depuis l’aéroport, l’itinéraire suit l’autoroute jusqu’à Landquart, puis la route de vallée du Prättigau par Klosters, qui monte jusqu’à Davos.",
+        "La plus grande partie du parcours se fait sur autoroute. Le dernier tronçon est une route de montagne, avec des virages et une montée régulière, que le chauffeur aborde à l’allure que la chaussée permet. D’octobre à avril, toutes les voitures roulent en pneus hiver ; après une chute de neige, c’est sur la route de vallée que le trajet ralentit. Prévoyez une marge si vous avez un train, un rendez-vous ou un dîner à tenir, et signalez-le à la centrale lors de la réservation.",
+        "Davos s’étire le long de sa vallée, avec deux centres, Davos Platz et Davos Dorf : indiquez l’adresse exacte de l’hôtel ou du chalet plutôt que le seul nom de la localité, afin que le chauffeur vous dépose devant la porte."
+      ]
+    },
+    {
+      "h2": "Quelle voiture pour Davos",
+      "paragraphs": [
+        "La classe Business accueille trois passagers avec trois valises. La classe Premium transporte trois passagers avec deux valises, dans un habitacle arrière conçu pour travailler. Le SUV accueille quatre passagers avec quatre valises et dispose de quatre roues motrices : c’est la voiture que nous envoyons pour les semaines de ski.",
+        "Le Business Van prend sept passagers avec sept valises : il convient aux familles, aux délégations et à ceux qui voyagent avec beaucoup de bagages. Pour les groupes jusqu’à seize personnes, la centrale établit un devis pour un minibus ou un autocar. Une berline entièrement électrique est disponible au tarif de la classe Business ; pour un trajet de montagne, demandez d’abord à la centrale, car l’autonomie est planifiée sur l’itinéraire avant l’attribution du véhicule."
+      ]
+    },
+    {
+      "h2": "Prise en charge à l’aéroport de Zurich et ce dont la centrale a besoin",
+      "paragraphs": [
+        "Le chauffeur vous attend dans le hall d’arrivée, et soixante minutes d’attente après l’atterrissage sont comprises dans le prix. Indiquez le numéro de vol à la réservation : le vol entrant est suivi et la prise en charge se décale avec lui sans supplément, de sorte qu’un atterrissage retardé ne change ni le prix ni le plan.",
+        "Les prix sont publiés pour les prises en charge à l’aéroport de Zurich. Le retour depuis Davos, une prise en charge à une autre adresse ou aux aéroports de Bâle et de Genève, ainsi que les trajets à l’étranger font l’objet d’un devis par trajet, établi par la centrale. Pour réserver, elle a besoin de :"
+      ],
+      "bullets": [
+        "Le numéro de vol et la date d’atterrissage",
+        "L’adresse à Davos, ou la localité si l’adresse n’est pas encore arrêtée",
+        "Le nombre de passagers et de valises",
+        "Les sièges enfant, skis ou snowboards, le cas échéant"
+      ]
+    },
+    {
+      "h2": "Davos en saison : janvier et les semaines de ski",
+      "paragraphs": [
+        "La demande à Davos suit le calendrier. Le Forum économique mondial s’y tient chaque janvier et les semaines de ski remplissent les voitures : réservez tôt pour ces dates, surtout si vous souhaitez une classe Premium ou un SUV.",
+        "En cas de forte neige, le trajet peut durer plus longtemps que {time}, et la centrale reste joignable à toute heure si vos plans dépendent de l’heure d’arrivée. Le prix couvre le trajet jusqu’à l’adresse que vous indiquez à Davos. Pour un arrêt en chemin ou une suite vers une autre vallée, demandez un devis à la centrale."
+      ]
+    }
+  ],
+  "priceNote": "Les tarifs s’entendent par voiture, hors TVA ; la TVA de {vat} s’ajoute sur une ligne à part. Ils sont publiés pour les prises en charge à l’aéroport de Zurich ; le retour depuis Davos ou tout autre point de prise en charge fait l’objet d’un devis de la centrale.",
+  "faq": [
+    {
+      "q": "Combien de temps dure le transfert de l’aéroport de Zurich à Davos ?",
+      "a": "Le trajet dure environ {time} pour {km} km. Le dernier tronçon est une route de vallée : prévoyez une marge après une chute de neige et signalez à la centrale tout rendez-vous fixe à l’arrivée."
+    },
+    {
+      "q": "Combien coûte un transfert privé de l’aéroport de Zurich à Davos ?",
+      "a": "{priceBusiness} en classe Business, {pricePremium} en classe Premium, {priceSuv} en SUV et {priceVan} en Business Van, hors TVA de {vat}. Le prix s’entend par voiture et il est fixé avant la réservation."
+    },
+    {
+      "q": "Que se passe-t-il si mon vol atterrit en retard ?",
+      "a": "Donnez-nous le numéro de vol à la réservation. Nous suivons le vol entrant et la prise en charge se décale avec lui sans supplément ; soixante minutes d’attente après l’atterrissage sont comprises."
+    },
+    {
+      "q": "Puis-je emporter des skis, des bagages et des sièges enfant ?",
+      "a": "Les sièges enfant (bébé, enfant ou rehausseur) sont installés avant le trajet sans frais. Indiquez à la centrale le nombre de valises et de paires de skis ou de snowboards, afin que la classe soit la bonne du premier coup ; le SUV et le Business Van offrent le plus de place."
+    },
+    {
+      "q": "Comment payer le transfert ?",
+      "a": "En ligne par carte ou par TWINT, au chauffeur le jour même, ou selon un arrangement pris avec la centrale sur WhatsApp. Les clients entreprises sont facturés mensuellement, et tout frais d’annulation est indiqué à la confirmation de la réservation."
+    },
+    {
+      "q": "Roulez-vous jusqu’à Davos en hiver ?",
+      "a": "Oui. Toutes les voitures roulent en pneus hiver d’octobre à avril. Si la neige est annoncée, demandez le SUV, qui dispose de quatre roues motrices."
+    },
+    {
+      "q": "Pouvez-vous nous prendre à Davos pour le retour à l’aéroport ?",
+      "a": "Oui, comme un trajet séparé. Les tarifs publiés s’appliquent aux prises en charge à l’aéroport de Zurich : la centrale chiffre le retour par trajet, envoyez la date et l’adresse."
+    }
+  ]
+}

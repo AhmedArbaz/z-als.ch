@@ -1,0 +1,93 @@
+{
+  "title": "Transfer Zürich Lugano | Privat mit Chauffeur | Z-ALS",
+  "description": "Privater Chauffeur-Transfer vom Flughafen Zürich nach Lugano, {km} km durch den Gotthard. Disposition rund um die Uhr, Festpreis vor der Buchung.",
+  "h1": "Transfer von Zürich nach Lugano mit privatem Chauffeur",
+  "lede": "Ein Chauffeur erwartet Sie in der Ankunftshalle und fährt Sie die {km} km durch den Gotthard nach Lugano, zu einem Festpreis, der vor der Buchung feststeht. Die Disposition antwortet rund um die Uhr persönlich.",
+  "intro": [
+    "Lugano ist die grösste Stadt des Tessins, des italienischsprachigen Teils der Schweiz, und der Weg vom Flughafen Zürich führt über die Alpen dorthin. Die Strecke misst {km} km, dafür sind rund {time} Fahrzeit einzuplanen. Das ist für Schweizer Verhältnisse eine lange Fahrt, und ihr Zeitplan hängt vom Gotthard ab.",
+    "Der Preis wird aus der Strecke und der Fahrzeugklasse berechnet und steht vor der Buchung fest. Nennen Sie uns die Flugnummer, wird der ankommende Flug verfolgt, und die Abholzeit verschiebt sich ohne Aufpreis mit. Vom Flughafen bis vor die Tür bleiben Sie in einem Fahrzeug, ohne Umsteigen unterwegs."
+  ],
+  "sections": [
+    {
+      "h2": "Der Festpreis vom Flughafen Zürich nach Lugano",
+      "paragraphs": [
+        "Ein Transfer in der Business-Klasse (Mercedes E-Klasse oder gleichwertig) kostet {priceBusiness}. Die Premium-Klasse (Mercedes S-Klasse oder gleichwertig) kostet {pricePremium}, der SUV (Mercedes GLE oder gleichwertig) {priceSuv} und der Business Van (Mercedes V-Klasse oder gleichwertig) {priceVan}. Die Beträge gelten pro Fahrzeug, nicht pro Person, und verstehen sich exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen.",
+        "Der Preis ergibt sich aus der Strecke und dem Kilometertarif der Klasse. Er wird vor der Buchung genannt und ändert sich danach nicht, auch nicht, wenn sich der Flug verspätet. Im Preis enthalten sind:"
+      ],
+      "bullets": [
+        "Wartezeit und Gepäckverladung",
+        "Mautgebühren und die Schweizer Autobahnvignette",
+        "Kindersitze, vor der Fahrt eingebaut, ohne Aufpreis",
+        "Sechzig Minuten Wartezeit nach der Landung",
+        "Passagierversicherung"
+      ]
+    },
+    {
+      "h2": "Durch den Gotthard: Strecke und Fahrzeit",
+      "paragraphs": [
+        "Die Strecke misst {km} km, bei freier Fahrt sind es rund {time} Fahrzeit. Der Chauffeur fährt auf der Autobahn durch die Zentralschweiz nach Süden, durch den Gotthard-Strassentunnel und auf der anderen Seite durch das Tessin hinunter, an Bellinzona vorbei nach Lugano am See. Der grösste Teil ist Autobahn, aber es ist eine lange Fahrt am Stück: Planen Sie einen Puffer ein, wenn Sie am Ziel einen Anschluss, eine Sitzung oder ein Abendessen haben.",
+        "Der Gotthard ist der Abschnitt, der den Zeitplan verändern kann. An Feiertagen und an Ferienwochenenden kann sich der Verkehr vor dem Tunnel stauen, und bei Schneefall im Winter wird die Fahrt langsamer. Von Oktober bis April fährt jedes unserer Fahrzeuge auf Winterreifen. Im Sommer entfällt der Schnee, der Ferienverkehr nach Süden bleibt.",
+        "Betrifft der Gotthard Ihre Abfahrtszeit, sagt Ihnen die Disposition Bescheid; sie ist rund um die Uhr per Telefon oder WhatsApp erreichbar."
+      ]
+    },
+    {
+      "h2": "Welches Fahrzeug für Lugano",
+      "paragraphs": [
+        "Die Business-Klasse nimmt drei Passagiere mit drei Koffern auf; ein vierter Passagier findet Platz, wenn das Gepäck leicht ist. Die Premium-Klasse bietet drei Plätze und Platz für zwei Koffer, dazu einen Fond, in dem sich auf einer langen Alpenetappe arbeiten oder ruhen lässt. Der SUV fasst vier Passagiere mit vier Koffern und hat Allradantrieb, was hilft, wenn am Gotthard Schnee gemeldet ist.",
+        "Der Business Van bietet sieben Plätze und Platz für sieben Koffer und passt für Familien, Delegationen und alle, die mit viel Gepäck reisen. Für Gruppen bis zu 16 Personen offeriert die Disposition einen Minibus oder Reisebus. Eine vollelektrische Limousine gibt es zum Tarif der Business-Klasse; bei einer Strecke dieser Länge plant die Disposition die Reichweite vor der Zuteilung gegen Ihre Route. Sagen Sie es bei der Buchung, wenn Ihre Reiserichtlinie ein Elektrofahrzeug verlangt."
+      ]
+    },
+    {
+      "h2": "Ankunft und Abholung am Flughafen Zürich",
+      "paragraphs": [
+        "Der Chauffeur wartet in der Ankunftshalle, und im Preis sind sechzig Minuten Wartezeit nach der Landung enthalten. Nennen Sie bei der Buchung die Flugnummer: Der ankommende Flug wird verfolgt, die Abholzeit verschiebt sich mit ihm ohne Aufpreis, und eine Verspätung ändert weder den Preis noch den Ablauf.",
+        "Publiziert sind die Preise für Abholungen am Flughafen Zürich. Die Rückfahrt ab Lugano, eine Abholung an einer anderen Adresse, am Flughafen Basel oder am Flughafen Genf sowie Fahrten ins Ausland offeriert die Disposition pro Strecke. Für die Buchung braucht sie:"
+      ],
+      "bullets": [
+        "Flugnummer und Landedatum",
+        "Die Adresse in Lugano oder, falls sie noch nicht feststeht, den Namen des Hotels",
+        "Anzahl der Passagiere und der Koffer, dazu Ski oder sperrige Gegenstände",
+        "Kindersitze, mit Alter oder Grösse des Kindes",
+        "Eine Telefonnummer, die bei der Ankunft erreichbar ist"
+      ]
+    },
+    {
+      "h2": "Lugano: Adresse, Anschluss und andere Ziele im Tessin",
+      "paragraphs": [
+        "Lugano liegt im Tessin, südlich der Alpen, am Luganersee. Nennen Sie die Adresse Ihres Hotels oder Ihrer Unterkunft mit Strasse und Nummer und nicht nur den Ort, damit der Chauffeur bis vor die richtige Tür fährt. Haben Sie nach der Ankunft einen Anschluss oder einen Termin, sagen Sie es bei der Buchung, damit die Abfahrt in Zürich dazu passt.",
+        "Zwei Einschränkungen nennen wir offen. Bei Stau am Gotthard oder starkem Schneefall kann die Fahrt länger dauern; die Angabe von {time} gilt für freie Fahrt. Und der publizierte Preis gilt für die einzelne Fahrt zur Adresse, die Sie in Lugano nennen: Ein anderer Ort im Tessin, ein Halt unterwegs, die Rückfahrt oder eine Weiterfahrt nach Italien sind je eine andere Strecke. Senden Sie der Disposition Datum und Einzelheiten, und der Festpreis kommt zurück, bevor Sie sich entscheiden."
+      ]
+    }
+  ],
+  "priceNote": "Die Preise verstehen sich pro Fahrzeug, einfache Fahrt ab Flughafen Zürich, und exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen. Die Rückfahrt ab Lugano und jede andere Abholadresse offeriert die Disposition pro Strecke.",
+  "faq": [
+    {
+      "q": "Wie lange dauert die Fahrt vom Flughafen Zürich nach Lugano?",
+      "a": "Die Fahrt dauert rund {time} für {km} km. Stau am Gotthard oder Schneefall kann Zeit kosten, planen Sie deshalb einen Puffer ein und sagen Sie der Disposition, wenn Sie bei der Ankunft einen festen Termin haben."
+    },
+    {
+      "q": "Was kostet ein privater Transfer vom Flughafen Zürich nach Lugano?",
+      "a": "{priceBusiness} in der Business-Klasse, {pricePremium} in der Premium-Klasse, {priceSuv} im SUV und {priceVan} im Business Van, jeweils pro Fahrzeug und zuzüglich {vat} MwSt. Der Preis steht vor der Buchung fest und ändert sich danach nicht."
+    },
+    {
+      "q": "Was ist, wenn der Flug später landet?",
+      "a": "Mit der Flugnummer wird der ankommende Flug verfolgt, die Abholzeit verschiebt sich ohne Aufpreis mit, und sechzig Minuten Wartezeit nach der Landung sind inbegriffen. Der Preis bleibt derselbe."
+    },
+    {
+      "q": "Können Sie Ski, Gepäck und Kindersitze mitnehmen?",
+      "a": "Beides gehört zum Preis: die Gepäckverladung und die Kindersitze, die vor der Fahrt eingebaut werden. Nennen Sie der Disposition die Zahl der Koffer und der Ski, damit die Klasse von Anfang an stimmt."
+    },
+    {
+      "q": "Wie kann ich bezahlen?",
+      "a": "Online per Karte oder TWINT, beim Chauffeur am Reisetag oder nach Absprache mit dem Team über WhatsApp. Firmenkunden werden monatlich fakturiert; die Bestätigung der Buchung nennt eine allfällige Stornogebühr."
+    },
+    {
+      "q": "Beeinflusst der Gotthard die Fahrt nach Lugano?",
+      "a": "Er kann es: Vor dem Tunnel kann sich der Verkehr stauen, und bei Schneefall wird die Fahrt langsamer. Betrifft das Ihre Abfahrt, sagt Ihnen die Disposition Bescheid; von Oktober bis April sind Winterreifen auf jedem Fahrzeug Standard."
+    },
+    {
+      "q": "Holen Sie uns in Lugano für die Rückfahrt zum Flughafen ab?",
+      "a": "Ja. Die Rückfahrt ab Lugano ist eine eigene Fahrt; die Disposition offeriert sie pro Strecke, weil die publizierten Preise für Abholungen am Flughafen Zürich gelten. Senden Sie Datum und Adresse."
+    }
+  ]
+}

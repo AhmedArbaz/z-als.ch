@@ -1,0 +1,49 @@
+{
+  "title": "Flughafen Zürich nach Zermatt, St. Moritz, Davos | Z-ALS",
+  "description": "Zug oder Privattransfer vom Flughafen Zürich nach Zermatt, St. Moritz und Davos: Reisezeit, Umstiege und feste Chauffeur-Preise im Vergleich.",
+  "eyebrow": "Ratgeber · Flughafen Zürich in die Alpen · Fahrpläne geprüft am {checked}",
+  "h1": "Vom Flughafen Zürich nach Zermatt, St. Moritz und Davos: Zug oder Privattransfer?",
+  "lede": "Mit dem Zug ist Zermatt {trainZermatt} entfernt ({trainZermattChanges}), St. Moritz {trainStMoritz} ({trainStMoritzChanges}) und Davos {trainDavos} ({trainDavosChanges}). Ein Privattransfer nach Davos kostet {priceDavos} plus MwSt.",
+  "intro": [
+    "Die drei bekanntesten Schweizer Ferienorte liegen wenige Stunden vom Flughafen Zürich entfernt, und alle drei sind mit hervorragenden Zügen erreichbar. Die Frage ist also nicht, ob die Bahn hinkommt, sondern ob die Umstiege, das Gepäck und das letzte Stück bis zum Chalet oder Hotel die Ersparnis wert sind.",
+    "Dieser Ratgeber vergleicht für jeden Ort die schnellste Zugverbindung mit einem privaten Chauffeur-Transfer. Die Zugzeiten stammen aus dem Schweizer Fahrplan, geprüft am {checked}; unsere Fahrzeiten, Distanzen und Preise stammen aus derselben Preisberechnung wie unser Buchungsformular, und jeder Ort hat eine eigene Seite mit der vollständigen Preistabelle."
+  ],
+  "sections": [
+    {
+      "h2": "Zermatt: Die Fahrt endet in Täsch",
+      "paragraphs": [
+        "Zermatt ist autofrei, deshalb endet jede Fahrt auf der Strasse in Täsch. Von dort fährt der Shuttlezug in wenigen Minuten ins Dorf, und am Bahnhof Zermatt warten Elektrotaxis und Hotelbusse. Unser Transfer fährt die {kmZermatt} km vom Flughafen bis Täsch in etwa {timeZermatt}; der Festpreis in der Business-Klasse beträgt {priceZermatt} plus MwSt., der Business Van für bis zu sieben Personen kostet {priceVanZermatt}.",
+        "Der schnellste Zug ab Flughafen braucht {trainZermatt} mit {trainZermattChanges}, meist in Visp, und die letzte Etappe führt mit der Schmalspurbahn direkt nach Zermatt. Mit leichtem Gepäck ist das eine bequeme Reise. Mit Ski, mehreren Koffern oder Kindern hilft das Auto vor allem beim Umsteigen und auf den Perrons, und der Chauffeur lädt in Täsch alles für den Shuttlezug aus."
+      ]
+    },
+    {
+      "h2": "St. Moritz: Über die Pässe oder durch den Tunnel",
+      "paragraphs": [
+        "Der Zug nach St. Moritz braucht {trainStMoritz} mit {trainStMoritzChanges}, meist in Zürich HB und Chur, und die letzte Stunde auf der Albulalinie gehört zu den schönsten Bahnstrecken Europas. Wenn die Landschaft Teil der Reise ist und das Gepäck leicht, spricht wenig dagegen.",
+        "Auf der Strasse fährt der Transfer {kmStMoritz} km in etwa {timeStMoritz}. Der Business-Preis beträgt {priceStMoritz} plus MwSt., die Premium-Klasse {pricePremiumStMoritz}. Im Winter hängt die Route von den Pässen ab: Die Disposition prüft am Vorabend Wetterbericht und Passstatus und plant die Abfahrt mit Ihnen, und jedes Fahrzeug fährt von Oktober bis April mit Winterreifen."
+      ]
+    },
+    {
+      "h2": "Davos: Die kürzeste der drei Strecken",
+      "paragraphs": [
+        "Davos liegt am nächsten. Der schnellste Zug braucht {trainDavos} mit {trainDavosChanges}, meist in Zürich HB und Landquart, und hält in Davos Platz oder Davos Dorf, von wo die meisten Hotels zu Fuss oder mit dem Ortsbus erreichbar sind.",
+        "Ein Privattransfer fährt die {kmDavos} km in etwa {timeDavos} zum Festpreis von {priceDavos} plus MwSt. in der Business-Klasse oder {priceVanDavos} im Business Van. Das World Economic Forum tagt jeden Januar in Davos, und in den Skiwochen sind die Fahrzeuge schnell ausgebucht; buchen Sie für diese Daten früh, sonst reichen meist ein bis zwei Tage Vorlauf."
+      ]
+    },
+    {
+      "h2": "Wie Sie sich entscheiden",
+      "paragraphs": [
+        "Nehmen Sie den Zug, wenn Sie mit wenig Gepäck reisen, die Fahrt geniessen und das Umsteigen mit Koffern nicht scheuen. Für eine oder zwei Personen ist er die günstigere Wahl, und Schweizer Züge fahren auf die Minute genau.",
+        "Buchen Sie einen Transfer, wenn Sie spät landen, Ski oder mehrere Koffer dabeihaben, mit Kindern reisen oder zu dritt oder mehr sind: Der Preis gilt pro Fahrzeug, nicht pro Person, eine vierköpfige Familie im Business Van nach Davos zahlt also insgesamt {priceVanDavos} plus MwSt. Sie sparen sich die Umstiege, und der Chauffeur verfolgt Ihren Flug und wartet in der Ankunftshalle, die ersten 60 Minuten nach der Landung sind inbegriffen."
+      ]
+    }
+  ],
+  "faq": [
+    { "q": "Wie lange dauert die Reise vom Flughafen Zürich nach Zermatt?", "a": "Mit dem schnellsten Zug etwa {trainZermatt} mit {trainZermattChanges}, mit dem Auto etwa {timeZermatt} bis Täsch, von wo der Shuttlezug ins autofreie Dorf fährt." },
+    { "q": "Was kostet ein Privattransfer vom Flughafen Zürich nach Zermatt?", "a": "Bei Z-ALS {priceZermatt} plus MwSt. in der Business-Klasse bis Täsch oder {priceVanZermatt} plus MwSt. im Business Van für bis zu sieben Personen, fest bei der Buchung." },
+    { "q": "Wie komme ich vom Flughafen Zürich nach St. Moritz?", "a": "Mit dem Zug in etwa {trainStMoritz} mit {trainStMoritzChanges} oder mit dem Privattransfer in etwa {timeStMoritz} für {priceStMoritz} plus MwSt. in der Business-Klasse. Im Winter bestätigt die Disposition die Route am Vorabend." },
+    { "q": "Wie komme ich am schnellsten vom Flughafen Zürich nach Davos?", "a": "Ein Privattransfer braucht etwa {timeDavos} von Tür zu Tür. Der schnellste Zug braucht {trainDavos} mit {trainDavosChanges}, danach geht es noch kurz zum Hotel." },
+    { "q": "Lohnt sich ein Transfer für eine Familie?", "a": "Oft ja, denn der Preis gilt pro Fahrzeug. Ein Business Van für bis zu sieben Personen und sieben Koffer kostet {priceVanDavos} nach Davos und {priceVanZermatt} bis Täsch für Zermatt, jeweils plus MwSt., Kindersitze auf Wunsch." },
+    { "q": "Fahren Sie im Winter in die Berge?", "a": "Ja. Jedes Fahrzeug fährt von Oktober bis April mit Winterreifen, und die Disposition prüft vor jeder Bergfahrt am Vorabend Wetterbericht und Passstatus und vereinbart die Abfahrtszeit mit Ihnen." }
+  ]
+}

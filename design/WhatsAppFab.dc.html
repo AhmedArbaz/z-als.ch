@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap">
+<style>
+@keyframes waIn{from{opacity:0;transform:translateY(-10px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</helmet>
+
+<sc-if value="{{ visible }}" hint-placeholder-val="{{ false }}">
+<div data-screen-label="WhatsApp button" style="position:fixed;left:clamp(16px,2.2vw,28px);top:104px;z-index:50;display:flex;align-items:center;gap:12px;font-family:Manrope,system-ui,sans-serif;animation:waIn 260ms cubic-bezier(.2,.6,.2,1) both">
+
+<a href="{{ waHref }}" target="_blank" rel="noopener" aria-label="Chat with Z-ALS dispatch on WhatsApp" style="position:relative;display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:14px;background:#25D366;color:#FFFFFF;text-decoration:none;box-shadow:0 8px 24px rgba(1,5,11,0.34);transition:transform 180ms cubic-bezier(.2,.6,.2,1),background 180ms ease-out" style-hover="background:#1EBE5B;transform:translateY(-2px);text-decoration:none" style-active="transform:translateY(1px)">
+<svg aria-hidden="true" width="30" height="30" viewBox="0 0 32 32" fill="currentColor"><path d="M16.03 4.5c-6.35 0-11.5 5.15-11.5 11.5 0 2.03.53 4.02 1.55 5.77L4.5 27.5l5.9-1.55a11.47 11.47 0 0 0 5.63 1.46h.01c6.34 0 11.49-5.15 11.49-11.5 0-3.07-1.2-5.96-3.37-8.13A11.42 11.42 0 0 0 16.03 4.5Zm0 21.02h-.01a9.55 9.55 0 0 1-4.86-1.33l-.35-.2-3.5.92.93-3.41-.23-.36a9.53 9.53 0 0 1-1.46-5.09c0-5.27 4.29-9.56 9.57-9.56 2.56 0 4.96 1 6.76 2.81a9.5 9.5 0 0 1 2.8 6.76c0 5.28-4.29 9.46-9.65 9.46Zm5.25-7.13c-.29-.15-1.79-.88-2.07-.98-.28-.1-.48-.15-.68.15-.2.29-.78.98-.96 1.18-.18.2-.35.22-.64.07-.29-.14-1.23-.45-2.34-1.44a8.8 8.8 0 0 1-1.62-2.02c-.17-.29-.02-.45.13-.6.13-.13.29-.35.44-.53.14-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.15-.68-1.65-.93-2.25-.24-.59-.49-.5-.68-.51h-.58c-.2 0-.51.07-.78.36-.27.29-1.03 1-1.03 2.45 0 1.44 1.05 2.83 1.2 3.03.15.19 2.06 3.14 4.98 4.29.7.3 1.24.48 1.67.61.71.23 1.35.2 1.86.12.57-.09 1.79-.73 2.04-1.44.25-.7.25-1.31.18-1.43-.07-.13-.27-.2-.56-.35Z"></path></svg>
+</a>
+</div>
+</sc-if>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:420,&quot;height&quot;:220},&quot;whatsappPhone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+41 76 272 09 09&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;prefillMessage&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Book A Ride\nName:\nContact No:\nPick-up Address:\nDrop-off Address:&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+/* public/js/i18n.js: the prefilled message follows the visitor's language, line by line. */
+const T = s => (window.ZALS_I18N ? window.ZALS_I18N.t(s) : s);
+
+class Component extends DCLogic {
+  /* Upper left, below the 86px sticky header, as on z-als.ch (WhatsAppFab.module.css).
+     z-index 50 sits under the header (60) and the mobile menu (90), so an open menu
+     covers it. Held back through the first 200px so it never lands on the headline on
+     a phone. No looping pulse: it pulls the eye off the booking panel. */
+  state = { visible: false };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const v = window.scrollY > 200;
+      if (v !== this.state.visible) this.setState({ visible: v });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    this._onScroll();
+  }
+
+  componentWillUnmount() { window.removeEventListener('scroll', this._onScroll); }
+
+  renderVals() {
+    const phone = String(this.props.whatsappPhone ?? '+41 76 272 09 09').replace(/[^0-9]/g, '');
+    const msg = this.props.prefillMessage ?? 'Book A Ride\nName:\nContact No:\nPick-up Address:\nDrop-off Address:';
+    return { visible: this.state.visible, waHref: 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg.split('\n').map(T).join('\n')) };
+  }
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+{
+  "title": "Transfer Lugano Aeroporto Zurigo | Autista privato | Z-ALS",
+  "description": "Transfer a lunga distanza con autista tra l’aeroporto di Zurigo e Lugano, {km} km attraverso il Gottardo. Prezzo fisso comunicato prima di prenotare.",
+  "h1": "Transfer tra Lugano e l’aeroporto di Zurigo con autista",
+  "lede": "Un autista La attende nell’area arrivi dell’aeroporto di Zurigo e La accompagna a Lugano, {km} km attraverso il Gottardo, a un prezzo fisso stabilito prima della prenotazione. Con il numero del volo, il prelievo segue l’atterraggio.",
+  "intro": [
+    "Lugano è la città più grande del Ticino, il cantone di lingua italiana della Svizzera, e dall’aeroporto di Zurigo ci si arriva attraversando le Alpi. La distanza è di {km} km e il viaggio dura circa {time}: è un tragitto lungo, il cui orario di partenza dipende dal corridoio del Gottardo.",
+    "Il prezzo si calcola in base alla distanza e alla classe dell’auto e Le viene comunicato prima della prenotazione, perciò non cambia se il Suo volo ritarda. La centrale operativa risponde di persona, giorno e notte, per telefono, WhatsApp o e-mail.",
+    "Qui sotto trova il prezzo, il percorso nelle diverse stagioni, l’auto adatta al Suo gruppo e ciò che serve alla centrale operativa per organizzare il prelievo."
+  ],
+  "sections": [
+    {
+      "h2": "Il prezzo fisso da Zurigo a Lugano",
+      "paragraphs": [
+        "Un transfer in classe Business (Mercedes Classe E o equivalente) costa {priceBusiness} per l’intera auto. La classe Premium (Mercedes Classe S o equivalente) costa {pricePremium}, il SUV (Mercedes GLE o equivalente) {priceSuv} e il Business Van (Mercedes Classe V o equivalente) {priceVan}. L’IVA, pari a {vat}, compare su una riga a parte e ogni importo vale per auto, non per passeggero.",
+        "Il prezzo deriva dalla distanza e dalla tariffa della classe. Su {km} km resta ben al di sopra della tariffa minima, che qui non entra in gioco. Viene comunicato prima della prenotazione e non cambia più. Comprende:"
+      ],
+      "bullets": [
+        "Attesa e gestione dei bagagli",
+        "Pedaggi e vignetta autostradale svizzera",
+        "Seggiolini per bambini, montati gratuitamente prima del viaggio",
+        "Sessanta minuti di attesa dopo l’atterraggio",
+        "L’assicurazione dei passeggeri"
+      ]
+    },
+    {
+      "h2": "Il percorso attraverso il Gottardo",
+      "paragraphs": [
+        "La distanza è di {km} km e il viaggio dura circa {time}. Dall’aeroporto l’autista segue l’autostrada verso sud attraverso la Svizzera centrale, passa dal tunnel stradale del San Gottardo e scende in Ticino, oltre Bellinzona, fino a Lugano sul suo lago. Quasi tutto il percorso è autostradale, ma è un viaggio lungo da fare in una volta sola: se ha una coincidenza, un appuntamento o una cena, preveda un margine.",
+        "Il Gottardo è il tratto che può cambiare l’orario. Nei periodi di vacanze davanti al tunnel si possono formare code in direzione sud, e con una forte nevicata si procede più piano. D’estate la neve non c’è, ma le code davanti al tunnel restano possibili. Da ottobre ad aprile tutte le auto montano pneumatici invernali. Per sapere come si presenta la strada prima di partire può rivolgersi alla centrale, raggiungibile giorno e notte per telefono o su WhatsApp."
+      ]
+    },
+    {
+      "h2": "Quale auto scegliere per Lugano",
+      "paragraphs": [
+        "La classe Business accoglie tre passeggeri con tre valigie, e un quarto passeggero trova posto se i bagagli sono leggeri: è la scelta abituale da una a tre persone. La classe Premium trasporta tre passeggeri con due valigie e ha un abitacolo posteriore pensato per lavorare lungo una tratta di questa lunghezza. Il SUV porta quattro passeggeri con quattro valigie e ha la trazione integrale, utile se è prevista neve sul Gottardo.",
+        "Il Business Van accoglie sette passeggeri con sette valigie ed è l’auto per famiglie e delegazioni. Per gruppi fino a sedici persone la centrale preventiva un minibus o un autobus. È disponibile anche una berlina completamente elettrica alla tariffa della classe Business: su una tratta così lunga l’autonomia viene pianificata sul percorso prima dell’assegnazione dell’auto, quindi lo segnali se la politica di viaggio della Sua azienda lo richiede."
+      ]
+    },
+    {
+      "h2": "Prelievo all’aeroporto di Zurigo e cosa serve alla centrale",
+      "paragraphs": [
+        "L’autista La attende nell’area arrivi e nel prezzo sono compresi sessanta minuti di attesa dopo l’atterraggio. Indichi il numero del volo al momento della prenotazione: il volo in arrivo viene monitorato e il prelievo si sposta di conseguenza, senza costi, così un atterraggio in ritardo non cambia né il prezzo né il programma.",
+        "Le tariffe sono pubblicate per i prelievi all’aeroporto di Zurigo. Il ritorno da Lugano, un prelievo a un altro indirizzo, gli aeroporti di Basilea e Ginevra e i viaggi all’estero vengono preventivati dalla centrale tratta per tratta. Per prenotare servono:"
+      ],
+      "bullets": [
+        "Il numero del volo e la data di atterraggio",
+        "L’indirizzo a Lugano, o il nome dell’albergo se l’indirizzo non è ancora definito",
+        "Il numero di passeggeri e di valigie, ed eventuali sci o bagagli ingombranti",
+        "Seggiolini per bambini, con età o taglia",
+        "Un numero di telefono raggiungibile all’arrivo"
+      ]
+    },
+    {
+      "h2": "Cosa distingue la tratta per Lugano",
+      "paragraphs": [
+        "Lugano si trova a sud delle Alpi, sulle rive del suo lago, e la città si estende lungo l’acqua e sulle colline circostanti. Indichi alla centrale il nome dell’albergo oppure la via e il numero civico, e non soltanto la località, così l’autista La lascia davanti alla porta giusta. Se dopo il transfer ha un volo o un appuntamento, lo dica già alla prenotazione, perché l’orario di partenza da Zurigo si decide a ritroso.",
+        "Il prezzo pubblicato vale per la sola corsa fino a Lugano. Un’altra località del Ticino, una fermata lungo il percorso, il ritorno o un viaggio che prosegue in Italia sono tratte diverse: ci invii i dettagli e la data, e la centrale risponde con un preventivo prima che Lei si impegni."
+      ]
+    }
+  ],
+  "priceNote": "Le tariffe valgono per auto, solo andata dall’aeroporto di Zurigo, e sono indicate IVA esclusa; l’IVA, pari a {vat}, compare su una riga a parte. Il ritorno da Lugano e ogni altro punto di prelievo vengono preventivati dalla centrale tratta per tratta.",
+  "faq": [
+    {
+      "q": "Quanto dura il transfer dall’aeroporto di Zurigo a Lugano?",
+      "a": "Il viaggio dura circa {time} per {km} km. Il Gottardo può rallentare nei periodi di forte traffico delle vacanze o con molta neve: preveda un margine e, se all’arrivo ha un appuntamento fisso, lo segnali alla centrale."
+    },
+    {
+      "q": "Quanto costa un transfer privato da Zurigo a Lugano?",
+      "a": "{priceBusiness} in classe Business, {pricePremium} in classe Premium, {priceSuv} in SUV e {priceVan} in Business Van, IVA ({vat}) esclusa. Il prezzo vale per l’auto, non per passeggero, ed è comunicato prima della prenotazione."
+    },
+    {
+      "q": "Cosa succede se il mio volo atterra in ritardo?",
+      "a": "Ci indichi il numero del volo al momento della prenotazione. Monitoriamo il volo in arrivo e il prelievo si sposta di conseguenza, senza costi; l’autista attende nell’area arrivi e sessanta minuti di attesa dopo l’atterraggio sono compresi."
+    },
+    {
+      "q": "Posso portare sci, bagagli e seggiolini per bambini?",
+      "a": "La gestione dei bagagli è compresa nel prezzo e i seggiolini per bambini vengono montati prima del viaggio, gratuitamente. Comunichi alla centrale il numero di valigie e di sci, così la classe è quella giusta al primo colpo."
+    },
+    {
+      "q": "Come si paga il transfer?",
+      "a": "Online con carta o TWINT, all’autista il giorno stesso, oppure concordando con la centrale su WhatsApp. I clienti aziendali ricevono una fattura mensile e l’eventuale spesa di annullamento viene indicata alla conferma della prenotazione."
+    },
+    {
+      "q": "Il Gottardo può influire sul viaggio verso Lugano?",
+      "a": "Può. Il tratto del Gottardo è quello che a volte forma code o rallenta con la neve: se ha un appuntamento fisso a Lugano, lo segnali alla prenotazione e preveda un margine. Da ottobre ad aprile tutte le auto montano pneumatici invernali."
+    },
+    {
+      "q": "Potete venirci a prendere a Lugano per il ritorno all’aeroporto?",
+      "a": "Sì, come tratta separata. Le tariffe pubblicate valgono per i prelievi all’aeroporto di Zurigo: ci invii la data e l’indirizzo per telefono, WhatsApp o e-mail e la centrale risponde con un preventivo."
+    }
+  ]
+}

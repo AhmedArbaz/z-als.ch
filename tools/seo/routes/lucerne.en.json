@@ -1,0 +1,93 @@
+{
+  "title": "Zurich to Lucerne Private Transfer | Chauffeur | Z-ALS",
+  "description": "Private chauffeur from Zurich Airport to Lucerne, {km} km by motorway, in a Mercedes E-, S- or V-Class. Flight tracked, fare fixed before you book.",
+  "h1": "Zurich Airport to Lucerne by private chauffeur",
+  "lede": "A chauffeur meets you inside arrivals at Zürich Airport and drives you the {km} km to Lucerne for a fare fixed before you book. The destination is your door, not the station.",
+  "intro": [
+    "Lucerne lies on Lake Lucerne in central Switzerland, with Mount Pilatus and the Rigi close by. From Zürich Airport it is {km} km by motorway, and a private transfer is one car and one chauffeur from the arrivals hall to the door of your hotel, office or apartment, with no change at the station.",
+    "The fare is calculated per kilometre by car class and fixed before you book. Dispatch answers at any hour, by phone, WhatsApp or email, and the chauffeur waits inside arrivals.",
+    "This page sets out the fare, the drive, the cars and what dispatch needs from you. The return from Lucerne and any other pick-up point are quoted per route."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Lucerne",
+      "paragraphs": [
+        "A Business Class transfer (Mercedes E-Class or equivalent) costs {priceBusiness} for the whole car, with {vat} VAT added as its own line. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. The figure is per car, not per passenger, so a party of three or four shares one fare.",
+        "The fare is the distance multiplied by the class rate, and on this route it sits above the class minimum. It is stated before you book and does not move afterwards. It includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats, fitted before the journey at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The drive to Lucerne",
+      "paragraphs": [
+        "The distance is {km} km and the drive takes about {time}. The usual way is by motorway round the west of Zürich and south towards Zug, then on to Lucerne, so almost the whole journey is motorway until the last stretch into the city.",
+        "The route does not cross a pass, which sets it apart from most of our mountain runs. From October to April every car runs winter tyres, and snow or heavy rain can still lengthen the drive, so allow some margin if you have a train or an appointment to reach and tell dispatch about it when you book.",
+        "In summer the roads around the lake carry more visitors, so treat {time} as a planning figure rather than a promise."
+      ]
+    },
+    {
+      "h2": "Which car for Lucerne",
+      "paragraphs": [
+        "Business Class carries three passengers and three cases, with a fourth passenger if the luggage is light. Premium Class seats three, with two cases, and has a rear cabin to work in on the way. The SUV seats four with four cases and has all-wheel drive, which is worth having for a winter arrival.",
+        "The Business Van seats seven with seven cases and suits families, delegations and anyone with a lot of luggage. For groups of up to sixteen dispatch quotes a minibus or coach, priced per journey rather than from the table. A fully electric saloon is available at the Business Class rate; its range is planned against the route before the car is assigned, so ask dispatch when you book."
+      ]
+    },
+    {
+      "h2": "At the airport, and what dispatch needs",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals. Give dispatch the flight number when you book: the inbound flight is tracked and the pick-up moves with it at no charge, so a delayed landing changes neither the fare nor the plan. Sixty minutes of waiting after landing are included.",
+        "Fares are published for pick-ups at Zürich Airport. The return from Lucerne, a pick-up at any other address, at Basel or Geneva airport, and journeys abroad are quoted per route by dispatch. To book, dispatch needs:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The hotel or address in Lucerne, or the town if the address is not settled",
+        "Number of passengers and cases",
+        "Child seats, skis or boards, if any"
+      ]
+    },
+    {
+      "h2": "Lucerne: train or car, and the old town",
+      "paragraphs": [
+        "Lucerne is one of the routes where the train is a real alternative, and it is only fair to say so. The rail link from Zürich is good, and for one traveller with a single bag it is a sound choice. The case for a car is door-to-door service: no change at the station, the luggage carried by the chauffeur, a party kept together, and a pick-up that follows your flight rather than a timetable.",
+        "Parts of the old town by the river and the lake are pedestrian areas, so for an address inside them the car stops at the nearest point it can reach and the last stretch is on foot. Give dispatch the hotel or the street and the drop-off is agreed in advance. The fare is for Lucerne itself: a village on the lake, a resort in the mountains behind it or an address outside the town is a different route, and dispatch quotes it before you book."
+      ]
+    }
+  ],
+  "priceNote": "Fares are net of VAT; {vat} VAT is added as its own line. They are published for pick-ups at Zürich Airport, and the return from Lucerne or any other pick-up point is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Lucerne take?",
+      "a": "The drive is about {time} for {km} km, mostly by motorway. Snow or heavy rain can lengthen it, so tell dispatch if you have a train or an appointment to reach."
+    },
+    {
+      "q": "How much does a private transfer from Zürich Airport to Lucerne cost?",
+      "a": "{priceBusiness} in a Business Class car, {pricePremium} in Premium Class, {priceSuv} in the SUV and {priceVan} in the Business Van, all net of {vat} VAT. That is per car, and fixed before you book."
+    },
+    {
+      "q": "Will the chauffeur wait if my flight is late?",
+      "a": "Yes. With the flight number, we track the inbound flight and move the pick-up at no charge, and sixty minutes of waiting after landing are included in the fare."
+    },
+    {
+      "q": "Can I bring luggage, skis and child seats?",
+      "a": "Child seats (infant, toddler or booster) are fitted before the journey at no charge. Tell dispatch how many cases and how many pairs of skis or boards you have, so that the class is right the first time."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "Pay online by card or TWINT, pay the chauffeur on the day, or settle it with dispatch on WhatsApp. Corporate clients are invoiced monthly. Any cancellation charge is stated when the booking is confirmed."
+    },
+    {
+      "q": "Is the train a better choice for Lucerne?",
+      "a": "For one or two people with light luggage and a hotel near the station, it can be. A car makes sense for door-to-door service, a lot of luggage, a group, or a pick-up that follows a delayed flight."
+    },
+    {
+      "q": "Can you collect us in Lucerne for the return to the airport?",
+      "a": "Yes, as a separate journey that dispatch quotes per route. Send the date and the address, and the fare comes back before you book."
+    }
+  ]
+}

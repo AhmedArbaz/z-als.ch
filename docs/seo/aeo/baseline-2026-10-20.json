@@ -1,0 +1,39 @@
+{
+  "note": "Ubersuggest AI Search Visibility before the AEO work. Topic was filed under loc_id 2586 (Pakistan), 5 cheap-transfer prompts, OpenAI only. Rebuilt on 2026-10-20 (see README.md).",
+  "captured": "2026-10-20",
+  "project_id": "dd55f5def4641ecdd6ff5cb5e2e3ac0c3ea01acb420cc129114109dbc11290b6",
+  "overview": {
+    "user_brand_visibility_percentage": 0,
+    "user_brand_total_mentions": 0,
+    "user_brand_average_rank": null,
+    "share_of_voice": 0,
+    "total_answers": 5,
+    "providers": ["openai"],
+    "brands_named": [
+      { "brand": "TripTransfer", "average_rank": 1.5, "mentions": 2, "visibility": 40 },
+      { "brand": "ZRH Airport Taxi", "average_rank": 1, "mentions": 1, "visibility": 20 },
+      { "brand": "Zurich Airport's official taxi service", "average_rank": 1, "mentions": 1, "visibility": 20 },
+      { "brand": "HOP IN", "average_rank": 2, "mentions": 1, "visibility": 20 },
+      { "brand": "Swiss Top Transfer GmbH", "average_rank": 2, "mentions": 1, "visibility": 20 },
+      { "brand": "Mozio", "average_rank": 3, "mentions": 1, "visibility": 20 },
+      { "brand": "Noble Transfer Limousine Service", "average_rank": 3, "mentions": 1, "visibility": 20 },
+      { "brand": "Zurich Airport Transfer", "average_rank": 4, "mentions": 1, "visibility": 20 },
+      { "brand": "Taxi Zürich Prime Transfers", "average_rank": 4, "mentions": 1, "visibility": 20 },
+      { "brand": "Zurich Pickup – Airport Transfer & Taxi Zurich", "average_rank": 5, "mentions": 1, "visibility": 20 }
+    ]
+  },
+  "config": {
+    "topic": "Zurich Airport Transfers",
+    "language": "en",
+    "loc_id": 2586,
+    "update_frequency": "BI_WEEKLY",
+    "competitors": ["zuerich-limousinenservice.ch", "theswisslimousine.ch", "zurichlimousines.ch", "limousineservicezurich.com", "zurichlimos.com"]
+  },
+  "prompts": [
+    { "prompt": "What is the best private transfer service from Zurich Airport to the city center and how much does it cost?", "z_als_rank": null, "brands": ["ZRH Airport Taxi", "TripTransfer"] },
+    { "prompt": "Which is cheaper for Zurich Airport transfers: hiring a private taxi or booking a shared shuttle service?", "z_als_rank": null, "brands": [] },
+    { "prompt": "Where can I book a reliable and affordable Zurich Airport transfer online before my trip?", "z_als_rank": null, "brands": ["Zurich Airport's official taxi service", "HOP IN", "Mozio", "Zurich Airport Transfer"] },
+    { "prompt": "What are the top-rated Zurich Airport transfer companies recommended for families traveling with luggage?", "z_als_rank": null, "brands": ["TripTransfer", "Swiss Top Transfer GmbH", "Noble Transfer Limousine Service", "Taxi Zürich Prime Transfers", "Zurich Pickup – Airport Transfer & Taxi Zurich"] },
+    { "prompt": "Which Zurich Airport transfer option offers the best value for a group of 4 traveling to a hotel in downtown Zurich?", "z_als_rank": null, "brands": [] }
+  ]
+}

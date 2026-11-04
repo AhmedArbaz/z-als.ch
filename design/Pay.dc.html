@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0;padding:0;background:#01050B;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#FFFFFF;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:#7E9BD4}
+:focus-visible{outline:2px solid #7E9BD4;outline-offset:2px}
+@keyframes pIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:1ms !important;transition-duration:1ms !important}}
+.p-wrap{position:relative;max-width:1240px;margin:0 auto;padding:clamp(32px,5vw,72px) clamp(16px,4vw,56px) clamp(72px,8vw,112px);display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.1fr);column-gap:clamp(32px,5vw,80px);grid-template-rows:auto 1fr;align-items:start}
+.p-intro{grid-column:1;grid-row:1}
+.p-panel{grid-column:2;grid-row:1 / span 2}
+/* Not sticky: with the bank and TWINT cards it is taller than a laptop screen. */
+.p-more{grid-column:1;grid-row:2;margin-top:32px}
+.p-eyebrow{display:flex;align-items:center;gap:14px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:#7E9BD4}
+.p-eyebrow::before{content:"";display:block;width:30px;height:1px;background:#5D7DB7}
+.p-h1{margin:18px 0 0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(36px,4.6vw,60px);line-height:1.02;letter-spacing:-0.03em;text-wrap:balance}
+.p-lede{margin:18px 0 0;max-width:46ch;font-size:16px;line-height:1.6;color:rgba(255,255,255,0.74)}
+.p-points{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px}
+.p-points li{display:grid;grid-template-columns:36px minmax(0,1fr);gap:14px;align-items:start;font-size:15px;line-height:1.5;color:rgba(255,255,255,0.82)}
+.p-points strong{display:block;color:#FFFFFF;font-weight:600}
+.p-ico{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;border:1px solid rgba(125,155,212,0.34);color:#7E9BD4}
+.p-help{margin-top:36px;padding-top:24px;border-top:1px solid rgba(125,155,212,0.2);font-size:14px;line-height:1.6;color:rgba(255,255,255,0.66)}
+.p-help-links{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:10px;font-size:14px}
+.p-panel{background:rgba(10,23,48,0.72);border:1px solid rgba(125,155,212,0.24);border-radius:20px;padding:clamp(20px,3vw,40px);animation:pIn 360ms cubic-bezier(.2,.6,.2,1) backwards}
+.p-h2{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:clamp(24px,2.4vw,32px);letter-spacing:-0.02em}
+.p-sub{margin:8px 0 0;font-size:14px;line-height:1.55;color:rgba(255,255,255,0.62)}
+.p-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:26px}
+.p-field{min-width:0}
+.p-field.is-wide{grid-column:1 / -1}
+.p-label{display:block;margin-bottom:9px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7E9BD4}
+.p-label em{font-style:normal;color:rgba(255,255,255,0.5);letter-spacing:0.04em;text-transform:none;font-weight:500}
+.p-box{display:flex;align-items:center;gap:12px;min-height:54px;padding:0 16px;background:rgba(1,5,11,0.55);border:1px solid rgba(125,155,212,0.34);border-radius:12px;transition:border-color 160ms ease-out,box-shadow 160ms ease-out}
+.p-box:focus-within{border-color:#7E9BD4;box-shadow:0 0 0 3px rgba(93,125,183,0.22)}
+.p-field.is-err .p-box{border-color:#E4757A}
+.p-cur{flex:none;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;color:#7E9BD4}
+.p-input{flex:1 1 auto;min-width:0;height:52px;border:0;background:transparent;padding:0;font-family:Manrope,system-ui,sans-serif;font-size:16px;font-weight:500;color:#FFFFFF;outline:none}
+.p-input::placeholder{color:rgba(255,255,255,0.45);font-weight:400}
+.p-amount .p-input{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:22px;letter-spacing:-0.01em}
+.p-hint{display:block;margin-top:7px;font-size:12px;line-height:1.4;color:rgba(255,255,255,0.55)}
+.p-err{display:block;margin-top:7px;font-size:12px;line-height:1.4;color:#F09A9E}
+.p-legend{margin:28px 0 12px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7E9BD4}
+.p-methods{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.p-method{appearance:none;display:flex;flex-direction:column;gap:12px;align-items:flex-start;min-height:44px;padding:18px;border:1px solid rgba(125,155,212,0.28);background:#050D1C;color:#FFFFFF;font:inherit;text-align:left;border-radius:16px;cursor:pointer;transition:border-color 180ms ease-out,box-shadow 180ms ease-out}
+.p-method:hover{border-color:#7E9BD4}
+.p-method.is-sel{border-color:#7E9BD4;box-shadow:0 0 0 2px #5D7DB7,0 0 26px rgba(93,125,183,0.3)}
+.p-method-top{display:flex;align-items:center;gap:12px}
+.p-radio{flex:none;width:20px;height:20px;border-radius:50%;border:1.5px solid rgba(125,155,212,0.6)}
+.p-method.is-sel .p-radio{border:6px solid #7E9BD4;background:#FFFFFF}
+.p-method-name{font-family:'Playfair Display',Georgia,serif;font-size:21px;letter-spacing:-0.01em}
+.p-marks{display:flex;flex-wrap:wrap;gap:6px}
+.p-logo{display:block;width:45px;height:30px;border-radius:4px;box-shadow:0 0 0 1px rgba(255,255,255,0.22)}
+.p-total{display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-top:28px;padding:18px 0 0;border-top:1px solid rgba(125,155,212,0.2)}
+.p-total-label{font-size:13px;color:rgba(255,255,255,0.66)}
+.p-total-sum{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:clamp(22px,2.4vw,28px);color:#FFFFFF;text-align:right}
+.p-total-sum small{display:block;margin-top:4px;font-family:Manrope,system-ui,sans-serif;font-size:12px;color:rgba(255,255,255,0.55)}
+.p-pay{appearance:none;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:56px;margin-top:20px;padding:0 24px;border:0;background:#5574AE;color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:13px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;border-radius:12px;cursor:pointer;transition:background 180ms ease-out,color 180ms ease-out}
+.p-pay:hover{background:#7E9BD4;color:#0A1730}
+.p-pay[aria-busy="true"]{opacity:0.7;cursor:progress}
+.p-fine{display:flex;align-items:center;justify-content:center;gap:8px;margin:14px 0 0;font-size:12px;line-height:1.55;color:rgba(255,255,255,0.58);text-align:center}
+.p-banner{margin-top:22px;padding:14px 16px;border:1px solid #E4757A;border-radius:12px;background:rgba(228,117,122,0.08);color:#F5B8BB;font-size:14px;line-height:1.5}
+.p-note{margin-top:22px;padding:14px 16px;border:1px solid rgba(125,155,212,0.34);border-radius:12px;background:rgba(93,125,183,0.1);color:rgba(255,255,255,0.86);font-size:14px;line-height:1.5}
+.p-done{margin-top:22px;padding:18px;border:1px solid rgba(37,211,102,0.5);border-radius:12px;background:rgba(37,211,102,0.08);font-size:15px;line-height:1.6;color:#C9F5D8}
+.p-again{appearance:none;margin-top:22px;min-height:48px;padding:0 22px;border:1px solid rgba(125,155,212,0.4);background:transparent;color:#FFFFFF;font:inherit;font-size:14px;font-weight:600;border-radius:12px;cursor:pointer}
+.p-again:hover{border-color:#FFFFFF}
+.p-bank{margin-top:36px;padding:22px;border:1px solid rgba(125,155,212,0.24);border-radius:16px;background:rgba(10,23,48,0.5)}
+.p-bank-h{margin:0;font-family:'Playfair Display',Georgia,serif;font-weight:400;font-size:21px;letter-spacing:-0.01em}
+.p-bank-dl{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px 18px;align-items:baseline;margin:16px 0 0}
+.p-bank-dl dt{font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#7E9BD4}
+.p-bank-dl dd{margin:0;font-size:15px;color:#FFFFFF}
+.p-iban{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.p-iban span{font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;user-select:all;overflow-wrap:anywhere}
+.p-copy{appearance:none;min-height:36px;padding:0 14px;border:1px solid rgba(125,155,212,0.4);background:transparent;color:#FFFFFF;font:inherit;font-size:13px;font-weight:600;border-radius:10px;cursor:pointer}
+.p-copy:hover{border-color:#FFFFFF}
+.p-bank-note{margin:14px 0 0;font-size:13px;line-height:1.55;color:rgba(255,255,255,0.66)}
+.p-qr{display:grid;grid-template-columns:180px minmax(0,1fr);gap:22px;align-items:center}
+.p-qr-img{display:block;width:180px;height:180px;border-radius:10px;image-rendering:pixelated}
+/* A phone can't scan its own screen: the code is for a visitor on a computer. */
+@media (max-width:900px),(hover:none){.p-qr{display:none}}
+@media (max-width:900px){.p-wrap{grid-template-columns:1fr;grid-template-rows:none;row-gap:32px}.p-intro,.p-panel,.p-more{grid-column:1;grid-row:auto;position:static;margin-top:0}.p-help{margin-top:28px}}
+@media (max-width:560px){.p-fields,.p-methods{grid-template-columns:1fr}.p-field{grid-column:1 / -1}}
+</style>
+</helmet>
+
+<div style="width:100%;min-height:100vh;background:#01050B;font-family:Manrope,system-ui,sans-serif;color:#FFFFFF;overflow-x:clip">
+
+<dc-import name="SiteHeader v3" active="pay" hint-size="100%,87px"></dc-import>
+
+<div aria-hidden="true" style="position:absolute;left:0;right:0;top:0;height:640px;pointer-events:none;background:radial-gradient(70% 90% at 10% 0%,rgba(93,125,183,0.22) 0%,rgba(93,125,183,0) 62%)"></div>
+
+<main class="p-wrap">
+<div class="p-intro">
+<div class="p-eyebrow">Secure online payment</div>
+<h1 class="p-h1">Pay your booking</h1>
+<p class="p-lede">Agreed a fare with our dispatch by phone or WhatsApp? Pay it here in a minute, by card or TWINT.</p>
+</div>
+
+<section class="p-panel" aria-label="Payment">
+<sc-if value="{{ checking }}">
+<h2 class="p-h2" id="p-h-check">Checking your payment…</h2>
+<p class="p-sub">This takes a few seconds.</p>
+</sc-if>
+
+<sc-if value="{{ isPaid }}">
+<h2 class="p-h2" id="p-h-paid">Payment received. Thank you.</h2>
+<div class="p-done" role="status">{{ paidLine }}</div>
+<p class="p-sub">Stripe emails your receipt. Dispatch has your payment and confirms your chauffeur personally.</p>
+<button type="button" class="p-again" onClick="{{ onAgain }}">Make another payment</button>
+</sc-if>
+
+<sc-if value="{{ showForm }}">
+<form novalidate onSubmit="{{ onPay }}">
+<h2 class="p-h2" id="p-h-form">Payment details</h2>
+<p class="p-sub">Enter the amount dispatch gave you. All fields except the reference are required.</p>
+<sc-if value="{{ cancelled }}"><div class="p-note" role="status">Payment cancelled. Nothing was charged.</div></sc-if>
+<div class="p-fields">
+<div class="{{ fAmount }}"><label class="p-label" for="p-amount">Amount <em>· incl. 8.1% VAT</em></label><div class="p-box"><span class="p-cur" aria-hidden="true">CHF</span><input id="p-amount" class="p-input" name="amount" type="text" inputmode="decimal" autocomplete="off" placeholder="0.00" value="{{ amount }}" onChange="{{ onField }}" aria-describedby="p-amount-hint"></div><sc-if value="{{ errAmount }}"><span class="p-err">{{ errAmount }}</span></sc-if><span class="p-hint" id="p-amount-hint">From CHF 20 to CHF 5,000</span></div>
+<div class="p-field is-wide"><label class="p-label" for="p-ref">Booking reference <em>· optional</em></label><div class="p-box"><input id="p-ref" class="p-input" name="ref" type="text" maxlength="60" autocomplete="off" placeholder="e.g. your name and travel date" value="{{ ref }}" onChange="{{ onField }}"></div></div>
+<div class="{{ fName }}"><label class="p-label" for="p-name">Full name</label><div class="p-box"><input id="p-name" class="p-input" name="name" type="text" maxlength="100" autocomplete="name" value="{{ name }}" onChange="{{ onField }}"></div><sc-if value="{{ errName }}"><span class="p-err">{{ errName }}</span></sc-if></div>
+<div class="{{ fEmail }}"><label class="p-label" for="p-email">Email <em>· for the receipt</em></label><div class="p-box"><input id="p-email" class="p-input" name="email" type="email" autocomplete="email" value="{{ email }}" onChange="{{ onField }}"></div><sc-if value="{{ errEmail }}"><span class="p-err">{{ errEmail }}</span></sc-if></div>
+</div>
+
+<div class="p-legend" id="p-method-l">Pay with</div>
+<div class="p-methods" role="radiogroup" aria-labelledby="p-method-l">
+<button type="button" role="radio" aria-checked="{{ cardOn }}" class="{{ cardCls }}" onClick="{{ pickCard }}"><span class="p-method-top"><span class="p-radio" aria-hidden="true"></span><span class="p-method-name">Card</span></span><span class="p-marks" aria-hidden="true"><img class="p-logo" src="/assets/pay/visa.svg" alt="" width="45" height="30"><img class="p-logo" src="/assets/pay/mastercard.svg" alt="" width="45" height="30"><img class="p-logo" src="/assets/pay/american-express.svg" alt="" width="45" height="30"><img class="p-logo" src="/assets/pay/apple-pay.svg" alt="" width="45" height="30"><img class="p-logo" src="/assets/pay/google-pay.svg" alt="" width="45" height="30"></span></button>
+<button type="button" role="radio" aria-checked="{{ twintOn }}" class="{{ twintCls }}" onClick="{{ pickTwint }}"><span class="p-method-top"><span class="p-radio" aria-hidden="true"></span><span class="p-method-name">TWINT</span></span><span class="p-marks" aria-hidden="true"><img class="p-logo" src="/assets/pay/twint.svg" alt="" width="45" height="30"></span></button>
+</div>
+
+<div class="p-total"><span class="p-total-label">To pay</span><span class="p-total-sum">{{ totalText }}<small>incl. 8.1% VAT</small></span></div>
+<sc-if value="{{ payError }}"><div class="p-banner" role="alert">{{ payError }}</div></sc-if>
+<button type="submit" class="p-pay" aria-busy="{{ busyAttr }}">{{ payCta }}</button>
+<p class="p-fine"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>You continue to Stripe's secure page to pay.</p>
+</form>
+</sc-if>
+</section>
+
+<div class="p-more">
+<ul class="p-points">
+<li><span class="p-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></span><span><strong>Secure checkout by Stripe</strong>You pay on Stripe's own page. This site never sees card details.</span></li>
+<li><span class="p-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg></span><span><strong>Receipt by email</strong>Stripe emails your receipt the moment the payment goes through.</span></li>
+<li><span class="p-ico" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg></span><span><strong>Dispatch is told at once</strong>Your payment reaches our dispatch straight away, day or night.</span></li>
+</ul>
+<section class="p-bank" aria-labelledby="p-bank-h">
+<h2 class="p-bank-h" id="p-bank-h">Prefer a bank transfer?</h2>
+<dl class="p-bank-dl"><dt>Account holder</dt><dd translate="no">Zurich-A.L.S GmbH</dd><dt>IBAN</dt><dd class="p-iban"><span translate="no">CH72 0027 8278 1373 9201 F</span><button type="button" class="p-copy" onClick="{{ onCopy }}" aria-live="polite">{{ copyLabel }}</button></dd></dl>
+<p class="p-bank-note">Please use your booking reference as the payment message. Our dispatch confirms once the money arrives.</p>
+</section>
+<section class="p-bank p-qr" aria-labelledby="p-qr-h">
+<img class="p-qr-img" src="/assets/pay/twint-qr.png" alt="TWINT QR code for Zurich-A.L.S GmbH" width="180" height="180">
+<div><h2 class="p-bank-h" id="p-qr-h">Pay with the TWINT app</h2>
+<p class="p-bank-note">Open TWINT on your phone, scan this code and enter the amount you agreed with dispatch. Please add your booking reference as the message.</p></div>
+</section>
+<div class="p-help">
+Questions about the amount? Our dispatch answers 24 / 7.
+<div class="p-help-links"><a href="{{ phoneHref }}">Call dispatch · {{ dispatchPhone }}</a><a href="{{ waHref }}" target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a></div>
+</div>
+</div>
+</main>
+
+<dc-import name="SiteFooter v3" hint-size="100%,640px"></dc-import>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:1200},&quot;dispatchPhone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+41 76 272 0909&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+/* The payment portal (payments.z-als.ch): the customer pays an amount dispatch already agreed, by card or TWINT,
+   on Stripe Checkout. server.mjs /api/pay checks the same limits and creates the session; dispatch is emailed
+   once Stripe reports it paid. A pay link can prefill it: ?amount=480&ref=Müller-12.11&method=twint. */
+const T = (s, v) => (window.ZALS_I18N ? window.ZALS_I18N.t(s, v) : s);
+const MIN = 20, MAX = 5000;
+const chf = n => {
+  const p = (Math.round(n * 100) / 100).toFixed(2).split('.');
+  const i = p[0];
+  return 'CHF ' + (i.length > 3 ? i.slice(0, i.length - 3) + ' ' + i.slice(-3) : i) + '.' + p[1];
+};
+/* "480", "480.5" or "480,50" → 480.5; anything else → NaN. */
+const amountOf = v => (/^\d{1,4}([.,]\d{1,2})?$/.test(String(v).trim()) ? Number(String(v).trim().replace(',', '.')) : NaN);
+const EMAIL = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const LABEL = { card: 'card', twint: 'TWINT' };
+const IBAN = 'CH720027827813739201F'; // copied without spaces: banking apps accept it either way
+
+class Component extends DCLogic {
+  state = { amount: '', ref: '', name: '', email: '', method: 'card', errors: {}, busy: false, payError: '', cancelled: false, checking: false, paid: null };
+
+  componentDidMount() {
+    const q = new URLSearchParams(location.search);
+    if (!isNaN(amountOf(q.get('amount') || ''))) this.state.amount = String(q.get('amount')).trim();
+    this.state.ref = String(q.get('ref') || '').trim().slice(0, 60);
+    if (q.get('method') === 'twint') this.state.method = 'twint';
+    const paidId = q.get('paid');
+    if (q.get('cancelled')) this.state.cancelled = true;
+    if (paidId || q.get('cancelled')) history.replaceState(null, '', location.pathname);
+    this.setState({});
+    if (!paidId) return;
+    const unsure = 'We could not confirm the payment. If you were charged, dispatch will see it. Please call or WhatsApp dispatch if in doubt.';
+    this.setState({ checking: true });
+    fetch('/api/checkout/status?id=' + encodeURIComponent(paidId)).then(r => r.json().then(st => ({ ok: r.ok, st }))).then(({ ok, st }) => {
+      if (ok && st.paid) this.setState({ checking: false, paid: { amount: st.amount, method: st.method, ref: st.ref } });
+      else this.setState({ checking: false, payError: ok ? 'The payment was not completed, so nothing was charged. Please try again.' : unsure });
+    }).catch(() => this.setState({ checking: false, payError: unsure }));
+  }
+
+  validate(s) {
+    const e = {}, n = amountOf(s.amount);
+    if (String(s.amount).trim() === '') e.amount = 'Please enter the amount you agreed with dispatch.';
+    else if (isNaN(n)) e.amount = 'Please enter the amount in francs, e.g. 480 or 480.50.';
+    else if (n < MIN || n > MAX) e.amount = 'Online payments are from CHF 20 to CHF 5,000. For other amounts, please contact dispatch.';
+    if (String(s.name).trim().length < 2) e.name = 'Please enter your full name.';
+    if (!EMAIL.test(String(s.email).trim())) e.email = 'Please enter a valid email address.';
+    return e;
+  }
+
+  pay(form) {
+    if (this.state.busy) return;
+    // Read the fields themselves: a value typed just before pressing Pay may not have fired its change event yet.
+    const f = new FormData(form);
+    const s = Object.assign({}, this.state, { amount: f.get('amount') || '', ref: f.get('ref') || '', name: f.get('name') || '', email: f.get('email') || '' });
+    const errors = this.validate(s);
+    this.setState({ amount: s.amount, ref: s.ref, name: s.name, email: s.email, errors, payError: '', cancelled: false });
+    if (Object.keys(errors).length) {
+      const first = form.querySelector('[name="' + Object.keys(errors)[0] + '"]');
+      if (first) first.focus();
+      return;
+    }
+    this.setState({ busy: true });
+    const lang = window.ZALS_I18N ? window.ZALS_I18N.lang : 'en';
+    fetch('/api/pay', {
+      method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ amount: amountOf(s.amount).toFixed(2), ref: s.ref.trim(), name: s.name.trim(), email: s.email.trim(), method: s.method, lang })
+    }).then(r => r.json().catch(() => ({})).then(j => ({ status: r.status, j }))).then(({ status, j }) => {
+      if (status === 200 && j.url) { window.location.href = j.url; return; }
+      // Fixed strings only, so every language has them.
+      const msg = status === 400 ? 'Please check the amount and your details.'
+        : status === 429 ? 'Too many attempts. Please try again later.'
+        : status === 502 && j.error === 'twint' ? "TWINT isn't available online right now. Please pay by card."
+        : 'Online payment is unavailable right now. Please call or WhatsApp dispatch.';
+      this.setState({ busy: false, payError: msg });
+    }).catch(() => this.setState({ busy: false, payError: 'Online payment is unavailable right now. Please call or WhatsApp dispatch.' }));
+  }
+
+  renderVals() {
+    const s = this.state, e = s.errors;
+    const phone = this.props.dispatchPhone ?? '+41 76 272 0909';
+    const n = amountOf(s.amount), ok = n >= MIN && n <= MAX;
+    const fld = k => 'p-field' + (k === 'amount' ? ' p-amount is-wide' : '') + (e[k] ? ' is-err' : '');
+    const sel = m => 'p-method' + (s.method === m ? ' is-sel' : '');
+    return {
+      dispatchPhone: phone,
+      phoneHref: 'tel:' + String(phone).replace(/[^+0-9]/g, ''),
+      waHref: 'https://wa.me/' + String(phone).replace(/[^0-9]/g, '') + '?text=' + encodeURIComponent(T('Hello Z-ALS, I have a question about paying my booking.')),
+      checking: s.checking, isPaid: !!s.paid, showForm: !s.checking && !s.paid,
+      cancelled: s.cancelled,
+      amount: s.amount, ref: s.ref, name: s.name, email: s.email,
+      fAmount: fld('amount'), fName: fld('name'), fEmail: fld('email'),
+      errAmount: e.amount ? T(e.amount) : '', errName: e.name ? T(e.name) : '', errEmail: e.email ? T(e.email) : '',
+      onField: ev => this.setState({ [ev.target.name]: ev.target.value, errors: Object.assign({}, e, { [ev.target.name]: '' }) }),
+      cardOn: String(s.method === 'card'), twintOn: String(s.method === 'twint'), cardCls: sel('card'), twintCls: sel('twint'),
+      pickCard: () => this.setState({ method: 'card', payError: '' }),
+      pickTwint: () => this.setState({ method: 'twint', payError: '' }),
+      totalText: ok ? chf(n) : 'CHF –',
+      payCta: s.busy ? T('Opening secure payment…') : ok ? T(s.method === 'twint' ? 'Pay {amount} with TWINT →' : 'Pay {amount} by card →', { amount: chf(n) }) : T(s.method === 'twint' ? 'Pay with TWINT →' : 'Pay by card →'),
+      busyAttr: String(s.busy),
+      payError: s.payError ? T(s.payError) : '',
+      onPay: ev => { ev.preventDefault(); this.pay(ev.target); },
+      paidLine: s.paid ? T('{amount} paid by {method} · reference {ref}.', { amount: chf(s.paid.amount), method: T(LABEL[s.paid.method] || s.paid.method), ref: s.paid.ref }) : '',
+      copyLabel: T(s.copied ? 'Copied' : 'Copy IBAN'),
+      onCopy: () => navigator.clipboard.writeText(IBAN).then(() => { this.setState({ copied: true }); setTimeout(() => this.setState({ copied: false }), 2000); }, () => {}),
+      onAgain: () =>this.setState({ paid: null, amount: '', ref: '', payError: '', errors: {} })
+    };
+  }
+}
+</script>
+</body>
+</html>

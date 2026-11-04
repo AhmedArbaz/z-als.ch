@@ -1,0 +1,56 @@
+{
+  "title": "Flughafen Zürich: Taxi, Zug oder Chauffeur? | Z-ALS",
+  "description": "Vom Flughafen Zürich in die Stadt: Zug {trainCity}, Taxi etwa {taxiCity}, Chauffeur zum Festpreis von {priceCity} plus MwSt. Was sich für wen lohnt.",
+  "eyebrow": "Ratgeber · Flughafen Zürich in die Stadt · Preise geprüft am {checked}",
+  "h1": "Vom Flughafen Zürich in die Stadt: Taxi, Zug oder privater Chauffeur?",
+  "lede": "Der Zug ist mit {trainCity} der günstigere Weg nach Zürich. Ein Taxi kostet nach Taxameter etwa {taxiCity}. Ein privater Chauffeur kostet fest {priceCity} plus MwSt., mit Flugüberwachung und Empfang in der Ankunftshalle.",
+  "intro": [
+    "Wer am Flughafen Zürich landet, will meistens in die Innenstadt, in ein Hotel oder in ein Büro in der Region. Dafür gibt es drei realistische Wege: den Zug ab dem Bahnhof unter dem Flughafen, ein Taxi vom Standplatz vor der Ankunft oder einen privaten Chauffeur, der im Voraus gebucht ist. Jeder davon ist für jemanden die richtige Wahl.",
+    "Diese Seite vergleicht die drei nach Preis, Dauer, dem Verhalten bei Verspätungen und dem Platz für Gepäck, Kinder und Gruppen. Unsere eigenen Preise stammen aus derselben Preisberechnung wie unser Buchungsformular; die Zahlen für Taxi und Zug stammen aus öffentlichen Quellen, die am Ende der Seite genannt sind, geprüft am {checked}."
+  ],
+  "sections": [
+    {
+      "h2": "Die kurze Antwort",
+      "paragraphs": [
+        "Wer allein, mit wenig Gepäck und knappem Budget reist, nimmt den Zug: Ein Einzelbillett vom Flughafen nach Zürich HB kostet in der zweiten Klasse {trainCity}, die Fahrt dauert {trainCityTime}. Wer spät abends landet, schwere Koffer hat oder in einer Gruppe reist, fährt bequemer mit dem Auto. Ein Taxi vom Standplatz kostet je nach Verkehr und Adresse etwa {taxiCity} bis in die Innenstadt. Ein Chauffeur von Z-ALS kostet in der Business-Klasse {priceCity} plus MwSt. an eine Adresse in Zürich, fest vor der Buchung, und der Fahrer wartet bereits, wenn Sie durch die Tür kommen."
+      ]
+    },
+    {
+      "h2": "Was die drei Varianten kosten",
+      "paragraphs": [
+        "Der Zug kostet ein Zonenbillett des Zürcher Verkehrsverbunds: Der Flughafen liegt in einer Zone, die Stadt Zürich zählt doppelt, die Fahrt ist also ein Billett für drei Zonen zu {trainCity} für Erwachsene in der zweiten Klasse. Mit Halbtax oder Zürich Card zahlen Sie weniger oder nichts.",
+        "Taxis in Zürich rechnen nach Taxameter ab. Die meisten verlangen eine Grundtaxe und einen Preis pro Kilometer, üblich sind {taxiTariff}. Bis in die Innenstadt sind das etwa {taxiCity}, je nach Verkehr, Wartezeit und Strecke bis zu Ihrer Tür. Den Endbetrag sehen Sie erst bei der Ankunft.",
+        "Ein Chauffeur-Transfer bei uns wird nach Distanz und Fahrzeugklasse berechnet und bei der Buchung festgelegt: {priceCity} in der Business-Klasse (Mercedes E-Klasse oder gleichwertig), {pricePremiumCity} in der Premium-Klasse (S-Klasse) und {priceVanCity} im Business Van für bis zu sieben Personen, jeweils plus MwSt. Wartezeit bei Verspätung, Maut und Kindersitze sind inbegriffen."
+      ]
+    },
+    {
+      "h2": "Zeit, Verspätungen und der letzte Kilometer",
+      "paragraphs": [
+        "Die Züge fahren im Minutentakt ab dem Flughafenbahnhof und sind in {trainCityTime} am Hauptbahnhof, das ist für den Bahnhof selbst kaum zu schlagen. Entscheidend ist aber die Zeit von Tür zu Tür: Ab dem Hauptbahnhof brauchen Sie mit Ihrem Gepäck oft noch ein Tram oder ein Taxi bis ins Hotel.",
+        "Taxi und Chauffeur bringen Sie bis vor die Tür, die Fahrzeit hängt vom Verkehr zur Landezeit ab. Der Unterschied zeigt sich, wenn etwas nicht nach Plan läuft. Ein Taxi steht bereit, wenn Sie dafür anstehen. Wir verfolgen Ihre Flugnummer und verschieben die Abholung mit der tatsächlichen Landung, und die ersten 60 Minuten Wartezeit nach dem Aufsetzen sind inbegriffen. Ein verspäteter Flug oder eine langsame Gepäckausgabe kostet also nichts extra."
+      ]
+    },
+    {
+      "h2": "Gepäck, Kinder und Gruppen",
+      "paragraphs": [
+        "Der Zug passt gut zu Handgepäck und einem Koffer; mit Ski, mehreren Koffern oder kleinen Kindern wird das Umsteigen auf Perrons und Rolltreppen anstrengend. Ein Taxi nimmt bis zu vier Personen mit begrenztem Kofferraum mit, und ein Kindersitz ist nicht immer an Bord.",
+        "Wer im Voraus bucht, wählt die Grösse des Fahrzeugs. Unser Business Van fasst bis zu sieben Personen und sieben Koffer, der SUV vier Personen und vier Koffer, und Kindersitze werden vor der Fahrt montiert, wenn Sie sie im Buchungsformular angeben. Gruppen bis sechzehn Personen reisen im Kleinbus, die Offerte erstellt die Disposition."
+      ]
+    },
+    {
+      "h2": "Wann sich ein privater Chauffeur lohnt",
+      "paragraphs": [
+        "Ein Chauffeur lohnt sich vor allem, wenn Zeit und Planbarkeit wichtiger sind als der letzte Franken: für Geschäftsreisende auf dem Weg in ein Meeting, Familien mit Gepäck, späte Ankünfte und alle, die den Preis vor dem Flug kennen wollen. Er lohnt sich auch auf längeren Strecken, wo die Alternative eine Zugreise mit mehreren Umstiegen ist; unser Ratgeber zu Zermatt, St. Moritz und Davos vergleicht diese Fahrten.",
+        "Zum Buchen geben Sie im Offertformular den Flughafen und Ihr Ziel ein. Es zeigt den Festpreis jeder Fahrzeugklasse, bevor Sie etwas absenden, und die Disposition bestätigt per E-Mail oder WhatsApp."
+      ]
+    }
+  ],
+  "faq": [
+    { "q": "Was kostet ein Taxi vom Flughafen Zürich in die Innenstadt?", "a": "Etwa {taxiCity} nach Taxameter, je nach Verkehr und Adresse; die meisten Zürcher Taxis verlangen {taxiTariff}. Quelle: Zürich Tourismus, geprüft am {checked}." },
+    { "q": "Was kostet der Zug vom Flughafen Zürich nach Zürich HB?", "a": "Ein Einzelbillett in der zweiten Klasse kostet für Erwachsene {trainCity} (drei Zonen des Zürcher Verkehrsverbunds), die Fahrt dauert {trainCityTime}. Quelle: ZVV-Preisliste gültig ab 14.12.2025, geprüft am {checked}." },
+    { "q": "Was kostet ein privater Chauffeur vom Flughafen Zürich nach Zürich?", "a": "Bei Z-ALS {priceCity} in der Business-Klasse, {pricePremiumCity} in der Premium-Klasse und {priceVanCity} im Business Van, jeweils plus MwSt., fest bei der Buchung. Wartezeit bei Verspätung, Maut und Kindersitze sind inbegriffen." },
+    { "q": "Ist ein Chauffeur in Zürich teurer als ein Taxi?", "a": "Bis in die Innenstadt liegt der feste Business-Preis von {priceCity} plus MwSt. über einem üblichen Taxipreis von {taxiCity}. Dafür erhalten Sie einen festen Preis, einen Fahrer in der Ankunftshalle, Flugüberwachung und ein Fahrzeug passend zu Ihrem Gepäck." },
+    { "q": "Was passiert, wenn mein Flug Verspätung hat?", "a": "Geben Sie bei der Buchung Ihre Flugnummer an. Wir verfolgen den Flug und verschieben die Abholung entsprechend; die ersten 60 Minuten Wartezeit nach der Landung sind im Preis inbegriffen." },
+    { "q": "Kann ich ein Fahrzeug für eine Gruppe oder eine Familie mit Kindern buchen?", "a": "Ja. Der Business Van fasst bis zu sieben Personen und sieben Koffer, Kindersitze werden auf Wunsch vor der Fahrt montiert, und Gruppen bis sechzehn Personen reisen im Kleinbus, die Offerte erstellt die Disposition." }
+  ]
+}

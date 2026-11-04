@@ -1,0 +1,11 @@
+{
+  "name": "z-als-previous",
+  "private": true,
+  "description": "z-als.ch: Variation 2 homepage and Request a quote wizard with WhatsApp booking and Stripe card/TWINT payment.",
+  "engines": { "node": ">=22.9" },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "start": "node server.mjs",
+    "dev": "node tools/build.mjs && node --env-file-if-exists=.env server.mjs"
+  }
+}

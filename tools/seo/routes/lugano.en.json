@@ -1,0 +1,92 @@
+{
+  "title": "Zurich Airport to Lugano Transfer | Chauffeur | Z-ALS",
+  "description": "Chauffeur transfer from Zurich Airport to Lugano, {km} km through the Gotthard into Ticino. Mercedes cars, 24/7 dispatch, fixed fare before you book.",
+  "h1": "Zurich Airport to Lugano by private chauffeur",
+  "lede": "A private chauffeur from Zürich Airport to Lugano: {km} km, about {time} by road through the Gotthard, at a fixed fare you can see before you book. Dispatch answers at any hour, and the chauffeur waits inside arrivals.",
+  "intro": [
+    "Lugano is the largest city in Ticino, the Italian-speaking part of Switzerland, and the journey from Zürich Airport crosses the Alps to reach it. The distance is {km} km and the drive takes about {time}, which is a long run by Swiss standards and one that depends on the Gotthard corridor.",
+    "The fare for this journey is worked out from the distance and the car class and shown before you book, so it does not change if your flight does. Dispatch answers personally at any hour, by phone, WhatsApp or email."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Lugano",
+      "paragraphs": [
+        "The fare from Zürich Airport to Lugano is {priceBusiness} in a Business Class car (Mercedes E-Class or equivalent), excluding VAT. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. VAT of {vat} is shown as its own line.",
+        "The fare is for the whole car, not per passenger, and it is worked out from the distance and the class rate. It includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats fitted before the journey, at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The drive through the Gotthard",
+      "paragraphs": [
+        "The route is {km} km and takes about {time}. The chauffeur takes the motorway south through central Switzerland, passes through the Gotthard Road Tunnel and continues down through Ticino, past Bellinzona, to Lugano on its lake. Most of the way is motorway, but it is a long run in one sitting: use {time} for planning, and add margin if you have a connection or a dinner at the other end.",
+        "The Gotthard corridor is the part of the road that can change the timing. At busy holiday periods it can queue, and in heavy snow it can slow down. Winter tyres are standard on every car from October to April. If the corridor affects your departure, dispatch will tell you, at any hour, by phone or WhatsApp."
+      ]
+    },
+    {
+      "h2": "Which car for Lugano",
+      "paragraphs": [
+        "Business Class takes three passengers with three cases and is the usual choice for one to three people. Premium Class seats three in a rear cabin with room for two cases, and suits a long run where you want to work or rest on the way. The SUV takes four passengers with four cases and has all-wheel drive, which is useful if snow is forecast on the Gotthard. For larger parties the Business Van takes seven passengers with seven cases, and for groups of up to sixteen dispatch quotes a minibus or coach.",
+        "A fully electric saloon is also available at the Business Class rate. On a run of this length dispatch plans its range against the route before assigning it, so say so if your travel policy asks for an electric car."
+      ]
+    },
+    {
+      "h2": "The pick-up, and what to have to hand",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals, with sixty minutes of waiting after landing included in the fare. With your flight number, we track the inbound flight and move the pick-up with it, early or late, at no charge.",
+        "Fares are published for pick-ups at Zürich Airport; anything else is quoted by dispatch, including the return from Lugano and pick-ups at Basel or Geneva airport. When you write or call, it helps to have these ready:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The address in Lugano, or the hotel name if the address is not yet settled",
+        "Number of passengers and cases, and any skis or bulky items",
+        "Child seats needed, with the ages or sizes",
+        "A phone number that works on arrival"
+      ]
+    },
+    {
+      "h2": "At the Lugano end",
+      "paragraphs": [
+        "Lugano lies in Ticino, on the south side of the Alps, beside its lake. Give dispatch the hotel name or the street and number rather than only the town, so that the chauffeur goes to the right door. If you have a flight or a meeting after the transfer, say so when you book.",
+        "The published fare is for the single run to Lugano. Another place in Ticino, a stop on the way, the return trip or a journey that continues into Italy is a different route: send dispatch the details and the date, and a fixed fare comes back before you commit."
+      ]
+    }
+  ],
+  "priceNote": "Fares are per car, one way from Zürich Airport, and exclude VAT of {vat}, which is shown as its own line. They include waiting, tolls, the motorway vignette and passenger insurance.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Lugano take?",
+      "a": "The drive is {km} km and takes about {time}. The Gotthard corridor can add time at busy holiday periods or in heavy snow, and dispatch tells you if that affects your departure."
+    },
+    {
+      "q": "How much is a private transfer from Zürich Airport to Lugano?",
+      "a": "{priceBusiness} in a Business Class car, {pricePremium} in Premium Class, {priceSuv} in the SUV and {priceVan} in the Business Van. All are per car and exclude VAT; VAT of {vat} is added as its own line."
+    },
+    {
+      "q": "Will the pick-up follow a delayed flight?",
+      "a": "Yes, if you gave dispatch the flight number. The pick-up moves with the inbound flight at no charge, and the chauffeur waits inside arrivals."
+    },
+    {
+      "q": "Can I bring skis, luggage and child seats?",
+      "a": "Luggage handling is included in the fare, and child seats are fitted before the journey at no charge. Tell dispatch how many cases and ski bags you have, and we will say which car fits."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "Online by card or TWINT, to the chauffeur on the day, or arranged with dispatch on WhatsApp. Corporate clients are invoiced monthly."
+    },
+    {
+      "q": "Does the Gotthard affect the journey to Lugano?",
+      "a": "It can. The road through the Gotthard is the part that may queue or slow down, so dispatch advises on the departure when it matters. Every car runs winter tyres from October to April."
+    },
+    {
+      "q": "Can you drive me back from Lugano to the airport?",
+      "a": "The return trip is quoted by dispatch rather than published, because the fares cover pick-ups at Zürich Airport. Send the date and the address by phone, WhatsApp or email and dispatch replies with a fixed fare."
+    }
+  ]
+}

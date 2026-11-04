@@ -1,0 +1,56 @@
+{
+  "title": "Zurich Airport: Taxi, Train or Chauffeur? | Z-ALS",
+  "description": "Zurich Airport to the city compared: train {trainCity}, taxi about {taxiCity}, a chauffeur at a fixed {priceCity} plus VAT. Which suits whom, and why.",
+  "eyebrow": "Guide · Zürich Airport to the city · prices checked {checked}",
+  "h1": "Zurich Airport to the city: taxi, train or private chauffeur?",
+  "lede": "The train is the lowest-cost way into Zürich at {trainCity}. A taxi costs about {taxiCity} on the meter. A private chauffeur costs a fixed {priceCity} plus VAT, with flight tracking and a driver waiting in arrivals.",
+  "intro": [
+    "Most people landing at Zürich Airport need to get to the city centre, a hotel or an office in the region, and there are three realistic ways to do it: the train from the station under the airport, a metered taxi from the rank outside arrivals, or a private chauffeur booked in advance. Each is the right answer for somebody.",
+    "This page compares them on what they cost, how long they take, what happens when your flight is late, and how they cope with luggage, children and groups. Our own fares come from the same price engine as our booking form; the taxi and train figures come from public sources named at the end of the page, checked on {checked}."
+  ],
+  "sections": [
+    {
+      "h2": "The short answer",
+      "paragraphs": [
+        "Travelling light, alone and on a budget, take the train: a single ticket from the airport to Zürich HB costs {trainCity} in second class and the ride takes {trainCityTime}. Arriving late at night, with heavy bags or with a group, a car is easier. A taxi from the rank costs about {taxiCity} to the city centre depending on traffic and the exact address. A chauffeur from Z-ALS costs {priceCity} plus VAT in the Business class to an address in Zürich, fixed before you book, and the driver is already waiting when you come through the doors."
+      ]
+    },
+    {
+      "h2": "What each option costs",
+      "paragraphs": [
+        "The train fare is a zone ticket of the Zurich transport network: the airport is in one zone and the city of Zürich counts as two, so the trip is a three-zone ticket at {trainCity} for an adult in second class. Holders of a Half Fare card or a Zürich Card pay less or nothing.",
+        "Taxis in Zürich charge by the meter. Most start at a base fare and add a rate per kilometre, typically {taxiTariff}, so the fare to the city centre lands at about {taxiCity} and grows with traffic, waiting and the distance to your door. You see the final figure when you arrive.",
+        "A chauffeur transfer with us is priced by distance and car class and fixed when you book: {priceCity} in the Business class (Mercedes E-Class or equivalent), {pricePremiumCity} in the Premium class (S-Class) and {priceVanCity} in the Business Van for up to seven passengers, each plus VAT. Waiting for a delayed flight, tolls and child seats are included."
+      ]
+    },
+    {
+      "h2": "Time, delays and the last mile",
+      "paragraphs": [
+        "Trains leave the airport station every few minutes and reach Zürich HB in {trainCityTime}, which is hard to beat for the station itself. The time that counts, though, is door to door: from the main station you may still need a tram or a taxi to your hotel, with your luggage.",
+        "A taxi or a chauffeur takes you to the door, and the drive time depends on traffic at the hour you land. The difference between the two shows when something goes wrong. A taxi is there if you queue for it. We track your flight number and move the pick-up time with your actual landing, and the first 60 minutes of waiting after touchdown are included, so a late flight or a slow baggage hall does not cost extra or leave you looking for a car."
+      ]
+    },
+    {
+      "h2": "Luggage, children and groups",
+      "paragraphs": [
+        "The train works well with a carry-on and one suitcase; with skis, several cases or small children it becomes hard work at the stations and on the platforms. A taxi takes up to four passengers with limited boot space, and there may be no child seat on board.",
+        "Booking a car in advance lets you choose its size. Our Business Van carries up to seven passengers and seven cases, our SUV four passengers and four cases, and child seats are fitted before the journey when you ask for them in the booking form. Groups of up to sixteen travel in a minibus, quoted by dispatch."
+      ]
+    },
+    {
+      "h2": "When a private chauffeur is worth it",
+      "paragraphs": [
+        "A chauffeur makes most sense when time and certainty matter more than the last franc: business travellers going straight to a meeting, families with luggage, late arrivals, and anyone who wants the fare settled before the flight. It also makes sense for longer trips, where the alternative is a chain of trains with changes; our guide to Zermatt, St. Moritz and Davos compares those journeys.",
+        "To book, enter the airport and your destination in the quote form. It shows the fixed fare for each car class before you send anything, and dispatch confirms by email or WhatsApp."
+      ]
+    }
+  ],
+  "faq": [
+    { "q": "How much is a taxi from Zurich Airport to the city centre?", "a": "About {taxiCity} on the meter, depending on traffic and the address; most Zürich taxis charge {taxiTariff}. Source: Zürich Tourism, checked {checked}." },
+    { "q": "How much is the train from Zurich Airport to Zürich HB?", "a": "A single second-class ticket for an adult costs {trainCity} (three zones of the Zurich transport network) and the ride takes {trainCityTime}. Source: ZVV price list valid from 14.12.2025, checked {checked}." },
+    { "q": "What does a private chauffeur from Zurich Airport to Zürich cost?", "a": "With Z-ALS, {priceCity} in the Business class, {pricePremiumCity} in the Premium class and {priceVanCity} in the Business Van, plus VAT, fixed when you book. Waiting for a delayed flight, tolls and child seats are included." },
+    { "q": "Is a chauffeur more expensive than a taxi in Zurich?", "a": "For the city centre the fixed Business fare of {priceCity} plus VAT is above a typical taxi fare of {taxiCity}. The difference buys a fixed price, a driver waiting in arrivals, flight tracking and a car chosen for your luggage." },
+    { "q": "What happens if my flight is late?", "a": "Give us your flight number when you book. We track the flight and move the pick-up time with it; the first 60 minutes of waiting after landing are included in the fare." },
+    { "q": "Can I book a car for a group or a family with children?", "a": "Yes. The Business Van carries up to seven passengers and seven cases, child seats are fitted before the journey on request, and groups of up to sixteen travel by minibus, quoted by dispatch." }
+  ]
+}

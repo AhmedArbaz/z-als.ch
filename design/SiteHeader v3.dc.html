@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Manrope:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+@keyframes zh3PanelIn{from{opacity:0;transform:translateY(-8px) scale(.99)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes zh3OverlayIn{from{opacity:0}to{opacity:1}}
+@keyframes zh3ItemIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+@media (prefers-reduced-motion:reduce){*{animation-duration:1ms !important;transition-duration:1ms !important}}
+[data-m="q-short"]{display:none}
+@media (max-width:1080px){[data-m="hdr-logo"]{height:26px !important}}
+@media (max-width:620px){[data-m="q-full"]{display:none}[data-m="q-short"]{display:inline}[data-m="hdr-cta"]{padding:0 16px !important}}
+@media (max-width:380px){[data-m="hdr-logo"]{height:23px !important}[data-m="hdr-cta"]{padding:0 13px !important}}
+/* Before dc-lite mounts, show the header the way renderVals() will resolve it (isWide() = innerWidth > 1080). */
+@media (max-width:1080px){dc-if[data-if="navWide"],dc-if[data-if="showPhone"],dc-if[data-if="showLang"]{display:none!important}dc-if[data-if="navCompact"][hidden],dc-if[data-if="showPhoneCompact"][hidden]{display:contents!important}}
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="display:contents;width:100%;font-family:Manrope,system-ui,sans-serif">
+
+<header data-screen-label="Header" style="position:sticky;top:0;z-index:60;background:{{ hdrBg }};backdrop-filter:blur(14px);border-bottom:1px solid {{ hdrBorder }};transition:background 260ms cubic-bezier(.2,.6,.2,1),border-color 260ms cubic-bezier(.2,.6,.2,1)">
+<div style="max-width:1400px;margin:0 auto;padding:0 clamp(20px,4vw,56px);min-height:{{ hdrH }};display:flex;align-items:center;justify-content:space-between;gap:clamp(14px,2vw,36px);transition:min-height 260ms cubic-bezier(.2,.6,.2,1)">
+
+<a href="Z-ALS%20Home%20Page%20v4%20web.dc.html" aria-label="Z-ALS home" style="display:flex;align-items:center;flex:none;text-decoration:none"><img data-m="hdr-logo" src="assets/logo-white.png" alt="Z-ALS · Zurich-Airport Limousinen Services" style="display:block;height:30px;width:auto;border-radius:14px"></a>
+
+<sc-if value="{{ navWide }}" hint-placeholder-val="{{ true }}">
+<nav aria-label="Main" onMouseLeave="{{ leaveNav }}" style="display:flex;align-items:center;gap:2px;flex:1 1 auto;justify-content:center;min-width:0">
+
+<div style="position:relative">
+<button type="button" onMouseEnter="{{ enterServices }}" onClick="{{ clickServices }}" aria-expanded="{{ svcExpanded }}" style="appearance:none;display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 14px;border:0;background:{{ svcBg }};color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.03em;cursor:pointer;transition:background 180ms ease-out;color:{{ fgServices }};border-bottom:1px solid {{ ulServices }};border-radius:12px">Services<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.8" stroke-linecap="round" style="{{ svcChev }:{{ svcChev }}"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+
+<div style="position:relative">
+<button type="button" onMouseEnter="{{ enterFleet }}" onClick="{{ clickFleet }}" aria-expanded="{{ fltExpanded }}" style="appearance:none;display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 14px;border:0;background:{{ fltBg }};color:#FFFFFF;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:0.03em;cursor:pointer;transition:background 180ms ease-out;color:{{ fgFleet }};border-bottom:1px solid {{ ulFleet }};border-radius:12px">Fleet<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.8" stroke-linecap="round" style="{{ fltChev }:{{ fltChev }}"><path d="m6 9 6 6 6-6"></path></svg></button>
+</div>
+
+<a href="Z-ALS%20About.dc.html" onMouseEnter="{{ leaveNav }}" style="display:inline-flex;align-items:center;height:40px;padding:0 14px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:{{ fgAbout }};text-decoration:none;border-bottom:1px solid {{ ulAbout }}" style-hover="color:#FFFFFF;text-decoration:none">Company</a>
+<a href="Z-ALS%20Blog.dc.html" onMouseEnter="{{ leaveNav }}" style="display:inline-flex;align-items:center;height:40px;padding:0 14px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:{{ fgBlog }};text-decoration:none;border-bottom:1px solid {{ ulBlog }}" style-hover="color:#FFFFFF;text-decoration:none">Journal</a>
+<a href="Z-ALS%20Contact.dc.html" onMouseEnter="{{ leaveNav }}" style="display:inline-flex;align-items:center;height:40px;padding:0 14px;font-size:12px;font-weight:600;letter-spacing:0.03em;color:{{ fgContact }};text-decoration:none;border-bottom:1px solid {{ ulContact }}" style-hover="color:#FFFFFF;text-decoration:none">Contact</a>
+</nav>
+</sc-if>
+
+<div style="display:flex;align-items:center;gap:clamp(10px,1.4vw,20px);flex:none">
+<sc-if value="{{ showPhone }}" hint-placeholder-val="{{ true }}">
+<a href="{{ phoneHref }}" style="display:inline-flex;align-items:center;gap:8px;height:38px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:rgba(255,255,255,0.82);text-decoration:none;white-space:nowrap;border-bottom:1px solid transparent" style-hover="color:#FFFFFF;border-bottom-color:#5D7DB7;text-decoration:none"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>{{ dispatchPhone }}</a>
+</sc-if>
+
+<sc-if value="{{ showPhoneCompact }}" hint-placeholder-val="{{ false }}">
+<a href="{{ phoneHref }}" aria-label="Call Z-ALS dispatch" style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(125,155,212,0.34);color:#FFFFFF;text-decoration:none;border-radius:12px;transition:border-color 180ms ease-out,background 180ms ease-out" style-hover="border-color:#FFFFFF;text-decoration:none" style-active="background:rgba(125,155,212,0.18)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></a>
+</sc-if>
+
+<sc-if value="{{ showLang }}" hint-placeholder-val="{{ true }}">
+<div role="group" aria-label="Language" translate="no" style="display:flex;align-items:center;gap:0">
+<button type="button" onClick="{{ setEN }}" aria-pressed="{{ pressedEN }}" style="appearance:none;border:0;background:transparent;padding:0 7px;height:20px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;color:{{ langEN }};cursor:pointer;border-radius:12px">EN</button>
+<span aria-hidden="true" style="display:block;width:1px;height:12px;background:rgba(125,155,212,0.34)"></span>
+<button type="button" onClick="{{ setDE }}" aria-pressed="{{ pressedDE }}" style="appearance:none;border:0;background:transparent;padding:0 7px;height:20px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;color:{{ langDE }};cursor:pointer;border-radius:12px">DE</button>
+<span aria-hidden="true" style="display:block;width:1px;height:12px;background:rgba(125,155,212,0.34)"></span>
+<button type="button" onClick="{{ setFR }}" aria-pressed="{{ pressedFR }}" style="appearance:none;border:0;background:transparent;padding:0 7px;height:20px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;color:{{ langFR }};cursor:pointer;border-radius:12px">FR</button>
+<span aria-hidden="true" style="display:block;width:1px;height:12px;background:rgba(125,155,212,0.34)"></span>
+<button type="button" onClick="{{ setIT }}" aria-pressed="{{ pressedIT }}" style="appearance:none;border:0;background:transparent;padding:0 7px;height:20px;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;color:{{ langIT }};cursor:pointer;border-radius:12px">IT</button>
+</div>
+</sc-if>
+
+<a href="Z-ALS%20Quote.dc.html" style="display:inline-flex;align-items:center;min-height:44px;padding:0 clamp(16px,1.8vw,24px);background:#5D7DB7;color:#FFFFFF;border:1px solid #5D7DB7;font-size:12px;font-weight:600;letter-spacing:0.03em;text-decoration:none;white-space:nowrap;transition:background 180ms ease-out,transform 120ms ease-out;border-radius:12px" style-hover="background:#7E9BD4;border-color:#7E9BD4;color:#0A1730;text-decoration:none" style-active="transform:translateY(1px)" data-m="hdr-cta"><span data-m="q-full">Request a quote</span><span data-m="q-short">Quote</span></a>
+
+<sc-if value="{{ navCompact }}" hint-placeholder-val="{{ false }}">
+<button type="button" aria-label="Open menu" aria-expanded="{{ menuExpanded }}" data-menu="open" onClick="{{ openOverlay }}" style="appearance:none;width:44px;height:44px;border:1px solid rgba(125,155,212,0.34);background:transparent;color:#FFFFFF;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M4 7h16"></path><path d="M4 12h16"></path><path d="M4 17h16"></path></svg></button>
+</sc-if>
+</div>
+</div>
+
+<sc-if value="{{ svcOpen }}" hint-placeholder-val="{{ false }}">
+<div onMouseEnter="{{ holdPanel }}" onMouseLeave="{{ leaveNav }}" style="position:absolute;left:0;right:0;top:100%;display:flex;justify-content:center;pointer-events:none">
+<div style="pointer-events:auto;width:min(940px,calc(100vw - 40px));margin-top:8px;background:#0A1730;border:1px solid rgba(125,155,212,0.24);box-shadow:0 24px 60px rgba(1,5,11,0.6);animation:zh3PanelIn 220ms cubic-bezier(.2,.6,.2,1) both;display:grid;grid-template-columns:minmax(0,0.9fr) minmax(0,1.5fr);border-radius:16px;overflow:hidden">
+
+<a href="Z-ALS%20Services.dc.html" style="position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:280px;padding:28px;text-decoration:none;overflow:hidden;border-right:1px solid rgba(125,155,212,0.24)" style-hover="text-decoration:none">
+<img src="https://z-als.ch/wp-content/uploads/2017/11/Premier-Class.webp" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(0.7) brightness(0.42) contrast(1.05)">
+<span aria-hidden="true" style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(1,5,11,0.2) 0%,rgba(1,5,11,0.88) 100%)"></span>
+<span style="position:relative;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:11px;letter-spacing:0.03em;color:#7E9BD4">Three airports</span>
+<span style="position:relative;margin-top:12px;font-family:'Playfair Display',Georgia,serif;font-size:28px;line-height:1.1;letter-spacing:-0.02em;color:#FFFFFF">Zürich · Basel · Geneva</span>
+<span style="position:relative;margin-top:12px;font-size:14px;line-height:1.55;color:rgba(255,255,255,0.8)">We collect at all three and drive on across Switzerland, Italy, France, Germany and Austria.</span>
+<span style="position:relative;margin-top:18px;display:inline-flex;align-items:center;gap:8px;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF">All services →</span>
+</a>
+
+<div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr))">
+<a href="Z-ALS%20Services.dc.html#transfer" style="display:flex;gap:14px;padding:26px 24px;text-decoration:none;border-right:1px solid rgba(125,155,212,0.16);border-bottom:1px solid rgba(125,155,212,0.16);transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.4-.2c.4-.3.6-.7.6-1.2z"></path></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600;color:#FFFFFF">Airport transfer</span><span style="display:block;margin-top:6px;font-size:13px;line-height:1.5;color:rgba(255,255,255,0.72)">Flight watched, chauffeur inside arrivals, 60 minutes waiting included.</span></span>
+</a>
+<a href="Z-ALS%20Services.dc.html#limousine" style="display:flex;gap:14px;padding:26px 24px;text-decoration:none;border-bottom:1px solid rgba(125,155,212,0.16);transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M21 8h-1.6a2 2 0 0 1-1.7-.9L15.9 4.3A2 2 0 0 0 14.2 3H9.8a2 2 0 0 0-1.7.9L6.3 6.1A2 2 0 0 1 4.6 7H3"></path><path d="M3 11h18v6H3z"></path><circle cx="7" cy="17" r="2"></circle><circle cx="17" cy="17" r="2"></circle></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600;color:#FFFFFF">Limousine by the hour</span><span style="display:block;margin-top:6px;font-size:13px;line-height:1.5;color:rgba(255,255,255,0.72)">Roadshows, board days and alpine runs — the car stays with you.</span></span>
+</a>
+<a href="Z-ALS%20Services.dc.html#chauffeur" style="display:flex;gap:14px;padding:26px 24px;text-decoration:none;border-right:1px solid rgba(125,155,212,0.16);transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="8" r="4"></circle></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600;color:#FFFFFF">Private chauffeur</span><span style="display:block;margin-top:6px;font-size:13px;line-height:1.5;color:rgba(255,255,255,0.72)">A trained, insured, discreet driver — for your own car if you prefer.</span></span>
+</a>
+<a href="Z-ALS%20Services.dc.html#bus" style="display:flex;gap:14px;padding:26px 24px;text-decoration:none;transition:background 180ms ease-out" style-hover="background:#122340;text-decoration:none">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#7E9BD4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="flex:none;margin-top:2px"><path d="M8 6v6"></path><path d="M15 6v6"></path><path d="M2 12h19.6"></path><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"></path><circle cx="7" cy="18" r="2"></circle><path d="M9 18h5"></path><circle cx="16" cy="18" r="2"></circle></svg>
+<span style="min-width:0"><span style="display:block;font-size:15px;font-weight:600;color:#FFFFFF">Bus service</span><span style="display:block;margin-top:6px;font-size:13px;line-height:1.5;color:rgba(255,255,255,0.72)">Minibus and coach for groups, delegations and events.</span></span>
+</a>
+</div>
+</div>
+</div>
+</sc-if>
+
+<sc-if value="{{ fltOpen }}" hint-placeholder-val="{{ false }}">
+<div onMouseEnter="{{ holdPanel }}" onMouseLeave="{{ leaveNav }}" style="position:absolute;left:0;right:0;top:100%;display:flex;justify-content:center;pointer-events:none">
+<div style="pointer-events:auto;width:min(1040px,calc(100vw - 40px));margin-top:8px;background:#0A1730;border:1px solid rgba(125,155,212,0.24);box-shadow:0 24px 60px rgba(1,5,11,0.6);animation:zh3PanelIn 220ms cubic-bezier(.2,.6,.2,1) both;padding:24px;border-radius:16px;overflow:hidden">
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:20px">
+<a href="Z-ALS%20Fleet.dc.html#business" style="display:block;text-decoration:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-3px);text-decoration:none">
+<span style="display:block;width:100%;aspect-ratio:16 / 10;overflow:hidden;border:1px solid rgba(125,155,212,0.24)"><img src="https://z-als.ch/wp-content/uploads/2017/11/Business-Class.webp" alt="Mercedes E-Class" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75) brightness(0.9);border-radius:14px"></span>
+<span style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:14px"><span style="font-size:15px;font-weight:600;color:#FFFFFF">Business Class</span><span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#7E9BD4">CHF 6.00 / km</span></span>
+<span style="display:block;margin-top:6px;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.04em;color:rgba(255,255,255,0.66)">3 seats · 3 cases</span>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#premium" style="display:block;text-decoration:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-3px);text-decoration:none">
+<span style="display:block;width:100%;aspect-ratio:16 / 10;overflow:hidden;border:1px solid rgba(125,155,212,0.24)"><img src="https://z-als.ch/wp-content/uploads/2017/11/Premier-Class.webp" alt="Mercedes S-Class" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75) brightness(0.9);border-radius:14px"></span>
+<span style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:14px"><span style="font-size:15px;font-weight:600;color:#FFFFFF">Premium Class</span><span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#7E9BD4">CHF 7.00 / km</span></span>
+<span style="display:block;margin-top:6px;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.04em;color:rgba(255,255,255,0.66)">3 seats · rear cabin</span>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#suv" style="display:block;text-decoration:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-3px);text-decoration:none">
+<span style="display:block;width:100%;aspect-ratio:16 / 10;overflow:hidden;border:1px solid rgba(125,155,212,0.24)"><img src="assets/fleet/suv.webp" alt="SUV class — black Mercedes-Benz SUV" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75) brightness(0.9);border-radius:14px"></span>
+<span style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:14px"><span style="font-size:15px;font-weight:600;color:#FFFFFF">SUV Class</span><span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#7E9BD4">CHF 7.00 / km</span></span>
+<span style="display:block;margin-top:6px;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.04em;color:rgba(255,255,255,0.66)">4 seats · 4 cases</span>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#van" style="display:block;text-decoration:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-3px);text-decoration:none">
+<span style="display:block;width:100%;aspect-ratio:16 / 10;overflow:hidden;border:1px solid rgba(125,155,212,0.24)"><img src="https://z-als.ch/wp-content/uploads/2017/11/van.webp" alt="Mercedes V-Class" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75) brightness(0.9);border-radius:14px"></span>
+<span style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:14px"><span style="font-size:15px;font-weight:600;color:#FFFFFF">Business VAN Class</span><span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#7E9BD4">CHF 6.00 / km</span></span>
+<span style="display:block;margin-top:6px;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.04em;color:rgba(255,255,255,0.66)">7 seats · 7 cases</span>
+</a>
+<a href="Z-ALS%20Fleet.dc.html#electric" style="display:block;text-decoration:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1)" style-hover="transform:translateY(-3px);text-decoration:none">
+<span style="display:block;width:100%;aspect-ratio:16 / 10;overflow:hidden;border:1px solid rgba(125,155,212,0.24)"><img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=1200&amp;q=80" alt="Fully electric saloon on charge" style="display:block;width:100%;height:100%;object-fit:cover;filter:saturate(0.75) brightness(0.9);border-radius:14px"></span>
+<span style="display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-top:14px"><span style="font-size:15px;font-weight:600;color:#FFFFFF">Electric Car</span><span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:13px;color:#7E9BD4">CHF 6.00 / km</span></span>
+<span style="display:block;margin-top:6px;font-family:Manrope,system-ui,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.04em;color:rgba(255,255,255,0.66)">3 seats · 3 cases</span>
+</a>
+</div>
+<a href="Z-ALS%20Fleet.dc.html" style="display:inline-flex;align-items:center;gap:10px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(125,155,212,0.16);width:100%;font-size:11px;font-weight:600;letter-spacing:0.03em;color:#FFFFFF;text-decoration:none" style-hover="color:#7E9BD4;text-decoration:none">Full fleet &amp; rate card →</a>
+</div>
+</div>
+</sc-if>
+</header>
+
+<sc-if value="{{ overlayOpen }}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="Menu" data-menu="overlay" style="position:fixed;inset:0;z-index:90;background:#01050B;display:flex;flex-direction:column;animation:zh3OverlayIn 160ms linear both;overflow-y:auto">
+<div style="display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,40px);min-height:72px;border-bottom:1px solid rgba(125,155,212,0.2);flex:none">
+<img src="assets/logo-white.png" alt="Z-ALS" style="display:block;height:26px;width:auto;border-radius:14px">
+<button type="button" aria-label="Close menu" data-menu="close" onClick="{{ closeOverlay }}" style="appearance:none;width:44px;height:44px;border:1px solid rgba(125,155,212,0.28);background:transparent;color:#FFFFFF;cursor:pointer;display:flex;align-items:center;justify-content:center;border-radius:12px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></button>
+</div>
+<nav style="flex:1 1 auto;padding:clamp(20px,5vw,40px) clamp(20px,5vw,40px) clamp(28px,6vw,48px);display:flex;flex-direction:column">
+<a href="Z-ALS%20Home%20Page%20v4%20web.dc.html" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-family:'Playfair Display',Georgia,serif;font-size:30px;letter-spacing:-0.02em;color:#FFFFFF;text-decoration:none;animation:zh3ItemIn 300ms cubic-bezier(.2,.6,.2,1) both 40ms">Home<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">01</span></a>
+<a href="Z-ALS%20Services.dc.html" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-family:'Playfair Display',Georgia,serif;font-size:30px;letter-spacing:-0.02em;color:#FFFFFF;text-decoration:none;animation:zh3ItemIn 300ms cubic-bezier(.2,.6,.2,1) both 80ms">Services<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">02</span></a>
+<a href="Z-ALS%20Fleet.dc.html" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-family:'Playfair Display',Georgia,serif;font-size:30px;letter-spacing:-0.02em;color:#FFFFFF;text-decoration:none;animation:zh3ItemIn 300ms cubic-bezier(.2,.6,.2,1) both 120ms">Fleet<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">03</span></a>
+<a href="Z-ALS%20About.dc.html" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-family:'Playfair Display',Georgia,serif;font-size:30px;letter-spacing:-0.02em;color:#FFFFFF;text-decoration:none;animation:zh3ItemIn 300ms cubic-bezier(.2,.6,.2,1) both 160ms">Company<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">04</span></a>
+<a href="Z-ALS%20Blog.dc.html" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-family:'Playfair Display',Georgia,serif;font-size:30px;letter-spacing:-0.02em;color:#FFFFFF;text-decoration:none;animation:zh3ItemIn 300ms cubic-bezier(.2,.6,.2,1) both 200ms">Journal<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">05</span></a>
+<a href="Z-ALS%20Contact.dc.html" style="display:flex;align-items:baseline;justify-content:space-between;gap:20px;min-height:64px;padding:12px 0;border-bottom:1px solid rgba(125,155,212,0.2);font-family:'Playfair Display',Georgia,serif;font-size:30px;letter-spacing:-0.02em;color:#FFFFFF;text-decoration:none;animation:zh3ItemIn 300ms cubic-bezier(.2,.6,.2,1) both 240ms">Contact<span style="font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:12px;letter-spacing:0.16em;color:#5D7DB7">06</span></a>
+<div style="margin-top:auto;padding-top:36px;display:flex;flex-direction:column;gap:14px">
+<div role="group" aria-label="Language" translate="no" style="display:flex;gap:8px">
+<button type="button" onClick="{{ setEN }}" aria-pressed="{{ pressedEN }}" style="appearance:none;flex:1;min-height:48px;border:1px solid rgba(125,155,212,0.34);background:transparent;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;letter-spacing:0.08em;color:{{ langEN }};cursor:pointer;border-radius:12px">EN</button>
+<button type="button" onClick="{{ setDE }}" aria-pressed="{{ pressedDE }}" style="appearance:none;flex:1;min-height:48px;border:1px solid rgba(125,155,212,0.34);background:transparent;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;letter-spacing:0.08em;color:{{ langDE }};cursor:pointer;border-radius:12px">DE</button>
+<button type="button" onClick="{{ setFR }}" aria-pressed="{{ pressedFR }}" style="appearance:none;flex:1;min-height:48px;border:1px solid rgba(125,155,212,0.34);background:transparent;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;letter-spacing:0.08em;color:{{ langFR }};cursor:pointer;border-radius:12px">FR</button>
+<button type="button" onClick="{{ setIT }}" aria-pressed="{{ pressedIT }}" style="appearance:none;flex:1;min-height:48px;border:1px solid rgba(125,155,212,0.34);background:transparent;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:14px;letter-spacing:0.08em;color:{{ langIT }};cursor:pointer;border-radius:12px">IT</button>
+</div>
+<a href="Z-ALS%20Quote.dc.html" style="display:flex;align-items:center;justify-content:center;min-height:56px;background:#5D7DB7;color:#FFFFFF;font-size:12px;font-weight:600;letter-spacing:0.03em;text-decoration:none;border-radius:12px">Request a quote</a>
+<a href="{{ phoneHref }}" style="display:flex;align-items:center;justify-content:center;min-height:56px;border:1px solid rgba(125,155,212,0.34);color:#FFFFFF;font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:15px;text-decoration:none;border-radius:12px">{{ dispatchPhone }}</a>
+</div>
+</nav>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1400,&quot;height&quot;:420},&quot;active&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;home&quot;,&quot;services&quot;,&quot;fleet&quot;,&quot;about&quot;,&quot;blog&quot;,&quot;contact&quot;],&quot;default&quot;:&quot;home&quot;,&quot;tsType&quot;:&quot;string&quot;},&quot;dispatchPhone&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;+41 76 272 0909&quot;,&quot;tsType&quot;:&quot;string&quot;}}">
+const isWide = () => { try { return window.innerWidth > 1080; } catch (e) { return true; } };
+
+class Component extends DCLogic {
+  /* wide is resolved before first paint — resolving it in componentDidMount made phones
+     render the desktop nav for a frame and then swap it out. */
+  state = { scrolled: false, wide: isWide(), open: null, overlay: false, lang: (window.ZALS_I18N ? window.ZALS_I18N.lang : 'en').toUpperCase() };
+
+  componentDidMount() {
+    this._onScroll = () => {
+      const s = window.scrollY > 24;
+      if (s !== this.state.scrolled) this.setState({ scrolled: s });
+    };
+    this._onResize = () => {
+      const w = isWide();
+      if (w !== this.state.wide) { this.lock(false); this.setState({ wide: w, open: null, overlay: false }); }
+    };
+    this._onKey = e => {
+      /* The phone menu is a modal dialog: Tab cycles inside it. */
+      if (e.key === 'Tab' && this.state.overlay) {
+        const box = document.querySelector('[data-menu="overlay"]');
+        const f = box ? [...box.querySelectorAll('a[href],button')].filter(el => el.offsetParent !== null) : [];
+        if (f.length && e.shiftKey && document.activeElement === f[0]) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (f.length && !e.shiftKey && document.activeElement === f[f.length - 1]) { e.preventDefault(); f[0].focus(); }
+        return;
+      }
+      if (e.key !== 'Escape') return;
+      if (this.state.open) this.setState({ open: null });
+      if (this.state.overlay) this.menu(false);
+    };
+    this._onDocDown = e => {
+      if (!this.state.open) return;
+      const hdr = document.querySelector('header[data-screen-label="Header"]');
+      if (hdr && !hdr.contains(e.target)) this.setState({ open: null });
+    };
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+    window.addEventListener('resize', this._onResize);
+    window.addEventListener('keydown', this._onKey);
+    document.addEventListener('pointerdown', this._onDocDown);
+    this._onScroll(); this._onResize();
+  }
+
+  /* The full-screen menu is the page on a phone — the body behind it must not scroll,
+     or closing the menu leaves you somewhere you never navigated to. */
+  lock(on) {
+    try {
+      const b = document.body;
+      if (on) { this._prevOverflow = b.style.overflow; b.style.overflow = 'hidden'; }
+      else { b.style.overflow = this._prevOverflow || ''; }
+    } catch (e) {}
+  }
+
+  componentWillUnmount() {
+    try { document.body.style.overflow = this._prevOverflow || ''; } catch (e) {}
+    window.removeEventListener('scroll', this._onScroll);
+    window.removeEventListener('resize', this._onResize);
+    window.removeEventListener('keydown', this._onKey);
+    document.removeEventListener('pointerdown', this._onDocDown);
+    clearTimeout(this._t);
+  }
+
+  /* public/js/i18n.js re-translates the page in place and re-renders every component. */
+  setLang(l) {
+    if (window.ZALS_I18N) window.ZALS_I18N.set(l.toLowerCase());
+    this.setState({ lang: l });
+  }
+
+  hold(name) { clearTimeout(this._t); if (this.state.open !== name) { this._pinned = false; this.setState({ open: name }); } }
+  /* A click on a panel the hover just opened (or a touch tap, whose emulated mouseenter opens it first) pins it
+     open, however long the visitor took to click; the next click closes it. Keyboard (detail 0) toggles. */
+  toggle(name, e) {
+    if (this.state.open === name && !this._pinned && e && e.detail > 0) { this._pinned = true; return; }
+    const next = this.state.open === name ? null : name;
+    this._pinned = !!next;
+    this.setState({ open: next });
+  }
+  /* Opens or closes the phone menu; focus goes to its Close button, and back to the menu button after. */
+  menu(on) {
+    this.lock(on);
+    this.setState({ overlay: on });
+    setTimeout(() => { const b = document.querySelector(on ? '[data-menu="close"]' : '[data-menu="open"]'); if (b) b.focus(); }, 0);
+  }
+  release() { clearTimeout(this._t); this._t = setTimeout(() => this.setState({ open: null }), 140); }
+
+  renderVals() {
+    const s = this.state;
+    const active = this.props.active ?? 'home';
+    const solid = s.scrolled || !!s.open;
+    const phone = this.props.dispatchPhone ?? '+41 76 272 0909';
+    const fg = k => (active === k ? '#FFFFFF' : 'rgba(255,255,255,0.7)');
+    const ul = k => (active === k ? '#5D7DB7' : 'transparent');
+    return {
+      hdrBg: solid ? 'rgba(4,10,22,0.94)' : 'rgba(1,5,11,0.14)',
+      hdrBorder: solid ? 'rgba(125,155,212,0.2)' : 'rgba(125,155,212,0.12)',
+      hdrH: s.scrolled ? '68px' : '86px',
+      navWide: s.wide, navCompact: !s.wide,
+      showPhone: s.wide, showPhoneCompact: !s.wide, showLang: s.wide,
+      svcOpen: s.open === 'svc', fltOpen: s.open === 'flt',
+      svcExpanded: s.open === 'svc' ? 'true' : 'false',
+      fltExpanded: s.open === 'flt' ? 'true' : 'false',
+      svcBg: s.open === 'svc' ? 'rgba(125,155,212,0.16)' : 'transparent',
+      fltBg: s.open === 'flt' ? 'rgba(125,155,212,0.16)' : 'transparent',
+      fgServices: fg('services'), fgFleet: fg('fleet'),
+      ulServices: ul('services'), ulFleet: ul('fleet'),
+      langFR: s.lang === 'FR' ? '#FFFFFF' : 'rgba(255,255,255,0.62)',
+      langIT: s.lang === 'IT' ? '#FFFFFF' : 'rgba(255,255,255,0.62)',
+      setFR: () => this.setLang('FR'),
+      setIT: () => this.setLang('IT'),
+      svcChev: 'flex:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1);transform:rotate(' + (s.open === 'svc' ? 180 : 0) + 'deg)',
+      fltChev: 'flex:none;transition:transform 200ms cubic-bezier(.2,.6,.2,1);transform:rotate(' + (s.open === 'flt' ? 180 : 0) + 'deg)',
+      enterServices: () => this.hold('svc'),
+      enterFleet: () => this.hold('flt'),
+      clickServices: e => this.toggle('svc', e),
+      clickFleet: e => this.toggle('flt', e),
+      holdPanel: () => clearTimeout(this._t),
+      leaveNav: () => this.release(),
+      openOverlay: () => this.menu(true),
+      closeOverlay: () => this.menu(false),
+      overlayOpen: s.overlay, menuExpanded: String(s.overlay),
+      fgAbout: fg('about'), fgBlog: fg('blog'), fgContact: fg('contact'),
+      ulAbout: ul('about'), ulBlog: ul('blog'), ulContact: ul('contact'),
+      langEN: s.lang === 'EN' ? '#FFFFFF' : 'rgba(255,255,255,0.62)',
+      langDE: s.lang === 'DE' ? '#FFFFFF' : 'rgba(255,255,255,0.62)',
+      setEN: () => this.setLang('EN'),
+      setDE: () => this.setLang('DE'),
+      pressedEN: String(s.lang === 'EN'), pressedDE: String(s.lang === 'DE'), pressedFR: String(s.lang === 'FR'), pressedIT: String(s.lang === 'IT'),
+      dispatchPhone: phone,
+      phoneHref: 'tel:' + String(phone).replace(/[^+0-9]/g, ''),
+      rootRef: null
+    };
+  }
+}
+</script>
+</body>
+</html>

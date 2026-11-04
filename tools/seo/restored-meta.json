@@ -1,0 +1,157 @@
+{
+ "/en/services": {
+  "title": "Zurich Chauffeur Service | Private & Corporate | Z-ALS",
+  "description": "Professional chauffeur service in Zurich: hire a personal chauffeur by the hour, for airport, VIP and long-distance trips. Fixed fares from CHF 120.",
+  "keyword": "zurich chauffeur service"
+ },
+ "/en/fleet": {
+  "title": "Luxury Van & Mercedes Chauffeur Zurich | Fleet | Z-ALS",
+  "description": "Chauffeur-driven Mercedes E-, S- and V-Class, luxury vans, Sprinters and coaches for group transfers from Zurich Airport. Fixed fares from CHF 120.",
+  "keyword": "luxury van chauffeur zurich"
+ },
+ "/en/about": {
+  "title": "Zurich-Airport Limousinen Services GmbH | About Z-ALS",
+  "description": "Zurich-Airport Limousinen Services GmbH (Z-ALS): licensed Swiss chauffeur service in Kloten since 2004, fixed km-based fares and a dispatch desk open 24/7.",
+  "keyword": "zurich-airport limousinen services gmbh"
+ },
+ "/en/contact": {
+  "title": "Book Airport Transfer Zurich | Contact Z-ALS Kloten",
+  "description": "Book your Zurich airport transfer with Z-ALS in Kloten. Call, WhatsApp or email, 24/7 dispatch, with a fixed fare quoted before you pay.",
+  "keyword": "book airport transfer zurich"
+ },
+ "/en/journal": {
+  "title": "Zurich Airport Transfer Guide | Journal | Z-ALS",
+  "description": "Notes from our dispatch desk: how fixed fares work, what to expect on arrival at Zurich Airport and how to plan chauffeur trips in Switzerland.",
+  "keyword": "zurich airport transfer guide"
+ },
+ "/en/journal/what-a-fixed-fare-has-to-cover": {
+  "title": "Fixed Price Airport Taxi: What the Fare Covers | Z-ALS",
+  "description": "What a fixed airport fare has to cover, and why a fixed price is easier to plan than a running meter. Notes from the Z-ALS dispatch desk.",
+  "keyword": "fixed price airport taxi"
+ },
+ "/en/journal/reading-a-chauffeur-invoice": {
+  "title": "How Much Does It Cost to Hire a Chauffeur? | Z-ALS",
+  "description": "How to read a chauffeur invoice line by line, and what really drives the cost of hiring a chauffeur in Switzerland, from distance to vehicle class.",
+  "keyword": "how much does it cost to hire a chauffeur"
+ },
+ "/de/services": {
+  "title": "Chauffeurservice Zürich | Privat & Business | Z-ALS",
+  "description": "Chauffeurservice in Zürich und der ganzen Schweiz: Chauffeur mieten, Limousine stundenweise, Busservice und Flughafentransfer. Festpreise ab CHF 120.",
+  "keyword": "chauffeurservice zürich"
+ },
+ "/de/fleet": {
+  "title": "V-Klasse & Vans mit Chauffeur Zürich | Fuhrpark | Z-ALS",
+  "description": "Fuhrpark mit Chauffeur: Mercedes E-, S- und V-Klasse, Vans und Busse für Gruppenreisen ab Flughafen Zürich. Nur mit Fahrer, Festpreise ab CHF 120.",
+  "keyword": "v-klasse mit chauffeur"
+ },
+ "/de/about": {
+  "title": "Zurich-Airport Limousinen Services GmbH | Über Z-ALS",
+  "description": "Zurich-Airport Limousinen Services GmbH (Z-ALS): bewilligter Chauffeurdienst in Kloten seit 2004, Festpreise nach Kilometern, Disposition rund um die Uhr.",
+  "keyword": "zurich-airport limousinen services gmbh"
+ },
+ "/de/contact": {
+  "title": "Chauffeur Kloten buchen | Kontakt | Z-ALS",
+  "description": "Chauffeur in Kloten oder Zürich buchen: per Telefon, WhatsApp oder E-Mail. Disposition rund um die Uhr, der Festpreis steht vor der Buchung fest.",
+  "keyword": "chauffeur kloten"
+ },
+ "/de/journal": {
+  "title": "Flughafentransfer Zürich Ratgeber | Journal | Z-ALS",
+  "description": "Notizen aus unserer Disposition: wie Festpreise funktionieren, was Sie bei der Ankunft am Flughafen Zürich erwartet und wie Sie Chauffeurfahrten planen.",
+  "keyword": "flughafentransfer zürich ratgeber"
+ },
+ "/fr/services": {
+  "title": "Chauffeur privé Zurich | Service de limousine | Z-ALS",
+  "description": "Chauffeur privé et limousine à Zurich et dans toute la Suisse : transferts aéroport, mise à disposition à l'heure et longs trajets à prix fixe dès CHF 120.",
+  "keyword": "chauffeur privé zurich"
+ },
+ "/fr/fleet": {
+  "title": "Mercedes Classe V avec chauffeur | Flotte | Z-ALS",
+  "description": "Notre flotte avec chauffeur : Mercedes Classe E, S et V, SUV et bus. Choisissez le véhicule adapté à votre groupe et à vos bagages, dès CHF 120.",
+  "keyword": "mercedes classe v avec chauffeur"
+ },
+ "/fr/about": {
+  "title": "Chauffeur VIP Suisse | À propos de Z-ALS, Kloten",
+  "description": "Z-ALS est un service de chauffeur agréé à Kloten : prix fixes au kilomètre et un dispatch joignable 24/7. Découvrez l'équipe et notre façon de travailler.",
+  "keyword": "chauffeur vip suisse"
+ },
+ "/fr/contact": {
+  "title": "Réserver chauffeur Zurich Kloten | Contact | Z-ALS",
+  "description": "Réservez votre chauffeur à Zurich ou Kloten par téléphone, WhatsApp ou e-mail. Dispatch 24/7, prix fixe annoncé avant la réservation.",
+  "keyword": "réserver chauffeur zurich kloten"
+ },
+ "/fr/journal": {
+  "title": "Guide transfert aéroport Zurich | Journal | Z-ALS",
+  "description": "Notes de notre dispatch : comment fonctionnent les prix fixes, que prévoir à l'arrivée à l'aéroport de Zurich et comment organiser vos trajets en Suisse.",
+  "keyword": "guide transfert aéroport zurich"
+ },
+ "/it/services": {
+  "title": "Autista privato Zurigo | Servizio limousine | Z-ALS",
+  "description": "Autista privato e servizio limousine a Zurigo e in tutta la Svizzera: transfer aeroportuali, noleggio a ore e lunghe tratte a prezzo fisso da CHF 120.",
+  "keyword": "autista privato zurigo"
+ },
+ "/it/fleet": {
+  "title": "Mercedes Classe V con autista | Flotta | Z-ALS",
+  "description": "La nostra flotta con autista: Mercedes Classe E, S e V, SUV e bus. Scelga il veicolo giusto per gruppo e bagagli, con prezzi fissi da CHF 120.",
+  "keyword": "mercedes classe v con autista"
+ },
+ "/it/about": {
+  "title": "Noleggio con conducente Svizzera | Chi siamo | Z-ALS",
+  "description": "Z-ALS è un servizio di autisti con licenza a Kloten: prezzi fissi al chilometro e una centrale operativa raggiungibile 24/7. Scopra come lavoriamo.",
+  "keyword": "noleggio con conducente svizzera"
+ },
+ "/it/contact": {
+  "title": "Prenota autista Zurigo Kloten | Contatti | Z-ALS",
+  "description": "Prenoti il suo autista a Zurigo o Kloten per telefono, WhatsApp o e-mail. Centrale operativa 24/7, con prezzo fisso comunicato prima della prenotazione.",
+  "keyword": "prenota autista zurigo"
+ },
+ "/it/journal": {
+  "title": "Guida transfer aeroporto Zurigo | Journal | Z-ALS",
+  "description": "Note dalla nostra centrale operativa: come funzionano i prezzi fissi, cosa aspettarsi all'arrivo a Zurigo e come pianificare i viaggi in Svizzera.",
+  "keyword": "guida transfer aeroporto zurigo"
+ },
+ "/en/journal/business-travel-emissions-and-the-car-that-meets-you": {
+  "title": "Scope 3 Category 6: Ground Transport Emissions | Z-ALS",
+  "description": "Ground transport is now a reportable line in business-travel emissions, and the worst evidenced. What it means when you choose a chauffeur transfer class.",
+  "keyword": "scope 3 category 6 ground transport"
+ },
+ "/en/journal/how-a-dispatch-desk-absorbs-a-delayed-flight": {
+  "title": "Delayed Flight at Zurich Airport: What Happens | Z-ALS",
+  "description": "The inbound flight slips two hours. What our dispatch desk does before the passenger has cleared passport control, and how the pick-up time moves with it.",
+  "keyword": "flight delayed zurich airport transfer"
+ },
+ "/en/journal/insurance-and-licensing": {
+  "title": "Chauffeur Insurance & Licensing: What to Ask | Z-ALS",
+  "description": "Four questions that separate a licensed Swiss chauffeur operator from a well-dressed ride-hailing account: licence, insurance, driving hours and accountability.",
+  "keyword": "chauffeur licence insurance switzerland"
+ },
+ "/en/journal/roadshow-logistics": {
+  "title": "Roadshow Transport Zurich: 14 Cars on One Sheet | Z-ALS",
+  "description": "How a three-day, multi-vehicle roadshow programme is planned in Switzerland, and why it lives on paper as well as on a screen. Notes from our dispatch desk.",
+  "keyword": "roadshow transport zurich"
+ },
+ "/en/journal/the-arrivals-gap": {
+  "title": "Zurich Airport Arrivals: The New Walk to the Kerb | Z-ALS",
+  "description": "Biometric border checks have put an unpredictable stretch between wheels-down and the arrivals hall. What that means for airport transfer pick-up times.",
+  "keyword": "zurich airport arrivals pick up time"
+ },
+ "/en/journal/what-we-ask-of-a-chauffeur": {
+  "title": "Chauffeur Requirements: Licence, Checks, Training | Z-ALS",
+  "description": "What we ask of a chauffeur before the first shift: licence, medical, background check, training and a fortnight of shadowing, in that order.",
+  "keyword": "chauffeur requirements switzerland"
+ },
+ "/en/journal/who-is-actually-driving": {
+  "title": "Who Is Driving Your Transfer? Swiss Rules | Z-ALS",
+  "description": "The ground leg is the most frequent and least controlled part of a business trip. What Swiss law requires of the driver, and what a booking channel does not.",
+  "keyword": "who is driving chauffeur switzerland"
+ },
+ "/en/journal/why-we-quote-by-hand": {
+  "title": "Fixed Fare Quotes by Hand, Not by Algorithm | Z-ALS",
+  "description": "Dynamic pricing works for volume, but not for a client who has to know the number in advance. Why Z-ALS quotes chauffeur transfers by hand.",
+  "keyword": "fixed fare chauffeur quote"
+ },
+ "/en/journal/winter-routes": {
+  "title": "Zurich to St. Moritz in Winter: Julier Pass Routes | Z-ALS",
+  "description": "Alpine transfers in February are a weather problem before they are a driving problem. How we plan winter routes, passes and cars for the Engadin and the Alps.",
+  "keyword": "zurich to st moritz winter transfer"
+ }
+}

@@ -1,0 +1,94 @@
+{
+  "title": "Transfer Zürich Davos | Privat mit Chauffeur | Z-ALS",
+  "description": "Privater Chauffeur-Transfer vom Flughafen Zürich nach Davos, {km} km über Klosters. Disposition rund um die Uhr, Festpreis vor der Buchung.",
+  "h1": "Transfer von Zürich nach Davos mit privatem Chauffeur",
+  "lede": "Ein Chauffeur erwartet Sie in der Ankunftshalle und fährt Sie die {km} km nach Davos, zu einem Festpreis, der vor der Buchung feststeht. Die Disposition antwortet rund um die Uhr persönlich.",
+  "intro": [
+    "Davos liegt auf rund 1560 m ü. M., und der Weg vom Flughafen Zürich führt über {km} km durch die Ostschweiz und das Prättigau. Ein privater Transfer bedeutet: ein Fahrzeug, ein Chauffeur und ein Preis, von der Ankunftshalle bis vor die Tür, ohne Umsteigen unterwegs.",
+    "Der Preis wird pro Kilometer nach Fahrzeugklasse berechnet und steht vor der Buchung fest. Der Chauffeur wartet in der Ankunftshalle. Nennen Sie uns die Flugnummer, wird der ankommende Flug verfolgt, und die Abholzeit verschiebt sich ohne Aufpreis mit.",
+    "Diese Seite nennt den Preis je Klasse, beschreibt die Strecke im Lauf des Jahres, ordnet die Fahrzeuge nach Gruppengrösse und hält fest, was die Disposition von Ihnen braucht."
+  ],
+  "sections": [
+    {
+      "h2": "Der Festpreis vom Flughafen Zürich nach Davos",
+      "paragraphs": [
+        "Ein Transfer in der Business-Klasse (Mercedes E-Klasse oder gleichwertig) kostet {priceBusiness}. Die Premium-Klasse (Mercedes S-Klasse oder gleichwertig) kostet {pricePremium}, der SUV (Mercedes GLE oder gleichwertig) {priceSuv} und der Business Van (Mercedes V-Klasse oder gleichwertig) {priceVan}. Die Beträge gelten pro Fahrzeug, nicht pro Person, und verstehen sich exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen.",
+        "Der Preis ergibt sich aus der Strecke und dem Kilometertarif der Klasse. Der Mindestpreis der Klasse, unter den keine Fahrt fällt, spielt bei {km} km keine Rolle. Der Preis wird vor der Buchung genannt und ändert sich danach nicht, auch nicht, wenn sich der Flug verspätet. Im Preis enthalten sind:"
+      ],
+      "bullets": [
+        "Wartezeit und Gepäckverladung",
+        "Mautgebühren und die Schweizer Autobahnvignette",
+        "Kindersitze, vor der Fahrt eingebaut, ohne Aufpreis",
+        "Sechzig Minuten Wartezeit nach der Landung",
+        "Passagierversicherung"
+      ]
+    },
+    {
+      "h2": "Die Strecke über Klosters und die Jahreszeiten",
+      "paragraphs": [
+        "Die Strecke misst {km} km; für die Fahrt sind rund {time} einzuplanen. Ab dem Flughafen führt die Autobahn am Walensee vorbei bis Landquart. Von dort folgt die Strasse dem Prättigau über Klosters und steigt über den Wolfgangpass nach Davos.",
+        "Auf der Autobahn läuft die Fahrt gleichmässig. Das letzte Stück ist eine Talstrasse mit Kurven und stetiger Steigung, und der Chauffeur fährt sie in dem Tempo, das der Belag zulässt. Von Oktober bis April fährt jedes unserer Fahrzeuge auf Winterreifen. Nach Schneefall wird die Fahrt auf diesem Abschnitt länger; im Sommer entfällt der Schnee, die Strecke bleibt eine Bergstrasse.",
+        "Müssen Sie am selben Tag einen Zug, eine Sitzung oder ein Abendessen erreichen, planen Sie einen Puffer ein und sagen Sie es der Disposition bei der Buchung."
+      ]
+    },
+    {
+      "h2": "Welches Fahrzeug für Davos",
+      "paragraphs": [
+        "Die Business-Klasse nimmt drei Passagiere mit drei Koffern auf; ein vierter Passagier findet Platz, wenn das Gepäck leicht ist. Die Premium-Klasse bietet drei Plätze und Platz für zwei Koffer, dazu einen Fond, in dem sich auf der langen Fahrt arbeiten oder ruhen lässt. Der SUV fasst vier Passagiere mit vier Koffern und hat Allradantrieb; er ist das Fahrzeug für Skiwochen und für verschneite Strassen.",
+        "Der Business Van bietet sieben Plätze und Platz für sieben Koffer und passt für Familien, Delegationen und alle, die mit viel Gepäck reisen. Für Gruppen bis zu 16 Personen offeriert die Disposition einen Minibus oder Reisebus. Wer Ski oder Snowboards mitnimmt, nennt die Stückzahl bei der Buchung, damit die Klasse von Anfang an stimmt. Eine vollelektrische Limousine ist zum Tarif der Business-Klasse ebenfalls im Angebot; für eine Bergstrecke wie diese klärt die Disposition vorab, ob sie sich eignet."
+      ]
+    },
+    {
+      "h2": "Abholung am Flughafen und was die Disposition braucht",
+      "paragraphs": [
+        "Der Chauffeur wartet in der Ankunftshalle, und im Preis sind sechzig Minuten Wartezeit nach der Landung enthalten. Nennen Sie bei der Buchung die Flugnummer: Der ankommende Flug wird verfolgt, die Abholzeit verschiebt sich mit ihm ohne Aufpreis, und eine Verspätung ändert weder den Preis noch den Ablauf.",
+        "Die publizierten Preise gelten für Abholungen am Flughafen Zürich. Die Rückfahrt ab Davos, eine Abholung an einer anderen Adresse, am Flughafen Basel oder am Flughafen Genf sowie Fahrten ins Ausland offeriert die Disposition pro Strecke. Für die Buchung braucht sie:"
+      ],
+      "bullets": [
+        "Flugnummer und Landedatum",
+        "Die Adresse in Davos oder, falls sie noch nicht feststeht, den Ort",
+        "Anzahl der Passagiere und der Koffer",
+        "Kindersitze, Ski oder Snowboards, falls zutreffend"
+      ]
+    },
+    {
+      "h2": "Davos Dorf, Davos Platz und die Saison",
+      "paragraphs": [
+        "Davos zieht sich entlang des Tals und ist nicht um einen einzigen Platz gebaut; Davos Dorf und Davos Platz liegen ein Stück auseinander. Nennen Sie deshalb die Adresse Ihres Hotels oder Chalets und nicht nur den Ort, damit der Chauffeur bis vor die Tür fährt.",
+        "Die Nachfrage folgt der Saison. Das World Economic Forum findet jeden Januar in Davos statt, und in den Skiwochen sind die Fahrzeuge gefragt. Buchen Sie für diese Daten früh und fragen Sie die Premium-Klasse oder den SUV lange im Voraus an, nicht erst in der Woche selbst.",
+        "Zwei Einschränkungen gehören dazu. Bei starkem Schneefall kann die Fahrt länger dauern als die Angabe oben; die Disposition ist jederzeit erreichbar, wenn Ihre Pläne von der Ankunft abhängen. Und der Preis deckt die Fahrt bis zu der Adresse, die Sie in Davos nennen: Ein Halt unterwegs oder eine Weiterfahrt in ein anderes Tal ist eine andere Strecke, die die Disposition separat offeriert."
+      ]
+    }
+  ],
+  "priceNote": "Die Preise verstehen sich pro Fahrzeug und exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen. Sie gelten für Abholungen am Flughafen Zürich; die Rückfahrt ab Davos und jede andere Abholadresse offeriert die Disposition pro Strecke.",
+  "faq": [
+    {
+      "q": "Wie lange dauert die Fahrt vom Flughafen Zürich nach Davos?",
+      "a": "Die Fahrt dauert rund {time} für {km} km. Das letzte Stück ist eine Talstrasse; planen Sie nach Schneefall deshalb einen Puffer ein und sagen Sie der Disposition, wenn Sie bei der Ankunft einen festen Termin haben."
+    },
+    {
+      "q": "Was kostet ein privater Transfer vom Flughafen Zürich nach Davos?",
+      "a": "{priceBusiness} in der Business-Klasse, {pricePremium} in der Premium-Klasse, {priceSuv} im SUV und {priceVan} im Business Van, jeweils pro Fahrzeug und zuzüglich {vat} MwSt. Der Preis steht vor der Buchung fest und ändert sich danach nicht."
+    },
+    {
+      "q": "Was passiert, wenn mein Flug Verspätung hat?",
+      "a": "Nennen Sie uns bei der Buchung die Flugnummer. Der ankommende Flug wird verfolgt, die Abholzeit verschiebt sich ohne Aufpreis mit, und sechzig Minuten Wartezeit nach der Landung sind im Preis enthalten."
+    },
+    {
+      "q": "Können Sie Ski, Gepäck und Kindersitze mitnehmen?",
+      "a": "Gepäckverladung und Kindersitze sind im Preis enthalten, die Kindersitze werden vor der Fahrt eingebaut. Nennen Sie der Disposition die Zahl der Koffer und der Ski oder Snowboards, damit die Klasse von Anfang an stimmt."
+    },
+    {
+      "q": "Wie bezahle ich den Transfer?",
+      "a": "Online per Karte oder TWINT, beim Chauffeur am Reisetag oder nach Absprache mit dem Team über WhatsApp. Firmenkunden werden monatlich fakturiert, und eine allfällige Stornogebühr wird bei der Bestätigung der Buchung genannt."
+    },
+    {
+      "q": "Fahren Sie im Winter nach Davos?",
+      "a": "Ja. Von Oktober bis April sind Winterreifen auf jedem Fahrzeug Standard, und der SUV mit Allradantrieb ist das Fahrzeug für Skiwochen und verschneite Strassen. Bei starkem Schneefall kann die Fahrt länger dauern als die {time}, die wir oben nennen."
+    },
+    {
+      "q": "Holen Sie uns in Davos für die Rückfahrt zum Flughafen ab?",
+      "a": "Ja, als eigene Fahrt. Die publizierten Preise gelten für Abholungen am Flughafen Zürich, deshalb offeriert die Disposition die Rückfahrt pro Strecke: Senden Sie uns Datum und Adresse."
+    }
+  ]
+}

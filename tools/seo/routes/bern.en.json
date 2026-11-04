@@ -1,0 +1,93 @@
+{
+  "title": "Zurich Airport to Bern Transfer | Chauffeur | Z-ALS",
+  "description": "Chauffeur from Zurich Airport to Bern, {km} km door to door with no train changes, in a Mercedes E-, S- or V-Class. Fare fixed before you book.",
+  "h1": "Zurich Airport to Bern by private chauffeur",
+  "lede": "A chauffeur meets you inside arrivals at Zürich Airport and drives you the {km} km to Bern, door to door and without a change of train, for a fare fixed before you book. Dispatch answers at any hour, by phone, WhatsApp or email.",
+  "intro": [
+    "Bern is the seat of the federal government, and the road there from Zürich Airport is {km} km, mostly motorway across the Swiss plateau. A private transfer is one car and one chauffeur from the arrivals hall to the address you give, with no platform, no change and no taxi queue at the other end.",
+    "Trains between the two cities are frequent, and for one traveller with a light bag they are a sound choice. A car earns its place when you have luggage, when you travel as a group, when the address is not beside the station, or when your meeting does not match a timetable.",
+    "The fare is calculated per kilometre by car class and fixed before you book. The chauffeur waits inside arrivals and, if you give us the flight number, the pick-up follows your landing. The sections below set out the fare, the drive, the cars and what dispatch needs from you."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Bern",
+      "paragraphs": [
+        "A Business Class transfer (Mercedes E-Class or equivalent) costs {priceBusiness} for the whole car, excluding VAT, which is added as its own line at {vat}. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. Each fare is per car, not per passenger.",
+        "The fare is worked out from the distance and the class rate. It is stated before you book and does not move afterwards, whatever the traffic does on the day. It includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats, fitted before the journey at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The drive to Bern",
+      "paragraphs": [
+        "The distance is {km} km and the drive takes about {time}. The usual way is the A1 motorway, which runs west from the airport across the plateau through Aargau and Solothurn into the Bern region. There are no mountain passes on the way.",
+        "Because the whole route lies on the plateau, the drive is much the same in every season. From October to April every car runs winter tyres, and snow or ice can lengthen it. Allow some margin if you have a meeting or a train to reach, and tell dispatch the time you need to be in Bern when you book.",
+        "Treat {time} as the planning figure, not a promise: roadworks and congestion on the A1 change from day to day, and the chauffeur chooses the way on the day."
+      ]
+    },
+    {
+      "h2": "Which car for Bern",
+      "paragraphs": [
+        "Business Class takes three passengers with three cases, and a fourth passenger fits if the luggage is light. It is the natural car for one or two people travelling to a meeting. Premium Class seats three, with two cases, and has a rear cabin with legroom and quiet, which suits working on a drive of this length.",
+        "The SUV seats four with four cases and has all-wheel drive, which helps if you arrive in snow. The Business Van seats seven with seven cases and suits delegations, families and teams travelling together. For groups of up to sixteen dispatch quotes a minibus or coach, and a fully electric saloon is also available at the Business Class rate."
+      ]
+    },
+    {
+      "h2": "Pick-up at Zürich Airport and booking",
+      "paragraphs": [
+        "Give us the flight number when you book and we track the inbound flight, moving the pick-up with it at no charge. The chauffeur waits inside arrivals, and sixty minutes of waiting after landing are included in the fare.",
+        "Fares are published for pick-ups at Zürich Airport. The return from Bern, a pick-up at any other address, at Basel or Geneva airport, and journeys abroad are quoted per route by dispatch. To book, dispatch needs:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The hotel, office or address in Bern, or the area if the address is not settled",
+        "Number of passengers and cases",
+        "Child seats or large items such as skis, if any"
+      ]
+    },
+    {
+      "h2": "Bern: appointments and the old town",
+      "paragraphs": [
+        "Bern is where the federal administration and the foreign embassies sit, so a trip there often ends at a fixed appointment. The case for a car is practical rather than a matter of distance: it is door to door without changes, your luggage stays in the boot throughout, and it fits meetings that do not match a timetable. If your day in Bern has several stops, tell dispatch when you book.",
+        "Parts of the old town are closed or restricted to vehicles, so the drop-off can be a short walk from the door. Name the hotel or the address when you book and dispatch will agree the nearest point in advance. A stop on the way, or an onward leg to another town, is a different route and is quoted separately."
+      ]
+    }
+  ],
+  "priceNote": "Fares are net of VAT; {vat} VAT is added as its own line. They are published for pick-ups at Zürich Airport, and the return from Bern or any other pick-up point is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Bern take?",
+      "a": "The drive is about {time} for {km} km, mostly by motorway. Snow can lengthen it in winter, so tell dispatch the time you need to be in Bern."
+    },
+    {
+      "q": "How much does a private transfer from Zürich Airport to Bern cost?",
+      "a": "{priceBusiness} in a Business Class car, {pricePremium} in Premium Class, {priceSuv} in the SUV and {priceVan} in the Business Van, all net of {vat} VAT. The fare is for the car and is fixed before you book."
+    },
+    {
+      "q": "What happens if my flight is late?",
+      "a": "Nothing changes in the fare. With the flight number, the pick-up moves with the inbound flight at no charge, and sixty minutes of waiting after landing are included."
+    },
+    {
+      "q": "Can I bring luggage, skis and child seats?",
+      "a": "Luggage handling is included in the fare, and child seats are fitted before the journey at no charge. Tell dispatch how many cases you have and whether there are skis, boards or other large items, so that the class is right the first time."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "Online by card or TWINT, to the chauffeur on the day, or arranged with dispatch on WhatsApp. Corporate clients are invoiced monthly, and any cancellation charge is stated when the booking is confirmed."
+    },
+    {
+      "q": "Why take a chauffeur to Bern when there are trains?",
+      "a": "Trains between the two cities are frequent, and for one traveller with a light bag they are a reasonable choice. A car is door to door without changes, carries your luggage throughout and does not depend on a timetable."
+    },
+    {
+      "q": "Can you collect us in Bern for the return to the airport?",
+      "a": "Yes, as a separate journey. Published fares apply to pick-ups at Zürich Airport, so dispatch quotes the return per route: send the date and the address."
+    }
+  ]
+}

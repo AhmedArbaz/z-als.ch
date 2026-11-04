@@ -1,0 +1,96 @@
+{
+  "title": "Zurich Airport to Geneva Transfer | Chauffeur | Z-ALS",
+  "description": "Chauffeur from Zurich Airport to Geneva, {km} km, or from Geneva Airport to Zurich on request. Mercedes E-, S- or V-Class, fare fixed before you book.",
+  "h1": "Zurich Airport to Geneva by private chauffeur",
+  "lede": "A private chauffeur from Zürich Airport to Geneva: {km} km, about {time} by motorway, at a fixed fare shown before you book. The chauffeur waits inside arrivals, and dispatch is there at any hour.",
+  "intro": [
+    "Geneva lies at the western end of Lake Geneva, in the French-speaking part of Switzerland, and the road from Zürich Airport crosses the whole Swiss plateau to reach it. The distance is {km} km and the drive takes about {time}, a long journey by Swiss standards and one that is easier made in a single seat, with the luggage handled for you.",
+    "Z-ALS has been a licensed chauffeur company in Kloten since 2004. The fare for this journey is worked out from the distance and the car class and shown before you book, so it does not change if your flight does. Dispatch answers at any hour, personally, by phone, WhatsApp or email.",
+    "If you want the journey the other way, from Geneva Airport to Zürich, the road is the same. That direction is quoted by dispatch rather than published, and the last section says what to send."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Geneva",
+      "paragraphs": [
+        "A Business Class car (Mercedes E-Class or equivalent) takes you from Zürich Airport to Geneva for {priceBusiness}, excluding VAT. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. VAT of {vat} is shown as its own line.",
+        "The fare is per car, not per passenger. It is worked out per kilometre by car class, so on a run of this length the class you choose is what sets the fare. It includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats fitted before the journey, at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The drive across the plateau",
+      "paragraphs": [
+        "The route is {km} km and takes about {time}. The chauffeur joins the A1 motorway and drives west across the Swiss plateau, past Bern and on towards Lausanne, then follows the shore of Lake Geneva into the city. It is motorway for most of the way and one long run in a single sitting: use {time} for planning, and add margin if you have a flight, a train or a meeting at the other end.",
+        "There is no mountain pass on this road, so winter matters less here than on the alpine routes, but snow on the plateau can still slow the motorway. Winter tyres are standard on every car from October to April. A slow day does not change the fare, and if it affects your departure, dispatch will tell you, at any hour, by phone or WhatsApp."
+      ]
+    },
+    {
+      "h2": "Which car for Geneva",
+      "paragraphs": [
+        "Business Class takes three passengers with three cases and is the usual choice for one to three people. On a journey of this length Premium Class suits a passenger who wants to work or rest on the way: it seats three in a rear cabin, with room for two cases. The SUV takes four passengers with four cases. For larger parties the Business Van takes seven passengers with seven cases, and for groups of up to sixteen dispatch quotes a minibus or coach.",
+        "A fully electric saloon is also available at the Business Class rate. On a run of this length, ask dispatch whether it suits your journey and your schedule before you choose it."
+      ]
+    },
+    {
+      "h2": "Pick-up at Zürich Airport and what to send",
+      "paragraphs": [
+        "Give dispatch your flight number and we track the inbound flight, moving the pick-up with it at no charge. The chauffeur waits inside arrivals, and sixty minutes of waiting after landing are included.",
+        "Fares are published for pick-ups at Zürich Airport. The return trip from Geneva, a pick-up at Basel airport or at Geneva Airport, and any other pick-up point are quoted per route by dispatch. When you write or call, it helps to have these to hand:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The address in Geneva, or the hotel name if the address is not yet settled",
+        "Number of passengers and cases, and any skis or bulky items",
+        "Child seats needed, with the ages or sizes",
+        "A phone number that works on arrival"
+      ]
+    },
+    {
+      "h2": "The Geneva end of the journey",
+      "paragraphs": [
+        "This is a long single run, and the details that matter are at the far end. Geneva is a large city with a lake front and an airport, and France lies close around it, so give dispatch the full address, with the street and number or the hotel name, rather than only the city. The chauffeur then goes to the right door the first time.",
+        "The published fare is to Geneva. A stop on the way, another place on Lake Geneva or a journey that continues into France is quoted by dispatch, because the published fares cover the single run from Zürich Airport. Send the route and the date and dispatch replies with a fixed fare."
+      ]
+    },
+    {
+      "h2": "From Geneva Airport to Zürich, and the return trip",
+      "paragraphs": [
+        "A pick-up at Geneva Airport, for a transfer to Zürich or to Zürich Airport, is quoted per route by dispatch, as is the return trip from a Geneva address. The road is the same in both directions; what differs is the starting point, and the published fares start at Zürich Airport. That is why dispatch quotes this direction instead of reading a price off a table.",
+        "To get a fixed fare before you book, send the date, the flight number and landing time at Geneva, the address in or near Zürich, and the number of passengers and cases. Dispatch replies with the fare before anything is confirmed."
+      ]
+    }
+  ],
+  "priceNote": "Fares are per car, one way from Zürich Airport, and exclude VAT of {vat}, which is shown as its own line. A pick-up at Geneva Airport is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Geneva take?",
+      "a": "The drive is {km} km and takes about {time}. Dispatch tells you if weather or an incident on the motorway affects your departure."
+    },
+    {
+      "q": "How much is a private transfer from Zürich Airport to Geneva?",
+      "a": "A Business Class car (Mercedes E-Class or equivalent) is {priceBusiness} excluding VAT, per car and not per passenger. Premium Class is {pricePremium}, the SUV {priceSuv} and the Business Van {priceVan}; VAT of {vat} is added as its own line."
+    },
+    {
+      "q": "What if my flight is delayed?",
+      "a": "Give dispatch your flight number and we track the inbound flight, so the pick-up moves with it at no charge. The chauffeur waits inside arrivals, and sixty minutes of waiting after landing are included."
+    },
+    {
+      "q": "Can I bring skis, luggage and child seats?",
+      "a": "Luggage handling is included in the fare, and child seats are fitted before the journey at no charge. Tell dispatch how many cases and ski bags you have, so that the car has the room."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "You can pay online by card or TWINT, pay the chauffeur on the day, or arrange payment with dispatch on WhatsApp. Corporate clients are invoiced monthly."
+    },
+    {
+      "q": "Can you collect me at Geneva Airport and drive me to Zürich?",
+      "a": "Yes, as a quoted journey. The published fares are for pick-ups at Zürich Airport, so dispatch quotes Geneva Airport to Zürich per route: send the date, flight number and address by phone, WhatsApp or email and the fare comes back before you book."
+    }
+  ]
+}

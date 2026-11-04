@@ -1,0 +1,92 @@
+{
+  "title": "Transfer Zürich St. Moritz | Privat mit Chauffeur | Z-ALS",
+  "description": "Privater Chauffeur-Transfer vom Flughafen Zürich nach St. Moritz, {km} km über den Julierpass. Mercedes E-, S- oder V-Klasse, Festpreis vor der Buchung.",
+  "h1": "Transfer von Zürich nach St. Moritz mit privatem Chauffeur",
+  "lede": "Ein privater Chauffeur bringt Sie vom Flughafen Zürich nach St. Moritz: {km} km, etwa {time} Fahrzeit, zu einem Festpreis, den Sie vor der Buchung sehen. Der Chauffeur wartet in der Ankunftshalle.",
+  "intro": [
+    "St. Moritz liegt im Oberengadin, am Ende einer langen Fahrt aus dem Unterland, und die Strasse dorthin führt über den Julierpass. Die Strecke misst {km} km; je nach Jahreszeit und Zustand der Strasse am Pass sind etwa {time} einzuplanen.",
+    "Z-ALS ist ein bewilligtes Schweizer Chauffeurunternehmen in Kloten und seit 2004 im Geschäft. Der Preis für diese Fahrt wird aus der Strecke und der Fahrzeugklasse berechnet und steht vor der Buchung fest. Die Disposition antwortet rund um die Uhr persönlich, per Telefon, WhatsApp oder E-Mail."
+  ],
+  "sections": [
+    {
+      "h2": "Der Festpreis und was er abdeckt",
+      "paragraphs": [
+        "Ab Flughafen Zürich nach St. Moritz kostet die Fahrt in der Business-Klasse (Mercedes E-Klasse oder gleichwertig) {priceBusiness} exkl. MwSt. Die Premium-Klasse (Mercedes S-Klasse oder gleichwertig) kostet {pricePremium}, der SUV (Mercedes GLE oder gleichwertig) {priceSuv} und der Business Van (Mercedes V-Klasse oder gleichwertig) {priceVan}. Die MwSt. von {vat} wird als eigene Zeile ausgewiesen.",
+        "Der Preis gilt pro Fahrzeug, nicht pro Person. Er schliesst Folgendes ein:"
+      ],
+      "bullets": [
+        "Wartezeit und Gepäckverladung",
+        "Mautgebühren und die Schweizer Autobahnvignette",
+        "Kindersitze, vor der Fahrt eingebaut, ohne Aufpreis",
+        "Sechzig Minuten Wartezeit nach der Landung",
+        "Passagierversicherung"
+      ]
+    },
+    {
+      "h2": "Über den Julierpass: Strecke und Jahreszeit",
+      "paragraphs": [
+        "Die Strecke beträgt {km} km. Ab Zürich fährt der Chauffeur zuerst auf der Autobahn Richtung Chur, danach auf der Bergstrasse über den Julierpass ins Oberengadin. Als Richtwert gelten {time} Fahrzeit; wer am Ziel einen Anschluss oder einen Termin hat, plant einen Puffer ein.",
+        "Ausserhalb des Winters ist der Pass eine gewöhnliche Bergstrasse. Im Winter kann der Julier gesperrt sein, und Schnee kann die Fahrzeit auch dann verlängern, wenn die Strasse offen bleibt. Winterreifen sind von Oktober bis April bei jedem Fahrzeug Standard, und im Februar bestätigt die Disposition Ihre Abfahrt am Vorabend. Ändern sich die Verhältnisse am Pass, erreichen Sie die Disposition jederzeit per Telefon oder WhatsApp."
+      ]
+    },
+    {
+      "h2": "Welches Fahrzeug für St. Moritz",
+      "paragraphs": [
+        "Die Business-Klasse nimmt drei Passagiere mit drei Koffern auf und ist die naheliegende Wahl für ein bis drei Personen. Die Premium-Klasse bietet drei Passagieren einen ruhigen Fond, mit Platz für zwei Koffer. Der SUV fasst vier Passagiere mit vier Koffern und hat Allradantrieb; deshalb ist er das übliche Winterfahrzeug für diese Strasse. Für grössere Gesellschaften nimmt der Business Van sieben Passagiere mit sieben Koffern auf, und Gruppen bis zu 16 Personen reisen im Minibus oder Reisebus, den die Disposition offeriert.",
+        "Ski bringen Sie als Gepäck mit. Nennen Sie der Disposition bei der Buchung die Stückzahl, damit das Fahrzeug genug Platz hat: Eine vierköpfige Familie mit Skisäcken sitzt im SUV oder im Van besser als in einer Limousine. Eine vollelektrische Limousine gehört ebenfalls zur Flotte, zum selben Kilometertarif wie die Business-Klasse; ob sie für diese Strecke passt, klärt die Disposition bei der Buchung mit Ihnen."
+      ]
+    },
+    {
+      "h2": "Ankunft in Zürich: Abholung und Angaben für die Buchung",
+      "paragraphs": [
+        "Der Chauffeur wartet in der Ankunftshalle. Nennen Sie der Disposition Ihre Flugnummer, dann wird der ankommende Flug verfolgt: Landet er früher oder später, verschiebt sich die Abholung ohne Aufpreis mit. Sechzig Minuten Wartezeit nach der Landung sind inbegriffen.",
+        "Die Preise gelten für Abholungen am Flughafen Zürich. Die Rückfahrt ab St. Moritz, eine Abholung am Flughafen Basel oder Genf und jeder andere Abholort werden von der Disposition pro Strecke offeriert. Bei Anfrage oder Anruf helfen folgende Angaben:"
+      ],
+      "bullets": [
+        "Flugnummer und Landedatum",
+        "Die Adresse in St. Moritz oder, falls sie noch nicht feststeht, der Name der Unterkunft",
+        "Zahl der Passagiere und Koffer, gegebenenfalls Ski",
+        "Benötigte Kindersitze, mit Alter oder Grösse der Kinder",
+        "Eine Telefonnummer, die bei der Ankunft erreichbar ist"
+      ]
+    },
+    {
+      "h2": "St. Moritz: Höhe, Ziel im Engadin und Rückfahrt",
+      "paragraphs": [
+        "St. Moritz liegt auf rund 1800 m ü. M. Wer im Winter aus Zürich anreist, findet dort oben meist deutlich mehr Schnee als im Unterland; richten Sie Kleidung und Schuhe auf das Ziel aus, nicht auf den Flughafen.",
+        "Der Preis gilt bis St. Moritz. Ein anderes Ziel im Engadin, die Rückfahrt, eine andere Abholadresse oder eine Fahrt ins Ausland offeriert die Disposition separat, denn die publizierten Preise gelten für die einfache Fahrt ab Flughafen Zürich. Senden Sie Strecke und Datum, dann antwortet die Disposition mit einer Offerte zum Festpreis."
+      ]
+    }
+  ],
+  "priceNote": "Die Preise gelten pro Fahrzeug für die einfache Fahrt ab Flughafen Zürich und verstehen sich exkl. MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen. Enthalten sind Wartezeit, Mautgebühren, Autobahnvignette und Passagierversicherung.",
+  "faq": [
+    {
+      "q": "Wie lange dauert der Transfer vom Flughafen Zürich nach St. Moritz?",
+      "a": "Bei {km} km sind etwa {time} Fahrzeit einzuplanen. Im Winter kann Schnee am Julierpass sie verlängern; hängt bei Ihrer Ankunft ein Anschluss oder ein Termin davon ab, planen Sie einen Puffer ein."
+    },
+    {
+      "q": "Was kostet ein privater Transfer vom Flughafen Zürich nach St. Moritz?",
+      "a": "Die Business-Klasse (Mercedes E-Klasse oder gleichwertig) kostet {priceBusiness} exkl. MwSt., pro Fahrzeug und nicht pro Person. Die Premium-Klasse kostet {pricePremium}, der SUV {priceSuv} und der Business Van {priceVan}; dazu kommt die MwSt. von {vat} als eigene Zeile."
+    },
+    {
+      "q": "Und wenn mein Flug später landet?",
+      "a": "Mit der Flugnummer wird der ankommende Flug verfolgt, und die Abholung verschiebt sich ohne Aufpreis mit der Landung. Sechzig Minuten Wartezeit nach der Landung sind inbegriffen, und der Chauffeur wartet in der Ankunftshalle."
+    },
+    {
+      "q": "Kann ich Ski, Gepäck und Kindersitze mitnehmen?",
+      "a": "Die Gepäckverladung ist im Preis inbegriffen, und Kindersitze werden vor der Fahrt ohne Aufpreis eingebaut. Nennen Sie der Disposition die Zahl der Koffer und Skisäcke, damit das Fahrzeug genug Platz hat; der SUV und der Business Van fassen am meisten."
+    },
+    {
+      "q": "Welche Zahlungsarten gibt es?",
+      "a": "Sie können online mit Karte oder TWINT bezahlen, den Chauffeur am Tag der Fahrt bezahlen oder die Zahlung mit dem Team über WhatsApp vereinbaren. Firmenkunden werden monatlich fakturiert."
+    },
+    {
+      "q": "Ist die Strasse nach St. Moritz im Winter offen?",
+      "a": "Der Julierpass kann im Winter gesperrt sein. Alle Fahrzeuge fahren von Oktober bis April auf Winterreifen, der SUV ist das übliche Winterfahrzeug, und im Februar bestätigt die Disposition die Abfahrt am Vorabend."
+    },
+    {
+      "q": "Fahren Sie mich auch von St. Moritz zurück zum Flughafen?",
+      "a": "Die Rückfahrt offeriert die Disposition pro Strecke, weil die publizierten Preise für Abholungen am Flughafen Zürich gelten. Senden Sie Datum und Adresse per Telefon, WhatsApp oder E-Mail, und die Disposition antwortet mit einem Festpreis."
+    }
+  ]
+}

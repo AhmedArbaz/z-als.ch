@@ -1,0 +1,20 @@
+{
+  "checked": "2026-10-20",
+  "sources": {
+    "taxi": "Zürich Tourism, 'Vom Flughafen ins Zentrum' (zuerich.com): CHF 50–70 airport to city centre; most taxis CHF 6 base + CHF 3.80 per km",
+    "zvv": "ZVV 'Tickets & Preise', valid from 14.12.2025 (zvv.ch): single ticket, adult, 2nd class, 3 zones (airport zone 121 + city zone 110, which counts double) CHF 7.20",
+    "trainTime": "Zürich Tourism (zuerich.com): airport to Zürich HB 10–15 minutes",
+    "trains": "SBB timetable via timetable.search.ch, fastest of three connections from Zürich Flughafen around 10:00 on a November weekday"
+  },
+  "taxiCityMin": 50,
+  "taxiCityMax": 70,
+  "taxiBase": 6,
+  "taxiKm": 3.8,
+  "trainCity": 7.2,
+  "trainCityMinutes": "10–15",
+  "trains": {
+    "zermatt": { "minutes": 211, "changes": 1 },
+    "st-moritz": { "minutes": 203, "changes": 2 },
+    "davos": { "minutes": 158, "changes": 2 }
+  }
+}

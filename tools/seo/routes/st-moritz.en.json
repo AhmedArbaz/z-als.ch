@@ -1,0 +1,92 @@
+{
+  "title": "Zurich to St. Moritz Transfer | Private Chauffeur | Z-ALS",
+  "description": "Private chauffeur transfer from Zurich Airport to St. Moritz, {km} km by road. Mercedes E-, S- or V-Class, 24/7 dispatch, fixed fare before you book.",
+  "h1": "Zurich Airport to St. Moritz by private chauffeur",
+  "lede": "A private chauffeur from Zürich Airport to St. Moritz: {km} km, about {time} by road, at a fixed fare you can see before you book. The chauffeur waits inside arrivals, and the pick-up follows your flight if you give us the number.",
+  "intro": [
+    "St. Moritz is one of the longest regular runs from Zürich Airport, and unlike most of them it climbs over a high mountain pass. The distance is {km} km and the drive takes about {time}, depending on the season and on the state of the road over the Julier Pass.",
+    "Z-ALS is a licensed Swiss chauffeur company in Kloten, founded in 2004. The fare is worked out from the distance and the car class and shown before you book, so it does not change if your flight does. Dispatch answers at any hour, personally, by phone, WhatsApp or email."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to St. Moritz",
+      "paragraphs": [
+        "In a Business Class car (Mercedes E-Class or equivalent) the fare from Zürich Airport to St. Moritz is {priceBusiness}, excluding VAT. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. VAT of {vat} is shown as its own line.",
+        "The fare is for the whole car, however many people travel in it, and it includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats fitted before the journey, at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The road over the Julier Pass",
+      "paragraphs": [
+        "The route is {km} km and takes about {time}. The chauffeur follows the motorway south-east through the canton of Graubünden, then takes the mountain road over the Julier Pass into the Upper Engadin. Use that time for planning, and add margin if you have a connection or a dinner at the other end.",
+        "The pass is a mountain road with bends and a long climb, and the chauffeur takes it at the speed the conditions allow. In winter the Julier can close, and snow can add time to the drive even when it stays open. Winter tyres are standard on every car from October to April, and for a February departure dispatch confirms the departure with you the evening before. If conditions on the pass change, dispatch is available at any hour by phone or WhatsApp."
+      ]
+    },
+    {
+      "h2": "Which car for St. Moritz",
+      "paragraphs": [
+        "Business Class takes three passengers with three cases and is the usual choice for one to three people in the warmer months. Premium Class seats three in a rear cabin with room for two cases. The SUV takes four passengers with four cases and has all-wheel drive, which makes it the usual winter car for this road. For larger parties the Business Van takes seven passengers with seven cases, and for groups of up to sixteen dispatch quotes a minibus or coach.",
+        "Skis count as luggage. Tell dispatch how many pieces you are bringing, so that the car has the room: a family of four with ski bags is better in the SUV or the Business Van than in a saloon. A fully electric saloon is also available at the Business Class rate; on a long alpine leg, dispatch plans its range against the route before assigning it."
+      ]
+    },
+    {
+      "h2": "Meeting the chauffeur, and what to send us",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals. Give dispatch your flight number and the inbound flight is tracked: if it lands early or late, the pick-up moves with it at no charge, and sixty minutes of waiting after landing are included.",
+        "Fares are published for pick-ups at Zürich Airport. The return trip from St. Moritz, a pick-up at Basel or Geneva airport and any other pick-up point are quoted per route by dispatch. When you write or call, it helps to have these to hand:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The address in St. Moritz, or the hotel name if the address is not yet settled",
+        "Number of passengers and cases, and any skis",
+        "Child seats needed, with the ages or sizes",
+        "A phone number that works on arrival"
+      ]
+    },
+    {
+      "h2": "The Engadin end of the journey",
+      "paragraphs": [
+        "The Upper Engadin has several villages close together, among them Celerina, Pontresina and Silvaplana, and St. Moritz itself is spread along its lake and up the hillside. Give dispatch the hotel name or the street rather than only the town, so that the chauffeur drives to the right door.",
+        "The fare is to St. Moritz. A stop on the way, a different village in the valley, the return trip or a journey that continues abroad is quoted by dispatch, because the published fares cover the single run from Zürich Airport. Send the route and the date and dispatch replies with a fixed fare."
+      ]
+    }
+  ],
+  "priceNote": "Fares are per car, one way from Zürich Airport, and exclude VAT of {vat}, which is shown as its own line. The return from St. Moritz is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to St. Moritz take?",
+      "a": "The drive is {km} km and takes about {time}. In winter, snow on the Julier Pass can add time or close the road, and dispatch confirms a February departure the evening before."
+    },
+    {
+      "q": "How much is a private transfer from Zürich Airport to St. Moritz?",
+      "a": "A Business Class car (Mercedes E-Class or equivalent) is {priceBusiness} excluding VAT, per car and not per passenger. Premium Class is {pricePremium}, the SUV {priceSuv} and the Business Van {priceVan}; VAT of {vat} is added as its own line."
+    },
+    {
+      "q": "What if my flight is early or late?",
+      "a": "Give dispatch your flight number and the inbound flight is tracked, so the pick-up moves with it at no charge. The chauffeur waits inside arrivals, and sixty minutes of waiting after landing are included."
+    },
+    {
+      "q": "Can I bring skis, luggage and child seats?",
+      "a": "Luggage handling is included in the fare, and child seats are fitted before the journey at no charge. Tell dispatch how many cases and ski bags you have; the SUV and the Business Van carry the most, and the Business Van takes a ski box from November."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "You can pay online by card or TWINT, pay the chauffeur on the day, or arrange payment with dispatch on WhatsApp. Corporate clients are invoiced monthly."
+    },
+    {
+      "q": "Is the road to St. Moritz open in winter?",
+      "a": "The Julier Pass can close in winter. Every car runs winter tyres from October to April, and for a February departure dispatch confirms the departure with you the evening before."
+    },
+    {
+      "q": "Can you drive me back from St. Moritz to the airport?",
+      "a": "The return trip is quoted by dispatch rather than published, because the fares cover pick-ups at Zürich Airport. Send the date and the address by phone, WhatsApp or email and dispatch replies with a fixed fare."
+    }
+  ]
+}

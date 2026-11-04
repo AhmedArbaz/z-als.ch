@@ -1,0 +1,93 @@
+{
+  "title": "Transfer Zürich Zermatt | Privat mit Chauffeur | Z-ALS",
+  "description": "Chauffeur-Transfer vom Flughafen Zürich nach Täsch, {km} km, weiter mit dem Shuttlezug ins autofreie Zermatt. Festpreis vor der Buchung.",
+  "h1": "Transfer von Zürich nach Zermatt mit privatem Chauffeur",
+  "lede": "Ein Chauffeur erwartet Sie in der Ankunftshalle und fährt Sie {km} km nach Täsch, wo der Shuttlezug ins autofreie Zermatt weiterfährt. Der Festpreis steht vor der Buchung fest, die Disposition antwortet rund um die Uhr.",
+  "intro": [
+    "Zermatt liegt am Ende des Mattertals unter dem Matterhorn auf rund 1600 m ü. M., und das Dorf ist autofrei. Ein privater Transfer endet deshalb in Täsch, dem letzten Ort, den man mit dem Auto erreicht; das letzte Stück legen Sie mit dem Shuttlezug zurück.",
+    "Bis Täsch bleiben Sie im selben Fahrzeug beim selben Chauffeur, zu einem Preis; umsteigen müssen Sie erst dort, in den Zug. Der Preis wird pro Kilometer nach Fahrzeugklasse berechnet und steht vor der Buchung fest. Nennen Sie uns die Flugnummer, wird der ankommende Flug verfolgt, und die Abholzeit verschiebt sich ohne Aufpreis mit."
+  ],
+  "sections": [
+    {
+      "h2": "Der Festpreis vom Flughafen Zürich nach Täsch und Zermatt",
+      "paragraphs": [
+        "Ein Transfer in der Business-Klasse (Mercedes E-Klasse oder gleichwertig) kostet {priceBusiness}. Die Premium-Klasse (Mercedes S-Klasse oder gleichwertig) kostet {pricePremium}, der SUV (Mercedes GLE oder gleichwertig) {priceSuv} und der Business Van (Mercedes V-Klasse oder gleichwertig) {priceVan}. Die Beträge gelten pro Fahrzeug, nicht pro Person, und umfassen die Fahrt bis Täsch. Sie verstehen sich exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen.",
+        "Der Preis ergibt sich aus der Strecke und dem Kilometertarif der Klasse; der Mindestpreis der Klasse spielt auf dieser Strecke keine Rolle. Er wird vor der Buchung genannt und ändert sich danach nicht, auch nicht, wenn sich der Flug verspätet. Das Billett für den Shuttlezug von Täsch nach Zermatt gehört nicht dazu. Im Preis enthalten sind:"
+      ],
+      "bullets": [
+        "Wartezeit und Gepäckverladung",
+        "Mautgebühren und die Schweizer Autobahnvignette",
+        "Kindersitze, vor der Fahrt eingebaut, ohne Aufpreis",
+        "Sechzig Minuten Wartezeit nach der Landung",
+        "Passagierversicherung"
+      ]
+    },
+    {
+      "h2": "Die Fahrt bis Täsch: Strecke und Jahreszeiten",
+      "paragraphs": [
+        "Für die {km} km bis Täsch sind rund {time} einzuplanen. Ab dem Flughafen verlässt die Route den Grossraum Zürich auf der Autobahn und führt ins Wallis; der Weg bis Visp richtet sich nach dem Tag, ab Visp folgt die Strasse dem Mattertal bis Täsch. Beide Werte gelten bis Täsch, die Fahrt mit dem Shuttlezug kommt hinzu.",
+        "Das Mattertal ist eine enge Talstrasse, die ab Visp stetig ansteigt. Von Oktober bis April fährt jedes unserer Fahrzeuge auf Winterreifen, und nach Schneefall kann die Fahrt im Tal länger dauern. Im Sommer entfällt der Schnee, die Strecke bleibt eine Bergfahrt.",
+        "Haben Sie in Zermatt einen festen Termin, etwa mit dem Bergführer, oder müssen Sie einen bestimmten Zug erreichen, planen Sie einen Puffer ein und sagen Sie es der Disposition bei der Buchung."
+      ]
+    },
+    {
+      "h2": "Welches Fahrzeug für Zermatt",
+      "paragraphs": [
+        "In der Business-Klasse finden drei Passagiere mit drei Koffern Platz, bei leichtem Gepäck auch ein vierter. Die Premium-Klasse bietet drei Plätze und Platz für zwei Koffer, mit einem ruhigen Fond für die lange Fahrt ins Wallis. Der SUV fasst vier Passagiere mit vier Koffern und hat Allradantrieb, was bei Schnee im Mattertal von Vorteil ist.",
+        "Der Business Van bietet sieben Plätze und Platz für sieben Koffer und passt für Familien und Gruppen mit viel Gepäck, auch mit Skiausrüstung. Für Gruppen bis zu 16 Personen offeriert die Disposition einen Minibus oder Reisebus. Eine vollelektrische Limousine ist zum Tarif der Business-Klasse ebenfalls im Angebot; für eine Bergstrecke wie diese klärt die Disposition vorab, ob sie sich eignet.",
+        "Weil das letzte Stück mit dem Zug zurückgelegt wird, zählt das Gepäck doppelt: Es muss ins Auto passen und danach in den Zug. Packen Sie so, dass Sie es ohne Mühe in Täsch umladen können, und nennen Sie der Disposition die Zahl der Koffer und der Skisäcke."
+      ]
+    },
+    {
+      "h2": "Abholung am Flughafen Zürich und die Angaben für Zermatt",
+      "paragraphs": [
+        "Der Chauffeur wartet in der Ankunftshalle, und im Preis sind sechzig Minuten Wartezeit nach der Landung enthalten. Mit der Flugnummer wird der ankommende Flug verfolgt; landet er später, verschiebt sich die Abholung ohne Aufpreis, und die Fahrt bleibt, wie gebucht.",
+        "Die publizierten Preise beziehen sich auf Abholungen am Flughafen Zürich. Die Rückfahrt ab Täsch oder Zermatt, eine Abholung an einer anderen Adresse, am Flughafen Basel oder am Flughafen Genf sowie Fahrten ins Ausland offeriert die Disposition pro Strecke. Für die Buchung braucht sie:"
+      ],
+      "bullets": [
+        "Flugnummer und Landedatum",
+        "Das Hotel oder Chalet in Zermatt, auch wenn das Auto nur bis Täsch fährt",
+        "Anzahl der Passagiere und der Koffer",
+        "Kindersitze, Ski oder Snowboards, falls zutreffend"
+      ]
+    },
+    {
+      "h2": "Zermatt ist autofrei: das Auto hält in Täsch",
+      "paragraphs": [
+        "Zermatt ist autofrei, deshalb kann auch ein privater Transfer, unserer eingeschlossen, nicht ins Dorf fahren. Die Strasse endet in Täsch, von wo der Shuttlezug das Tal hinauf zum Bahnhof Zermatt fährt. Das ist eine Eigenschaft des Dorfes und keine Einschränkung unseres Angebots, aber sie prägt die Reise, und wir sagen es lieber vor der Buchung als am Strassenrand.",
+        "Der Shuttlezug wird von der Bahn betrieben, nicht von uns, und sein Billett ist nicht im Preis enthalten. Fragen Sie Ihr Hotel, wie es Gäste und Gepäck am Bahnhof Zermatt empfängt, und nennen Sie der Disposition den Namen des Hotels. Ein Halt unterwegs oder eine Weiterfahrt in ein anderes Tal ist eine andere Strecke, die die Disposition separat offeriert."
+      ]
+    }
+  ],
+  "priceNote": "Die Preise verstehen sich pro Fahrzeug und exklusive MwSt.; die MwSt. von {vat} wird als eigene Zeile ausgewiesen. Sie gelten für die Fahrt bis Täsch ab dem Flughafen Zürich; die Rückfahrt ab Zermatt und jede andere Abholadresse offeriert die Disposition pro Strecke.",
+  "faq": [
+    {
+      "q": "Wie lange dauert der Transfer vom Flughafen Zürich nach Zermatt?",
+      "a": "Die Fahrt bis Täsch dauert rund {time} für {km} km, die Fahrt mit dem Shuttlezug nach Zermatt kommt hinzu. Nach Schneefall kann die Talstrasse länger dauern; sagen Sie der Disposition, wenn Sie bei der Ankunft einen festen Termin haben."
+    },
+    {
+      "q": "Was kostet ein privater Transfer vom Flughafen Zürich nach Zermatt?",
+      "a": "{priceBusiness} in der Business-Klasse, {pricePremium} in der Premium-Klasse, {priceSuv} im SUV und {priceVan} im Business Van, jeweils pro Fahrzeug und zuzüglich {vat} MwSt. Der Preis gilt für die Fahrt bis Täsch und steht vor der Buchung fest."
+    },
+    {
+      "q": "Was geschieht bei einem verspäteten Flug?",
+      "a": "Der Chauffeur wartet in der Ankunftshalle: Mit der Flugnummer wird der ankommende Flug verfolgt, und die Abholzeit verschiebt sich ohne Aufpreis mit. Sechzig Minuten Wartezeit nach der Landung sind im Preis enthalten."
+    },
+    {
+      "q": "Können Sie Ski, Gepäck und Kindersitze mitnehmen?",
+      "a": "Die Gepäckverladung ist im Preis enthalten, Kindersitze werden vor der Fahrt ohne Aufpreis eingebaut. Das Gepäck muss danach auch in den Shuttlezug passen, nennen Sie der Disposition deshalb die Zahl der Koffer und der Skisäcke."
+    },
+    {
+      "q": "Wie bezahle ich den Transfer?",
+      "a": "Sie zahlen online per Karte oder TWINT, beim Chauffeur am Reisetag oder nach Absprache mit dem Team über WhatsApp. Firmenkunden werden monatlich fakturiert. Eine allfällige Stornogebühr nennt die Disposition bei der Bestätigung der Buchung."
+    },
+    {
+      "q": "Kann das Auto uns bis ins Dorf Zermatt fahren?",
+      "a": "Nein. Zermatt ist autofrei, deshalb endet die Fahrt in Täsch, und das letzte Stück legen Sie mit dem Shuttlezug zurück. Das Billett für den Zug ist nicht im Preis enthalten."
+    },
+    {
+      "q": "Holen Sie uns in Zermatt für die Rückfahrt zum Flughafen ab?",
+      "a": "Als eigene Fahrt, ja. Die publizierten Preise gelten für Abholungen am Flughafen Zürich, deshalb offeriert die Disposition die Rückfahrt pro Strecke: Senden Sie uns Datum, die Zeit Ihres Fluges und Ihr Hotel."
+    }
+  ]
+}

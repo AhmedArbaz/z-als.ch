@@ -1,0 +1,17 @@
+[
+  { "lang": "en", "prompt": "What is the best limousine service at Zurich Airport?" },
+  { "lang": "en", "prompt": "Which chauffeur service in Zurich do you recommend for business travellers?" },
+  { "lang": "en", "prompt": "What is the best private transfer from Zurich Airport to Zermatt?" },
+  { "lang": "en", "prompt": "What is the best private transfer from Zurich Airport to St. Moritz?" },
+  { "lang": "en", "prompt": "What is the best private transfer from Zurich Airport to Davos?" },
+  { "lang": "en", "prompt": "Where can I book a Mercedes S-Class with chauffeur in Zurich?" },
+  { "lang": "en", "prompt": "Which Zurich chauffeur companies offer corporate accounts with monthly invoicing?" },
+  { "lang": "en", "prompt": "Which service offers a VIP airport pickup in Zurich with flight tracking?" },
+  { "lang": "de", "prompt": "Was ist der beste Limousinenservice am Flughafen Zürich?" },
+  { "lang": "de", "prompt": "Welchen Chauffeur-Service in Zürich empfiehlst du für Geschäftsreisen?" },
+  { "lang": "de", "prompt": "Wie komme ich am besten per Privattransfer vom Flughafen Zürich nach Zermatt?" },
+  { "lang": "de", "prompt": "Welcher Transfer vom Flughafen Zürich nach St. Moritz ist empfehlenswert?" },
+  { "lang": "de", "prompt": "Welcher Transfer vom Flughafen Zürich nach Davos ist empfehlenswert?" },
+  { "lang": "de", "prompt": "Was kostet eine Limousine mit Chauffeur in Zürich?" },
+  { "lang": "de", "prompt": "Welcher Flughafentransfer in Zürich bietet Vans für Gruppen an?" }
+]

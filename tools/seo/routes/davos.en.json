@@ -1,0 +1,93 @@
+{
+  "title": "Zurich to Davos Transfer | Private Chauffeur | Z-ALS",
+  "description": "Private chauffeur from Zurich Airport to Davos, {km} km via Klosters. Mercedes E-, S- or V-Class, flight tracked, fare fixed before you book.",
+  "h1": "Zurich Airport to Davos by private chauffeur",
+  "lede": "A chauffeur meets you inside arrivals at Zürich Airport and drives you to Davos, {km} km up the Prättigau valley, for a fare fixed before you book. If you give us the flight number, the pick-up follows your landing.",
+  "intro": [
+    "Davos lies at about 1,560 m, and the way up from Zürich Airport is {km} km by motorway and valley road. A private transfer is one car, one chauffeur and one fare from the arrivals hall to the door, with no change of vehicle on the way.",
+    "The fare is set per kilometre by car class and stated before you book. A person answers dispatch at any hour, by phone, WhatsApp or email, so a question about snow or timing does not have to wait for the morning.",
+    "Below you will find the fare, the road in each season, the cars, and what dispatch needs from you. Anything outside the published fares, such as the return from Davos, is quoted per route."
+  ],
+  "sections": [
+    {
+      "h2": "The fixed fare from Zürich Airport to Davos",
+      "paragraphs": [
+        "A Business Class transfer (Mercedes E-Class or equivalent) costs {priceBusiness} for the whole car. Premium Class (Mercedes S-Class or equivalent) is {pricePremium}, the SUV (Mercedes GLE or equivalent) is {priceSuv}, and the Business Van (Mercedes V-Class or equivalent) is {priceVan}. VAT of {vat} is added as its own line, and every figure is per car, not per passenger.",
+        "The fare comes from the distance and the class rate. At {km} km it sits far above the class minimum, so the minimum plays no part here. It is stated before you book and does not move afterwards. Every fare includes:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats, fitted before the journey at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "The road to Davos",
+      "paragraphs": [
+        "The distance is {km} km and the drive takes about {time}. From the airport the route runs by motorway across eastern Switzerland, then follows the Prättigau valley road through Klosters and climbs to Davos.",
+        "Most of the distance is motorway. The last stretch is a mountain valley road with bends and a steady climb, and the chauffeur drives it at the pace the surface allows. From October to April every car runs winter tyres, and after snowfall the valley road is where the journey slows. Allow some margin if you have a train, a meeting or a dinner to reach, and tell dispatch about it when you book.",
+        "Davos is spread along its valley rather than gathered round one square, so give the address of your hotel or chalet instead of the town name. The chauffeur can then drive to the door."
+      ]
+    },
+    {
+      "h2": "Which car for Davos",
+      "paragraphs": [
+        "Business Class takes three passengers with three cases, and a fourth passenger fits if the luggage is light. Premium Class seats three with two cases and has a rear cabin built to work in. The SUV seats four with four cases and has all-wheel drive, which is why it is the car we send for ski weeks.",
+        "The Business Van seats seven with seven cases and suits families, delegations and anyone travelling with a lot of luggage. For groups of up to sixteen, dispatch quotes a minibus or coach. A fully electric saloon is available at the Business Class rate; for a mountain run, ask dispatch first, because its range is planned against the route before the car is assigned."
+      ]
+    },
+    {
+      "h2": "Arrival at Zürich Airport and what dispatch needs",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals, and sixty minutes of waiting after landing are part of the fare. Give the flight number when you book: the inbound flight is tracked and the pick-up moves with it at no charge, so a delayed landing changes neither the fare nor the plan.",
+        "Fares are published for pick-ups at Zürich Airport. The return from Davos, a pick-up at any other address, at Basel or Geneva airport, and journeys abroad are quoted per route by dispatch. To book, dispatch needs:"
+      ],
+      "bullets": [
+        "Flight number and landing date",
+        "The address in Davos, or the town if the address is not settled",
+        "Number of passengers and cases",
+        "Child seats, skis or boards, if any"
+      ]
+    },
+    {
+      "h2": "Davos in season",
+      "paragraphs": [
+        "Demand in Davos follows the calendar. The World Economic Forum meets there every January and ski weeks fill the cars, so book early for those dates and ask for Premium Class or the SUV well ahead.",
+        "In heavy snow the journey can take longer than {time}, and dispatch can be reached at any hour if your plans depend on the arrival. The fare covers the journey to the address you name in Davos; a stop on the way, or an onward leg to another valley, is a different route and dispatch quotes it separately."
+      ]
+    }
+  ],
+  "priceNote": "Fares are net of VAT; {vat} VAT is added as its own line. They are published for pick-ups at Zürich Airport, and the return from Davos or any other pick-up point is quoted by dispatch.",
+  "faq": [
+    {
+      "q": "How long does the transfer from Zürich Airport to Davos take?",
+      "a": "The drive is about {time} for {km} km. The last stretch is a valley road, so allow extra margin after snowfall and tell dispatch if you have a fixed commitment on arrival."
+    },
+    {
+      "q": "How much does a private transfer from Zürich Airport to Davos cost?",
+      "a": "{priceBusiness} in a Business Class car, {pricePremium} in Premium Class, {priceSuv} in the SUV and {priceVan} in the Business Van, all net of {vat} VAT. The fare is for the car and is fixed before you book."
+    },
+    {
+      "q": "What if my flight lands late?",
+      "a": "Give us the flight number when you book. We track the inbound flight and the pick-up moves with it at no charge; sixty minutes of waiting after landing are included."
+    },
+    {
+      "q": "Can I bring skis, luggage and child seats?",
+      "a": "Child seats (infant, toddler or booster) are fitted before the journey at no charge. Tell dispatch how many cases and how many pairs of skis or boards you have, so the class is right the first time; the Business Van takes a ski box from November."
+    },
+    {
+      "q": "How do I pay for the transfer?",
+      "a": "Online by card or TWINT, to the chauffeur on the day, or arranged with dispatch on WhatsApp. Corporate clients are invoiced monthly, and any cancellation charge is stated when the booking is confirmed."
+    },
+    {
+      "q": "Do you drive to Davos in winter?",
+      "a": "Yes. Every car runs winter tyres from October to April. If snow is forecast, ask for the SUV, which has all-wheel drive."
+    },
+    {
+      "q": "Can you collect us in Davos for the return to the airport?",
+      "a": "Yes, as a separate journey. Published fares apply to pick-ups at Zürich Airport, so dispatch quotes the return per route: send the date and the address."
+    }
+  ]
+}

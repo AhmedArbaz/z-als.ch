@@ -1,0 +1,77 @@
+{
+  "title": "Airport Transfer Switzerland, Fixed Price | Z-ALS",
+  "description": "Chauffeur transfers from Zurich Airport across Switzerland: flight tracked, 60 minutes of waiting included. The fare is fixed before you book.",
+  "h1": "Fixed-price airport transfers from Zurich Airport across Switzerland",
+  "lede": "A chauffeur meets you inside arrivals at Zürich Airport and drives you to your destination in Switzerland for a fare fixed before you book. Dispatch answers at any hour, by phone, WhatsApp or email.",
+  "intro": [
+    "Z-ALS is a licensed Swiss chauffeur company in Kloten, founded in 2004. A transfer with us is one car, one chauffeur and one fare from the arrivals hall to the door of your hotel, home or office, with no change of vehicle on the way.",
+    "The fare is fixed before you book. It is worked out from the distance and the rate of the car class you choose, and it does not move afterwards. The table below lists the routes we publish, each with its distance, drive time and Business Class fare, and each linked to a page of its own.",
+    "This page explains how a fare is made up, what every fare includes, how other pick-up points and journeys abroad are handled, and how to book. Fares are published for pick-ups at Zürich Airport; anything else is quoted by dispatch before you commit."
+  ],
+  "sections": [
+    {
+      "h2": "How the fixed fare is calculated",
+      "paragraphs": [
+        "A transfer is charged by distance at the rate of the car class. Business Class and the Business Van share one rate, Premium Class and the SUV share a higher one, and each class has a minimum fare below which no journey is priced, however short it is. VAT is shown as its own line, so you can read the net fare and the total separately.",
+        "The fare is for the whole car, not per passenger, and it is stated before you book. Because waiting, luggage handling and tolls are already inside it, nothing is added for them afterwards. The fare does not move if the flight does."
+      ]
+    },
+    {
+      "h2": "What every fare includes",
+      "paragraphs": [
+        "The chauffeur waits inside arrivals with your name and carries the luggage to the car. Where you give a flight number, the inbound flight is tracked and the pick-up moves with it at no charge, so a late landing changes neither the fare nor the plan. These items are part of every fare, on every route:"
+      ],
+      "bullets": [
+        "Waiting and luggage handling",
+        "Tolls and the Swiss motorway vignette",
+        "Child seats fitted before the journey, at no charge",
+        "Sixty minutes of waiting after landing",
+        "Passenger insurance"
+      ]
+    },
+    {
+      "h2": "Other pick-up points and journeys abroad",
+      "paragraphs": [
+        "The published fares apply to pick-ups at Zürich Airport. The return trip from your destination, a pick-up at Basel or Geneva airport, a pick-up from any other address, and any journey that crosses the border are quoted per route by dispatch.",
+        "Send the date, the pick-up point, the destination and the number of passengers by WhatsApp, phone or email. The quote comes back before you book, and you confirm it only once the figure suits you."
+      ]
+    },
+    {
+      "h2": "Cars, booking and payment",
+      "paragraphs": [
+        "There are four classes. Business Class is a Mercedes E-Class or equivalent, Premium Class a Mercedes S-Class or equivalent, the SUV a Mercedes GLE or equivalent with all-wheel drive, and the Business Van a Mercedes V-Class or equivalent for larger parties. A fully electric saloon is also available at the Business Class rate, and for groups of up to sixteen dispatch quotes a minibus or coach. Winter tyres are standard on every car from October to April.",
+        "To book, choose the route and the class online, or write to dispatch. Dispatch answers at any hour, personally, by phone, WhatsApp or email. You can pay online by card or TWINT, pay the chauffeur on the day, or arrange payment with dispatch on WhatsApp. Corporate clients are invoiced monthly."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "Are the fares really fixed?",
+      "a": "Yes. For the published routes from Zürich Airport the fare is stated before you book and does not move afterwards, even if your flight does. It is the distance multiplied by the class rate, never below the class minimum, with VAT as a separate line."
+    },
+    {
+      "q": "What is included in the fare?",
+      "a": "Waiting, luggage handling, tolls, the Swiss motorway vignette, child seats fitted before the journey, sixty minutes of waiting after landing and passenger insurance. The chauffeur waits inside arrivals."
+    },
+    {
+      "q": "Can I be picked up somewhere other than Zürich Airport?",
+      "a": "Yes, but those journeys are quoted by dispatch rather than read from the table. That covers the return trip from your destination, Basel airport, Geneva airport, other addresses and journeys abroad. Send the details and the fare comes back before you book."
+    },
+    {
+      "q": "How do I pay?",
+      "a": "Online by card or TWINT, to the chauffeur on the day, or arranged with dispatch on WhatsApp. Corporate clients are invoiced monthly."
+    },
+    {
+      "q": "How do I change or cancel a booking?",
+      "a": "Tell dispatch by phone, WhatsApp or email; all three are answered at any hour. Any cancellation charge is stated when the booking is confirmed, so you know it before you travel."
+    },
+    {
+      "q": "What happens if my flight is delayed?",
+      "a": "Give us the flight number when you book. The inbound flight is tracked and the pick-up moves with it at no charge, and sixty minutes of waiting after landing are included in the fare."
+    },
+    {
+      "q": "Which car should I choose?",
+      "a": "Business Class suits up to three passengers with three cases, Premium Class adds a rear cabin built to work in, the SUV seats four with all-wheel drive, and the Business Van seats seven. Give dispatch your passenger and luggage count and it will name the class that fits."
+    }
+  ]
+}

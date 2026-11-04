@@ -1,0 +1,95 @@
+{
+  "title": "Transfert Zurich Zermatt | Chauffeur privé | Z-ALS",
+  "description": "Transfert avec chauffeur de l’aéroport de Zurich à Täsch, {km} km, puis navette vers Zermatt, village sans voitures. Prix fixe avant la réservation.",
+  "h1": "Transfert de Zurich à Zermatt, via Täsch, avec chauffeur",
+  "lede": "Un chauffeur vous attend dans le hall d’arrivée de l’aéroport de Zurich et vous conduit à Täsch, à {km} km, où la navette ferroviaire prend le relais vers Zermatt. Le prix fixe est annoncé avant la réservation.",
+  "intro": [
+    "Zermatt se trouve au fond de la vallée de Zermatt (Mattertal), au pied du Cervin, à environ 1 600 m d’altitude. C’est un village sans voitures : le transfert privé s’arrête à Täsch, la dernière localité accessible en voiture, et le dernier tronçon se fait en navette ferroviaire.",
+    "Z-ALS, entreprise suisse de transport avec chauffeur titulaire des autorisations requises, est établie à Kloten depuis 2004. De l’aéroport de Zurich à Täsch, vous avez un seul véhicule, un seul chauffeur et un seul prix, sans correspondance avant la navette. Le prix est calculé au kilomètre selon la classe de véhicule et annoncé avant la réservation. Si vous indiquez votre numéro de vol, le vol entrant est suivi et la prise en charge se décale avec lui, sans supplément.",
+    "Cette page donne le prix fixe de chaque classe, décrit le trajet, indique quel véhicule convient à quelle taille de groupe et précise ce dont la centrale a besoin. Ce qui sort des prix publiés, comme le retour depuis Zermatt, fait l’objet d’un devis de la centrale, trajet par trajet."
+  ],
+  "sections": [
+    {
+      "h2": "Le prix fixe de l’aéroport de Zurich à Täsch",
+      "paragraphs": [
+        "En classe Business (Mercedes Classe E ou équivalent), le transfert de l’aéroport de Zurich à Täsch coûte {priceBusiness} hors TVA. La classe Premium (Mercedes Classe S ou équivalent) est à {pricePremium}, le SUV (Mercedes GLE ou équivalent) à {priceSuv} et le Business Van (Mercedes Classe V ou équivalent) à {priceVan}. Les montants s’entendent par véhicule, et non par personne ; la TVA de {vat} figure sur une ligne distincte.",
+        "Le prix résulte de la distance et du tarif au kilomètre de la classe, et il ne descend jamais sous le minimum de la classe, qui n’entre pas en jeu sur ce trajet. Il est annoncé avant la réservation et ne change pas ensuite, même si le vol a du retard. Le billet de la navette ferroviaire entre Täsch et Zermatt n’est pas compris. Les éventuels frais d’annulation sont indiqués au moment de la confirmation de la réservation. Le prix comprend :"
+      ],
+      "bullets": [
+        "L’attente et la manutention des bagages",
+        "Les péages et la vignette autoroutière suisse",
+        "Les sièges enfant, installés avant le trajet, sans frais",
+        "Soixante minutes d’attente après l’atterrissage",
+        "L’assurance passagers"
+      ]
+    },
+    {
+      "h2": "Le trajet : parcours, durée et saisons",
+      "paragraphs": [
+        "Le parcours jusqu’à Täsch mesure {km} km et prend environ {time}. Depuis l’aéroport, la route quitte l’agglomération zurichoise par l’autoroute, rejoint le Valais, puis suit la vallée de Zermatt depuis Viège (Visp) jusqu’à Täsch. L’itinéraire exact dépend des conditions du jour ; la distance et la durée s’arrêtent à Täsch, et le trajet en navette ferroviaire vient en plus.",
+        "La dernière partie du parcours est une route de vallée à pente régulière, avec des virages ; le chauffeur la conduit à l’allure que la chaussée permet. D’octobre à avril, chaque véhicule roule en pneus hiver. Après des chutes de neige, le trajet peut durer plus longtemps ; en été, la route est dégagée, mais elle reste une route de montagne.",
+        "Si vous avez une correspondance, un dîner ou un rendez-vous avec un guide de montagne, prévoyez une marge et dites-le à la centrale à la réservation."
+      ]
+    },
+    {
+      "h2": "Quel véhicule pour Zermatt",
+      "paragraphs": [
+        "La classe Business accueille trois passagers avec trois valises ; un quatrième passager trouve sa place si les bagages sont légers. La classe Premium offre trois places et deux valises, dans un habitacle arrière calme pour travailler ou se reposer pendant une longue étape. Le SUV prend quatre passagers et quatre valises et dispose de quatre roues motrices, un atout sur une route de vallée enneigée ; c’est aussi la voiture que nous envoyons pour les semaines de ski.",
+        "Le Business Van embarque sept passagers et sept valises ; c’est le choix des familles, des délégations et de toute personne qui voyage avec des skis. Pour un groupe plus large, la centrale établit un devis en minibus ou en autocar, jusqu’à seize personnes. Une berline entièrement électrique fait aussi partie de la flotte, au tarif au kilomètre de la classe Business ; pour une route de montagne comme celle-ci, la centrale vérifie d’abord si elle convient.",
+        "Comme le dernier tronçon se fait en train, vos bagages voyagent d’abord en voiture, puis en navette : indiquez à la centrale le nombre de valises et de housses de ski, pour que la classe soit la bonne du premier coup."
+      ]
+    },
+    {
+      "h2": "Prise en charge à l’aéroport de Zurich et informations pour la centrale",
+      "paragraphs": [
+        "Le chauffeur vous attend dans le hall d’arrivée, et soixante minutes d’attente après l’atterrissage sont comprises dans le prix. Indiquez votre numéro de vol à la réservation : le vol entrant est suivi, la prise en charge se décale avec lui sans supplément, et un retard ne change ni le prix ni le déroulement.",
+        "Les prix publiés s’appliquent aux prises en charge à l’aéroport de Zurich. Le retour depuis Täsch ou Zermatt, une prise en charge à une autre adresse ou aux aéroports de Bâle et de Genève, ainsi que les trajets à l’étranger font l’objet d’un devis de la centrale, trajet par trajet. Pour réserver, la centrale a besoin de ces informations :"
+      ],
+      "bullets": [
+        "Le numéro de vol et la date d’atterrissage",
+        "Le nom de votre hôtel ou de votre chalet à Zermatt, pour que le voyage tienne compte de la navette et du village",
+        "Le nombre de passagers et de valises",
+        "Les sièges enfant, skis ou snowboards, le cas échéant",
+        "Un numéro de téléphone joignable à l’arrivée"
+      ]
+    },
+    {
+      "h2": "Zermatt est un village sans voitures : la route s’arrête à Täsch",
+      "paragraphs": [
+        "Comme Zermatt est un village sans voitures, notre transfert s’arrête à Täsch, d’où une navette ferroviaire monte la vallée jusqu’à la gare de Zermatt. C’est une particularité du village et non une limite de notre offre, mais elle conditionne le voyage : mieux vaut le savoir avant de réserver que le découvrir au bord de la route.",
+        "La navette est exploitée par une compagnie ferroviaire, et non par Z-ALS ; son billet n’est pas compris dans le prix. Demandez à votre hôtel comment il accueille ses clients et leurs bagages à la gare de Zermatt, et indiquez son nom à la centrale. Une halte en route ou un trajet vers une autre vallée est un autre trajet, que la centrale chiffre séparément."
+      ]
+    }
+  ],
+  "priceNote": "Les prix s’entendent par véhicule, hors TVA ; la TVA de {vat} figure sur une ligne distincte. Ils couvrent le trajet jusqu’à Täsch depuis l’aéroport de Zurich ; le retour depuis Zermatt et toute autre adresse de prise en charge font l’objet d’un devis de la centrale.",
+  "faq": [
+    {
+      "q": "Combien de temps dure le transfert de l’aéroport de Zurich à Zermatt ?",
+      "a": "Le trajet jusqu’à Täsch prend environ {time} pour {km} km ; la navette ferroviaire vers Zermatt s’y ajoute. Après des chutes de neige, prévoyez une marge, et dites à la centrale si un rendez-vous vous attend à l’arrivée."
+    },
+    {
+      "q": "Combien coûte un transfert privé de l’aéroport de Zurich à Zermatt ?",
+      "a": "{priceBusiness} en classe Business, {pricePremium} en classe Premium, {priceSuv} en SUV et {priceVan} en Business Van, par véhicule et hors TVA de {vat}. Le prix couvre le trajet jusqu’à Täsch et il est annoncé avant la réservation."
+    },
+    {
+      "q": "Que se passe-t-il si mon vol a du retard ?",
+      "a": "Indiquez votre numéro de vol à la réservation : le vol entrant est suivi et la prise en charge se décale avec lui, sans supplément. Soixante minutes d’attente après l’atterrissage sont comprises dans le prix."
+    },
+    {
+      "q": "Puis-je emporter des skis, des bagages et des sièges enfant ?",
+      "a": "La manutention des bagages est comprise, et les sièges enfant sont installés avant le trajet, sans frais. Indiquez à la centrale le nombre de valises et de housses de ski pour que la classe convienne ; le SUV et le Business Van offrent le plus de place."
+    },
+    {
+      "q": "Comment payer le transfert ?",
+      "a": "En ligne par carte ou par TWINT, au chauffeur le jour du trajet, ou en convenant du paiement avec l’équipe sur WhatsApp. Les clients entreprises sont facturés mensuellement, et les éventuels frais d’annulation sont indiqués à la confirmation de la réservation."
+    },
+    {
+      "q": "La voiture peut-elle nous conduire jusque dans le village de Zermatt ?",
+      "a": "Non. Zermatt est un village sans voitures : le trajet s’arrête à Täsch, et vous faites le dernier tronçon en navette ferroviaire. Le billet de la navette n’est pas compris dans le prix."
+    },
+    {
+      "q": "Pouvez-vous nous ramener de Zermatt à l’aéroport ?",
+      "a": "Oui, comme trajet à part. Les prix publiés s’appliquent aux prises en charge à l’aéroport de Zurich : la centrale établit donc le retour par un devis, trajet par trajet. Envoyez la date, l’heure de votre vol et le nom de votre hôtel."
+    }
+  ]
+}
