@@ -1,5 +1,4 @@
 # z-als.ch
-
 The Z-ALS website: the Variation 2 homepage, a Request a quote wizard and the legal page, served at
 **https://z-als.ch** (www.z-als.ch 301s to it). It replaced the Next.js site
 (`jalexzander662-web/z-als`, archived) on 2026-09-26. That site's Journal, About, Services, Fleet and Contact pages
